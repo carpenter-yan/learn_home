@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_fastjson/src/main/java/com/carpenter/yan/fastjson/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_fastjson/src/main/java/com/carpenter/yan/fastjson/Convert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/learn/protobuf/AddPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/protobuf/AddPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/learn/protobuf/AddressBookProtos.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/protobuf/AddressBookProtos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/learn/protobuf/ListPeople.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/protobuf/ListPeople.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -96,7 +89,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SimpleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
+            <state relative-caret-position="527">
               <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -277,7 +270,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548224724864" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548224730419" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/algs4.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -423,7 +416,7 @@
       <workItem from="1546576959678" duration="2145000" />
       <workItem from="1547802755800" duration="1472000" />
       <workItem from="1548032786444" duration="17000" />
-      <workItem from="1548222625755" duration="1925000" />
+      <workItem from="1548222625755" duration="2182000" />
     </task>
     <task id="LOCAL-00001" summary="add learn_fastjson module">
       <created>1548222694164</created>
@@ -432,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548222694164</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="use mockito basic method">
+      <created>1548224814845</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548224814845</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -468,7 +468,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49992000" />
+    <option name="totallyTimeSpent" value="50249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,7 +524,8 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="add learn_fastjson module" />
-    <option name="LAST_COMMIT_MESSAGE" value="add learn_fastjson module" />
+    <MESSAGE value="use mockito basic method" />
+    <option name="LAST_COMMIT_MESSAGE" value="use mockito basic method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.54/fastjson-1.2.54.jar!/com/alibaba/fastjson/JSON.class">
@@ -778,7 +779,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SimpleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
+        <state relative-caret-position="527">
           <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
