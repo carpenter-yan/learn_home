@@ -11,6 +11,7 @@
     <modules>
         <module>learn_protobuf</module>
         <module>learn_algr4</module>
+        <module>learn_fastjson</module>
     </modules>
 
     <properties>

@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="learn_algr4" />
+        <module name="learn_fastjson" />
         <module name="learn_protobuf" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="learn_algs4" target="1.5" />
-      <module name="learn_fastjson" target="1.5" />
       <module name="learn_mockito" target="1.5" />
     </bytecodeTargetLevel>
   </component>
