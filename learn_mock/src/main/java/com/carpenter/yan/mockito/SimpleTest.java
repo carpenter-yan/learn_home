@@ -1,5 +1,6 @@
 package com.carpenter.yan.mockito;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Iterator;
@@ -22,7 +23,7 @@ public class SimpleTest {
     @Test
     public void SimpleTest2(){
         Iterator i = mock(Iterator.class, "simple2");
-        when(i.next()).thenReturn("Hello", "World");
+        when(i.next()).thenReturn("Hello", "World").thenThrow(new RuntimeException());
         String result = i.next() + " " + i.next();
         assertEquals("Hello World", result);
     }
@@ -30,5 +31,8 @@ public class SimpleTest {
     @Test
     public void SimpleTest3(){
         Iterator i = mock(Iterator.class, "simple3");
+        doReturn("Hello").doReturn("World").when(i).next();
+        String result = i.next() + " " + i.next();
+        assertEquals("Hello World", result);
     }
 }

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="use mockito basic method">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SimpleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,15 +88,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SimpleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/MatchersTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,6 +200,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/learn_mock/pom.xml" />
         <option value="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SimpleTest.java" />
+        <option value="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/MatchersTest.java" />
       </list>
     </option>
   </component>
@@ -258,6 +268,23 @@
             </path>
             <path>
               <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_mock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_mock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mockito" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -270,7 +297,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548224819846" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548241877646" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/algs4.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -301,37 +328,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SimpleTest.SimpleTest2">
-    <configuration name="AddPerson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.learn.protobuf.AddPerson" />
-      <module name="learn_protobuf" />
-      <option name="PROGRAM_PARAMETERS" value="D:\IdeaProjects\learn_home\learn_protobuf\src\main\resources\addressBookFile" />
+  <component name="RunManager" selected="JUnit.MatchersTest.argumentMatchersTest2">
+    <configuration name="MatchersTest.argumentMatchersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn_mock" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.learn.protobuf.*" />
+          <option name="PATTERN" value="com.carpenter.yan.mockito.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.carpenter.yan.mockito" />
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.mockito.MatchersTest" />
+      <option name="METHOD_NAME" value="argumentMatchersTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Convert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.fastjson.Convert" />
-      <module name="learn_fastjson" />
+    <configuration name="MatchersTest.argumentMatchersTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn_mock" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.fastjson.*" />
+          <option name="PATTERN" value="com.carpenter.yan.mockito.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestAlgs4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestAlgs4" />
-      <module name="learn_algr4" />
+      <option name="PACKAGE_NAME" value="com.carpenter.yan.mockito" />
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.mockito.MatchersTest" />
+      <option name="METHOD_NAME" value="argumentMatchersTest2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -347,6 +372,22 @@
       <option name="PACKAGE_NAME" value="com.carpenter.yan.mockito" />
       <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.mockito.SimpleTest" />
       <option name="METHOD_NAME" value="SimpleTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleTest.SimpleTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn_mock" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.carpenter.yan.mockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.carpenter.yan.mockito" />
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.mockito.SimpleTest" />
+      <option name="METHOD_NAME" value="SimpleTest3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -369,19 +410,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AddPerson" />
-      <item itemvalue="Application.TestAlgs4" />
-      <item itemvalue="Application.Convert" />
       <item itemvalue="JUnit.SimpleTest.simpleTest" />
       <item itemvalue="JUnit.SimpleTest.SimpleTest2" />
+      <item itemvalue="JUnit.SimpleTest.SimpleTest3" />
+      <item itemvalue="JUnit.MatchersTest.argumentMatchersTest" />
+      <item itemvalue="JUnit.MatchersTest.argumentMatchersTest2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatchersTest.argumentMatchersTest2" />
+        <item itemvalue="JUnit.MatchersTest.argumentMatchersTest" />
         <item itemvalue="JUnit.SimpleTest.SimpleTest2" />
+        <item itemvalue="JUnit.SimpleTest.SimpleTest3" />
         <item itemvalue="JUnit.SimpleTest.simpleTest" />
-        <item itemvalue="Application.Convert" />
-        <item itemvalue="Application.TestAlgs4" />
-        <item itemvalue="Application.AddPerson" />
       </list>
     </recent_temporary>
   </component>
@@ -416,7 +457,7 @@
       <workItem from="1546576959678" duration="2145000" />
       <workItem from="1547802755800" duration="1472000" />
       <workItem from="1548032786444" duration="17000" />
-      <workItem from="1548222625755" duration="2182000" />
+      <workItem from="1548222625755" duration="3997000" />
     </task>
     <task id="LOCAL-00001" summary="add learn_fastjson module">
       <created>1548222694164</created>
@@ -432,43 +473,57 @@
       <option name="project" value="LOCAL" />
       <updated>1548224814845</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="use mockito basic method">
+      <created>1548224836538</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548224836538</updated>
+    </task>
+    <task id="LOCAL-00004" summary="use mockito basic method">
+      <created>1548224861396</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548224861396</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="mockList_testConsecutiveCall - 2018.12.13 at 21h 19m 56s.xml">
-      <configuration name="mockList.testConsecutiveCall" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mockList_testConsecutiveCall - 2018.12.13 at 21h 20m 16s.xml">
-      <configuration name="mockList.testConsecutiveCall" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mockList_testConsecutiveCall - 2018.12.13 at 21h 20m 25s.xml">
-      <configuration name="mockList.testConsecutiveCall" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mockList_testAnswer - 2018.12.13 at 21h 33m 17s.xml">
-      <configuration name="mockList.testAnswer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mockList_testAnswer - 2018.12.13 at 21h 34m 18s.xml">
-      <configuration name="mockList.testAnswer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest_simpleTest - 2019.01.23 at 14h 02m 47s.xml">
-      <configuration name="SimpleTest.simpleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest_simpleTest - 2019.01.23 at 14h 06m 47s.xml">
-      <configuration name="SimpleTest.simpleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest_simpleTest - 2019.01.23 at 14h 07m 10s.xml">
-      <configuration name="SimpleTest.simpleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest_simpleTest - 2019.01.23 at 14h 07m 23s.xml">
-      <configuration name="SimpleTest.simpleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest_SimpleTest2 - 2019.01.23 at 14h 20m 54s.xml">
+    <history-entry file="SimpleTest_SimpleTest2 - 2019.01.23 at 14h 37m 03s.xml">
       <configuration name="SimpleTest.SimpleTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SimpleTest_SimpleTest2 - 2019.01.23 at 14h 38m 10s.xml">
+      <configuration name="SimpleTest.SimpleTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SimpleTest_SimpleTest2 - 2019.01.23 at 14h 38m 30s.xml">
+      <configuration name="SimpleTest.SimpleTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchersTest_argumentMatchersTest - 2019.01.23 at 19h 04m 46s.xml">
+      <configuration name="MatchersTest.argumentMatchersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchersTest_argumentMatchersTest2 - 2019.01.23 at 19h 07m 51s.xml">
+      <configuration name="MatchersTest.argumentMatchersTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchersTest_argumentMatchersTest2 - 2019.01.23 at 19h 08m 30s.xml">
+      <configuration name="MatchersTest.argumentMatchersTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchersTest_argumentMatchersTest2 - 2019.01.23 at 19h 09m 08s.xml">
+      <configuration name="MatchersTest.argumentMatchersTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchersTest_argumentMatchersTest2 - 2019.01.23 at 19h 10m 05s.xml">
+      <configuration name="MatchersTest.argumentMatchersTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchersTest_argumentMatchersTest2 - 2019.01.23 at 19h 10m 18s.xml">
+      <configuration name="MatchersTest.argumentMatchersTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchersTest_argumentMatchersTest2 - 2019.01.23 at 19h 10m 50s.xml">
+      <configuration name="MatchersTest.argumentMatchersTest2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50249000" />
+    <option name="totallyTimeSpent" value="52064000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -779,12 +834,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SimpleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/MatchersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
           </folding>
         </state>
       </provider>
