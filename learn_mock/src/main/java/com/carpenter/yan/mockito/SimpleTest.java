@@ -1,6 +1,5 @@
 package com.carpenter.yan.mockito;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Iterator;
