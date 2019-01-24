@@ -323,6 +323,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/ClassDependency.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/ClassUnderTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/SampleTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_mockito/pom.xml">
           <value>
             <set />
@@ -418,6 +433,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-service/src/main/java/com/jd/jimi3/dm/engine/action/node/FormActionNode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-service/src/main/java/com/jd/jimi3/dm/engine/action/node/IntentAccurateActionNode.java">
           <value>
             <set />
@@ -439,6 +459,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-service/src/main/java/com/jd/jimi3/dm/engine/action/node/xiaozhi/InviteCommentNode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-service/src/main/java/com/jd/jimi3/dm/service/impl/BehaviorTreeProcessEngineImpl.java">
           <value>
             <set />
           </value>
