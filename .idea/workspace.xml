@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="use powermock">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_mock/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/learn_mock/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,10 +39,19 @@
         <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/SampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4-sources.jar!/org/mockito/stubbing/OngoingStubbing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="179" column="23" selection-start-line="179" selection-start-column="23" selection-end-line="179" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -62,15 +68,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/ClassUnderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="340">
+              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding>
                 <element signature="e#128#129#0" expanded="true" />
                 <element signature="e#172#173#0" expanded="true" />
                 <element signature="e#381#382#0" expanded="true" />
                 <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
                 <element signature="e#580#581#0" expanded="true" />
                 <element signature="e#636#637#0" expanded="true" />
                 <element signature="e#696#697#0" expanded="true" />
@@ -87,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/ClassDependency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
                 <element signature="e#122#123#0" expanded="true" />
                 <element signature="e#166#167#0" expanded="true" />
@@ -116,6 +120,7 @@
       <find>Builder</find>
       <find>builder</find>
       <find>PhoneNumber</find>
+      <find>final</find>
     </findStrings>
     <replaceStrings>
       <replace>com.carpenter.yan.learn.protobuf</replace>
@@ -264,7 +269,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548316784133" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548317866945" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/algs4.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -327,6 +332,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SampleTest.testCallFinalMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn_mock" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.carpenter.yan.powermock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.carpenter.yan.powermock" />
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.powermock.SampleTest" />
+      <option name="METHOD_NAME" value="testCallFinalMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SampleTest.testCallInternalInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_mock" />
       <extension name="coverage">
@@ -359,36 +380,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpecialArgTest.returnsSmartNullsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learn_mock" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.mockito.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.carpenter.yan.mockito" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.mockito.SpecialArgTest" />
-      <option name="METHOD_NAME" value="returnsSmartNullsTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.SpecialArgTest.returnsSmartNullsTest" />
       <item itemvalue="JUnit.SpecialArgTest.deepStubsTest" />
       <item itemvalue="JUnit.SampleTest.testCallArgumentInstance" />
       <item itemvalue="JUnit.SampleTest.testCallInternalInstance" />
       <item itemvalue="JUnit.SampleTest" />
+      <item itemvalue="JUnit.SampleTest.testCallFinalMethod" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SampleTest" />
+        <item itemvalue="JUnit.SampleTest.testCallFinalMethod" />
         <item itemvalue="JUnit.SampleTest.testCallInternalInstance" />
         <item itemvalue="JUnit.SampleTest.testCallArgumentInstance" />
         <item itemvalue="JUnit.SpecialArgTest.deepStubsTest" />
-        <item itemvalue="JUnit.SpecialArgTest.returnsSmartNullsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -424,7 +429,7 @@
       <workItem from="1547802755800" duration="1472000" />
       <workItem from="1548032786444" duration="17000" />
       <workItem from="1548222625755" duration="4252000" />
-      <workItem from="1548291462241" duration="12742000" />
+      <workItem from="1548291462241" duration="13815000" />
     </task>
     <task id="LOCAL-00001" summary="add learn_fastjson module">
       <created>1548222694164</created>
@@ -482,25 +487,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548313264282</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="use powermock">
+      <created>1548316809055</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1548316809055</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CaptorTest_argumentCaptorTest1 - 2019.01.24 at 13h 58m 53s.xml">
-      <configuration name="CaptorTest.argumentCaptorTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CaptorTest_argumentCaptorTest1 - 2019.01.24 at 14h 00m 37s.xml">
-      <configuration name="CaptorTest.argumentCaptorTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpyTest_spyTest1 - 2019.01.24 at 14h 36m 53s.xml">
-      <configuration name="SpyTest.spyTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpyTest_spyTest1 - 2019.01.24 at 14h 37m 56s.xml">
-      <configuration name="SpyTest.spyTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpecialArgTest_returnsSmartNullsTest - 2019.01.24 at 14h 42m 54s.xml">
-      <configuration name="SpecialArgTest.returnsSmartNullsTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpecialArgTest_deepStubsTest - 2019.01.24 at 14h 47m 10s.xml">
       <configuration name="SpecialArgTest.deepStubsTest" configurationId="JUnit" />
     </history-entry>
@@ -516,9 +513,24 @@
     <history-entry file="SampleTest - 2019.01.24 at 15h 59m 29s.xml">
       <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SampleTest_testCallFinalMethod - 2019.01.24 at 16h 05m 43s.xml">
+      <configuration name="SampleTest.testCallFinalMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest - 2019.01.24 at 16h 05m 51s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest - 2019.01.24 at 16h 08m 29s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest - 2019.01.24 at 16h 14m 14s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest - 2019.01.24 at 16h 17m 28s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65061000" />
+    <option name="totallyTimeSpent" value="66134000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -578,23 +590,10 @@
     <MESSAGE value="use matcher" />
     <MESSAGE value="use answer interface" />
     <MESSAGE value="use spy/captor" />
-    <option name="LAST_COMMIT_MESSAGE" value="use spy/captor" />
+    <MESSAGE value="use powermock" />
+    <option name="LAST_COMMIT_MESSAGE" value="use powermock" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4-sources.jar!/org/mockito/invocation/InvocationOnMock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4-sources.jar!/org/mockito/stubbing/OngoingStubbing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3621">
-          <caret line="216" column="23" selection-start-line="216" selection-start-column="23" selection-end-line="216" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/learn/fastjson/Student.java" />
     <entry file="file://$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/learn/protobuf.java" />
     <entry file="file://$PROJECT_DIR$/learn_mockito/src/test/java/com/carpenter/yan/mockito/mockList.java" />
@@ -928,10 +927,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="110" column="12" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/ClassDependency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="e#122#123#0" expanded="true" />
             <element signature="e#166#167#0" expanded="true" />
@@ -941,15 +954,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/ClassUnderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="340">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding>
             <element signature="e#128#129#0" expanded="true" />
             <element signature="e#172#173#0" expanded="true" />
             <element signature="e#381#382#0" expanded="true" />
             <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
             <element signature="e#580#581#0" expanded="true" />
             <element signature="e#636#637#0" expanded="true" />
             <element signature="e#696#697#0" expanded="true" />
@@ -962,17 +973,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Assert.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4-sources.jar!/org/mockito/stubbing/OngoingStubbing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <caret line="179" column="23" selection-start-line="179" selection-start-column="23" selection-end-line="179" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/SampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
