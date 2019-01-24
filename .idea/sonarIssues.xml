@@ -273,7 +273,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_mock/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/AnswerTest.java">
           <value>
             <set />
           </value>
@@ -284,6 +294,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SimpleTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/VerifyTest.java">
           <value>
             <set />
           </value>

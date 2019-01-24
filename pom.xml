@@ -13,6 +13,7 @@
         <module>learn_algr4</module>
         <module>learn_fastjson</module>
         <module>learn_mock</module>
+        <module>learn_java</module>
     </modules>
 
     <properties>
