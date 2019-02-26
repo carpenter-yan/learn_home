@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../fairy-assistant-sale/fairy-assistant-sale-web/src/main/java/com/jd/fairy/assistant/sale/controller/FairyAssistantSaleController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-boot-answer/src/main/buildEnv/jd-isobk-knowledge-dev.properties">
           <value>
             <set />
@@ -369,6 +374,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MapTest.java">
           <value>
             <set />
           </value>
