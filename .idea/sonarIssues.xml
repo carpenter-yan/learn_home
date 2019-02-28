@@ -373,12 +373,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/BooleanTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MapTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java">
           <value>
             <set />
           </value>
@@ -499,6 +509,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_protobuf/src/main/resources/hex">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_refactor/src/main/java/com/carpenter/yan/clean/GeneratePrimes.java">
           <value>
             <set />
           </value>

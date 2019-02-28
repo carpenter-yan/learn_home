@@ -11,6 +11,7 @@
         <module name="learn_java" />
         <module name="learn_mock" />
         <module name="learn_protobuf" />
+        <module name="learn_refactor" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

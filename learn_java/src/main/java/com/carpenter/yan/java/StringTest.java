@@ -6,8 +6,8 @@ public class StringTest {
     }
 
     public static void testSplit() {
-        String src = "a@&b";
-        String[] dest = src.split("@&");
+        String src = "a|||b";
+        String[] dest = src.split("\\|\\|\\|");
         for(String each : dest){
             System.out.println(each);
         }
