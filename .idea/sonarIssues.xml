@@ -158,6 +158,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-domain/src/main/java/com/jd/isobk/knowledge/domain/KOfficialIndustryClassify.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-domain/src/main/java/com/jd/isobk/knowledge/domain/KOfficialRobotClassify.java">
           <value>
             <set />
@@ -294,6 +299,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/keywords/impl/KKeywordsInfoServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/knowledge/IKnowledgeAnswerManage.java">
           <value>
             <set />
           </value>
@@ -624,6 +634,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-service/src/test/java/com/jd/jimi3/dm/test/unit/service/impl/SearchServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dt/jd-jimi3-dt-sdk/src/main/java/com/jd/jimi3/dt/sdk/DataTransferServiceAnalysis.java">
           <value>
             <set />
           </value>

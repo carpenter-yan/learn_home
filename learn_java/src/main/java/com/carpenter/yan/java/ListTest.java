@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ListTest {
     public static void main(String[] args) {
-        testBasic();
+        testSubList();
     }
 
     public static void testSetOperation(){
@@ -32,4 +32,13 @@ public class ListTest {
         oneArray.get(1);
         System.out.println(oneArray.removeAll(Arrays.asList("3")));
     }
+
+    public static void testSubList(){
+        List<String> sup = Arrays.asList("0", "1", "2", "3", "4");
+        List<String> sub = sup.subList(1,3);
+        sub.set(1, "9");
+        System.out.println(sub);
+        System.out.println(sup);
+    }
+
 }
