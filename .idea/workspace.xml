@@ -7,7 +7,6 @@
     <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="add String test">
       <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,15 +43,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="678">
               <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="1029" column="28" lean-forward="true" selection-start-line="1029" selection-start-column="28" selection-end-line="1029" selection-end-column="28" />
+            <state relative-caret-position="472">
+              <caret line="106" column="23" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6252#6253#0" expanded="true" />
@@ -75,11 +74,12 @@
                 <element signature="e#10945#10946#0" expanded="true" />
                 <element signature="e#13541#13542#0" expanded="true" />
                 <element signature="e#13596#13597#0" expanded="true" />
-                <element signature="e#15354#15384#1" expanded="true" />
                 <element signature="e#15414#15415#0" expanded="true" />
                 <element signature="e#15459#15460#0" expanded="true" />
                 <element signature="e#24549#24550#0" expanded="true" />
                 <element signature="e#24603#24604#0" expanded="true" />
+                <element signature="e#30684#30685#0" expanded="true" />
+                <element signature="e#30716#30717#0" expanded="true" />
                 <element signature="e#33005#34687#0" />
                 <element signature="e#46390#46391#0" expanded="true" />
                 <element signature="e#46455#46456#0" expanded="true" />
@@ -89,42 +89,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/AbstractList.java">
+        <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="600" column="28" selection-start-line="600" selection-start-column="28" selection-end-line="600" selection-end-column="28" />
+            <state relative-caret-position="425">
+              <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/Deque.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1004">
+              <caret line="219" column="52" lean-forward="true" selection-start-line="219" selection-start-column="52" selection-end-line="219" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/BooleanTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
-                <element signature="e#4449#4450#0" expanded="true" />
-                <element signature="e#4506#4507#0" expanded="true" />
-                <element signature="e#4990#4991#0" expanded="true" />
-                <element signature="e#5047#5048#0" expanded="true" />
-                <element signature="e#5343#5344#0" expanded="true" />
-                <element signature="e#5400#5401#0" expanded="true" />
-                <element signature="e#7627#7628#0" expanded="true" />
-                <element signature="e#7665#7666#0" expanded="true" />
-                <element signature="e#9661#9662#0" expanded="true" />
-                <element signature="e#9693#9694#0" expanded="true" />
-                <element signature="e#22195#22196#0" expanded="true" />
-                <element signature="e#22251#22252#0" expanded="true" />
+                <element signature="e#103#104#0" expanded="true" />
+                <element signature="e#137#138#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/IntegerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#103#104#0" expanded="true" />
+                <element signature="e#130#131#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/ListIterator.java">
+        <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="290">
+              <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/System.java">
+        <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="493" column="65" lean-forward="true" selection-start-line="493" selection-start-column="65" selection-end-line="493" selection-end-column="65" />
+            <state relative-caret-position="290">
+              <caret line="110" column="48" lean-forward="true" selection-start-line="110" selection-start-column="48" selection-end-line="110" selection-end-column="48" />
+              <folding>
+                <element signature="e#33104#33105#0" expanded="true" />
+                <element signature="e#33178#33179#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/Iterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="101" column="16" lean-forward="true" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -155,6 +189,7 @@
       <find>c</find>
       <find>retainAll</find>
       <find>contains</find>
+      <find>forEachRemaining</find>
     </findStrings>
     <replaceStrings>
       <replace>com.carpenter.yan.learn.protobuf</replace>
@@ -209,6 +244,7 @@
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/BooleanTest.java" />
         <option value="$PROJECT_DIR$/learn_refactor/src/main/java/com/carpenter/yan/clean/GeneratePrimes.java" />
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java" />
+        <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/IntegerTest.java" />
       </list>
     </option>
   </component>
@@ -235,10 +271,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1723" />
-    <option name="y" value="45" />
-    <option name="width" value="1612" />
-    <option name="height" value="867" />
+    <option name="x" value="1592" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -249,14 +285,59 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552377512323" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552571872626" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/algs4.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -289,7 +370,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ListTest">
+  <component name="RunManager" selected="Application.IntegerTest">
     <configuration name="BooleanTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.BooleanTest" />
       <module name="learn_java" />
@@ -316,8 +397,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.ListTest" />
+    <configuration name="IntegerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.IntegerTest" />
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -329,8 +410,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.MapTest" />
+    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.ListTest" />
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -357,18 +438,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.ListTest" />
-      <item itemvalue="Application.MapTest" />
       <item itemvalue="Application.StringTest" />
       <item itemvalue="Application.GeneratePrimes" />
       <item itemvalue="Application.BooleanTest" />
+      <item itemvalue="Application.IntegerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IntegerTest" />
         <item itemvalue="Application.ListTest" />
         <item itemvalue="Application.GeneratePrimes" />
         <item itemvalue="Application.BooleanTest" />
         <item itemvalue="Application.StringTest" />
-        <item itemvalue="Application.MapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -422,7 +503,9 @@
       <workItem from="1551231623872" duration="1288000" />
       <workItem from="1551316233410" duration="7520000" />
       <workItem from="1551402239079" duration="3394000" />
-      <workItem from="1552358900765" duration="10268000" />
+      <workItem from="1552358900765" duration="11508000" />
+      <workItem from="1552437619629" duration="3141000" />
+      <workItem from="1552525931433" duration="5083000" />
     </task>
     <task id="LOCAL-00001" summary="add learn_fastjson module">
       <created>1548222694164</created>
@@ -551,7 +634,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124164000" />
+    <option name="totallyTimeSpent" value="133628000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -566,8 +649,8 @@
     <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46003553" visible="true" weight="0.21375267" />
-      <window_info id="Structure" order="1" sideWeight="0.5399645" side_tool="true" visible="true" weight="0.21375267" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.45625" visible="true" weight="0.2185501" />
+      <window_info id="Structure" order="1" sideWeight="0.54375" side_tool="true" visible="true" weight="0.2185501" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -575,7 +658,7 @@
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37305123" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46547884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39972144" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -692,53 +775,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="add String test" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/learn_fastjson/src/main/java/com/carpenter/yan/fastjson/Convert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.54/fastjson-1.2.54-sources.jar!/com/alibaba/fastjson/JSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14263">
-          <caret line="889" column="25" selection-start-line="889" selection-start-column="25" selection-end-line="889" selection-end-column="25" />
-          <folding>
-            <element signature="e#5392#5393#0" expanded="true" />
-            <element signature="e#5450#5451#0" expanded="true" />
-            <element signature="e#32768#32769#0" expanded="true" />
-            <element signature="e#32841#32842#0" expanded="true" />
-            <element signature="e#36314#36315#0" expanded="true" />
-            <element signature="e#36398#36399#0" expanded="true" />
-            <element signature="e#36479#36480#0" expanded="true" />
-            <element signature="e#36562#36563#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_fastjson/src/main/java/com/carpenter/yan/fastjson/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#154#155#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4-sources.jar!/org/mockito/ArgumentMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -1017,17 +1053,6 @@
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/BooleanTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#137#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn_refactor/src/main/java/com/carpenter/yan/clean/GeneratePrimes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1045,7 +1070,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="45.5" y="15.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="46.0" y="15.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -1089,18 +1114,11 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="46.5" y="15.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="47.0" y="15.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1133,28 +1151,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
-          <folding>
-            <element signature="e#33104#33105#0" expanded="true" />
-            <element signature="e#33178#33179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="3207" column="28" selection-start-line="3207" selection-start-column="28" selection-end-line="3207" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="493" column="65" lean-forward="true" selection-start-line="493" selection-start-column="65" selection-end-line="493" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1165,9 +1165,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="493" column="65" selection-start-line="493" selection-start-column="65" selection-end-line="493" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/AbstractList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="814">
           <caret line="600" column="28" selection-start-line="600" selection-start-column="28" selection-end-line="600" selection-end-column="28" />
           <folding>
             <element signature="e#4449#4450#0" expanded="true" />
@@ -1186,10 +1193,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="101" column="16" lean-forward="true" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="110" column="48" lean-forward="true" selection-start-line="110" selection-start-column="48" selection-end-line="110" selection-end-column="48" />
+          <folding>
+            <element signature="e#33104#33105#0" expanded="true" />
+            <element signature="e#33178#33179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="1029" column="28" lean-forward="true" selection-start-line="1029" selection-start-column="28" selection-end-line="1029" selection-end-column="28" />
+        <state relative-caret-position="472">
+          <caret line="106" column="23" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6252#6253#0" expanded="true" />
@@ -1202,11 +1239,12 @@
             <element signature="e#10945#10946#0" expanded="true" />
             <element signature="e#13541#13542#0" expanded="true" />
             <element signature="e#13596#13597#0" expanded="true" />
-            <element signature="e#15354#15384#1" expanded="true" />
             <element signature="e#15414#15415#0" expanded="true" />
             <element signature="e#15459#15460#0" expanded="true" />
             <element signature="e#24549#24550#0" expanded="true" />
             <element signature="e#24603#24604#0" expanded="true" />
+            <element signature="e#30684#30685#0" expanded="true" />
+            <element signature="e#30716#30717#0" expanded="true" />
             <element signature="e#33005#34687#0" />
             <element signature="e#46390#46391#0" expanded="true" />
             <element signature="e#46455#46456#0" expanded="true" />
@@ -1214,14 +1252,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java">
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="290">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1004">
+          <caret line="219" column="52" lean-forward="true" selection-start-line="219" selection-start-column="52" selection-end-line="219" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/BooleanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#137#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/IntegerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#130#131#0" expanded="true" />
           </folding>
         </state>
       </provider>

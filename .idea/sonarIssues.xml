@@ -333,6 +333,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/response/impl/NewKnowledgeServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/test/java/com/jd/isobk/knowledge/test/unit/service/CustomManagerServiceImplTest.java">
           <value>
             <set />
@@ -384,6 +389,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/BooleanTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/IntegerTest.java">
           <value>
             <set />
           </value>
@@ -643,6 +653,41 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dt/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dt/xz-jimi3-dt-service/src/main/java/com/jd/jimi3/dt/service/DataActionExecutor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dt/xz-jimi3-dt-service/src/main/java/com/jd/jimi3/dt/service/QueryDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dt/xz-jimi3-dt-service/src/main/java/com/jd/jimi3/dt/service/executor/AbstractExecutor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dt/xz-jimi3-dt-service/src/main/java/com/jd/jimi3/dt/service/executor/SQLDataExecutor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dt/xz-jimi3-dt-service/src/main/java/com/jd/jimi3/dt/service/impl/QueryDataServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dt/xz-jimi3-dt-service/src/main/java/com/jd/jimi3/dt/service/impl/UpdateDataSetviceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-faq/xz-jimi3-faq-sdk/src/main/java/com/jd/jimi3/faq/sdk/IFaqSearch.java">
           <value>
             <set />
@@ -654,6 +699,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-faq/xz-jimi3-faq-service/src/main/java/com/jd/jimi3/faq/service/PopFAQData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-idx/xz-jimi3-idx-rpc/src/main/java/com/jd/jimi3/index/rpc/dao/impl/FaqEsDaoImpl.java">
           <value>
             <set />
           </value>
