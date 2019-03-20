@@ -15,6 +15,7 @@
         <module>learn_mock</module>
         <module>learn_java</module>
         <module>learn_refactor</module>
+        <module>learn_commons</module>
     </modules>
 
     <properties>
@@ -23,6 +24,7 @@
         <powermock.version>2.0.0</powermock.version>
         <mockito.version>2.23.4</mockito.version>
         <junit.version>4.12</junit.version>
+        <commons.lang.version>3.8.1</commons.lang.version>
     </properties>
 
     <dependencyManagement>
@@ -41,6 +43,11 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.powermock</groupId>

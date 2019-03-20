@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="learn_algr4" />
+        <module name="learn_commons" />
         <module name="learn_fastjson" />
         <module name="learn_java" />
         <module name="learn_mock" />

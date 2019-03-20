@@ -263,6 +263,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-rpc/src/test/java/com/jd/isobk/knowledge/test/unit/rpc/VenderRpcServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/pom.xml">
           <value>
             <set />
@@ -274,6 +279,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/CustomManagerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/cfg/impl/CfgSettingsServiceImpl.java">
           <value>
             <set />
           </value>
@@ -323,6 +333,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/problem/impl/ProblemServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/product/PriceRpcServiceImpl.java">
           <value>
             <set />
@@ -368,6 +383,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_commons/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/StringUtilsTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_fastjson/pom.xml">
           <value>
             <set />
@@ -404,6 +429,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MapTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/RegexTest.java">
           <value>
             <set />
           </value>
@@ -559,6 +589,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-am/xz-jimi3-am-service/src/main/java/com/jd/jimi3/am/service/answer/impl/AMCommonServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-rpc/src/main/java/com/jd/jimi3/de/rpc/product/ProductRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-rpc/src/main/java/com/jd/jimi3/de/rpc/product/impl/ProductRpcServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-service/src/main/java/com/jd/jimi3/de/service/inner/action/xiaozhi/AskBackActionNode.java">
           <value>
             <set />
           </value>
