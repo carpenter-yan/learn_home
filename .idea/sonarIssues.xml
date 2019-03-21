@@ -23,6 +23,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../java-test-demo/server/src/main/java/com/test/demo/server/Application.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-boot-answer/src/main/buildEnv/jd-isobk-knowledge-dev.properties">
           <value>
             <set />
@@ -498,6 +503,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/MutiPriMethodClass.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/MutiPriMethodClassTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/SampleTest.java">
           <value>
             <set />
@@ -589,6 +604,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-am/xz-jimi3-am-service/src/main/java/com/jd/jimi3/am/service/answer/impl/AMCommonServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-dist/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-rpc/src/main/java/com/jd/jimi3/de/rpc/order/impl/OrderServiceRpcImpl.java">
           <value>
             <set />
           </value>
