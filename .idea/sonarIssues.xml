@@ -98,6 +98,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-boot/src/main/java/com/jd/isobk/knowledge/modules/bot/BotPeriodSettiongEvent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-boot/src/main/java/com/jd/isobk/knowledge/modules/knowledge/IndustoryKnowledgeControllerEvent.java">
           <value>
             <set />
@@ -378,6 +383,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-sdk/src/main/java/com/jd/jimi3/component/sdk/inner/IJimi3InnerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-service/src/main/java/com/jd/jimi3/component/service/inner/Jimi3InnerServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-jimi3-pdp/jd-jimi3-pdp-common/src/main/java/com/jd/jimi3/pdp/common/utils/AsyncRpcInvoker.java">
           <value>
             <set />
@@ -588,6 +603,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-rpc/src/main/java/com/jd/jimi/component/mall/rpc/im/IImMerchantInfoRpc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-sdk/src/main/java/com/jd/jimi/component/mall/sdk/inner/xzInnerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/inner/XzInnerServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/sizeRecommend/SizeRecommendServiceImpl.java">
           <value>
             <set />
@@ -613,6 +643,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-rpc/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-rpc/src/main/java/com/jd/jimi3/de/rpc/order/OrderServiceRpc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-rpc/src/main/java/com/jd/jimi3/de/rpc/order/impl/OrderServiceRpcImpl.java">
           <value>
             <set />
@@ -624,6 +664,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-rpc/src/main/java/com/jd/jimi3/de/rpc/product/impl/ProductRpcServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-service/src/main/java/com/jd/jimi3/de/service/inner/action/NluActionNode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-service/src/main/java/com/jd/jimi3/de/service/inner/action/faq/FAQPopActionNode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-de/xz-jimi3-de-service/src/main/java/com/jd/jimi3/de/service/inner/action/xiaozhi/AdjustInputActionNode.java">
           <value>
             <set />
           </value>
