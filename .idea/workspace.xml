@@ -4,7 +4,7 @@
     <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="add String test">
       <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/RegexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/RegexTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,6 +22,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/learn_home$StringTest.ic" NAME="StringTest Coverage Results" MODIFIED="1555898785139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.carpenter.yan.java.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -42,52 +47,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/RegexTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MapTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_refactor/src/main/java/com/carpenter/yan/clean/GeneratePrimes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/SampleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="51">
+              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#129#130#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/MutiPriMethodClassTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="64" lean-forward="true" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+            <state relative-caret-position="245">
+              <caret line="1470" column="36" lean-forward="true" selection-start-line="1470" selection-start-column="36" selection-end-line="1470" selection-end-column="36" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#82616#82617#0" expanded="true" />
+                <element signature="e#82667#82668#0" expanded="true" />
+                <element signature="e#94598#94599#0" expanded="true" />
+                <element signature="e#94636#94637#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,13 +156,13 @@
         <option value="$PROJECT_DIR$/learn_refactor/src/main/java/com/carpenter/yan/clean/GeneratePrimes.java" />
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java" />
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/IntegerTest.java" />
-        <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/learn_commons/pom.xml" />
         <option value="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/StringUtilsTest.java" />
         <option value="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/MutiPriMethodClass.java" />
         <option value="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/MutiPriMethodClassTest.java" />
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/RegexTest.java" />
+        <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" />
       </list>
     </option>
   </component>
@@ -231,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,77 +223,49 @@
             <path>
               <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn_home" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_mock" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn_home" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_mock" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn_home" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_mock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_mock" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn_home" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_mock" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yan" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn_home" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_mock" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yan" type="462c0819:PsiDirectoryNode" />
-              <item name="mockito" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_mock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yan" type="462c0819:PsiDirectoryNode" />
-              <item name="powermock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_mock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555135696197" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555900075517" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/algs4.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -344,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RegexTest">
+  <component name="RunManager" selected="Application.StringTest">
     <configuration name="IntegerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.IntegerTest" />
       <module name="learn_java" />
@@ -358,8 +312,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.ListTest" />
+    <configuration name="RegexTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.RegexTest" />
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -371,8 +325,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegexTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.RegexTest" />
+    <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.StringTest" />
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -412,19 +366,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ListTest" />
       <item itemvalue="Application.IntegerTest" />
       <item itemvalue="Application.RegexTest" />
       <item itemvalue="Application.StringUtilsTest" />
       <item itemvalue="JUnit.MutiPriMethodClassTest" />
+      <item itemvalue="Application.StringTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringTest" />
         <item itemvalue="Application.RegexTest" />
         <item itemvalue="JUnit.MutiPriMethodClassTest" />
         <item itemvalue="Application.StringUtilsTest" />
         <item itemvalue="Application.IntegerTest" />
-        <item itemvalue="Application.ListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -487,7 +441,9 @@
       <workItem from="1553067384718" duration="2701000" />
       <workItem from="1553131326328" duration="6441000" />
       <workItem from="1553482086361" duration="1456000" />
-      <workItem from="1555135510953" duration="303000" />
+      <workItem from="1555135510953" duration="1057000" />
+      <workItem from="1555292232478" duration="711000" />
+      <workItem from="1555897984104" duration="1880000" />
     </task>
     <task id="LOCAL-00001" summary="add learn_fastjson module">
       <created>1548222694164</created>
@@ -616,7 +572,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158714000" />
+    <option name="totallyTimeSpent" value="162059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,7 +587,7 @@
     <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.446281" visible="true" weight="0.23454158" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.446281" visible="true" weight="0.24040511" />
       <window_info id="Structure" order="1" sideWeight="0.553719" side_tool="true" weight="0.22707888" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -640,8 +596,42 @@
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46547884" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39972144" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46547884" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986637" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962447" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32850778" />
+      <window_info anchor="bottom" id="SonarQube" order="9" weight="0.32962447" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32962447" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32684284" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32628062" />
+      <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.32962447" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32942432" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32969153" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.446281" weight="0.24040511" />
+      <window_info id="Structure" order="1" sideWeight="0.553719" side_tool="true" weight="0.22707888" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.46547884" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986637" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32962447" />
@@ -662,7 +652,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.32969153" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1042,19 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34782">
-          <caret line="2119" column="19" selection-start-line="2119" selection-start-column="19" selection-end-line="2119" selection-end-column="19" />
-          <folding>
-            <element signature="e#82616#82617#0" expanded="true" />
-            <element signature="e#82667#82668#0" expanded="true" />
-            <element signature="e#94598#94599#0" expanded="true" />
-            <element signature="e#94636#94637#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
@@ -1121,17 +1098,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#177#178#0" expanded="true" />
             <element signature="e#206#207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#102#103#0" expanded="true" />
-            <element signature="e#129#130#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1203,13 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn_refactor/src/main/java/com/carpenter/yan/clean/GeneratePrimes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1219,8 +1178,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/SampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="799">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1229,10 +1188,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/MutiPriMethodClassTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="64" lean-forward="true" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="1470" column="36" lean-forward="true" selection-start-line="1470" selection-start-column="36" selection-end-line="1470" selection-end-column="36" />
+          <folding>
+            <element signature="e#82616#82617#0" expanded="true" />
+            <element signature="e#82667#82668#0" expanded="true" />
+            <element signature="e#94598#94599#0" expanded="true" />
+            <element signature="e#94636#94637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1289,7 +1278,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>learn_algr4</last-edited>
+          <last-edited>learn_refactor</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

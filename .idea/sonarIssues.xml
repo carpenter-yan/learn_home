@@ -693,6 +693,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-rpc/src/main/java/com/jd/jimi3/dm/rpc/impl/RedisServiceRpcImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-sdk/src/main/java/com/jd/jimi3/dm/sdk/DispatchService.java">
           <value>
             <set />
