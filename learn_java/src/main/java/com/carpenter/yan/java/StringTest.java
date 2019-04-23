@@ -2,7 +2,7 @@ package com.carpenter.yan.java;
 
 public class StringTest {
     public static void main(String[] args) {
-        testUUIDHashCode();
+        testStringFormat();
     }
 
     public static void testSplit() {
@@ -15,7 +15,12 @@ public class StringTest {
 
     public static void testUUIDHashCode(){
         String uuid = "dd280e0b1e4b2f4e89603946824ba1a4";
-        System.out.println(uuid.substring(uuid.length()-4));
+        System.out.println(uuid.substring(uuid.length()-4).hashCode() % 100);
+    }
+
+    public static void testStringFormat(){
+        int suffix = 9;
+        System.out.println(String.format("%02d", 19));
     }
 
     public static void testToChar(){

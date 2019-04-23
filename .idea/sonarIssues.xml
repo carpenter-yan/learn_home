@@ -133,6 +133,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-boot/src/main/resources/spring/ctx-service.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-boot/src/test/java/com/jd/isobk/knowledge/knowledge/KCustomControllerEventTest.java">
           <value>
             <set />
@@ -378,6 +383,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-worker/src/main/java/com/jd/isobk/knowledge/worker/check/task/CategoryChangeEmailHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-worker/src/main/resources/spring/ctx-xxl-job.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/pom.xml">
           <value>
             <set />
@@ -459,6 +474,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/SystemTest.java">
           <value>
             <set />
           </value>
@@ -688,6 +708,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-common/src/main/java/com/jd/jimi3/dm/common/utils/CacheKeyUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-engine/src/main/java/com/jd/jimi3/dm/engine/node/control/SelectorNode.java">
           <value>
             <set />
@@ -748,6 +773,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-service/src/main/java/com/jd/jimi3/dm/service/impl/DialogPolicyServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-service/src/main/java/com/jd/jimi3/dm/service/search/impl/SearchServiceImpl.java">
           <value>
             <set />
@@ -759,6 +789,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-service/src/main/java/com/jd/jimi3/dm/util/SolutionTreeUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-service/src/main/resources/conf/config.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-dm/xz-jimi3-dm-service/src/main/resources/spring/ctx-service-jimdb.xml">
           <value>
             <set />
           </value>
@@ -834,6 +874,61 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-idx/xz-jimi3-idx-rpc/src/main/java/com/jd/jimi3/index/rpc/dao/impl/FaqEsDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/resources/conf/config.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/resources/spring.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/resources/spring/ctx-worker.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/xz-jimi3-ire-worker/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/main/java/com/jd/xz/jimi3/ire/worker/OrderRecommendJobHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/main/java/com/jd/xz/jimi3/ire/worker/OrderRecommendTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/main/java/com/jd/xz/jimi3/ire/worker/xzOrderRecommendJobHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/main/resources/spring/ctx-xxl-job.xml">
           <value>
             <set />
           </value>
