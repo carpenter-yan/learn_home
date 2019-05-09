@@ -1,8 +1,10 @@
 package com.carpenter.yan.java;
 
+import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
+
 public class StringTest {
     public static void main(String[] args) {
-        testIntern();
+        testHashCode();
     }
 
     public static void testSplit() {
@@ -38,5 +40,9 @@ public class StringTest {
         String s3 = s1.intern();
         String s4 = s2.intern();
         System.out.println(s3 == s4);
+    }
+
+    public static void testHashCode(){
+        System.out.println(Math.abs("JIMI_3276670118A34EBC96736805184734C6".hashCode()%100));
     }
 }
