@@ -23,7 +23,7 @@ public class DateFormatTest {
     }
 
     public static void testUnixTimeToDate(){
-        Date date = new Date(1557970068715L);
+        Date date = new Date(1559546040000L);
         System.out.println(date.toString());
     }
 }

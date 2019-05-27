@@ -1,10 +1,8 @@
 package com.carpenter.yan.java;
 
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
-
 public class StringTest {
     public static void main(String[] args) {
-        testHashCode();
+        testStringFormat();
     }
 
     public static void testSplit() {
@@ -21,8 +19,7 @@ public class StringTest {
     }
 
     public static void testStringFormat(){
-        int suffix = 9;
-        System.out.println(String.format("%02d", 19));
+        System.out.println(String.format("%d", 1009));
     }
 
     public static void testToChar(){
