@@ -4,10 +4,10 @@ import org.apache.commons.lang3.StringUtils;
 
 public class StringUtilsTest {
     public static void main(String[] args) {
-        testRemoveStart();
+        testIsNumber();
     }
     public static void testIsNumber(){
-        System.out.println(StringUtils.isNumeric("123b"));
+        System.out.println(StringUtils.isAlphanumeric("1234_b"));
     }
 
     public static void testRemoveStart(){
@@ -17,4 +17,5 @@ public class StringUtilsTest {
         }
         System.out.println(var);
     }
+
 }

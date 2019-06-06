@@ -18,6 +18,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../JDHBaseDemo/hbase-demo/src/main/java/com/jd/hbase/service/HBaseDemo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JDHBaseDemo/spring-hbase-demo/src/main/java/com/jd/hbase/SpringHbaseDemo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../fairy-assistant-sale/fairy-assistant-sale-web/src/main/java/com/jd/fairy/assistant/sale/controller/FairyAssistantSaleController.java">
           <value>
             <set />
@@ -448,7 +458,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Solution.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_commons/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/BeanUtilsTest.java">
           <value>
             <set />
           </value>
@@ -1078,7 +1098,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/java/com/jd/xz/jimi3/ire/boot/modules/autotest/AutoTestPromotionEventImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/java/com/jd/xz/jimi3/ire/modules/autotest/AutoTestPromotionEventImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/resources/conf/config.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/resources/conf/jsf-modules.properties">
           <value>
             <set />
           </value>
@@ -1188,6 +1223,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-domain/src/main/java/com.jd.xz.jimi3.ire.domain/context/AutoTestContext.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-domain/src/main/java/com.jd.xz.jimi3.ire.domain/context/IRESessionContext.java">
           <value>
             <set />
@@ -1259,6 +1299,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/ImDataRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/ProductRpcService.java">
           <value>
             <set />
           </value>
@@ -1383,6 +1428,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/redis/impl/RedisStatisticsServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/reminder/CouponReminderService.java">
           <value>
             <set />
@@ -1423,6 +1473,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/statistics/RedisStatistics.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/statistics/RedisStatisticsService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/statistics/impl/RedisStatisticsImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/statistics/impl/RedisStatisticsServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/utils/CacheUtils.java">
           <value>
             <set />
@@ -1434,6 +1504,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/utils/RecommendResultUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/utils/TraceUtils.java">
           <value>
             <set />
           </value>
