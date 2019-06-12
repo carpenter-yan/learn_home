@@ -1,32 +1,21 @@
 package edu.princeton.cs.algs4;
 
-import java.util.List;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 class Solution {
-    public String findLongestWord(String s, List<String> d) {
-        String longestWord = "";
-        for(String target : d){
-            int l1 = longestWord.length();
-            int l2 = target.length();
-            if(l1 > l2 ||(l1 == l2 && longestWord.compareTo(target) < 0)){
-                continue;
-            }
-            if(isSubStr(s, target)){
-                longestWord = target;
+    public char nextGreatestLetter(char[] letters, char target) {
+        int len = letters.length;
+        int lo = 0, hi = len - 1;
+        while(lo <= hi){
+            int mi = lo + (hi - lo)/2;
+            if(letters[lo] <= letters[hi]){
+                lo = mi + 1;
+            }else{
+                lo = mi - 1;
             }
         }
-        return longestWord;
-    }
-
-    private boolean isSubStr(String s, String target) {
-        int i = 0, j = 0;
-        while (i < s.length() && j < target.length()){
-            if(s.charAt(i) == target.charAt(j)){
-                j++;
-            }
-            i++;
-        }
-
-        return j == target.length();
+        return lo < len ? letters[lo] : letters[0];
     }
 }
