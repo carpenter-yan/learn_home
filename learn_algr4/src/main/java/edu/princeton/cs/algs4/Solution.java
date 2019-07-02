@@ -1,21 +1,26 @@
 package edu.princeton.cs.algs4;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import sun.reflect.generics.tree.Tree;
+
+import javax.swing.tree.TreeNode;
+import java.util.*;
+import java.util.Stack;
 
 class Solution {
-    public char nextGreatestLetter(char[] letters, char target) {
-        int len = letters.length;
-        int lo = 0, hi = len - 1;
-        while(lo <= hi){
-            int mi = lo + (hi - lo)/2;
-            if(letters[lo] <= letters[hi]){
-                lo = mi + 1;
-            }else{
-                lo = mi - 1;
+    public int[] nextGreaterElements(int[] nums) {
+        int len = nums.length;
+        int[] next = new int[len];
+        Arrays.fill(next, -1);
+        Stack<Integer> stack = new Stack<>();
+        for(int i = 0; i < 2 * len; i++){
+            int num = nums[i % len];
+            while(!stack.isEmpty() && num > nums[stack.peek()]){
+                next[stack.pop()] = num;
+            }
+            if(i < len) {
+                stack.push(i);
             }
         }
-        return lo < len ? letters[lo] : letters[0];
+        return next;
     }
 }
