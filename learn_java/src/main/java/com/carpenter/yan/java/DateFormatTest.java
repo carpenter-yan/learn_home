@@ -3,11 +3,12 @@ package com.carpenter.yan.java;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class DateFormatTest {
     public static void main(String[] args) {
-        testUnixTimeToDate();
+        testDateOperation();
     }
     public static void testSimpleDateFormat(){
         DateFormat df1 = DateFormat.getDateTimeInstance();
@@ -26,5 +27,19 @@ public class DateFormatTest {
         Date date = new Date(1560242833681L);
         System.out.println(date.toString());
         System.currentTimeMillis();
+    }
+
+    public static void testDateOperation(){
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+
+        DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        System.out.println(sdf.format(cal.getTime()));
+
+        cal.add(Calendar.DAY_OF_YEAR, 3);
+        System.out.println(sdf.format(cal.getTime()));
+
     }
 }
