@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class DateFormatTest {
     public static void main(String[] args) {
-        testDateOperation();
+        testUnixTimeToDate();
     }
     public static void testSimpleDateFormat(){
         DateFormat df1 = DateFormat.getDateTimeInstance();
@@ -24,9 +24,12 @@ public class DateFormatTest {
     }
 
     public static void testUnixTimeToDate(){
-        Date date = new Date(1560242833681L);
-        System.out.println(date.toString());
-        System.currentTimeMillis();
+        Date date1 = new Date(1563875828000L);
+        DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        System.out.println(sdf.format(date1));
+
+        Date date2 = new Date(1564136828000L);
+        System.out.println(sdf.format(date2));
     }
 
     public static void testDateOperation(){

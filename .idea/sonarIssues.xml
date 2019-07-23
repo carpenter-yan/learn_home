@@ -1393,6 +1393,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/test/java/com/jd/zx/jimi3/ire/worker/OrderRecommendTaskTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/test/resources/log4j2-test.xml">
           <value>
             <set />
@@ -1789,6 +1794,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/main/resources/spring/ctx-xxl-job.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/test/java/com/jd/xz/jimi3/ire/worker/OrderRecommendTask.java">
           <value>
             <set />
           </value>
