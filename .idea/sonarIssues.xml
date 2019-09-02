@@ -208,6 +208,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-common/src/main/java/com/jd/isobk/knowledge/common/consts/UMPConstants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-common/src/main/java/com/jd/isobk/knowledge/common/utils/WebContextUtils.java">
           <value>
             <set />
@@ -413,6 +418,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-rpc/src/test/java/com/jd/isobk/knowledge/test/unit/rpc/preSaleRpcServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-rpc/src/test/java/com/jd/isobk/knowledge/test/unit/rpc/presaleRpcServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-sdk/src/main/java/com/jd/isobk/sdk/model/ire/IntelligentPromotion.java">
           <value>
             <set />
@@ -563,6 +578,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/scene/impl/SceneRecommendServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/test/java/com/jd/isobk/knowledge/test/unit/service/CustomManagerServiceImplTest.java">
           <value>
             <set />
@@ -598,12 +618,47 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-rpc/src/main/java/com/jd/jimi3/component/http/im/impl/ImMerchantInfoRpcImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-rpc/src/main/java/com/jd/jimi3/component/http/pricesearch/impl/PriceSearchRpcImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-rpc/src/main/java/com/jd/jimi3/component/jsf/product/IProductServiceRpc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-rpc/src/main/java/com/jd/jimi3/component/jsf/product/impl/ProductServiceRpcImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-sdk/src/main/java/com/jd/jimi3/component/sdk/inner/IJimi3InnerService.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-sdk/src/main/java/com/jd/jimi3/component/sdk/product/IProductRelatedInfoService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-service/src/main/java/com/jd/jimi3/component/service/inner/Jimi3InnerServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-service/src/main/java/com/jd/jimi3/component/service/product/ProductRelatedInfoServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi3-component/jd-jimi3-component-service/src/main/resources/jsf/consumer/rpc-im-consumer.xml">
           <value>
             <set />
           </value>
@@ -669,6 +724,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_fastjson/src/main/java/fastjson/Student.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/learn_web/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/pom.xml">
           <value>
             <set />
           </value>
@@ -764,6 +829,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/Java8Tester.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/LambdaTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/StreamTest.java">
           <value>
             <set />
           </value>
@@ -923,7 +998,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_web/WEB_INF/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-rpc/pom.xml">
           <value>
             <set />
           </value>
@@ -933,7 +1018,52 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-rpc/src/main/java/com/jd/jimi/component/mall/rpc/im/ImDataRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-rpc/src/main/java/com/jd/jimi/component/mall/rpc/im/impl/ImDataRpcServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-rpc/src/main/java/com/jd/jimi/component/mall/rpc/im/impl/ImDataUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-rpc/src/main/java/com/jd/jimi/component/mall/rpc/product/IProductServiceRpc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-rpc/src/main/java/com/jd/jimi/component/mall/rpc/product/impl/ProductRelatedUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-rpc/src/main/java/com/jd/jimi/component/mall/rpc/product/impl/ProductServiceRpcImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../mall/mall-sdk/src/main/java/com/jd/jimi/component/mall/sdk/inner/xzInnerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-sdk/src/main/java/com/jd/jimi/component/mall/sdk/recommend/CollocationRecommendService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/cart/CartRpcServiceImpl.java">
           <value>
             <set />
           </value>
@@ -943,12 +1073,107 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/order/OrderRpcServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/product/ProductDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/product/impl/ProductDataServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/recommend/RecommendService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/recommend/goods/CollocationRecommendServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/recommend/goods/GoodsRecommendServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/recommend/pdp/PriceRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/recommend/pdp/PriceRpcServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/recommend/pdp/ProductRelatedUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/recommend/pdp/ProductRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/recommend/pdp/ProductRpcServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/recommend/pdp/ProductUrlUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/recommend/pdp/StockRecommendServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../mall/mall-service/src/main/java/com/jd/jimi/component/mall/service/sizeRecommend/SizeRecommendServiceImpl.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-service/src/test/java/com/jd/jimi/component/mall/service/recommend/goods/CollocationRecommendServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-web/WEB_INF/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-web/src/main/resources/recommend/collocation-intent.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../mall/mall-web/src/main/resources/spring/ctx-service-jsf-rpc.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-web/src/main/resources/spring/ctx-service-jsf.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mall/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-am/xz-jimi3-am-boot/src/main/resources/spring/ctx-jsf-consumer.xml">
           <value>
             <set />
           </value>
@@ -963,7 +1188,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-am/xz-jimi3-am-service/src/main/java/com/jd/jimi3/am/service/answer/AnswerServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-am/xz-jimi3-am-service/src/main/java/com/jd/jimi3/am/service/answer/impl/AMCommonServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-am/xz-jimi3-am-service/src/main/java/com/jd/jimi3/am/service/context/AMContext.java">
           <value>
             <set />
           </value>
@@ -974,6 +1209,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-am/xz-jimi3-am-service/src/main/java/com/jd/jimi3/am/service/sdk/impl/AMServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-am/xz-jimi3-am-service/src/main/java/com/jd/jimi3/am/service/sdk/impl/AnswerHandlerImpl.java">
           <value>
             <set />
           </value>
@@ -1313,6 +1553,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/java/com/jd/xz/jimi3/ire/boot/listener/PresaleSilentMessageListener.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/java/com/jd/xz/jimi3/ire/boot/modules/autotest/AutoTestPromotionEventImpl.java">
           <value>
             <set />
@@ -1324,6 +1569,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/resources/conf/config.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-boot/src/main/resources/conf/important.properties">
           <value>
             <set />
           </value>
@@ -1404,6 +1654,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-common/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-common/src/main/java/com/jd/xz/jimi3/ire/common/constants/UMPConstants.java">
           <value>
             <set />
           </value>
@@ -1503,12 +1758,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-domain/src/test/java/com/jd/xz/jimi3/ire/domain/vo/OrderRecommendTaskTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-domain/src/test/java/com/jd/xz/jimi3/ire/domain/vo/SessionVoTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-domain/target/surefire-reports/TEST-com.jd.xz.jimi3.ire.domain.vo.SessionVoTest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-domain/target/surefire-reports/com.jd.xz.jimi3.ire.domain.vo.SessionVoTest.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/pom.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/AnswerRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/CartRpcService.java">
           <value>
             <set />
           </value>
@@ -1528,7 +1808,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/FollowRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/IProductCommentRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/ImDataRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/OrderRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/PresaleExportServiceRpc.java">
           <value>
             <set />
           </value>
@@ -1588,7 +1888,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/impl/NewProductPrcServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/impl/OrderRpcServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/impl/PresaleExportServiceRpcImpl.java">
           <value>
             <set />
           </value>
@@ -1599,6 +1909,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/impl/ProductCommentRpcServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/impl/ProductEnums.java">
           <value>
             <set />
           </value>
@@ -1658,6 +1973,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/recommend/impl/SilentIntelligentPromotionSettingServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/redis/RedisService.java">
           <value>
             <set />
@@ -1713,6 +2033,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/silentpush/validator/tailpay/TailPayOrderInfoValidator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/statistics/RedisStatistics.java">
           <value>
             <set />
@@ -1763,6 +2088,56 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/hbase/HbaseServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/recommend/IntelligentPromotionServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/recommend/IntelligentPromotionSettingServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/redis/RedisServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/redis/RedisStatisticsServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/reminder/CouponReminderServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/send/SendMessageImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/silentpush/validator/tailpay/TailPayOrderInfoValidatorTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/utils/DuccUtilsTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/utils/TraceUtilsTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/xz-jimi3-ire-worker/pom.xml">
           <value>
             <set />
@@ -1783,6 +2158,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/main/java/com/jd/xz/jimi3/ire/worker/SilentRecommendTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/main/java/com/jd/xz/jimi3/ire/worker/test.java">
           <value>
             <set />
@@ -1798,7 +2178,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/test/java/com/jd/xz/jimi3/ire/test/unit/worker/OrderRecommendTaskTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/test/java/com/jd/xz/jimi3/ire/test/unit/worker/UnitTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/test/java/com/jd/xz/jimi3/ire/worker/OrderRecommendTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/test/java/com/jd/xz/jimi3/ire/worker/OrderRecommendTaskTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-worker/src/test/resources/log4j2.xml">
           <value>
             <set />
           </value>
@@ -1813,7 +2213,117 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-engine/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-engine/src/main/java/com/jd/jimi3/sa/engine/BehaviorTreeEngineService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-engine/src/main/java/com/jd/jimi3/sa/engine/action/AbstractActionNodeService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-rpc/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-sdk/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-sdk/src/main/java/com/jd/jimi3/sa/sdk/IScenarioAnalysisService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/main/java/com/jd/jimi3/sa/service/impl/InitiativeCareServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/main/java/com/jd/jimi3/sa/service/impl/Invited$ArtificialServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/main/java/com/jd/jimi3/sa/service/sdk/impl/FlowInviteServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/main/java/com/jd/jimi3/sa/service/sdk/impl/QuestionTipsServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/main/java/com/jd/jimi3/sa/service/sdk/impl/ScenarioAnalysisServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/main/resources/spring/ctx-service-jsf-rpc.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/main/resources/spring/ctx-service-jsf.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/test/java/com/jimi3/sa/unit/InitiativeCareServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/test/java/com/jimi3/sa/unit/Invited$ArtificialServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/test/java/com/jimi3/sa/unit/InvitedArtificialServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/test/java/com/jimi3/sa/unit/QuestionTipsServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/test/java/com/jimi3/sa/unit/ScenarioAnalysisServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/test/java/com/jimi3/sa/unit/SceneAnalysisServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/test/java/com/jimi3/sa/unit/SlightMessageListenerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-sa/xz-jimi3-sa-service/src/test/java/com/jimi3/sa/unit/utils/TestContextUtils.java">
           <value>
             <set />
           </value>

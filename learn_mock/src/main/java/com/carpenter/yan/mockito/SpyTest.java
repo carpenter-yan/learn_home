@@ -1,6 +1,5 @@
 package com.carpenter.yan.mockito;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.LinkedList;
@@ -28,4 +27,6 @@ public class SpyTest {
         verify(spy).add("one");
         verify(spy).add("two");
     }
+
+
 }

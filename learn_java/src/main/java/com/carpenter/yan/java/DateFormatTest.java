@@ -24,12 +24,14 @@ public class DateFormatTest {
     }
 
     public static void testUnixTimeToDate(){
-        Date date1 = new Date(1563875828000L);
+        Date date1 = new Date(1565230671979L);
         DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         System.out.println(sdf.format(date1));
 
         Date date2 = new Date(1564136828000L);
         System.out.println(sdf.format(date2));
+        //2019-08-08 10:17:51
+        //2019-08-08 10:17:52.074
     }
 
     public static void testDateOperation(){

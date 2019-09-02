@@ -1,5 +1,7 @@
 package com.carpenter.yan.java;
 
+import org.junit.Test;
+
 public class StringTest {
     public static void main(String[] args) {
         testStringFormat();
@@ -41,5 +43,12 @@ public class StringTest {
 
     public static void testHashCode(){
         System.out.println(Math.abs("JIMI_3276670118A34EBC96736805184734C6".hashCode()%100));
+    }
+
+    @Test
+    public void testEquals(){
+        String a = "123";
+        Long b = 123L;
+        System.out.println(a.equals(String.valueOf(b)));
     }
 }

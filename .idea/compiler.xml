@@ -13,6 +13,7 @@
         <module name="learn_mock" />
         <module name="learn_protobuf" />
         <module name="learn_refactor" />
+        <module name="learn_web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

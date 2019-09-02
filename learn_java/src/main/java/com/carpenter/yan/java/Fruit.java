@@ -8,4 +8,12 @@ public class Fruit {
         this.color = color;
         this.weight = weight;
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public Integer getWeight() {
+        return weight;
+    }
 }

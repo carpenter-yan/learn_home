@@ -16,6 +16,7 @@
         <module>learn_java</module>
         <module>learn_refactor</module>
         <module>learn_commons</module>
+        <module>learn_web</module>
     </modules>
 
     <properties>
