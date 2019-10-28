@@ -1163,6 +1163,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/readme.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../mall/mall-common/src/main/java/com/jd/jimi/component/mall/common/ContextUtils.java">
           <value>
             <set />
