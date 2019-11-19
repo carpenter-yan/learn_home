@@ -1,5 +1,7 @@
 package com.carpenter.yan.java;
 
+import org.junit.Test;
+
 public class IntegerTest {
     public static void main(String[] args) {
         testAdd();
@@ -19,5 +21,13 @@ public class IntegerTest {
     public static void testCompare(){
         Integer a = 5;
         a.compareTo(5);
+    }
+
+    @Test
+    public void test1(){
+        Integer a = Integer.valueOf(1);
+        Integer b = Integer.valueOf(2);
+        Integer c = a + b;
+        System.out.println(c);
     }
 }

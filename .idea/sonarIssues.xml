@@ -598,6 +598,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/window/impl/ImMessageServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/test/java/com/jd/isobk/knowledge/test/unit/service/CustomManagerServiceImplTest.java">
           <value>
             <set />
@@ -828,6 +833,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../kg-note/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kg-note/docs/uml/class.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Solution.java">
           <value>
             <set />
@@ -903,6 +918,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/BufferTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ByteTest.java">
           <value>
             <set />
@@ -914,6 +934,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/DoubleTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/EnumTest.java">
           <value>
             <set />
           </value>
@@ -954,6 +979,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/RegexTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ScenePromotionResult.java">
           <value>
             <set />
           </value>
@@ -1443,6 +1473,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../mall/mall-web/src/main/resources/conf/ump.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../mall/mall-web/src/main/resources/recommend/collocation-intent.properties">
           <value>
             <set />
@@ -1513,6 +1548,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../shop-smart-web-gw/frontend/src/components/SmartCuiPay/QqCP/Set/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../shop-smart-web-gw/frontend/src/components/SmartData/Chart/index.js">
           <value>
             <set />
@@ -1564,6 +1604,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../shop-smart-web-gw/src/main/resources/conf/jsf-modules.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../shop-smart-web-gw/src/main/webapp/WEB-INF/resources/index.html">
           <value>
             <set />
           </value>

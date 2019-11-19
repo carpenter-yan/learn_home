@@ -65,4 +65,22 @@ public class StringTest {
         }
         System.out.println(sb.toString());
     }
+
+    @Test
+    public void testFinal(){
+        final char[] array = {'1', '2', '3'};
+        array[0] = '4';
+        System.out.println(array);
+        String a= "123";
+        StringBuilder sb = new StringBuilder("123");
+        sb.append("45");
+    }
+
+    @Test
+    public void testFormat(){
+        System.out.println(String.format("%.2f", 0.0));
+        System.out.println(String.format("%.2f", 0.10));
+        System.out.println(String.format("%.2f", 0.01));
+        System.out.println(String.format("%.2f", 1.012));
+    }
 }

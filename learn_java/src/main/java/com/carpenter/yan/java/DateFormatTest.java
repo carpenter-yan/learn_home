@@ -68,7 +68,7 @@ public class DateFormatTest {
         Long milliSecond = LocalDateTime.now().toInstant(ZoneOffset.of("+8")).toEpochMilli();
         System.out.println("current="+System.currentTimeMillis()+"milliSecond=" + milliSecond);
         System.out.println("start=" + (todayStart.toInstant(ZoneOffset.of("+8")).toEpochMilli() - 86400000));
-        System.out.println("end=" + (todayEnd.toInstant(ZoneOffset.of("+8")).toEpochMilli()-86400000));
+        System.out.println("end=" + (todayEnd.toInstant(ZoneOffset.of("+8")).toEpochMilli() - 86400000));
 
         long random = System.currentTimeMillis() % 2;
         System.out.println("random=" + random);
@@ -87,8 +87,8 @@ public class DateFormatTest {
 
     @Test
     public void test3(){
-        System.out.println(new Date(1571553162921L));
-        System.out.println(new Date(1572105600000L));//1571455792000
+        System.out.println(new Date(1573920000000L));
+        System.out.println(new Date(1574006399999L));//1571455792000
         System.out.println(new Date(1572191999999L));
     }
 
