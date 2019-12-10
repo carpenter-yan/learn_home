@@ -178,6 +178,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-boot/src/main/java/com/jd/isobk/knowledge/modules/scene/KSceneProductControllerEvent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-boot/src/main/java/com/jd/isobk/knowledge/modules/session/SessionContextEvent.java">
           <value>
             <set />
@@ -194,6 +199,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-boot/src/main/resources/spring.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-boot/src/main/resources/spring/ctx-jsf-provider.xml">
           <value>
             <set />
           </value>
@@ -363,6 +373,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-domain/src/main/java/com/jd/isobk/knowledge/domain/stats/SceneRecommendFacilitateOrderStats.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-rpc/pom.xml">
           <value>
             <set />
@@ -473,6 +488,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/bot/impl/BotVenderServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/cache/auth/AuthResourcesCacheService.java">
           <value>
             <set />
@@ -499,6 +519,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/impl/IndustryKnowledgeServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-isobk-knowledge/jd-isobk-knowledge-service/src/main/java/com/jd/isobk/knowledge/service/ire/active/impl/IsobkIreActiveServiceImpl.java">
           <value>
             <set />
           </value>
@@ -763,7 +788,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi-pop/jd-jimi-pop-worker/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jd-jimi-pop/jd-jimi-pop-worker/src/main/java/com/jd/jimi/pop/spring/schedule/SendHotQuestionMqJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../jd-jimi-pop/jd-jimi-pop-worker/src/main/resources/spring/ctx-jsf-client.xml">
           <value>
             <set />
           </value>
@@ -843,6 +878,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../kg-note/images/a.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Solution.java">
           <value>
             <set />
@@ -903,6 +943,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/InnetAddressTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/Apple.java">
           <value>
             <set />
@@ -924,6 +969,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ByteTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ChannelTest.java">
           <value>
             <set />
           </value>
@@ -978,6 +1028,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/PathTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/RegexTest.java">
           <value>
             <set />
@@ -1003,6 +1058,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/URLDecoderTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/DateTimeTester.java">
           <value>
             <set />
@@ -1019,6 +1079,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/StreamTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/thread/TestVolatile.java">
           <value>
             <set />
           </value>
@@ -1553,6 +1618,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../shop-smart-web-gw/frontend/src/components/SmartCuiPay/SlientCP/Topic/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../shop-smart-web-gw/frontend/src/components/SmartData/Chart/index.js">
           <value>
             <set />
@@ -1598,6 +1668,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../shop-smart-web-gw/frontend/src/pages/smartCuiPay.js">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../shop-smart-web-gw/frontend/src/services/KnowledgeService.js">
           <value>
             <set />
@@ -1608,7 +1683,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../shop-smart-web-gw/src/main/webapp/WEB-INF/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../shop-smart-web-gw/src/main/webapp/WEB-INF/resources/css/app.min.css">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../shop-smart-web-gw/src/main/webapp/WEB-INF/resources/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../shop-smart-web-gw/src/main/webapp/index.html">
           <value>
             <set />
           </value>
@@ -2228,7 +2318,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-domain/src/main/java/com.jd.xz.jimi3.ire.domain/vo/SceneVo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-domain/src/main/java/com.jd.xz.jimi3.ire.domain/vo/SessionVo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-domain/src/main/java/com.jd.xz.jimi3.ire.domain/vo/SkuInfVo.java">
           <value>
             <set />
           </value>
@@ -2318,6 +2418,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/IsobkBusinessRpcService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/OrderRpcService.java">
           <value>
             <set />
@@ -2389,6 +2494,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/impl/ImDataUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-rpc/src/main/java/com/jd/xz/jimi3/ire/rpc/impl/IsobkBusinessServiceRpcImpl.java">
           <value>
             <set />
           </value>
@@ -2489,6 +2599,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/recommend/IntelligentPromotionService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/recommend/IntelligentPromotionSettingService.java">
           <value>
             <set />
           </value>
@@ -2684,6 +2799,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/silentpush/validator/common/ImActiveValidatorTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/test/java/com/jd/xz/jimi3/ire/service/silentpush/validator/common/ParamValidatorTest.java">
           <value>
             <set />
           </value>

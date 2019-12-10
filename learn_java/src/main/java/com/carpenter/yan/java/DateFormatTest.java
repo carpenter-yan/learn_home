@@ -67,8 +67,14 @@ public class DateFormatTest {
         LocalDateTime todayEnd = LocalDateTime.of(LocalDate.now(), LocalTime.MAX);
         Long milliSecond = LocalDateTime.now().toInstant(ZoneOffset.of("+8")).toEpochMilli();
         System.out.println("current="+System.currentTimeMillis()+"milliSecond=" + milliSecond);
-        System.out.println("start=" + (todayStart.toInstant(ZoneOffset.of("+8")).toEpochMilli() - 86400000));
-        System.out.println("end=" + (todayEnd.toInstant(ZoneOffset.of("+8")).toEpochMilli() - 86400000));
+        System.out.println("today_start=" + (todayStart.toInstant(ZoneOffset.of("+8")).toEpochMilli()));
+        System.out.println("today_end=" + (todayEnd.toInstant(ZoneOffset.of("+8")).toEpochMilli()));
+        System.out.println("yesterday_start=" + (todayStart.toInstant(ZoneOffset.of("+8")).toEpochMilli() - 86400000));
+        System.out.println("yesterday_end=" + (todayEnd.toInstant(ZoneOffset.of("+8")).toEpochMilli() - 86400000));
+        System.out.println("2day_start=" + (todayStart.toInstant(ZoneOffset.of("+8")).toEpochMilli() - 86400000*2));
+        System.out.println("2day_end=" + (todayEnd.toInstant(ZoneOffset.of("+8")).toEpochMilli() - 86400000*2));
+        System.out.println("3day_start=" + (todayStart.toInstant(ZoneOffset.of("+8")).toEpochMilli() - 86400000*3));
+        System.out.println("3day_end=" + (todayEnd.toInstant(ZoneOffset.of("+8")).toEpochMilli() - 86400000*3));
 
         long random = System.currentTimeMillis() % 2;
         System.out.println("random=" + random);
@@ -88,8 +94,8 @@ public class DateFormatTest {
     @Test
     public void test3(){
         System.out.println(new Date(1573920000000L));
-        System.out.println(new Date(1574006399999L));//1571455792000
-        System.out.println(new Date(1572191999999L));
+        System.out.println(new Date(1574352000000L));//1571455792000
+        System.out.println(new Date(1574438399999L));
     }
 
     @Test
