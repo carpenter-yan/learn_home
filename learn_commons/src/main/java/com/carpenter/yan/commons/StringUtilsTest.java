@@ -21,12 +21,11 @@ public class StringUtilsTest {
         System.out.println(var);
     }
 
-    public static void testJoin(){
-        List<Long> list = new ArrayList<>();
-        list.add(1L);
-        list.add(2L);
+    public static void testJoin() {
+        List<String> list = new ArrayList<>();
+        list.add(null);
+        list.add(null);
         System.out.println(StringUtils.join(list, ","));
-
     }
 
 }

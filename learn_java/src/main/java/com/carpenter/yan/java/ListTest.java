@@ -78,4 +78,12 @@ public class ListTest {
         list.stream().forEach(a -> System.out.println(a.getColor()));
 
     }
+
+    @Test
+    public void testContain(){
+        List<String> s = new ArrayList<>();
+        s.add("11230304522");
+        System.out.println(s.contains("11230304522"));
+        System.out.println(s.contains(11230304522L));
+    }
 }
