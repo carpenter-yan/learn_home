@@ -1,6 +1,7 @@
 package com.carpenter.yan;
 
 import com.carpenter.yan.spring.domain.User;
+import com.carpenter.yan.spring.service.PrintUserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -9,5 +10,8 @@ public class AnnotationApp {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(JavaConfig.class);
         User user = ctx.getBean("user", User.class);
         System.out.println(user.getUserName());
+
+        PrintUserService printUserService = ctx.getBean(PrintUserService.class);
+        printUserService.printUser();
     }
 }
