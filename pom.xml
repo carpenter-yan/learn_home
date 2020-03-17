@@ -17,6 +17,8 @@
         <module>learn_refactor</module>
         <module>learn_commons</module>
         <module>learn_web</module>
+        <module>learn_spring</module>
+        <module>learn_spring4</module>
     </modules>
 
     <properties>

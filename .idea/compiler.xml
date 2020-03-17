@@ -13,12 +13,14 @@
         <module name="learn_mock" />
         <module name="learn_protobuf" />
         <module name="learn_refactor" />
+        <module name="learn_spring" />
         <module name="learn_web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="learn_algs4" target="1.5" />
       <module name="learn_mockito" target="1.5" />
+      <module name="learn_spring4" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
