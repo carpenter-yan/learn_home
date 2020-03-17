@@ -1,5 +1,7 @@
 package com.carpenter.yan.protobuf;// See README.txt for information and build instructions.
 
+import com.carpenter.yan.protobuf.AddressBookProtos.Person.PhoneType;
+
 import java.io.FileInputStream;
 
 class ListPeople {
@@ -14,15 +16,15 @@ class ListPeople {
 
       for (AddressBookProtos.Person.PhoneNumber phoneNumber : person.getPhonesList()) {
         switch (phoneNumber.getType()) {
-          case AddressBookProtos.Person.PhoneType.MOBILE:
-            System.out.print("  Mobile phone #: ");
-            break;
-          case AddressBookProtos.Person.PhoneType.HOME:
-            System.out.print("  Home phone #: ");
-            break;
-          case AddressBookProtos.Person.PhoneType.WORK:
-            System.out.print("  Work phone #: ");
-            break;
+//          case PhoneType.MOBILE:
+//            System.out.print("  Mobile phone #: ");
+//            break;
+//          case PhoneType.HOME:
+//            System.out.print("  Home phone #: ");
+//            break;
+//          case PhoneType.WORK:
+//            System.out.print("  Work phone #: ");
+//            break;
           default:
             System.out.println(" Unknown phone #: ");
             break;

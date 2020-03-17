@@ -1383,6 +1383,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/protobuf/ListPeople.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_protobuf/src/main/resources/addressBookFile">
           <value>
             <set />
@@ -1414,6 +1419,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/XmlApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/config/AnnotationApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/config/JavaConfig.java">
           <value>
             <set />
           </value>
@@ -1454,6 +1469,26 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/domain/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/service/PrintUserService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/service/Service.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/service/impl/PrintUserServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_spring/src/main/resources/config.properties">
           <value>
             <set />
           </value>
@@ -3649,6 +3684,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/scene/impl/store/price/PriceNotifyMessageListener.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xz-jimi3-ire/xz-jimi3-ire-service/src/main/java/com/jd/xz/jimi3/ire/service/scene/push/impl/JimiMessageSendServiceImpl.java">
           <value>
             <set />
           </value>

@@ -8,7 +8,7 @@ public class User {
     @Value("1")
     private Long id;
 
-    @Value("张三")
+    @Value("${user.username}")
     private String userName;
 
     @Value("备注")
