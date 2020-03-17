@@ -1403,6 +1403,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/AnnotationApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/JavaConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/XmlApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/learn/App.java">
           <value>
             <set />
@@ -1434,6 +1449,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/XmlApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/domain/User.java">
           <value>
             <set />
           </value>
