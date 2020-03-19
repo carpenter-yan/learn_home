@@ -1,6 +1,7 @@
 package com.carpenter.yan.config;
 
 import com.carpenter.yan.spring.domain.Domain;
+import com.carpenter.yan.spring.processor.Processor;
 import com.carpenter.yan.spring.service.Service;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
-@ComponentScan(basePackageClasses = {Domain.class, Service.class})
+@ComponentScan(basePackageClasses = {Domain.class, Service.class, Processor.class})
 @ImportResource({"classpath:spring.xml"})
 @PropertySource(value={"classpath:config.properties"}, encoding="UTF-8")
 public class JavaConfig {
