@@ -1,5 +1,5 @@
 package com.carpenter.yan.spring.service;
 
-public interface PrintUserService {
+public interface UserService {
     void printUser();
 }

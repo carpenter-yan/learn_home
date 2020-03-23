@@ -1,11 +1,13 @@
 package com.carpenter.yan.config;
 
+import com.carpenter.yan.spring.aspect.Aspect;
 import com.carpenter.yan.spring.domain.Domain;
 import com.carpenter.yan.spring.processor.Processor;
 import com.carpenter.yan.spring.service.Service;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
 
@@ -13,7 +15,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
-@ComponentScan(basePackageClasses = {Domain.class, Service.class, Processor.class})
+@ComponentScan(basePackageClasses = {Domain.class, Service.class, Processor.class, Aspect.class})
+@EnableAspectJAutoProxy
 @ImportResource({"classpath:spring.xml"})
 @PropertySource(value={"classpath:config.properties"}, encoding="UTF-8")
 public class JavaConfig {
