@@ -35,7 +35,7 @@ public class AnnotationApp {
         r.setRoleName("工程师");
         r.setNote("技术人才");
         roleService.printRole(r);
-        roleService.printRole(null);
+        //roleService.printRole(null);
 
         ctx.close();
     }

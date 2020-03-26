@@ -1,8 +1,10 @@
 package com.carpenter.yan.spring.aspect;
 
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -11,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class RoleAspect {
-    @Pointcut("execution(* com.carpenter.yan.spring.service.impl.RoleServiceImpl.printRole(..))")
+    @Pointcut("execution(* com.carpenter.yan.spring.service.RoleService.printRole(..))")
     public void printRole(){
 
     }
@@ -34,5 +36,16 @@ public class RoleAspect {
     @AfterThrowing("printRole()")
     public void afterThrowing(){
         System.out.println("---afterThrowing---");
+    }
+
+    @Around("printRole()")
+    public void around(ProceedingJoinPoint jp){
+        System.out.println("---around before---");
+        try{
+            jp.proceed();
+        }catch (Throwable t){
+            t.printStackTrace();
+        }
+        System.out.println("---around after---");
     }
 }
