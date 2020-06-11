@@ -1,5 +1,7 @@
 package com.carpenter.yan.java;
 
+import org.junit.Test;
+
 import java.util.*;
 
 public class MapTest {
@@ -43,5 +45,10 @@ public class MapTest {
         int h;
         System.out.println((h = key) ^ (h >>> 16));
         return 0;
+    }
+
+    @Test
+    public void putNull(){
+        Map<String, String> map = new HashMap<>();
     }
 }

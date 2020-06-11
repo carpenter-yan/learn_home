@@ -18,7 +18,8 @@
         <module>learn_commons</module>
         <module>learn_web</module>
         <module>learn_spring</module>
-        <module>learn_spring4</module>
+        <module>learn_joda</module>
+        <module>learn_guava</module>
     </modules>
 
     <properties>
@@ -28,6 +29,8 @@
         <mockito.version>2.23.4</mockito.version>
         <junit.version>4.12</junit.version>
         <commons.lang.version>3.8.1</commons.lang.version>
+        <joda.time.version>2.10.5</joda.time.version>
+        <google.guava.version>29.0-jre</google.guava.version>
     </properties>
 
     <dependencyManagement>
@@ -77,6 +80,18 @@
                 <artifactId>commons-beanutils</artifactId>
                 <version>1.9.3</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda.time.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${google.guava.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 </project>

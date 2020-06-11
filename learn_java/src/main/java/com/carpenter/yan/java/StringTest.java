@@ -83,4 +83,25 @@ public class StringTest {
         System.out.println(String.format("%.2f", 0.01));
         System.out.println(String.format("%.2f", 1.012));
     }
+
+    @Test
+    public void testTrans(){
+        String ori = "<p><a href=\\\"https://item.jd.com/100010799910.html\\\" target=\\\"_self\\\" class=\\\"J_Link\\";
+        System.out.println(ori);
+
+        if(ori.contains("href") && ori.contains("http")){
+            System.out.println("1111");
+        }
+
+        String fin = ori.replaceAll("\\\"","\\\\\"");
+        System.out.println(fin);
+    }
+
+    @Test
+    public void testHash(){
+        String a = "阎刚";
+        System.out.println((a.hashCode() % 100 + 100) % 100);
+        a = "jd_92831234";
+        System.out.println((a.hashCode() % 100 + 100) % 100);
+    }
 }
