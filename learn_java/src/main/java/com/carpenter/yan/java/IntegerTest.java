@@ -30,4 +30,9 @@ public class IntegerTest {
         Integer c = a + b;
         System.out.println(c);
     }
+
+    @Test
+    public void testValueOf(){
+        System.out.println(Integer.valueOf("01"));
+    }
 }

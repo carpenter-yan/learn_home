@@ -51,4 +51,11 @@ public class MapTest {
     public void putNull(){
         Map<String, String> map = new HashMap<>();
     }
+
+    @Test
+    public void testLinkedHashMap(){
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        LinkedHashSet linkedHashSet = new LinkedHashSet();
+
+    }
 }

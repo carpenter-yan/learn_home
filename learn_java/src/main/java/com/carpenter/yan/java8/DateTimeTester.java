@@ -11,7 +11,7 @@ import java.time.temporal.ChronoUnit;
 
 public class DateTimeTester {
     public static void main(String[] args) {
-        testInstant();
+        testCurrentString();
     }
 
     public static void testLocalDate(){
@@ -60,5 +60,9 @@ public class DateTimeTester {
     public static void testInstant(){
         Instant instant = Instant.now();
         System.out.println(instant);
+    }
+
+    public static void testCurrentString(){
+        System.out.println(LocalTime.now().toString());
     }
 }
