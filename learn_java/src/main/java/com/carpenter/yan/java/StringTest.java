@@ -104,4 +104,10 @@ public class StringTest {
         a = "jd_92831234";
         System.out.println((a.hashCode() % 100 + 100) % 100);
     }
+
+    @Test
+    public void testDouble(){
+        Double d = Double.valueOf("100");
+        System.out.print(d == 100.0);
+    }
 }

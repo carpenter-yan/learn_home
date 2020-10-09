@@ -1,306 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="add spring properties">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/TestAlgs4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/AVLTreeST$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/AVLTreeST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Accumulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/AcyclicLP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/AcyclicSP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/AdjMatrixEdgeWeightedDigraph$AdjIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/AdjMatrixEdgeWeightedDigraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Alphabet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/AmericanFlag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/AmericanFlagX.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Arbitrage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/AssignmentProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Average.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BST$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BTree$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BTree$Entry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BTree$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Bag$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Bag$ListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Bag$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Bag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BellmanFordSP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinaryDump.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinaryIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinaryInsertion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinaryOut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinarySearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinarySearchST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinaryStdIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinaryStdOut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinomialMinPQ$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinomialMinPQ$MyComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinomialMinPQ$MyIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinomialMinPQ$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BinomialMinPQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Bipartite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BipartiteMatching.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BipartiteX.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BlackFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BoruvkaMST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BoyerMoore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/BreadthFirstPaths.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/CC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/CPM.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Cat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ClosestPair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/CollisionSystem$Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/CollisionSystem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Complex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Count.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Counter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Cycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Date.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DeDup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DegreesOfSeparation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DepthFirstDirectedPaths.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DepthFirstOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DepthFirstPaths.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DepthFirstSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Digraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DigraphGenerator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DigraphGenerator$Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DigraphGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DijkstraAllPairsSP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DijkstraSP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DijkstraUndirectedSP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DirectedCycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DirectedCycleX.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DirectedDFS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DirectedEdge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DirectedEulerianCycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DirectedEulerianPath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DoublingRatio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DoublingTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Draw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/DrawListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/EdgeWeightedDigraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/EdgeWeightedDirectedCycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/EdgeWeightedGraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/EulerianCycle$Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/EulerianCycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/EulerianPath$Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/EulerianPath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FFT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FarthestPair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FenwickTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FibonacciMinPQ$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FibonacciMinPQ$MyComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FibonacciMinPQ$MyIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FibonacciMinPQ$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FibonacciMinPQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FileIndex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FlowEdge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FlowNetwork.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FloydWarshall.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FordFulkerson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/FrequencyCounter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GREP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GabowSCC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GaussJordanElimination.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GaussianElimination.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Genome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GlobalMincut$CutPhase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GlobalMincut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GrahamScan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GraphGenerator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GraphGenerator$Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GraphGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/GrayscalePicture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Heap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/HexDump.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/HopcroftKarp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Huffman$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Huffman.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/In.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexBinomialMinPQ$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexBinomialMinPQ$MyComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexBinomialMinPQ$MyIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexBinomialMinPQ$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexBinomialMinPQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexFibonacciMinPQ$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexFibonacciMinPQ$MyComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexFibonacciMinPQ$MyIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexFibonacciMinPQ$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexFibonacciMinPQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexMaxPQ$HeapIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexMaxPQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexMinPQ$HeapIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexMinPQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexMultiwayMinPQ$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexMultiwayMinPQ$MyComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexMultiwayMinPQ$MyIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/IndexMultiwayMinPQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/InplaceMSD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Insertion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/InsertionX.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Interval1D$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Interval1D$LengthComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Interval1D$MaxEndpointComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Interval1D$MinEndpointComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Interval1D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Interval2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Inversions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/KMP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/KWIK.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Knuth.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/KosarajuSharirSCC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/KruskalMST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LSD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LZW.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LazyPrimMST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinearProbingHashST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinearProgramming.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinearRegression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedBag$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedBag$ListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedBag$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedBag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedQueue$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedQueue$ListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedQueue$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedStack$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedStack$ListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedStack$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LinkedStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LongestCommonSubstring.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LongestRepeatedSubstring.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LookupCSV.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/LookupIndex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MSD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MaxPQ$HeapIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MaxPQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Merge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MergeBU.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MergeX.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MinPQ$HeapIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MinPQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Multiway.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MultiwayMinPQ$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MultiwayMinPQ$MyComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MultiwayMinPQ$MyIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/MultiwayMinPQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/NFA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/NonrecursiveDFS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/NonrecursiveDirectedDFS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Out.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Particle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/PatriciaSET$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/PatriciaSET.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/PatriciaST$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/PatriciaST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Picture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/PictureDump.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Point2D$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Point2D$Atan2Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Point2D$DistanceToOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Point2D$PolarOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Point2D$ROrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Point2D$XOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Point2D$YOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Point2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Polynomial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/PrimMST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Queue$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Queue$ListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Queue$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Queue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Quick.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Quick3string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Quick3way.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/QuickBentleyMcIlroy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/QuickFindUF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/QuickUnionUF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/QuickX.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/RabinKarp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/RandomSeq.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/RectHV.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/RedBlackBST$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/RedBlackBST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ResizingArrayBag$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ResizingArrayBag$ArrayIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ResizingArrayBag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ResizingArrayQueue$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ResizingArrayQueue$ArrayIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ResizingArrayQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ResizingArrayStack$ReverseArrayIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ResizingArrayStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/RunLength.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SET.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SegmentTree$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SegmentTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Selection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SeparateChainingHashST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SequentialSearchST$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SequentialSearchST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Shell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SparseVector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Stack$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Stack$ListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Stack$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/StaticSETofInts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/StdArrayIO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/StdAudio$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/StdAudio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/StdDraw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/StdIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/StdOut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/StdRandom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/StdStats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Stopwatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/StopwatchCPU.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SuffixArray$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SuffixArray$Suffix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SuffixArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SuffixArrayX.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SymbolDigraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/SymbolGraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TST$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TST$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TarjanSCC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ThreeSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/ThreeSumFast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TopM.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Topological.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TopologicalX.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Transaction$HowMuchOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Transaction$WhenOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Transaction$WhoOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TransitiveClosure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TrieSET$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TrieSET$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TrieSET.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TrieST$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TrieST$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TrieST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/TwoPersonZeroSumGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/UF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Vector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/WeightedQuickUnionUF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/WhiteFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/target/classes/edu/princeton/cs/algs4/Whitelist.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/IntegerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/IntegerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/DateTimeTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/DateTimeTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/RandomUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/RandomUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/SystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/SystemTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -356,37 +62,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+        <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7242">
-              <caret line="463" column="39" selection-start-line="463" selection-start-column="39" selection-end-line="463" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/concurrent/atomic/AtomicStampedReference.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/DateTimeTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/IntegerTest.java">
+        <entry file="file://$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/RandomUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="34" column="21" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="27" />
+            <state relative-caret-position="221">
+              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -455,9 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/App.java" />
-        <option value="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/User.java" />
-        <option value="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/AnnotationApp.java" />
         <option value="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/JavaConfig.java" />
         <option value="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/Role.java" />
         <option value="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/service/Service.java" />
@@ -492,7 +177,6 @@
         <option value="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/StringEscapeUtilsTest.java" />
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/UUIDTest.java" />
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/DoubleTest.java" />
-        <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" />
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MathTest.java" />
         <option value="$PROJECT_DIR$/learn_joda/pom.xml" />
         <option value="$PROJECT_DIR$/learn_fastjson/src/test/java/com/carpenter/yan/fastjson/Convert.java" />
@@ -506,6 +190,10 @@
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/LRU.java" />
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/DateTimeTester.java" />
         <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/IntegerTest.java" />
+        <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/SystemTest.java" />
+        <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" />
+        <option value="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/Main.java" />
+        <option value="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/RandomUtilsTest.java" />
       </list>
     </option>
   </component>
@@ -555,8 +243,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -599,16 +287,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yan" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="learn_home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_home" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yan" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -618,7 +296,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596589637863" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602234813685" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan" />
@@ -660,22 +338,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IntegerTest.testValueOf">
-    <configuration name="DateTimeTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java8.DateTimeTester" />
-      <module name="learn_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.java8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LRU" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.LRU" />
+  <component name="RunManager" selected="Application.RandomUtilsTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.Main" />
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -687,12 +352,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RateLimitTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.learn.RateLimitTest" />
-      <module name="learn_guava" />
+    <configuration name="RandomUtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.commons.RandomUtilsTest" />
+      <module name="learn_commons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.learn.*" />
+          <option name="PATTERN" value="com.carpenter.yan.commons.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -700,7 +365,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegerTest.testValueOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SystemTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.SystemTest" />
+      <module name="learn_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.carpenter.yan.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringTest.testDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -709,43 +387,43 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.carpenter.yan.java" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.IntegerTest" />
-      <option name="METHOD_NAME" value="testValueOf" />
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.StringTest" />
+      <option name="METHOD_NAME" value="testDouble" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessageFormatTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SystemTest.testIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.java8.*" />
+          <option name="PATTERN" value="com.carpenter.yan.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.carpenter.yan.java8" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java8.MessageFormatTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="com.carpenter.yan.java" />
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.SystemTest" />
+      <option name="METHOD_NAME" value="testIn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RateLimitTest" />
-      <item itemvalue="Application.LRU" />
-      <item itemvalue="Application.DateTimeTester" />
-      <item itemvalue="JUnit.MessageFormatTest.test1" />
-      <item itemvalue="JUnit.IntegerTest.testValueOf" />
+      <item itemvalue="Application.SystemTest" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.SystemTest.testIn" />
+      <item itemvalue="JUnit.StringTest.testDouble" />
+      <item itemvalue="Application.RandomUtilsTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IntegerTest.testValueOf" />
-        <item itemvalue="Application.DateTimeTester" />
-        <item itemvalue="Application.LRU" />
-        <item itemvalue="Application.RateLimitTest" />
-        <item itemvalue="JUnit.MessageFormatTest.test1" />
+        <item itemvalue="Application.RandomUtilsTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StringTest.testDouble" />
+        <item itemvalue="Application.SystemTest" />
+        <item itemvalue="JUnit.SystemTest.testIn" />
       </list>
     </recent_temporary>
   </component>
@@ -898,7 +576,8 @@
       <workItem from="1594878814508" duration="3424000" />
       <workItem from="1595206781702" duration="1797000" />
       <workItem from="1596419314993" duration="1969000" />
-      <workItem from="1596502977614" duration="599000" />
+      <workItem from="1596502977614" duration="8379000" />
+      <workItem from="1602234667192" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="add learn_fastjson module">
       <created>1548222694164</created>
@@ -1222,19 +901,17 @@
       <option name="project" value="LOCAL" />
       <updated>1591837198488</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="add LRU">
+      <created>1596589705150</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1596589705150</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DateTimeTest_test3 - 2020.05.16 at 15h 32m 15s.xml">
-      <configuration name="DateTimeTest.test3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DateTimeTest_test3 - 2020.05.16 at 16h 25m 23s.xml">
-      <configuration name="DateTimeTest.test3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DateTimeTest_test3 - 2020.05.16 at 16h 25m 40s.xml">
-      <configuration name="DateTimeTest.test3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Convert_test2 - 2020.05.16 at 16h 33m 45s.xml">
       <configuration name="Convert.test2" configurationId="JUnit" />
     </history-entry>
@@ -1256,9 +933,18 @@
     <history-entry file="IntegerTest_testValueOf - 2020.08.03 at 16h 39m 51s.xml">
       <configuration name="IntegerTest.testValueOf" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SystemTest_testIn - 2020.08.05 at 09h 23m 17s.xml">
+      <configuration name="SystemTest.testIn" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringTest_testDouble - 2020.08.05 at 17h 27m 07s.xml">
+      <configuration name="StringTest.testDouble" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringTest_testDouble - 2020.08.05 at 17h 27m 18s.xml">
+      <configuration name="StringTest.testDouble" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="615699000" />
+    <option name="totallyTimeSpent" value="623557000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1270,19 +956,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3119777" visible="true" weight="0.2217484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3119777" visible="true" weight="0.18603411" />
       <window_info id="Structure" order="1" sideWeight="0.68802226" side_tool="true" weight="0.2647815" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.532294" side_tool="true" weight="0.31130064" />
+      <window_info anchor="bottom" id="Duplication Code Results" />
+      <window_info anchor="bottom" id="风险组件扫描" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32628062" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22160356" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30501392" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1308,6 +996,42 @@
       <window_info anchor="right" id="Database" order="8" weight="0.32969153" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3119777" visible="true" weight="0.2217484" />
+      <window_info id="Structure" order="1" sideWeight="0.68802226" side_tool="true" weight="0.2647815" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.532294" side_tool="true" weight="0.31130064" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32628062" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30501392" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32850778" />
+      <window_info anchor="bottom" id="SonarQube" order="9" weight="0.32962447" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286908" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32684284" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32293987" />
+      <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.32962447" />
+      <window_info anchor="bottom" id="JProfiler" order="15" />
+      <window_info anchor="bottom" id="Spring" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32942432" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32969153" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1380,118 +1104,14 @@
     <MESSAGE value="add spring mix config" />
     <MESSAGE value="add spring aop" />
     <MESSAGE value="add spring properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="add spring properties" />
+    <MESSAGE value="add LRU" />
+    <option name="LAST_COMMIT_MESSAGE" value="add LRU" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/spring/service/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="33" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/StringEscapeUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/LambdaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/StreamTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/UUID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="140" column="23" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/UUIDTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_spring/src/main/java/com/carpenter/yan/config/JavaConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23817">
-          <caret line="1464" column="15" selection-start-line="1464" selection-start-column="15" selection-end-line="1464" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/DoubleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_joda/src/main/java/com/carpenter/yan/joda/DateTimeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/StringUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/BeanUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_fastjson/src/main/java/com/carpenter/yan/fastjson/FastJsonDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn_fastjson/src/main/java/com/carpenter/yan/fastjson/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1582,13 +1202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/RandomUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -1686,13 +1299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="102" column="61" selection-start-line="102" selection-start-column="61" selection-end-line="102" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/MessageFormatTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1753,20 +1359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/LRU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/thread/TestVolatile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1819,6 +1411,128 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="34" column="21" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ByteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/Apple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/io/InputStreamReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/io/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="118" column="15" selection-start-line="118" selection-start-column="15" selection-end-line="118" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="387" column="18" selection-start-line="387" selection-start-column="18" selection-end-line="387" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/CharSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="2497" column="25" selection-start-line="2497" selection-start-column="25" selection-end-line="2497" selection-end-column="25" />
+          <folding>
+            <element signature="e#94598#94599#0" expanded="true" />
+            <element signature="e#94636#94637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DevApp/Java8/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="110" column="36" selection-start-line="110" selection-start-column="36" selection-end-line="110" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/SystemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="110" column="37" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/LRU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/RandomUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
         </state>
       </provider>
     </entry>
