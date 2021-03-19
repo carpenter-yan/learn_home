@@ -20,6 +20,7 @@
         <module>learn_spring</module>
         <module>learn_joda</module>
         <module>learn_guava</module>
+        <module>learn-elasticsearch</module>
     </modules>
 
     <properties>
@@ -31,10 +32,21 @@
         <commons.lang.version>3.8.1</commons.lang.version>
         <joda.time.version>2.10.5</joda.time.version>
         <google.guava.version>29.0-jre</google.guava.version>
+        <elasticsearch.version>7.9.3</elasticsearch.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>transport</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.google.protobuf</groupId>
                 <artifactId>protobuf-java</artifactId>

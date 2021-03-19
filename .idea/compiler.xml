@@ -6,17 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="learn_algr4" />
-        <module name="learn_commons" />
-        <module name="learn_fastjson" />
+        <module name="learn_refactor" />
+        <module name="learn_mock" />
         <module name="learn_guava" />
         <module name="learn_java" />
         <module name="learn_joda" />
-        <module name="learn_mock" />
-        <module name="learn_protobuf" />
-        <module name="learn_refactor" />
-        <module name="learn_spring" />
+        <module name="learn_commons" />
+        <module name="learn-elasticsearch" />
+        <module name="learn_fastjson" />
         <module name="learn_web" />
+        <module name="learn_protobuf" />
+        <module name="learn_algr4" />
+        <module name="learn_spring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

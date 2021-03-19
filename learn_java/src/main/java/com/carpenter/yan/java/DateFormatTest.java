@@ -1,5 +1,6 @@
 package com.carpenter.yan.java;
 
+import org.apache.commons.lang.BooleanUtils;
 import org.junit.Test;
 
 import java.text.DateFormat;
@@ -103,5 +104,25 @@ public class DateFormatTest {
         Long begin  = LocalDateTime.of(LocalDate.now(), LocalTime.now()).toInstant(ZoneOffset.of("+8")).toEpochMilli();
         Long end = begin - 86400000;
         System.out.println("begin="+ begin + ",end=" + end);
+    }
+
+
+    @Test
+    public void test5(){
+        try {
+            String invalidTime = "2020-11-26 22:50:00";
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            Date now = simpleDateFormat.parse(simpleDateFormat.format(new Date()));
+            Date invalidtime = simpleDateFormat.parse(invalidTime);
+            long compareTo = (invalidtime.getTime() - now.getTime()) / 60000;
+            System.out.println(compareTo);
+        } catch (ParseException e) {
+        }
+
+    }
+
+    @Test
+    public void Test6(){
+        System.out.println(BooleanUtils.isFalse(false));
     }
 }

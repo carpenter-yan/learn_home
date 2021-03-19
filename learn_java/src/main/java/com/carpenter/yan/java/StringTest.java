@@ -110,4 +110,17 @@ public class StringTest {
         Double d = Double.valueOf("100");
         System.out.print(d == 100.0);
     }
+
+    @Test
+    public void testCompareTo(){
+        String a = "9.3.0";
+        String b = "8.5.12-5.2";
+        System.out.println(b);
+        System.out.println(a.compareTo(b.substring(0, a.length())));
+    }
+
+    @Test
+    public void testContain(){
+        System.out.println("小米售后技能组".contains("售后"));
+    }
 }

@@ -50,7 +50,7 @@ public class SystemTest {
     }
 
     @Test
-    public void testIn(){
-
+    public void testOS(){
+        System.out.println(System.getProperty("os.name").toLowerCase());
     }
 }

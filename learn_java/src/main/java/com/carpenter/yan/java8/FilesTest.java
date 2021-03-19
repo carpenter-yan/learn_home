@@ -61,8 +61,8 @@ public class FilesTest {
             BufferedWriter writer = Files.newBufferedWriter(outPath, StandardOpenOption.APPEND);
             reader.lines().forEach((line)->{
                 StringBuilder sb = new StringBuilder();
-                sb.append(" \"{")
-                        .append(line.substring(line.indexOf("msg") - 1, line.indexOf("mqType") + 10).replaceAll("\\\"", "\\\\\""))
+                sb.append("\"{")
+                        .append(line.substring(line.indexOf("msg") - 1, line.indexOf("mqType") + 10).replaceAll("\"", "\"\""))
                         .append("}\"\r\n");
                 try {
                     writer.write(sb.toString());
