@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="add elasticsearch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_algr4/learn_algr4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_fastjson/learn_fastjson.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/learn_java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/DateFormatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/DateFormatTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/SystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/SystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/DoubleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/DoubleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/RegexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/RegexTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/DateTimeTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/DateTimeTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/FilesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/FilesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_mock/learn_mock.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_protobuf/learn_protobuf.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,8 +337,8 @@
       <recent name="D:\IdeaProjects\learn_home\learn_protobuf\src\main\java\com\carpenter\yan\learn\protobuf" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DateTimeTester.testLocalDate2">
-    <configuration name="DateTimeTester.testLocalDate2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DateTimeTester.testFormat2">
+    <configuration name="DateTimeTester.testFormat2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -361,13 +348,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.carpenter.yan.java8" />
       <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java8.DateTimeTester" />
-      <option name="METHOD_NAME" value="testLocalDate2" />
+      <option name="METHOD_NAME" value="testFormat2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListTest.testLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DoubleTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -376,14 +363,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.carpenter.yan.java" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.ListTest" />
-      <option name="METHOD_NAME" value="testLinkedList" />
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.DoubleTest" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegexTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -392,29 +379,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.carpenter.yan.java" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.ReflectionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReflectionTest.testClassName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learn_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.carpenter.yan.java" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.ReflectionTest" />
-      <option name="METHOD_NAME" value="testClassName" />
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.RegexTest" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SystemTest.testOS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegexTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -423,27 +395,43 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.carpenter.yan.java" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.SystemTest" />
-      <option name="METHOD_NAME" value="testOS" />
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.RegexTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegexTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.carpenter.yan.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.carpenter.yan.java" />
+      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java.RegexTest" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SystemTest.testOS" />
-      <item itemvalue="JUnit.ReflectionTest.testClassName" />
-      <item itemvalue="JUnit.ReflectionTest" />
-      <item itemvalue="JUnit.ListTest.testLinkedList" />
-      <item itemvalue="JUnit.DateTimeTester.testLocalDate2" />
+      <item itemvalue="JUnit.RegexTest.test3" />
+      <item itemvalue="JUnit.RegexTest.test4" />
+      <item itemvalue="JUnit.RegexTest.test5" />
+      <item itemvalue="JUnit.DoubleTest.test3" />
+      <item itemvalue="JUnit.DateTimeTester.testFormat2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DateTimeTester.testLocalDate2" />
-        <item itemvalue="JUnit.ListTest.testLinkedList" />
-        <item itemvalue="JUnit.ReflectionTest.testClassName" />
-        <item itemvalue="JUnit.ReflectionTest" />
-        <item itemvalue="JUnit.SystemTest.testOS" />
+        <item itemvalue="JUnit.DateTimeTester.testFormat2" />
+        <item itemvalue="JUnit.DoubleTest.test3" />
+        <item itemvalue="JUnit.RegexTest.test5" />
+        <item itemvalue="JUnit.RegexTest.test4" />
+        <item itemvalue="JUnit.RegexTest.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -617,13 +605,6 @@
       <workItem from="1612336485475" duration="1122000" />
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
-    </task>
-    <task id="LOCAL-00001" summary="add learn_fastjson module">
-      <created>1548222694164</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1548222694164</updated>
     </task>
     <task id="LOCAL-00002" summary="use mockito basic method">
       <created>1548224814845</created>
@@ -961,7 +942,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603781755021</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add elasticsearch">
+      <created>1616138360484</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1616138360484</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1120,7 +1108,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add learn_fastjson module" />
     <MESSAGE value="use mockito basic method" />
     <MESSAGE value="use matcher" />
     <MESSAGE value="use answer interface" />
@@ -1145,7 +1132,8 @@
     <MESSAGE value="add spring aop" />
     <MESSAGE value="add spring properties" />
     <MESSAGE value="add LRU" />
-    <option name="LAST_COMMIT_MESSAGE" value="add LRU" />
+    <MESSAGE value="add elasticsearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="add elasticsearch" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

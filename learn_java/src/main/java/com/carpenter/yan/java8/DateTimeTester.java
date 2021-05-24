@@ -14,7 +14,7 @@ import java.time.temporal.ChronoUnit;
 public class DateTimeTester {
 
     @Test
-    public void testLocalDate(){
+    public void testLocalDate() {
         LocalDate now = LocalDate.now();
         System.out.println(now);
 
@@ -44,7 +44,7 @@ public class DateTimeTester {
     }
 
     @Test
-    public void testParse(){
+    public void testParse() {
         LocalDate date = LocalDate.parse("2019-07-18");
         System.out.println(date);
         LocalTime time = LocalTime.parse("12:45:20");
@@ -54,46 +54,52 @@ public class DateTimeTester {
     }
 
     @Test
-    public void testOfDateTime(){
+    public void testOfDateTime() {
         LocalDateTime dateTime = LocalDateTime.of(2019, 7, 15, 12, 0, 5);
         System.out.println(dateTime);
 
     }
 
     @Test
-    public void testInstant(){
+    public void testInstant() {
         Instant instant = Instant.now();
         System.out.println(instant);
     }
 
     @Test
-    public void testCurrentString(){
+    public void testCurrentString() {
         System.out.println(LocalTime.now().toString());
     }
 
     @Test
-    public void testFormat(){
+    public void testFormat() {
         System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
     }
 
     @Test
-    public void testDate(){
+    public void testFormat2() {
+        System.out.println(LocalDate.now().minusDays(1).format(DateTimeFormatter.ofPattern("yyyy_MM_dd")));
+    }
+
+    @Test
+    public void testDate() {
         System.out.println(LocalDate.now().toString());
     }
 
     @Test
-    public void testMutiDate(){
+    public void testMutiDate() {
         LocalDate localDate = LocalDate.now();
-        for(int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++) {
             System.out.println(localDate.minusDays(i).toString());
         }
     }
 
     @Test
-    public void testLocalDate2(){
+    public void testLocalDate2() {
         String abc = LocalDate.now().minusDays(2).format(DateTimeFormatter.ofPattern("yyyy:MM:dd"));
         String def = String.format("%s:op:bloom:filter:zone%s", abc, 1);
         System.out.println(def);
     }
+
 
 }
