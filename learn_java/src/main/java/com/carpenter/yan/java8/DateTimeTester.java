@@ -2,6 +2,8 @@ package com.carpenter.yan.java8;
 
 import org.junit.Test;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -10,6 +12,8 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class DateTimeTester {
 
@@ -73,7 +77,7 @@ public class DateTimeTester {
 
     @Test
     public void testFormat() {
-        System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+        System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")));
     }
 
     @Test
@@ -101,5 +105,40 @@ public class DateTimeTester {
         System.out.println(def);
     }
 
+    @Test
+    public void cartTagSend() {
+        String userPin = "dasuantou";
+        String skuId = "214928347123";
+        String cartTm = "2021-09-30 13:34:43.231";
+
+        String sendTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
+        String clientIp;
+        try {
+            clientIp = InetAddress.getLocalHost().getHostAddress();
+        } catch (UnknownHostException e) {
+            clientIp = "127.0.0.1";
+        }
+
+        Map<String, Object> map = new LinkedHashMap<>();
+        map.put("send_time", sendTime);
+        map.put("app_name", "xz-jimi3-ire");
+        map.put("client_ip", clientIp);
+        map.put("generate_time", sendTime);
+        map.put("user_pin", userPin);
+        map.put("sku_id", skuId);
+        map.put("cart_tm", cartTm);
+
+        StringBuilder sb = new StringBuilder();
+
+        map.forEach((k, v) -> {
+            sb.append(null == v ? "" : String.valueOf(v)
+                    .replaceAll("\n|\\\\n", "")
+                    .replaceAll("\t|\\\\t", "")
+                    .replaceAll("\r|\\\\r", ""))
+                    .append("\t");
+        });
+        sb.setLength(sb.length() - 1);
+        System.out.println(sb.toString());
+    }
 
 }

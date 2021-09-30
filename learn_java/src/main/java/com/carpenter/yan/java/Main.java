@@ -1,5 +1,7 @@
 package com.carpenter.yan.java;
 
+import org.apache.commons.lang.ArrayUtils;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class Main {
@@ -18,5 +20,12 @@ public class Main {
     public int echo(int i){
         System.out.println(i);
         return 2;
+    }
+
+    @Test
+    public void testContain(){
+        Integer a[] = {10000, 20000, 30000};
+        Long b = Long.valueOf(10000);
+        System.out.println(ArrayUtils.contains(a, b));
     }
 }

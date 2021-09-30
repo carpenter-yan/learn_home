@@ -10,8 +10,80 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import static java.lang.System.out;
 
 public class FilesTest {
+    /**
+     * 求两个文件交集
+     */
+    @Test
+    public void inner() {
+        String fileAim = "D:\\lookalike\\haoqi\\attr09240802.txt";
+        String fileOrder = "D:\\lookalike\\haoqi\\order_hq_0925.txt";
+        String fileResult = fileAim.replace(".", "_output.");
+
+        //1.检测文件是否存在
+        Path pathA = Paths.get(fileAim);
+        if (Files.notExists(pathA)) {
+            out.println("file a not exist");
+            return;
+        }
+
+        Path pathB = Paths.get(fileOrder);
+        if (Files.notExists(pathB)) {
+            out.println("file b not exist");
+            return;
+        }
+
+        Path pathC = Paths.get(fileResult);
+        if (Files.notExists(pathC)) {
+            try {
+                Files.createFile(pathC);
+            } catch (IOException e) {
+                System.out.println("create file c error");
+            }
+        }
+
+        try {
+            BufferedReader readerA = Files.newBufferedReader(pathA, StandardCharsets.UTF_8);
+            Set<String> setA = new HashSet<>(128);
+            readerA.lines().forEach(item -> setA.add(item.split(",")[1]));
+            //readerA.lines().forEach(item -> setA.add(item));
+
+            BufferedReader readerB = Files.newBufferedReader(pathB, StandardCharsets.UTF_8);
+            Set<String> setB = new HashSet<>(128);
+            readerB.lines().forEach(item -> setB.add(item));
+
+            readerA.close();
+            readerB.close();
+
+            setA.retainAll(setB);
+
+            out.println("setA.size=" + setA.size());
+
+            if (setA.size() > 0) {
+                BufferedWriter writerC = Files.newBufferedWriter(pathC, StandardOpenOption.APPEND);
+                setA.stream().forEach(item -> {
+                    try {
+                        writerC.write(item);
+                        writerC.write("\r\n");
+                        writerC.flush();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                });
+                writerC.close();
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     @Test
     public void chgOrder() {
@@ -117,6 +189,20 @@ public class FilesTest {
                 System.out.println(line.length());
             });
             reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void readFile() {
+        try {
+            List<String> lines = Files.readAllLines(Paths.get("D:\\sensitive.txt"));
+            for (String line : lines) {
+                String[] word = line.split("\\t");
+                System.out.println(word[0] + ":" + word[1]);
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }

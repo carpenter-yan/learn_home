@@ -55,7 +55,7 @@ public class MapTest {
     @Test
     public void testLinkedHashMap(){
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        LinkedHashSet linkedHashSet = new LinkedHashSet();
+        LinkedHashMap linkedHashSet = new LinkedHashMap();
 
     }
 }

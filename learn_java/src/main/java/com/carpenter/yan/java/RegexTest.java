@@ -69,4 +69,12 @@ public class RegexTest {
             System.out.println(m.replaceAll("哈哈:)"));
         }
     }
+
+    @Test
+    public void test6(){
+        String regex = "(^\\d{2})|(\\d{2}$)";
+        String source = "11201234213342";
+        String result = Pattern.compile(regex).matcher(source).replaceAll("**");
+        System.out.println(result);
+    }
 }
