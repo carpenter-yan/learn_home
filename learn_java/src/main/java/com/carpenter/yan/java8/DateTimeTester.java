@@ -4,12 +4,7 @@ import org.junit.Test;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.LinkedHashMap;
@@ -139,6 +134,14 @@ public class DateTimeTester {
         });
         sb.setLength(sb.length() - 1);
         System.out.println(sb.toString());
+    }
+
+    @Test
+    public void testUnixTime(){
+        long dt1 = 1632724012360L;
+        LocalDateTime localDateTime = Instant.ofEpochMilli(dt1).atZone(ZoneOffset.ofHours(8)).toLocalDateTime();
+        System.out.println(localDateTime);
+        System.out.println(localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")));
     }
 
 }

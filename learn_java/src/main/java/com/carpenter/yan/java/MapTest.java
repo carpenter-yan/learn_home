@@ -11,7 +11,7 @@ public class MapTest {
         hash(12);
     }
 
-    public static void testValuseMethod(){
+    public static void testValuseMethod() {
         Map<Integer, String> englishNumber = new HashMap<>();
         englishNumber.put(1, "one");
 
@@ -19,7 +19,7 @@ public class MapTest {
 
         System.out.println(english.get(0));
 
-        for(Map.Entry<Integer, String> entry : englishNumber.entrySet()){
+        for (Map.Entry<Integer, String> entry : englishNumber.entrySet()) {
             entry.getKey();
         }
     }
@@ -48,14 +48,22 @@ public class MapTest {
     }
 
     @Test
-    public void putNull(){
+    public void putNull() {
         Map<String, String> map = new HashMap<>();
     }
 
     @Test
-    public void testLinkedHashMap(){
-        LinkedHashMap linkedHashMap = new LinkedHashMap();
-        LinkedHashMap linkedHashSet = new LinkedHashMap();
+    public void testLinkedHashMap() {
+        LinkedHashMap map1 = new LinkedHashMap();
+        map1.put("1", "1");
+        map1.put("2", "2");
+        LinkedHashMap map2 = new LinkedHashMap();
+        map2.put("3", "3");
+        map2.put("4", "4");
+        map1.putAll(map2);
 
+        map1.forEach((k, v) -> {
+            System.out.println(v);
+        });
     }
 }

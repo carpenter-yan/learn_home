@@ -20,10 +20,5 @@
         <module name="learn_spring" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="learn_algs4" target="1.5" />
-      <module name="learn_mockito" target="1.5" />
-      <module name="learn_spring4" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
