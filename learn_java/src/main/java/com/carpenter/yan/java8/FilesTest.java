@@ -22,8 +22,8 @@ public class FilesTest {
      */
     @Test
     public void inner() {
-        String fileAim = "D:\\lookalike\\1012\\vivob5000.txt";
-        String fileOrder = "D:\\lookalike\\1012\\vivo_order.txt";
+        String fileAim = "D:\\lookalike\\1012\\vivob8000.txt";
+        String fileOrder = "D:\\lookalike\\1012\\vivo1001bbrowse.txt";
         String fileResult = fileAim.replace(".", "_output.");
 
         //1.检测文件是否存在

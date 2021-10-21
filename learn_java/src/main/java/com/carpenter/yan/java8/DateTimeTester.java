@@ -137,11 +137,17 @@ public class DateTimeTester {
     }
 
     @Test
-    public void testUnixTime(){
+    public void testUnixTime() {
         long dt1 = 1632724012360L;
         LocalDateTime localDateTime = Instant.ofEpochMilli(dt1).atZone(ZoneOffset.ofHours(8)).toLocalDateTime();
         System.out.println(localDateTime);
         System.out.println(localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")));
+    }
+
+    @Test
+    public void test11() {
+        LocalDateTime  dt = LocalDateTime.now();
+        System.out.println(dt.toString());
     }
 
 }
