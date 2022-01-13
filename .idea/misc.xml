@@ -10,7 +10,9 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/learn_protobuf/learn_algs4/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_refactor/pom.xml" />
         <option value="$PROJECT_DIR$/learn_spring4/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_web/pom.xml" />
       </set>
     </option>
   </component>

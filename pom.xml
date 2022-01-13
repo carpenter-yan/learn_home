@@ -14,9 +14,7 @@
         <module>learn_fastjson</module>
         <module>learn_mock</module>
         <module>learn_java</module>
-        <module>learn_refactor</module>
         <module>learn_commons</module>
-        <module>learn_web</module>
         <module>learn_spring</module>
         <module>learn_joda</module>
         <module>learn_guava</module>

@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="add elasticsearch">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/DateTimeTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/DateTimeTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/FilesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/FilesTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="add elasticsearch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
