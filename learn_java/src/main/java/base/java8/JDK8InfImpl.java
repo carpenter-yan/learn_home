@@ -10,7 +10,6 @@ public class JDK8InfImpl implements JDK8Inf {
 
     @Test
     public void test1(){
-        staticMethod();
         JDK8Inf impl = new JDK8InfImpl();
         impl.defaultMethod();
         impl.normalMethod();
