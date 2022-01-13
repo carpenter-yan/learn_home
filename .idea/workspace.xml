@@ -4,7 +4,514 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="add elasticsearch" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="refactor module">
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/AVLTreeST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Accumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/AcyclicLP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/AcyclicSP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/AdjMatrixEdgeWeightedDigraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Alphabet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/AmericanFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/AmericanFlagX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Arbitrage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/AssignmentProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Average.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Bag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BellmanFordSP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BinaryDump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BinaryIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BinaryInsertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BinaryOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BinarySearchST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BinaryStdIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BinaryStdOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BinomialMinPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Bipartite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BipartiteMatching.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BipartiteX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BlackFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BoruvkaMST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BoyerMoore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BreadthFirstDirectedPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/BreadthFirstPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/CC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/CPM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/ClosestPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/CollisionSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Complex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Cycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DeDup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DegreesOfSeparation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DepthFirstDirectedPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DepthFirstOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DepthFirstPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DepthFirstSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Digraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DigraphGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DijkstraAllPairsSP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DijkstraSP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DijkstraUndirectedSP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DirectedCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DirectedCycleX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DirectedDFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DirectedEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DirectedEulerianCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DirectedEulerianPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DoublingRatio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DoublingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Draw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/DrawListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/EdgeWeightedDigraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/EdgeWeightedDirectedCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/EdgeWeightedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/EulerianCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/EulerianPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/FFT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/FarthestPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/FenwickTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/FibonacciMinPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/FileIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/FlowEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/FlowNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/FloydWarshall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/FordFulkerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/FrequencyCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/GREP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/GabowSCC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/GaussJordanElimination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/GaussianElimination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Genome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/GlobalMincut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/GrahamScan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/GraphGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/GrayscalePicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/HexDump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/HopcroftKarp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Huffman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/In.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/IndexBinomialMinPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/IndexFibonacciMinPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/IndexMaxPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/IndexMinPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/IndexMultiwayMinPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/InplaceMSD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Insertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/InsertionX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Interval1D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Interval2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Inversions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/KMP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/KWIK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Knuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/KosarajuSharirSCC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/KruskalMST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LSD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LZW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LazyPrimMST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LinearProbingHashST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LinearProgramming.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LinearRegression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LinkedBag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LinkedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LongestCommonSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LongestRepeatedSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LookupCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/LookupIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/MSD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/MaxPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Merge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/MergeBU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/MergeX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/MinPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Multiway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/MultiwayMinPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/NFA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/NonrecursiveDFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/NonrecursiveDirectedDFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Out.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Particle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/PatriciaSET.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/PatriciaST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Picture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/PictureDump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Point2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Polynomial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/PrimMST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Quick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Quick3string.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Quick3way.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/QuickBentleyMcIlroy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/QuickFindUF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/QuickUnionUF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/QuickX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/RabinKarp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/RandomSeq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/RectHV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/RedBlackBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/ResizingArrayBag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/ResizingArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/ResizingArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/RunLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/SET.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/ST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/SegmentTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Selection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/SeparateChainingHashST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/SequentialSearchST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Shell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/SparseVector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/StaticSETofInts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/StdArrayIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/StdAudio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/StdDraw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/StdIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/StdOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/StdRandom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/StdStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Stopwatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/StopwatchCPU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/SuffixArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/SuffixArrayX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/SymbolDigraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/SymbolGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/TST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/TarjanSCC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/ThreeSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/ThreeSumFast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/TopM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Topological.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/TopologicalX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/TransitiveClosure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/TrieSET.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/TrieST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/TwoPersonZeroSumGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/UF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Vector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/WeightedQuickUnionUF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/WhiteFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/algs4/Whitelist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/TestAlgs4.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/algs4/TestAlgs4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/AVLTreeST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Accumulator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/AcyclicLP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/AcyclicSP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/AdjMatrixEdgeWeightedDigraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Alphabet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/AmericanFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/AmericanFlagX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Arbitrage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/AssignmentProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Average.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Bag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BellmanFordSP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BinaryDump.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BinaryIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BinaryInsertion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BinaryOut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BinarySearchST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BinaryStdIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BinaryStdOut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BinomialMinPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Bipartite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BipartiteMatching.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BipartiteX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BlackFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BoruvkaMST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BoyerMoore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/BreadthFirstPaths.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/CC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/CPM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/ClosestPair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/CollisionSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Complex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Count.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Counter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Cycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Date.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DeDup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DegreesOfSeparation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DepthFirstDirectedPaths.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DepthFirstOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DepthFirstPaths.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DepthFirstSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Digraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DigraphGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DijkstraAllPairsSP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DijkstraSP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DijkstraUndirectedSP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DirectedCycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DirectedCycleX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DirectedDFS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DirectedEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DirectedEulerianCycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DirectedEulerianPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DoublingRatio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DoublingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Draw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/DrawListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Edge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/EdgeWeightedDigraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/EdgeWeightedDirectedCycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/EdgeWeightedGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/EulerianCycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/EulerianPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/FFT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/FarthestPair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/FenwickTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/FibonacciMinPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/FileIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/FlowEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/FlowNetwork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/FloydWarshall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/FordFulkerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/FrequencyCounter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/GREP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/GabowSCC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/GaussJordanElimination.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/GaussianElimination.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Genome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/GlobalMincut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/GrahamScan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/GraphGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/GrayscalePicture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Heap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/HexDump.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/HopcroftKarp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Huffman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/In.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/IndexBinomialMinPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/IndexFibonacciMinPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/IndexMaxPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/IndexMinPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/IndexMultiwayMinPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/InplaceMSD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Insertion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/InsertionX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Interval1D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Interval2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Inversions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/KMP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/KWIK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Knuth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/KosarajuSharirSCC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/KruskalMST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LSD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LZW.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LazyPrimMST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LinearProbingHashST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LinearProgramming.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LinearRegression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LinkedBag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LinkedQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LinkedStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LongestCommonSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LongestRepeatedSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LookupCSV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/LookupIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/MSD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/MaxPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Merge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/MergeBU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/MergeX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/MinPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Multiway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/MultiwayMinPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/NFA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/NonrecursiveDFS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/NonrecursiveDirectedDFS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Out.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Particle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/PatriciaSET.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/PatriciaST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Picture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/PictureDump.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Point2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Polynomial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/PrimMST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Queue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Quick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Quick3string.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Quick3way.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/QuickBentleyMcIlroy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/QuickFindUF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/QuickUnionUF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/QuickX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/RabinKarp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/RandomSeq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/RectHV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/RedBlackBST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/ResizingArrayBag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/ResizingArrayQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/ResizingArrayStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/RunLength.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/SET.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/ST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/SegmentTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Selection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/SeparateChainingHashST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/SequentialSearchST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Shell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/SparseVector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/StaticSETofInts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/StdArrayIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/StdAudio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/StdDraw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/StdIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/StdOut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/StdRandom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/StdStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Stopwatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/StopwatchCPU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/SuffixArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/SuffixArrayX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/SymbolDigraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/SymbolGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/TST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/TarjanSCC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/ThreeSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/ThreeSumFast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/TopM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Topological.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/TopologicalX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/TransitiveClosure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/TrieSET.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/TrieST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/TwoPersonZeroSumGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/UF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Vector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/WeightedQuickUnionUF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/WhiteFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_algr4/src/main/java/edu/princeton/cs/algs4/Whitelist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_commons/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/BeanUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/commons/BeanUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/NumberUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/commons/NumberUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/RandomUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/commons/RandomUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/StringEscapeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/commons/StringEscapeUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_commons/src/main/java/com/carpenter/yan/commons/StringUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/commons/StringUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_fastjson/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_fastjson/src/main/java/com/carpenter/yan/fastjson/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/fastjson/Convert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_fastjson/src/main/java/com/carpenter/yan/fastjson/FastJsonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/fastjson/FastJsonDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_fastjson/src/main/java/com/carpenter/yan/fastjson/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/fastjson/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_fastjson/src/test/java/com/carpenter/yan/fastjson/Convert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_guava/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_guava/src/main/java/com/carpenter/yan/learn/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/guava/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_guava/src/main/java/com/carpenter/yan/learn/MapsUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/guava/MapsUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_guava/src/main/java/com/carpenter/yan/learn/RateLimitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/guava/RateLimitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_guava/src/test/java/com/carpenter/yan/learn/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/InnetAddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/InnetAddressTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/StackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/StackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/ThreadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/ThreadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/Apple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/BigDecimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/BigDecimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/BooleanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/BooleanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/BufferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/BufferTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ByteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/ByteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/CalenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/CalenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ChannelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/ChannelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/ClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/DateFormatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/DateFormatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/DoubleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/DoubleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/EnumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/EnumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ExceptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/ExceptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/FileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/FileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/InetAddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/InetAddressTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/InnerClass/DataStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/InnerClass/DataStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/IntegerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/IntegerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/LRU.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/LRU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/ListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/MapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/MathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/MathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ObtainRemoteImageWidthAndHeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/ObtainRemoteImageWidthAndHeight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/PathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/PathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/PropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/PropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ReadNetImageSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/ReadNetImageSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/ReflectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/RegexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/RegexTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/ScenePromotionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/ScenePromotionResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/SetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/SetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/StringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/SyntaxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/SyntaxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/SystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/SystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/URLDecoderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/URLDecoderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/UUIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/UUIDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/proxy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/proxy/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/proxy/SqlExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/proxy/SqlExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/proxy/SqlExecutorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/proxy/SqlExecutorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/proxy/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/proxy/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/proxy/TransactionHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/proxy/TransactionHander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java/proxy/TransactionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/proxy/TransactionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/DateTimeTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java8/DateTimeTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/FilesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java8/FilesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/Java8Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java8/Java8Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/LambdaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java8/LambdaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/MessageFormatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java8/MessageFormatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/java8/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java8/StreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/jd/CallBackTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/thread/TestVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/thread/TestVolatile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_joda/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_joda/src/main/java/com/carpenter/yan/joda/DateTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/joda/DateTimeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/junit/AssertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/junit/AssertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/junit/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/junit/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/junit/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/junit/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/junit/JunitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/junit/JunitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/junit/MethodOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/junit/MethodOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/AnnotationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/mockito/AnnotationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/AnswerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/mockito/AnswerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/CaptorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/mockito/CaptorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/MatchersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/mockito/MatchersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/mockito/SimpleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SpecialArgTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/mockito/SpecialArgTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/SpyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/mockito/SpyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/mockito/VerifyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/mockito/VerifyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/ClassDependency.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/powermock/ClassDependency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/ClassUnderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/powermock/ClassUnderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/MutiPriMethodClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/powermock/MutiPriMethodClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/MutiPriMethodClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/powermock/MutiPriMethodClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_mock/src/main/java/com/carpenter/yan/powermock/SampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/mock/powermock/SampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_protobuf/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/protobuf/AddPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/protobuf/AddPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/protobuf/AddressBookProtos.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/protobuf/AddressBookProtos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_protobuf/src/main/java/com/carpenter/yan/protobuf/ListPeople.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/protobuf/ListPeople.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_protobuf/src/main/resources/addressBookFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_protobuf/src/main/resources/addressbook.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_protobuf/src/main/resources/hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_protobuf/target/classes/addressBookFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_protobuf/target/classes/addressbook.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_protobuf/target/classes/hex" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -309,12 +816,17 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15332031" />
     <property name="project.structure.side.proportion" value="0.4025375" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\learn_home\learn_algr4\src\main\java" />
+      <recent name="D:\IdeaProjects\learn_home\learn_protobuf\src\main\resources" />
+      <recent name="D:\IdeaProjects\learn_home\learn_protobuf\src\main\java\com\carpenter\yan\learn\protobuf" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\learn_home\learn_spring\src\main\resources" />
     </key>
@@ -325,23 +837,34 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.carpenter.yan.java" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\learn_home\learn_algr4\src\main\java" />
-      <recent name="D:\IdeaProjects\learn_home\learn_protobuf\src\main\resources" />
-      <recent name="D:\IdeaProjects\learn_home\learn_protobuf\src\main\java\com\carpenter\yan\learn\protobuf" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.FilesTest.inner">
+  <component name="RunManager" selected="JUnit.ArrayTest.test1">
+    <configuration name="ArrayTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base.java" />
+      <option name="MAIN_CLASS_NAME" value="base.java.ArrayTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DateTimeTester.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.java8.*" />
+          <option name="PATTERN" value="base.java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.carpenter.yan.java8" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java8.DateTimeTester" />
+      <option name="PACKAGE_NAME" value="base.java8" />
+      <option name="MAIN_CLASS_NAME" value="base.java8.DateTimeTester" />
       <option name="METHOD_NAME" value="test11" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -352,44 +875,28 @@
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.java8.*" />
+          <option name="PATTERN" value="base.java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.carpenter.yan.java8" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java8.DateTimeTester" />
+      <option name="PACKAGE_NAME" value="base.java8" />
+      <option name="MAIN_CLASS_NAME" value="base.java8.DateTimeTester" />
       <option name="METHOD_NAME" value="testUnixTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FastJsonDemo.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learn_fastjson" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.fastjson.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.carpenter.yan.fastjson" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.fastjson.FastJsonDemo" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FastJsonDemo.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learn_fastjson" />
+      <module name="learn_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.fastjson.*" />
+          <option name="PATTERN" value="fastjson.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.carpenter.yan.fastjson" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.fastjson.FastJsonDemo" />
+      <option name="PACKAGE_NAME" value="fastjson" />
+      <option name="MAIN_CLASS_NAME" value="fastjson.FastJsonDemo" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -400,12 +907,12 @@
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.carpenter.yan.java8.*" />
+          <option name="PATTERN" value="base.java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.carpenter.yan.java8" />
-      <option name="MAIN_CLASS_NAME" value="com.carpenter.yan.java8.FilesTest" />
+      <option name="PACKAGE_NAME" value="base.java8" />
+      <option name="MAIN_CLASS_NAME" value="base.java8.FilesTest" />
       <option name="METHOD_NAME" value="inner" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -415,17 +922,17 @@
     <list>
       <item itemvalue="JUnit.FilesTest.inner" />
       <item itemvalue="JUnit.FastJsonDemo.test3" />
-      <item itemvalue="JUnit.FastJsonDemo.test2" />
       <item itemvalue="JUnit.DateTimeTester.test11" />
       <item itemvalue="JUnit.DateTimeTester.testUnixTime" />
+      <item itemvalue="JUnit.ArrayTest.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArrayTest.test1" />
         <item itemvalue="JUnit.FilesTest.inner" />
         <item itemvalue="JUnit.DateTimeTester.test11" />
         <item itemvalue="JUnit.DateTimeTester.testUnixTime" />
         <item itemvalue="JUnit.FastJsonDemo.test3" />
-        <item itemvalue="JUnit.FastJsonDemo.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -599,13 +1106,6 @@
       <workItem from="1612336485475" duration="1122000" />
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
-    </task>
-    <task id="LOCAL-00005" summary="use matcher">
-      <created>1548241955769</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1548241955769</updated>
     </task>
     <task id="LOCAL-00006" summary="use answer interface">
       <created>1548308224465</created>
@@ -943,7 +1443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634195538068</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="delete module">
+      <created>1642036507380</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1642036507380</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1102,8 +1609,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="use mockito basic method" />
-    <MESSAGE value="use matcher" />
     <MESSAGE value="use answer interface" />
     <MESSAGE value="use spy/captor" />
     <MESSAGE value="use powermock" />
@@ -1127,23 +1632,25 @@
     <MESSAGE value="add spring properties" />
     <MESSAGE value="add LRU" />
     <MESSAGE value="add elasticsearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="add elasticsearch" />
+    <MESSAGE value="delete module" />
+    <MESSAGE value="refactor module" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/StackTest.java</url>
+          <url>file://$PROJECT_DIR$/learn_java/src/main/java/base/StackTest.java</url>
           <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/StackTest.java</url>
+          <url>file://$PROJECT_DIR$/learn_java/src/main/java/base/StackTest.java</url>
           <line>11</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/learn_java/src/main/java/com/carpenter/yan/StackTest.java</url>
+          <url>file://$PROJECT_DIR$/learn_java/src/main/java/base/StackTest.java</url>
           <line>15</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>

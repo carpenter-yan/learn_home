@@ -9,7 +9,14 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/learn_algr4/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_commons/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_fastjson/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_guava/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_joda/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_mock/pom.xml" />
         <option value="$PROJECT_DIR$/learn_protobuf/learn_algs4/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_protobuf/pom.xml" />
         <option value="$PROJECT_DIR$/learn_refactor/pom.xml" />
         <option value="$PROJECT_DIR$/learn_spring4/pom.xml" />
         <option value="$PROJECT_DIR$/learn_web/pom.xml" />
