@@ -9,15 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>learn_protobuf</module>
-        <module>learn_algr4</module>
-        <module>learn_fastjson</module>
-        <module>learn_mock</module>
         <module>learn_java</module>
-        <module>learn_commons</module>
         <module>learn_spring</module>
-        <module>learn_joda</module>
-        <module>learn_guava</module>
         <module>learn-elasticsearch</module>
     </modules>
 
@@ -35,6 +28,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.elasticsearch.client</groupId>
                 <artifactId>elasticsearch-rest-high-level-client</artifactId>
@@ -81,16 +79,10 @@
                 <version>${mockito.version}</version>
             </dependency>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>${junit.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
                 <version>1.9.3</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
             <dependency>
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
@@ -101,7 +93,6 @@
                 <artifactId>guava</artifactId>
                 <version>${google.guava.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 </project>

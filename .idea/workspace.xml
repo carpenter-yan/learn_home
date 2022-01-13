@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="refactor module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/base/java8/JDK8InfImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java8/JDK8InfImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +334,7 @@
       <recent name="com.carpenter.yan.java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InnetAddressTest.test1">
+  <component name="RunManager" selected="JUnit.MethodTest.test1">
     <configuration name="ArrayTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
@@ -352,33 +351,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateTimeTester.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BufferTest.testBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="base.java8.*" />
+          <option name="PATTERN" value="base.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="base.java8" />
-      <option name="MAIN_CLASS_NAME" value="base.java8.DateTimeTester" />
-      <option name="METHOD_NAME" value="test11" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilesTest.inner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learn_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="base.java8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="base.java8" />
-      <option name="MAIN_CLASS_NAME" value="base.java8.FilesTest" />
-      <option name="METHOD_NAME" value="inner" />
+      <option name="PACKAGE_NAME" value="base.java" />
+      <option name="MAIN_CLASS_NAME" value="base.java.BufferTest" />
+      <option name="METHOD_NAME" value="testBasic" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -416,20 +399,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MethodTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.MethodTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.FilesTest.inner" />
-      <item itemvalue="JUnit.DateTimeTester.test11" />
       <item itemvalue="JUnit.ArrayTest.test1" />
       <item itemvalue="JUnit.JDK8InfImpl.test1" />
       <item itemvalue="JUnit.InnetAddressTest.test1" />
+      <item itemvalue="JUnit.BufferTest.testBasic" />
+      <item itemvalue="JUnit.MethodTest.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MethodTest.test1" />
+        <item itemvalue="JUnit.BufferTest.testBasic" />
         <item itemvalue="JUnit.InnetAddressTest.test1" />
         <item itemvalue="JUnit.JDK8InfImpl.test1" />
         <item itemvalue="JUnit.ArrayTest.test1" />
-        <item itemvalue="JUnit.FilesTest.inner" />
-        <item itemvalue="JUnit.DateTimeTester.test11" />
       </list>
     </recent_temporary>
   </component>
@@ -603,13 +602,6 @@
       <workItem from="1612336485475" duration="1122000" />
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
-    </task>
-    <task id="LOCAL-00008" summary="use spy/captor">
-      <created>1548313264282</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1548313264282</updated>
     </task>
     <task id="LOCAL-00009" summary="use powermock">
       <created>1548316809055</created>
@@ -947,7 +939,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642037880535</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="refactor module">
+      <created>1642038132919</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1642038132919</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
