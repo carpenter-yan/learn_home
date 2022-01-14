@@ -1,7 +1,7 @@
-package com.carpenter.yan;
+package base;
 
-import com.carpenter.yan.spring.domain.Role;
-import com.carpenter.yan.spring.domain.User;
+import base.spring.domain.Role;
+import base.spring.domain.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

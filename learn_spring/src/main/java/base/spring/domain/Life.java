@@ -1,4 +1,4 @@
-package com.carpenter.yan.spring.domain;
+package base.spring.domain;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;

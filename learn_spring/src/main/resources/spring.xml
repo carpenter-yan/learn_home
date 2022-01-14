@@ -5,8 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-    <context:component-scan base-package="com.carpenter.yan.config"/>
-    <bean id="role" class="com.carpenter.yan.spring.domain.Role">
+    <context:component-scan base-package="base.config"/>
+    <bean id="role" class="base.spring.domain.Role">
         <property name="id" value="1"/>
         <property name="roleName" value="高级工程师"/>
         <property name="note" value="重要人员"/>

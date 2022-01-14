@@ -1,4 +1,4 @@
-package com.carpenter.yan.spring.domain;
+package base.spring.domain;
 
 public class Role {
     private Long id;

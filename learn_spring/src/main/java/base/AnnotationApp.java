@@ -1,11 +1,11 @@
-package com.carpenter.yan;
+package base;
 
-import com.carpenter.yan.config.JavaConfig;
-import com.carpenter.yan.spring.domain.Life;
-import com.carpenter.yan.spring.domain.Role;
-import com.carpenter.yan.spring.domain.User;
-import com.carpenter.yan.spring.service.RoleService;
-import com.carpenter.yan.spring.service.UserService;
+import base.config.JavaConfig;
+import base.spring.domain.Life;
+import base.spring.domain.Role;
+import base.spring.domain.User;
+import base.spring.service.RoleService;
+import base.spring.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.Map;

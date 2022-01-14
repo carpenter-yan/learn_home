@@ -1,6 +1,6 @@
-package com.carpenter.yan.spring.processor;
+package base.spring.processor;
 
-import com.carpenter.yan.spring.domain.Life;
+import base.spring.domain.Life;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;

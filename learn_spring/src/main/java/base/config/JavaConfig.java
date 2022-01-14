@@ -1,9 +1,9 @@
-package com.carpenter.yan.config;
+package base.config;
 
-import com.carpenter.yan.spring.aspect.Aspect;
-import com.carpenter.yan.spring.domain.Domain;
-import com.carpenter.yan.spring.processor.Processor;
-import com.carpenter.yan.spring.service.Service;
+import base.spring.aspect.Aspect;
+import base.spring.domain.Domain;
+import base.spring.processor.Processor;
+import base.spring.service.Service;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

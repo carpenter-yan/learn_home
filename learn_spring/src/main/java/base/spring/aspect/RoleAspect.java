@@ -1,4 +1,4 @@
-package com.carpenter.yan.spring.aspect;
+package base.spring.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class RoleAspect {
-    @Pointcut("execution(* com.carpenter.yan.spring.service.RoleService.printRole(..))")
+    @Pointcut("execution(* base.spring.service.RoleService.printRole(..))")
     public void printRole(){
 
     }

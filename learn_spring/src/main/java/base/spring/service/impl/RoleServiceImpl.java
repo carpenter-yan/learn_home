@@ -1,7 +1,7 @@
-package com.carpenter.yan.spring.service.impl;
+package base.spring.service.impl;
 
-import com.carpenter.yan.spring.domain.Role;
-import com.carpenter.yan.spring.service.RoleService;
+import base.spring.domain.Role;
+import base.spring.service.RoleService;
 import com.sun.deploy.util.StringUtils;
 import org.springframework.stereotype.Component;
 

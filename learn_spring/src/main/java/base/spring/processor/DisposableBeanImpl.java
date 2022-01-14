@@ -1,4 +1,4 @@
-package com.carpenter.yan.spring.processor;
+package base.spring.processor;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.stereotype.Component;

@@ -11,7 +11,8 @@
     <modules>
         <module>learn_java</module>
         <module>learn_spring</module>
-        <module>learn-elasticsearch</module>
+        <module>learn_elasticsearch</module>
+        <module>learn_note</module>
     </modules>
 
     <properties>

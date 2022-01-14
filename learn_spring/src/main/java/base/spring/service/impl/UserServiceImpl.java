@@ -1,7 +1,7 @@
-package com.carpenter.yan.spring.service.impl;
+package base.spring.service.impl;
 
-import com.carpenter.yan.spring.domain.User;
-import com.carpenter.yan.spring.service.UserService;
+import base.spring.domain.User;
+import base.spring.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
