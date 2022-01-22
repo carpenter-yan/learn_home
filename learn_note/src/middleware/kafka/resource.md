@@ -1,0 +1,1 @@
+[kafka原理和实践](https://www.cnblogs.com/dennyzhangdd/p/7759869.html)  

@@ -1,0 +1,1 @@
+[Log4j 爆“核弹级”漏洞，公司炸锅了](https://mp.weixin.qq.com/s/j-5x3qL8NtTzimy5GLQU6w)  
