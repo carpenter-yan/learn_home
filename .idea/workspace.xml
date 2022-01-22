@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="迁移learning项目">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="迁移kgnote项目">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/network/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/computer/network/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,11 +324,11 @@
       <recent name="D:\IdeaProjects\learn_home\learn_protobuf\src\main\java\com\carpenter\yan\learn\protobuf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\learn_home\learn_note\src\computer" />
+      <recent name="D:\IdeaProjects\learn_home\learn_note\src\java\base" />
       <recent name="D:\IdeaProjects\learn_home\learn_note\src\java\spring\cloud" />
       <recent name="D:\IdeaProjects\learn_home\learn_note\src\middleware" />
       <recent name="D:\IdeaProjects\learn_home\learn_note\src\java\spring" />
-      <recent name="D:\IdeaProjects\learn_home\learn_note\src\database\mysql" />
-      <recent name="D:\IdeaProjects\learn_home\learn_note\src\java\opensource" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="base" />
@@ -607,13 +607,6 @@
       <workItem from="1612336485475" duration="1122000" />
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
-    </task>
-    <task id="LOCAL-00012" summary="add map test">
-      <created>1551183428120</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1551183428120</updated>
     </task>
     <task id="LOCAL-00013" summary="add String test">
       <created>1551184603804</created>
@@ -951,7 +944,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642822759387</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="迁移kgnote项目">
+      <created>1642824189503</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1642824189503</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1110,7 +1110,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="use powermock mock static final etc" />
     <MESSAGE value="commit iml file" />
     <MESSAGE value="add map test" />
     <MESSAGE value="add String test" />
@@ -1135,7 +1134,8 @@
     <MESSAGE value="refactor end" />
     <MESSAGE value="增加spring-cache文件" />
     <MESSAGE value="迁移learning项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="迁移learning项目" />
+    <MESSAGE value="迁移kgnote项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="迁移kgnote项目" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
