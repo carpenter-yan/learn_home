@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加斜体和粗体">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加分级标题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" afterDir="false" />
     </list>
@@ -608,13 +608,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00016" summary="add test">
-      <created>1556192720881</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1556192720881</updated>
-    </task>
     <task id="LOCAL-00017" summary="add test String.intern()">
       <created>1556596185638</created>
       <option name="number" value="00017" />
@@ -951,7 +944,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642835495857</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="增加分级标题">
+      <created>1642835744440</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1642835744440</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1110,7 +1110,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="uuid hash test" />
     <MESSAGE value="add test String.intern()" />
     <MESSAGE value="add byte test" />
     <MESSAGE value="add InnerClass" />
@@ -1135,7 +1134,8 @@
     <MESSAGE value="markdown强调" />
     <MESSAGE value="增加目录列表和锚点" />
     <MESSAGE value="增加斜体和粗体" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加斜体和粗体" />
+    <MESSAGE value="增加分级标题" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加分级标题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
