@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="加入图像">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加表头和代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" afterDir="false" />
     </list>
@@ -608,13 +608,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00024" summary="add leetcode">
-      <created>1560301832126</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1560301832126</updated>
-    </task>
     <task id="LOCAL-00025" summary="add leetcode">
       <created>1562036515015</created>
       <option name="number" value="00025" />
@@ -951,7 +944,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642839063183</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="增加表头和代码">
+      <created>1642840045930</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1642840045930</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1110,7 +1110,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add test" />
     <MESSAGE value="add spring ioc" />
     <MESSAGE value="add spring autowired" />
     <MESSAGE value="add spring mix config" />
@@ -1135,7 +1134,8 @@
     <MESSAGE value="试验锚点" />
     <MESSAGE value="加入引用" />
     <MESSAGE value="加入图像" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入图像" />
+    <MESSAGE value="增加表头和代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加表头和代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

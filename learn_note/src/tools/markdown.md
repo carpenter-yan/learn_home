@@ -50,7 +50,7 @@ ___三个下划线___
 ### 插入图像
 图片的创建方式与超链接相似，而且和超链接一样也有两种写法，行内式和参考式写法。
 语法中图片Alt的意思是如果图片因为某些原因不能显示，就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样，表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的，可以省略，但建议写上。
-![美丽花儿](http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg "美丽花儿")
+![百度](https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1-66368c33f8.png "百度")
 
 ### 其它
 换行: 行尾2个空格加回车或者html换行标记
