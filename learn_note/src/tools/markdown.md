@@ -1,3 +1,5 @@
+[TOC]
+
 # 目录
 + [目录](#目录)
     + [斜体和粗体](#斜体和粗体)
@@ -50,10 +52,26 @@ ___三个下划线___
 语法中图片Alt的意思是如果图片因为某些原因不能显示，就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样，表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的，可以省略，但建议写上。
 ![美丽花儿](http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg "美丽花儿")
 
-### 
+### 其它
+换行: 行尾2个空格加回车或者html换行标记
+缩进: 多个空格，建议4个缩进
+颜色: html的font标签
+背景色: html标签实现
+分隔线: 用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线
 
+### 表格
+不管是哪种方式，第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。  
+列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。  
+第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。  
+学号|姓名|分数
+-|-|-
+小明|男|75
+小红|女|79
+小陆|男|92
 
-
+### 代码
+一种是利用缩进(Tab), 另一种是用六个（`）包裹多行代码包裹代码。
+注意： 缩进式插入前方必须有空行
 
 参考文章
 [Markdown语法手册](https://blog.csdn.net/witnessai1/article/details/52551362?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-4.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-4.pc_relevant_default&utm_relevant_index=9)  
