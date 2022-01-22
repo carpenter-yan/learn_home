@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="试验锚点">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="加入引用">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" afterDir="false" />
     </list>
@@ -608,13 +608,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00022" summary="add InnerClass">
-      <created>1558924561108</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1558924561108</updated>
-    </task>
     <task id="LOCAL-00023" summary="add InnerClass">
       <created>1559806287852</created>
       <option name="number" value="00023" />
@@ -951,7 +944,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642838143722</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="加入引用">
+      <created>1642838846494</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1642838846494</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1110,7 +1110,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add learn_web module" />
     <MESSAGE value="测试" />
     <MESSAGE value="add test" />
     <MESSAGE value="add spring ioc" />
@@ -1135,7 +1134,8 @@
     <MESSAGE value="增加自动链接" />
     <MESSAGE value="增加本地文件链接" />
     <MESSAGE value="试验锚点" />
-    <option name="LAST_COMMIT_MESSAGE" value="试验锚点" />
+    <MESSAGE value="加入引用" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入引用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
