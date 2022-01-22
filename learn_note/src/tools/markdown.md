@@ -1,4 +1,6 @@
-# 目录
+{#head}
+
+# 目录 {#1}
 + [目录](#目录)
     + [斜体和粗体](#斜体和粗体)
     + [分级标题](#分级标题)
@@ -32,6 +34,22 @@ ___三个下划线___
 
 参考式: 如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理
 自动链接: 使用<>包起来 <https://www.jd.com/>
+
+### 锚点
+只支持在标题后插入锚点{#锚点名}，在跳转的地方(#锚点名)。如果是锚点名和标题名相同可以省略锚点定义
+(#head)
+返回目录 (#1)
+
+### 列表
+
+### 引用
+
+### 插入图像
+
+### 
+
+
+
 
 参考文章
 [Markdown语法手册](https://blog.csdn.net/witnessai1/article/details/52551362?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-4.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-4.pc_relevant_default&utm_relevant_index=9)  
