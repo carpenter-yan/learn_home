@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="markdown强调">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加目录列表和锚点">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" afterDir="false" />
     </list>
@@ -608,13 +608,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00014" summary="uuid hash test">
-      <created>1555900092491</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1555900092492</updated>
-    </task>
     <task id="LOCAL-00015" summary="uuid hash test">
       <created>1555983936398</created>
       <option name="number" value="00015" />
@@ -951,7 +944,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642832568703</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="增加目录列表和锚点">
+      <created>1642835074853</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1642835074854</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1110,7 +1110,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add map test" />
     <MESSAGE value="add String test" />
     <MESSAGE value="uuid hash test" />
     <MESSAGE value="add test String.intern()" />
@@ -1135,7 +1134,8 @@
     <MESSAGE value="迁移learning项目" />
     <MESSAGE value="迁移kgnote项目" />
     <MESSAGE value="markdown强调" />
-    <option name="LAST_COMMIT_MESSAGE" value="markdown强调" />
+    <MESSAGE value="增加目录列表和锚点" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加目录列表和锚点" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
