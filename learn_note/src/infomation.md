@@ -6,10 +6,6 @@
 
 [保持高效学习的 7 个方法](https://www.cnblogs.com/xiao2shiqi/p/15401920.html)   
 
-[扛住100亿次请求 如何做一个“有把握”的春晚红包系统](https://www.cnblogs.com/powerwu/articles/12021625.html)  
-
-[扛住100亿次请求？我们来试一试](https://github.com/xiaojiaqi/10billionhongbaos/wiki/%E6%89%9B%E4%BD%8F100%E4%BA%BF%E6%AC%A1%E8%AF%B7%E6%B1%82%EF%BC%9F%E6%88%91%E4%BB%AC%E6%9D%A5%E8%AF%95%E4%B8%80%E8%AF%95)  
-
 [聊聊云原生和微服务架构](https://www.cnblogs.com/xiao2shiqi/p/15623540.html)  
 
 [你还不了解DevOps? 看这篇就够了](https://www.cnblogs.com/FLY_DREAM/p/13643315.html)  

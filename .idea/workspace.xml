@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="修改markdown">
-      <change beforePath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" afterDir="false" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加Java基础">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/network/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/computer/network/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/infomation.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/infomation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/middleware/kafka/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/middleware/kafka/resource.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -607,13 +610,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00028" summary="add java8 time test">
-      <created>1563859684251</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1563859684251</updated>
-    </task>
     <task id="LOCAL-00029" summary="add java8 time test">
       <created>1563859701436</created>
       <option name="number" value="00029" />
@@ -950,7 +946,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643160263773</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="增加Java基础">
+      <created>1643160507333</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1643160507333</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1109,7 +1112,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add spring mix config" />
     <MESSAGE value="add spring aop" />
     <MESSAGE value="add spring properties" />
     <MESSAGE value="add LRU" />
@@ -1134,7 +1136,8 @@
     <MESSAGE value="增加表头和代码" />
     <MESSAGE value="百度图片" />
     <MESSAGE value="修改markdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改markdown" />
+    <MESSAGE value="增加Java基础" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加Java基础" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
