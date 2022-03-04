@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="learn_java" />
         <module name="learn_elasticsearch" />
+        <module name="learn-elasticsearch" />
         <module name="learn_spring" />
       </profile>
     </annotationProcessing>
