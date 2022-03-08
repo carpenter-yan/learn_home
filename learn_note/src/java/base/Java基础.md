@@ -3,8 +3,8 @@
 <a href="#0">Java 基础</a>  
 &emsp;<a href="#1">1. 基本数据类型</a>  
 &emsp;&emsp;<a href="#2">1.1. 包装类型</a>  
-&emsp;&emsp;&emsp;<a href="#3">1.1.1. 缓冲池</a>  
-&emsp;&emsp;<a href="#4">1.2. BigDecimal</a>  
+&emsp;&emsp;<a href="#3">1.2. 缓冲池</a>  
+&emsp;&emsp;<a href="#4">1.3. BigDecimal</a>  
 &emsp;<a href="#5">2. String</a>  
 &emsp;&emsp;<a href="#6">2.1. String, StringBuffer and StringBuilder</a>  
 &emsp;&emsp;&emsp;<a href="#7">2.1.1. 内部数据结构</a>  
@@ -49,18 +49,22 @@
 ## <a name="1">基本数据类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 八大基本数据类型
-- byte/8: 取值范围为-128~127，占用1个字节
-- short/16: 取值范围为-32768~32767，占用2个字节
-- int/32: 占用4个字节（-2^31^~2^31^-1）
-- float/32: 占用4个字节 （-3.40292347E+38~3.40292347E+38）
-- long/64: 占用8个字节（-2的63次方到2的63次方-1）
+- byte/8: 占用1个字节(-128~127)
+- short/16: 占用2个字节(-32768~32767)
+- int/32: 占用4个字节(-2<sup>31</sup>~2<sup>31</sup>-1)
+- float/32: 占用4个字节(-3.40292347E+38~3.40292347E+38)
+- long/64: 占用8个字节(-2<sup>63</sup>~2<sup>63</sup>-1)
 - double/64: 占用8个字节，IEEE754
 - char/16
 - boolean/~
+  
+boolean只有true或false，可以使用1bit来存储，但具体大小没有明确规定。JVM在编译时期将boolean类型数据转换为int，但boolean数组却是通过byte数组来实现
+
+short和char: 都占用4个字节，但short是对数值编码，首位为符号位。char是对字符编码，无符号位(0~65535)
 
 基本数据类型转换关系：byte→short(char)→int→long→float→double
 
-### <a name="2">包装类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## <a name="2">包装类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 所谓包装类，就是能够直接将简单类型的变量表示为一个类，在执行变量类型的相互转换时，我们会大量使用这些包装类。
 
@@ -83,7 +87,7 @@ new Integer(123) 与 Integer.valueOf(123) 的区别在于：
 
 > valueOf() 方法的实现比较简单，就是先判断值是否在缓存池中，如果在的话就直接返回缓存池的内容
 
-#### <a name="3">缓冲池</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## <a name="3">缓冲池</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 包装类型内存使用 private static class IntegerCache，声明一个内部使用的缓存池
 > 如Integer中有个静态内部类IntegerCache，里面有个cache[],也就是Integer常量池，常量池的大小为一个字节（-128~127）\

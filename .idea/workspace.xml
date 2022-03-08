@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加io文章">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="字符上标">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
@@ -607,13 +607,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00031" summary="测试">
-      <created>1572263087073</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1572263087073</updated>
-    </task>
     <task id="LOCAL-00032" summary="测试">
       <created>1572266848499</created>
       <option name="number" value="00032" />
@@ -950,7 +943,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646659989984</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="字符上标">
+      <created>1646701858165</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1646701858165</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1109,7 +1109,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add spring properties" />
     <MESSAGE value="add LRU" />
     <MESSAGE value="add elasticsearch" />
     <MESSAGE value="delete module" />
@@ -1134,7 +1133,8 @@
     <MESSAGE value="修改markdown" />
     <MESSAGE value="增加Java基础" />
     <MESSAGE value="增加io文章" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加io文章" />
+    <MESSAGE value="字符上标" />
+    <option name="LAST_COMMIT_MESSAGE" value="字符上标" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
