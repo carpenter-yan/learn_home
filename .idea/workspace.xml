@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="字符上标">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="基础类型修改">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
@@ -166,12 +167,6 @@
     </option>
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Users\cdyangang\.m2\repository" />
-        <option name="userSettingsFile" value="C:\Users\cdyangang\.m2\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="downloadDocsAutomatically" value="true" />
@@ -314,7 +309,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15332031" />
     <property name="project.structure.side.proportion" value="0.4025375" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -606,13 +601,6 @@
       <workItem from="1612336485475" duration="1122000" />
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
-    </task>
-    <task id="LOCAL-00032" summary="测试">
-      <created>1572266848499</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1572266848499</updated>
     </task>
     <task id="LOCAL-00033" summary="add test">
       <created>1574141615481</created>
@@ -950,7 +938,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646701858165</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="基础类型修改">
+      <created>1646703199320</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1646703199320</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1109,7 +1104,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add LRU" />
     <MESSAGE value="add elasticsearch" />
     <MESSAGE value="delete module" />
     <MESSAGE value="refactor module" />
@@ -1134,7 +1128,8 @@
     <MESSAGE value="增加Java基础" />
     <MESSAGE value="增加io文章" />
     <MESSAGE value="字符上标" />
-    <option name="LAST_COMMIT_MESSAGE" value="字符上标" />
+    <MESSAGE value="基础类型修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="基础类型修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -12,17 +12,5 @@
         <module name="learn_spring" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="learn_algr4" target="1.5" />
-      <module name="learn_commons" target="1.5" />
-      <module name="learn_fastjson" target="1.5" />
-      <module name="learn_guava" target="1.7" />
-      <module name="learn_joda" target="1.5" />
-      <module name="learn_mock" target="1.5" />
-      <module name="learn_note" target="8" />
-      <module name="learn_protobuf" target="1.5" />
-      <module name="learn_refactor" target="1.5" />
-      <module name="learn_web" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

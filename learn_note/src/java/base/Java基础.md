@@ -66,11 +66,9 @@ short和char: 都占用4个字节，但short是对数值编码，首位为符号
 
 ## <a name="2">包装类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-所谓包装类，就是能够直接将简单类型的变量表示为一个类，在执行变量类型的相互转换时，我们会大量使用这些包装类。
-
-以下用途
-1. 作为基本数据类型对应的类类型，提供了一系列实用的对象操作，如类型转换，进制转换等
-2. 集合不允许存放基本数据类型，故常用包装类
+包装类有以下用途
+1. 集合不允许存放基本数据类型，故常用包装类
+2. 作为基本数据类型对应的类类型，提供了一系列实用的对象操作，如类型转换，进制转换等
 3. 包含了每种基本类型的相关属性，如最大值，最小值，所占位数等
 
 > 包装类都为final 不可继承 \
@@ -85,12 +83,13 @@ new Integer(123) 与 Integer.valueOf(123) 的区别在于：
 - new Integer(123) 每次都会新建一个对象；
 - Integer.valueOf(123) 会使用缓存池中的对象，多次调用会取得同一个对象的引用。
 
-> valueOf() 方法的实现比较简单，就是先判断值是否在缓存池中，如果在的话就直接返回缓存池的内容
+> valueOf() 方法的实现比较简单，先判断值是否在缓存池中，如果在则返回缓存池中的实例。
 
 ## <a name="3">缓冲池</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 包装类型内存使用 private static class IntegerCache，声明一个内部使用的缓存池
 > 如Integer中有个静态内部类IntegerCache，里面有个cache[],也就是Integer常量池，常量池的大小为一个字节（-128~127）\
+> 缓冲池可以减少大量装箱时频繁新建对象  
 > 为啥把缓存设置为[-128，127]区间？性能和资源之间的权衡。
 
 在 jdk 1.8 所有的数值类缓冲池中，Integer 的缓冲池 IntegerCache 很特殊，这个缓冲池的下界是 - 128，上界默认是 127，但是这个上界是可调的，在启动 jvm 的时候，通过 `-XX:AutoBoxCacheMax=<size>` 来指定这个缓冲池的大小。
@@ -105,7 +104,7 @@ new Integer(123) 与 Integer.valueOf(123) 的区别在于：
 ### <a name="4">BigDecimal</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 BigDecimal 主要用于处理解决精度丢失问题
-> float和double类型主要是为了科学计算和工程计算而设计的。执行二进制浮点运算，这是为了在广泛的数字范围上提供较为精确的快速近似计算而精心设计的。然而，它们并没有提供完全精确的结果
+> float和double类型主要是为了科学计算和工程计算而设计的。在广泛的数字范围上提供较为精确的快速近似计算而精心设计的。然而，它们并没有提供完全精确的结果
 
 ```
 float a = 1.0f - 0.9f;
@@ -114,6 +113,10 @@ System.out.println(a);// 0.100000024
 System.out.println(b);// 0.099999964
 System.out.println(a == b);// false
 ```
+
+BigDecimal保持精度的原理是内部记录有效位数和小数点后位数，将小数转化为BigInteger计算再按小数位转换回小数  
+[BigDecimal的浮点数运算能保证精度的原理](https://zhuanlan.zhihu.com/p/71796835)  
+BigInteger的原理是将大数转换为int数组再按位运算  
 
 ## <a name="5">String</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
