@@ -6,9 +6,9 @@
 &emsp;&emsp;<a href="#3">1.2. 缓冲池</a>  
 &emsp;&emsp;<a href="#4">1.3. BigDecimal</a>  
 &emsp;<a href="#5">2. String</a>  
-&emsp;&emsp;<a href="#6">2.1. String, StringBuffer and StringBuilder</a>  
-&emsp;&emsp;&emsp;<a href="#7">2.1.1. 内部数据结构</a>  
-&emsp;&emsp;&emsp;<a href="#8">2.1.2. AbstractStringBuilder 扩容</a>  
+&emsp;&emsp;<a href="#6">2.1 概览</a>  
+&emsp;&emsp;<a href="#7">2.2 内部数据结构</a>  
+&emsp;&emsp;<a href="#8">2.3 AbstractStringBuilder 扩容</a>  
 &emsp;<a href="#9">3. final 关键字</a>  
 &emsp;<a href="#10">4. static 关键字</a>  
 &emsp;<a href="#11">5. Object 通用方法</a>  
@@ -64,6 +64,10 @@ short和char: 都占用4个字节，但short是对数值编码，首位为符号
 
 基本数据类型转换关系：byte→short(char)→int→long→float→double
 
+- [Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+- [The Java® Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf)
+
+
 ## <a name="2">包装类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 包装类有以下用途
@@ -84,6 +88,11 @@ new Integer(123) 与 Integer.valueOf(123) 的区别在于：
 - Integer.valueOf(123) 会使用缓存池中的对象，多次调用会取得同一个对象的引用。
 
 > valueOf() 方法的实现比较简单，先判断值是否在缓存池中，如果在则返回缓存池中的实例。
+
+- [Autoboxing and Unboxing](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html)  
+- [StackOverflow : Differences between new Integer(123), Integer.valueOf(123) and just 123
+](https://stackoverflow.com/questions/9030817/differences-between-new-integer123-integer-valueof123-and-just-123)
+
 
 ## <a name="3">缓冲池</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
@@ -115,22 +124,45 @@ System.out.println(a == b);// false
 ```
 
 BigDecimal保持精度的原理是内部记录有效位数和小数点后位数，将小数转化为BigInteger计算再按小数位转换回小数  
-[BigDecimal的浮点数运算能保证精度的原理](https://zhuanlan.zhihu.com/p/71796835)  
+
+- [BigDecimal的浮点数运算能保证精度的原理](https://zhuanlan.zhihu.com/p/71796835)  
+
 BigInteger的原理是将大数转换为int数组再按位运算  
 
 ## <a name="5">String</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-String 被声明为 final，因此它不可被继承
-- Java 8 中，String 内部使用 char 数组存储数据。
-- Java 9 之后，String 类的实现改用 byte 数组存储字符串，同时使用 coder 来标识使用了哪种编码。
+String被声明为final，因此它不可被继承。 在Java8中，String内部使用char数组存储数据。
 
-> 对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
+```java
+public final class String
+    implements java.io.Serializable, Comparable<String>, CharSequence {
+    /** The value is used for character storage. */
+    private final char value[];
+}
+```
+
+在Java9之后，String类的实现改用byte数组存储字符串，同时使用`coder`来标识使用了哪种编码。
+
+```java
+public final class String
+    implements java.io.Serializable, Comparable<String>, CharSequence {
+    /** The value is used for character storage. */
+    private final byte[] value;
+
+    /** The identifier of the encoding used to encode the bytes in {@code value}. */
+    private final byte coder;
+}
+```
+
+value数组被声明为final，这意味着value数组初始化之后就不能再引用其它数组。并且String内部没有改变value数组的方法，因此可以保证String不可变。
 
 不可变的好处
-1. 可以缓存 hash 值
-2. String Pool 的需要。如果一个 String 对象已经被创建过了，那么就会从 String Pool 中取得引用。只有 String 是不可变的，才可能使用 String Pool。
-3. 安全性。String 经常作为参数，String 不可变性可以保证参数不可变。如网络传输
-4. 线程安全
+> 可以缓存hash值。因为String的hash值经常被使用，例如String用做HashMap的key。不可变的特性可以使得hash值也不可变，因此只需要进行一次计算。
+> String Pool的需要。如果一个String对象已经被创建过了，那么就会从String Pool中取得引用。只有String是不可变的，才可能使用String Pool。
+> 安全性。String 经常作为参数，String 不可变性可以保证参数不可变。如网络传输
+> 线程安全。String 不可变性天生具备线程安全，可以在多个线程中安全地使用。
+
+
 
 关于String使用new创建的问题：
 > new String("abc")创建两String对象。(前提是String Pool 中还没有 "abc" 字符串对象)\
