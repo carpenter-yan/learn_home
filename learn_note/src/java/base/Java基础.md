@@ -6,9 +6,9 @@
 &emsp;&emsp;<a href="#3">1.2. 缓冲池</a>  
 &emsp;&emsp;<a href="#4">1.3. BigDecimal</a>  
 &emsp;<a href="#5">2. String</a>  
-&emsp;&emsp;<a href="#6">2.1 概览</a>  
-&emsp;&emsp;<a href="#7">2.2 内部数据结构</a>  
-&emsp;&emsp;<a href="#8">2.3 AbstractStringBuilder 扩容</a>  
+&emsp;&emsp;<a href="#6">2.1 不可变性</a>  
+&emsp;&emsp;<a href="#7">2.2 String Pool</a>  
+&emsp;&emsp;<a href="#8">2.3 StringBuilder,StringBuffer</a>  
 &emsp;<a href="#9">3. final 关键字</a>  
 &emsp;<a href="#10">4. static 关键字</a>  
 &emsp;<a href="#11">5. Object 通用方法</a>  
@@ -156,25 +156,99 @@ public final class String
 
 value数组被声明为final，这意味着value数组初始化之后就不能再引用其它数组。并且String内部没有改变value数组的方法，因此可以保证String不可变。
 
+### <a name="6">不可变性</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+
 不可变的好处
-> 可以缓存hash值。因为String的hash值经常被使用，例如String用做HashMap的key。不可变的特性可以使得hash值也不可变，因此只需要进行一次计算。
-> String Pool的需要。如果一个String对象已经被创建过了，那么就会从String Pool中取得引用。只有String是不可变的，才可能使用String Pool。
-> 安全性。String 经常作为参数，String 不可变性可以保证参数不可变。如网络传输
-> 线程安全。String 不可变性天生具备线程安全，可以在多个线程中安全地使用。
+> 可以缓存hash值。因为String的hash值经常被使用，例如String用做HashMap的key。不可变的特性可以使得hash值也不可变，因此只需要进行一次计算。  
+> String Pool的需要。如果一个String对象已经被创建过了，那么就会从String Pool中取得引用。只有String是不可变的，才可能使用String Pool。  
+> 安全性。String 经常作为参数，String 不可变性可以保证参数不可变。如网络传输  
+> 线程安全。String 不可变性天生具备线程安全，可以在多个线程中安全地使用。  
 
+### <a name="7">String Pool</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
+字符串常量池（String Pool）保存着所有字符串字面量（literal strings），这些字面量在编译时期就确定。不仅如此，还可以使用String的intern()方法在运行过程将字符串添加到String Pool中。
+
+当一个字符串调用intern() 方法时，如果 String Pool 中已经存在一个字符串和该字符串值相等（使用 equals() 方法进行确定），那么就会返回 String Pool 中字符串的引用；否则，就会在 String Pool 中添加一个新的字符串，并返回这个新字符串的引用。
+
+下面示例中，s1 和 s2 采用 new String() 的方式新建了两个不同字符串，而 s3 和 s4 是通过 s1.intern() 和 s2.intern() 方法取得同一个字符串引用。intern() 首先把 "aaa" 放到 String Pool 中，然后返回这个字符串引用，因此 s3 和 s4 引用的是同一个字符串。
+
+```
+String s1 = new String("aaa");
+String s2 = new String("aaa");
+System.out.println(s1 == s2);           // false
+String s3 = s1.intern();
+String s4 = s2.intern();
+System.out.println(s3 == s4);           // true
+```
+
+如果是采用 "bbb" 这种字面量的形式创建字符串，会自动地将字符串放入 String Pool 中。
+
+```
+String s5 = "bbb";
+String s6 = "bbb";
+System.out.println(s5 == s6);  // true
+```
+
+在 Java 7 之前，String Pool 被放在运行时常量池中，它属于永久代。而在 Java 7，String Pool 被移到堆中。这是因为永久代的空间有限，在大量使用字符串的场景下会导致 OutOfMemoryError 错误。
+
+- [StackOverflow : What is String interning?](https://stackoverflow.com/questions/10578984/what-is-string-interning)
+- [深入解析 String#intern](https://tech.meituan.com/in_depth_understanding_string_intern.html)
 
 关于String使用new创建的问题：
 > new String("abc")创建两String对象。(前提是String Pool 中还没有 "abc" 字符串对象)\
-> 使用new关键字创建的字符串对象存储在堆的普通内存部分。\
-> java 8 字符串常量池放置于方法区中\
-> 参考资料：[字符串常量池String Constant Pool](https://www.cnblogs.com/LinQingYang/p/12524949.html#importantPointsToRememberLabel)
+> "abc" 属于字符串字面量，因此编译时期会在 String Pool 中创建一个字符串对象，指向这个 "abc" 字符串字面量；\
+> 而使用 new 的方式会在堆中创建一个字符串对象。\
 
-### <a name="6">String, StringBuffer and StringBuilder</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+- [字符串常量池String Constant Pool](https://www.cnblogs.com/LinQingYang/p/12524949.html#importantPointsToRememberLabel)
 
-intern() 方法：
-- 当一个字符串调用 intern() 方法时，如果 String Pool 中已经存在一个字符串和该字符串值相等（使用 equals() 方法进行确定），那么就会返回 String Pool 中字符串的引用；
-- 否则，就会在 String Pool 中添加一个新的字符串，并返回这个新字符串的引用。
+创建一个测试类，其 main 方法中使用这种方式来创建字符串对象。
+
+```java
+public class NewStringTest {
+    public static void main(String[] args) {
+        String s = new String("abc");
+    }
+}
+```
+
+使用 javap -verbose 进行反编译，得到以下内容：
+
+```
+// ...
+Constant pool:
+// ...
+   #2 = Class              #18            // java/lang/String
+   #3 = String             #19            // abc
+// ...
+  #18 = Utf8               java/lang/String
+  #19 = Utf8               abc
+// ...
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: new           #2                  // class java/lang/String
+         3: dup
+         4: ldc           #3                  // String abc
+         6: invokespecial #4                  // Method java/lang/String."<init>":(Ljava/lang/String;)V
+         9: astore_1
+// ...
+```
+
+在 Constant Pool 中，#19 存储这字符串字面量 "abc"，#3 是 String Pool 的字符串对象，它指向 #19 这个字符串字面量。在 main 方法中，0: 行使用 new #2 在堆中创建一个字符串对象，并且使用 ldc #3 将 String Pool 中的字符串对象作为 String 构造函数的参数。
+
+以下是 String 构造函数的源码，可以看到，在将一个字符串对象作为另一个字符串对象的构造函数参数时，并不会完全复制 value 数组内容，而是都会指向同一个 value 数组。
+
+```
+public String(String original) {
+    this.value = original.value;
+    this.hash = original.hash;
+}
+```
+
+### <a name="8">StringBuilder,StringBuffer</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 String、StringBuilder、StringBuffer三者的执行效率：\
 StringBuilder > StringBuffer > String。这个实验结果是相对而言的，不一定在所有情况下都是这样。
@@ -199,14 +273,8 @@ System.out.println((a == c));
 输出结果为：true。对于被final修饰的变量，会在class文件常量池中保存一个副本，也就是说不会通过连接而进行访问
 ```
 
-#### <a name="7">内部数据结构</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+- [StackOverflow : String, StringBuffer, and StringBuilder](https://stackoverflow.com/questions/2971315/string-stringbuffer-and-stringbuilder)
 
-java 8 为char[] 数组
-
-#### <a name="8">AbstractStringBuilder 扩容</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
-扩容的大小是新字符串的长度的2倍，然后再加上2。
-> 在使用StringBuilder的时候，append()之后，我们一般会在后面在加上一个分隔符，例如逗号，也就是再加上一个char，而char在java中占2个字节，避免了因为添加分隔符而再次引起扩容。
 
 ## <a name="9">final 关键字</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 

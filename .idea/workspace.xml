@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加BigDecimal原理参考">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="修改String相关部分">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -603,13 +602,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00034" summary="add test">
-      <created>1575961103121</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1575961103121</updated>
-    </task>
     <task id="LOCAL-00035" summary="add test">
       <created>1575961121002</created>
       <option name="number" value="00035" />
@@ -946,7 +938,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646919250879</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="修改String相关部分">
+      <created>1647048942867</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1647048942867</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1105,7 +1104,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="delete module" />
     <MESSAGE value="refactor module" />
     <MESSAGE value="refactor end" />
     <MESSAGE value="增加spring-cache文件" />
@@ -1130,7 +1128,8 @@
     <MESSAGE value="字符上标" />
     <MESSAGE value="基础类型修改" />
     <MESSAGE value="增加BigDecimal原理参考" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加BigDecimal原理参考" />
+    <MESSAGE value="修改String相关部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改String相关部分" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
