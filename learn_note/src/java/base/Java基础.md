@@ -154,14 +154,14 @@ public final class String
 }
 ```
 
-value数组被声明为final，这意味着value数组初始化之后就不能再引用其它数组。并且String内部没有改变value数组的方法，因此可以保证String不可变。
+value数组被声明为final，初始化之后就不能再引用其它数组。并且String内部没有改变value数组的方法，因此可以保证String不可变。
 
 ### <a name="6">不可变性</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 不可变的好处
-> 可以缓存hash值。因为String的hash值经常被使用，例如String用做HashMap的key。不可变的特性可以使得hash值也不可变，因此只需要进行一次计算。  
-> String Pool的需要。如果一个String对象已经被创建过了，那么就会从String Pool中取得引用。只有String是不可变的，才可能使用String Pool。  
-> 安全性。String 经常作为参数，String 不可变性可以保证参数不可变。如网络传输  
+> 可以缓存hash值。String的hash值经常被使用，如String用做HashMap的key。不可变性使得hash值也不可变，因此只需要进行一次计算。  
+> String Pool的需要。一个String对象已经被创建过了，就会从String Pool中取得引用。只有String是不可变的，才能使用String Pool。  
+> 安全性。String 经常作为参数，String不可变性可以保证参数不可变。如网络传输  
 > 线程安全。String 不可变性天生具备线程安全，可以在多个线程中安全地使用。  
 
 ### <a name="7">String Pool</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
@@ -248,17 +248,6 @@ public String(String original) {
 }
 ```
 
-### <a name="8">StringBuilder,StringBuffer</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
-String、StringBuilder、StringBuffer三者的执行效率：\
-StringBuilder > StringBuffer > String。这个实验结果是相对而言的，不一定在所有情况下都是这样。
-> 比如String str = "hello"+ "world"的效率就比 StringBuilder st = new StringBuilder().append("hello").append("world")要高。
-
-对于三者使用的总结：
-1. 操作少量的数据: 适用String
-2. 单线程操作字符串缓冲区下操作大量数据: 适用StringBuilder
-3. 多线程操作字符串缓冲区下操作大量数据: 适用StringBuffer
-
 ```
 String a = "hello2"; 　  
 String b = "hello";       
@@ -272,6 +261,28 @@ String c = b + 2;
 System.out.println((a == c));
 输出结果为：true。对于被final修饰的变量，会在class文件常量池中保存一个副本，也就是说不会通过连接而进行访问
 ```
+
+### <a name="8">StringBuilder,StringBuffer</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+
+**1. 可变性**
+
+- String 不可变
+- StringBuffer 和 StringBuilder 可变
+
+**2. 线程安全**
+
+- String 不可变，因此是线程安全的
+- StringBuilder 不是线程安全的
+- StringBuffer 是线程安全的，内部使用 synchronized 进行同步
+
+**3. 执行效率**
+StringBuilder > StringBuffer > String。这个实验结果是相对而言的，不一定在所有情况下都是这样。
+> 比如String str = "hello"+ "world"的效率就比 StringBuilder st = new StringBuilder().append("hello").append("world")要高。
+
+**4. 使用的总结**
+- 操作少量的数据: 适用String
+- 单线程操作字符串缓冲区下操作大量数据: 适用StringBuilder
+- 多线程操作字符串缓冲区下操作大量数据: 适用StringBuffer
 
 - [StackOverflow : String, StringBuffer, and StringBuilder](https://stackoverflow.com/questions/2971315/string-stringbuffer-and-stringbuilder)
 
