@@ -180,6 +180,26 @@ value数组被声明为final，初始化之后就不能再引用其它数组。�
 > "abc" 属于字符串字面量，因此编译时期会在 String Pool 中创建一个字符串对象，指向这个 "abc" 字符串字面量；\
 > 而使用 new 的方式会在堆中创建一个字符串对象。\
 
+```
+String s1 = "abc";
+String s2 = "abc";
+String s3 = new String("abc");
+System.out.println(s1 == s2);  // true
+System.out.println(s1 == s3);  // false
+
+String a = "hello2"; 　  
+String b = "hello";       
+String c = b + 2;       
+System.out.println((a == c));
+输出结果为:false。由于有符号引用的存在，所以  String c = b + 2;不会在编译期间被优化，不会把b+2当做字面常量来处理的
+
+String a = "hello2";   　
+final String b = "hello";       
+String c = b + 2;       
+System.out.println((a == c));
+输出结果为：true。对于被final修饰的变量，会在class文件常量池中保存一个副本，也就是说不会通过连接而进行访问
+```
+
 以下是 String构造函数的源码，可以看到，在将一个字符串对象作为另一个字符串对象的构造函数参数时，并不会完全复制value数组内容，而是都会指向同一个value数组。
 
 ```
@@ -202,28 +222,6 @@ System.out.println(s1 == s2);           // false
 String s3 = s1.intern();
 String s4 = s2.intern();
 System.out.println(s3 == s4);           // true
-```
-
-如果是采用 "bbb" 这种字面量的形式创建字符串，会自动地将字符串放入 String Pool 中。
-
-```
-String s5 = "bbb";
-String s6 = "bbb";
-System.out.println(s5 == s6);  // true
-```
-
-```
-String a = "hello2"; 　  
-String b = "hello";       
-String c = b + 2;       
-System.out.println((a == c));
-输出结果为:false。由于有符号引用的存在，所以  String c = b + 2;不会在编译期间被优化，不会把b+2当做字面常量来处理的
-
-String a = "hello2";   　
-final String b = "hello";       
-String c = b + 2;       
-System.out.println((a == c));
-输出结果为：true。对于被final修饰的变量，会在class文件常量池中保存一个副本，也就是说不会通过连接而进行访问
 ```
 
 - [字符串常量池String Constant Pool](https://www.cnblogs.com/LinQingYang/p/12524949.html#importantPointsToRememberLabel)
