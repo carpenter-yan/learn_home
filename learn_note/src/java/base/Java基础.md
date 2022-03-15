@@ -7,7 +7,7 @@
 &emsp;&emsp;<a href="#4">1.3. BigDecimal</a>  
 &emsp;<a href="#5">2. String</a>  
 &emsp;&emsp;<a href="#6">2.1 不可变性</a>  
-&emsp;&emsp;<a href="#7">2.2 String Pool</a>  
+&emsp;&emsp;<a href="#7">2.2 String Constant Pool</a>  
 &emsp;&emsp;<a href="#8">2.3 StringBuilder,StringBuffer</a>  
 &emsp;<a href="#9">3. final 关键字</a>  
 &emsp;<a href="#10">4. static 关键字</a>  
@@ -164,9 +164,32 @@ value数组被声明为final，初始化之后就不能再引用其它数组。�
 > 安全性。String 经常作为参数，String不可变性可以保证参数不可变。如网络传输  
 > 线程安全。String 不可变性天生具备线程安全，可以在多个线程中安全地使用。  
 
-### <a name="7">String Pool</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### <a name="7">String Constant Pool</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-字符串常量池（String Pool）保存着所有字符串字面量（literal strings），这些字面量在编译时期就确定。不仅如此，还可以使用String的intern()方法在运行过程将字符串添加到String Pool中。
+1. 字符串常量池的定义和使用
+字符串常量池（String Pool）是JVM为了最小化在堆上存储具有重复字符串对象所造成的冗余和内存浪费而在留出一个特殊区域。
+
+- 不使用new关键字创建的字符串对象存储在堆的**字符串常量池**部分  
+- 还可以使用String的intern()方法在运行过程将字符串添加到**字符串常量池**中  
+- 使用new关键字创建的字符串对象存储在堆的**普通内存**部分
+
+在Java7之前，String Pool被放在运行时常量池中，它属于永久代。而在Java7，String Pool被移到堆中。这是因为永久代的空间有限，在大量使用字符串的场景下会导致OutOfMemoryError错误。
+
+2. String对象创建问题
+> new String("abc")创建两String对象。(前提是String Pool 中还没有 "abc" 字符串对象)\
+> "abc" 属于字符串字面量，因此编译时期会在 String Pool 中创建一个字符串对象，指向这个 "abc" 字符串字面量；\
+> 而使用 new 的方式会在堆中创建一个字符串对象。\
+
+以下是 String构造函数的源码，可以看到，在将一个字符串对象作为另一个字符串对象的构造函数参数时，并不会完全复制value数组内容，而是都会指向同一个value数组。
+
+```
+public String(String original) {
+    this.value = original.value;
+    this.hash = original.hash;
+}
+```
+
+3. String.intern()方法
 
 当一个字符串调用intern() 方法时，如果 String Pool 中已经存在一个字符串和该字符串值相等（使用 equals() 方法进行确定），那么就会返回 String Pool 中字符串的引用；否则，就会在 String Pool 中添加一个新的字符串，并返回这个新字符串的引用。
 
@@ -189,65 +212,6 @@ String s6 = "bbb";
 System.out.println(s5 == s6);  // true
 ```
 
-在 Java 7 之前，String Pool 被放在运行时常量池中，它属于永久代。而在 Java 7，String Pool 被移到堆中。这是因为永久代的空间有限，在大量使用字符串的场景下会导致 OutOfMemoryError 错误。
-
-- [StackOverflow : What is String interning?](https://stackoverflow.com/questions/10578984/what-is-string-interning)
-- [深入解析 String#intern](https://tech.meituan.com/in_depth_understanding_string_intern.html)
-
-关于String使用new创建的问题：
-> new String("abc")创建两String对象。(前提是String Pool 中还没有 "abc" 字符串对象)\
-> "abc" 属于字符串字面量，因此编译时期会在 String Pool 中创建一个字符串对象，指向这个 "abc" 字符串字面量；\
-> 而使用 new 的方式会在堆中创建一个字符串对象。\
-
-- [字符串常量池String Constant Pool](https://www.cnblogs.com/LinQingYang/p/12524949.html#importantPointsToRememberLabel)
-
-创建一个测试类，其 main 方法中使用这种方式来创建字符串对象。
-
-```java
-public class NewStringTest {
-    public static void main(String[] args) {
-        String s = new String("abc");
-    }
-}
-```
-
-使用 javap -verbose 进行反编译，得到以下内容：
-
-```
-// ...
-Constant pool:
-// ...
-   #2 = Class              #18            // java/lang/String
-   #3 = String             #19            // abc
-// ...
-  #18 = Utf8               java/lang/String
-  #19 = Utf8               abc
-// ...
-
-  public static void main(java.lang.String[]);
-    descriptor: ([Ljava/lang/String;)V
-    flags: ACC_PUBLIC, ACC_STATIC
-    Code:
-      stack=3, locals=2, args_size=1
-         0: new           #2                  // class java/lang/String
-         3: dup
-         4: ldc           #3                  // String abc
-         6: invokespecial #4                  // Method java/lang/String."<init>":(Ljava/lang/String;)V
-         9: astore_1
-// ...
-```
-
-在 Constant Pool 中，#19 存储这字符串字面量 "abc"，#3 是 String Pool 的字符串对象，它指向 #19 这个字符串字面量。在 main 方法中，0: 行使用 new #2 在堆中创建一个字符串对象，并且使用 ldc #3 将 String Pool 中的字符串对象作为 String 构造函数的参数。
-
-以下是 String 构造函数的源码，可以看到，在将一个字符串对象作为另一个字符串对象的构造函数参数时，并不会完全复制 value 数组内容，而是都会指向同一个 value 数组。
-
-```
-public String(String original) {
-    this.value = original.value;
-    this.hash = original.hash;
-}
-```
-
 ```
 String a = "hello2"; 　  
 String b = "hello";       
@@ -261,6 +225,11 @@ String c = b + 2;
 System.out.println((a == c));
 输出结果为：true。对于被final修饰的变量，会在class文件常量池中保存一个副本，也就是说不会通过连接而进行访问
 ```
+
+- [字符串常量池String Constant Pool](https://www.cnblogs.com/LinQingYang/p/12524949.html#importantPointsToRememberLabel)
+- [StackOverflow : What is String interning?](https://stackoverflow.com/questions/10578984/what-is-string-interning)
+- [深入解析 String#intern](https://tech.meituan.com/in_depth_understanding_string_intern.html)
+
 
 ### <a name="8">StringBuilder,StringBuffer</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 

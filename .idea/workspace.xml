@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="修改StringBuilder部分">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加mysql文章">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/database/mysql/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/database/mysql/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -602,13 +602,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00037" summary="add test">
-      <created>1583740294540</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1583740294540</updated>
-    </task>
     <task id="LOCAL-00038" summary="add spring ioc">
       <created>1584410068470</created>
       <option name="number" value="00038" />
@@ -945,7 +938,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647220340092</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="增加mysql文章">
+      <created>1647306281940</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1647306281940</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1104,7 +1104,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加spring-cache文件" />
     <MESSAGE value="迁移learning项目" />
     <MESSAGE value="迁移kgnote项目" />
     <MESSAGE value="markdown强调" />
@@ -1129,7 +1128,8 @@
     <MESSAGE value="修改String相关部分" />
     <MESSAGE value="修改String相关部分02" />
     <MESSAGE value="修改StringBuilder部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改StringBuilder部分" />
+    <MESSAGE value="增加mysql文章" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加mysql文章" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
