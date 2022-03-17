@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="更新final部分">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/base/java/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/StringTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -413,11 +412,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.StringTest" />
       <item itemvalue="JUnit.JDK8InfImpl.test1" />
       <item itemvalue="JUnit.InnetAddressTest.test1" />
       <item itemvalue="JUnit.BufferTest.testBasic" />
       <item itemvalue="JUnit.MethodTest.test1" />
-      <item itemvalue="Application.StringTest" />
     </list>
     <recent_temporary>
       <list>
@@ -599,13 +598,6 @@
       <workItem from="1612336485475" duration="1122000" />
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
-    </task>
-    <task id="LOCAL-00040" summary="add spring autowired">
-      <created>1584427174126</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1584427174126</updated>
     </task>
     <task id="LOCAL-00041" summary="add spring mix config">
       <created>1584434172358</created>
@@ -943,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647309457223</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="更新final部分">
+      <created>1647479402563</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1647479402564</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TestHistory">
