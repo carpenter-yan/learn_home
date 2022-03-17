@@ -71,8 +71,11 @@ short和char: 都占用4个字节，但short是对数值编码，首位为符号
 ## <a name="2">包装类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 包装类有以下用途
+
 1. 集合不允许存放基本数据类型，故常用包装类
+   
 2. 作为基本数据类型对应的类类型，提供了一系列实用的对象操作，如类型转换，进制转换等
+   
 3. 包含了每种基本类型的相关属性，如最大值，最小值，所占位数等
 
 > 包装类都为final 不可继承 \
@@ -84,6 +87,7 @@ int y = x;         // 拆箱 调用了 X.intValue()
 ```
 
 new Integer(123) 与 Integer.valueOf(123) 的区别在于：
+
 - new Integer(123) 每次都会新建一个对象；
 - Integer.valueOf(123) 会使用缓存池中的对象，多次调用会取得同一个对象的引用。
 
@@ -211,18 +215,42 @@ public String(String original) {
 
 3. String.intern()方法
 
-当一个字符串调用intern() 方法时，如果 String Pool 中已经存在一个字符串和该字符串值相等（使用 equals() 方法进行确定），那么就会返回 String Pool 中字符串的引用；否则，就会在 String Pool 中添加一个新的字符串，并返回这个新字符串的引用。
+String.intern()是一个native的方法。通过分析OpenJDK7源码，它的大体实现结构就是:JAVA使用jni调用c++实现的StringTable的intern方法, StringTable的intern方法跟Java中的HashMap的实现是差不多的, 只是不能自动扩容。默认大小是1009。
 
-下面示例中，s1 和 s2 采用 new String() 的方式新建了两个不同字符串，而 s3 和 s4 是通过 s1.intern() 和 s2.intern() 方法取得同一个字符串引用。intern() 首先把 "aaa" 放到 String Pool 中，然后返回这个字符串引用，因此 s3 和 s4 引用的是同一个字符串。
+要注意的是，String的String Pool是一个固定大小的Hashtable，默认值大小长度是1009，如果放进String Pool的String非常多，就会造成Hash冲突严重，从而导致链表会很长，而链表长了后直接会造成的影响就是当调用String.intern时性能会大幅下降。
+
+在jdk6中StringTable是固定的，就是1009的长度，所以如果常量池中的字符串过多就会导致效率下降很快。在jdk7中，StringTable的长度可以通过一个参数指定：
+
+> -XX:StringTableSize=99991
+
+- new String都是在堆上创建字符串对象。当调用intern()方法时，编译器会将字符串添加到常量池中（stringTable维护），并返回指向该常量的引用。
+- 通过字面量赋值创建字符串（如：String str=”twm”）时，会先在常量池中查找是否存在相同的字符串，若存在，则将栈中的引用直接指向该字符串；若不存在，则在常量池中生成一个字符串，再将栈中的引用指向该字符串。
+- 常量字符串的“+”操作，编译阶段直接会合成为一个字符串。如string str=”JA”+”VA”，在编译阶段会直接合并成语句String str=”JAVA”，于是会去常量池中查找是否存在”JAVA”,从而进行创建或引用。 
+- 对于final字段，编译期直接进行了常量替换（而对于非final字段则是在运行期进行赋值处理的）。
+- 常量字符串和变量拼接时（如：String str3=baseStr + “01”;）会调用stringBuilder.append()在堆上创建新的对象。
+- JDK7后，intern方法还是会先去查询常量池中是否有已经存在，如果存在，则返回常量池中的引用，这一点与之前没有区别，区别在于，如果在常量池找不到对应的字符串，则不会再将字符串拷贝到常量池，而只是在常量池中生成一个对原字符串的引用。简单的说，就是往常量池放的东西变了：原来在常量池中找不到时，复制一个副本放到常量池，1.7后则是将在堆上的地址引用复制到常量池。
+
+举例说明：
 
 ```
-String s1 = new String("aaa");
-String s2 = new String("aaa");
-System.out.println(s1 == s2);           // false
-String s3 = s1.intern();
-String s4 = s2.intern();
-System.out.println(s3 == s4);           // true
+String str2 = new String("str") + new String("01");
+str2.intern();//常量池中保存的是"str01"的应用，即str2
+String str1 = "str01";
+System.out.println(str1 == str2);//true
 ```
+
+在JDK 1.7下，当执行str2.intern();时，因为常量池中没有“str01”这个字符串，所以会在常量池中生成一个对堆中的“str01”的引用(注意这里是引用 ，就是这个区别于JDK 1.6的地方。在JDK1.6下是生成原字符串的拷贝)，而在进行String str1 = “str01”;字面量赋值的时候，常量池中已经存在一个引用，所以直接返回了该引用，因此str1和str2都指向堆中的同一个字符串，返回true。
+
+```
+String str2 = new String("str") + new String("01");
+String str1 = "str01";
+str2.intern();//常量池中已经存在"str01"，intern方法会返回常量池"str01"的应用，但这里没有对返回值重新赋值到str2，所以str2仍然指向普通堆中的"str01"
+System.out.println(str1 == str2);//false
+str2=str2.intern();
+System.out.println(str1 == str2);//true
+```
+
+将中间两行调换位置以后，因为在进行字面量赋值（String str1 = “str01″）的时候，常量池中不存在，所以str1指向的常量池中的位置，而str2指向的是堆中的对象，再进行intern方法时，对str1和str2已经没有影响了，所以返回false。
 
 - [字符串常量池String Constant Pool](https://www.cnblogs.com/LinQingYang/p/12524949.html#importantPointsToRememberLabel)
 - [StackOverflow : What is String interning?](https://stackoverflow.com/questions/10578984/what-is-string-interning)
@@ -256,23 +284,28 @@ StringBuilder > StringBuffer > String。这个实验结果是相对而言的，�
 
 ## <a name="9">final 关键字</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-- 数据：声明数据为常量，可以是编译时常量，也可以是在运行时被初始化后不能被改变的常量。
-- 对于基本类型，final 使数值不变；
-- 对于引用类型，final 使引用不变，也就不能引用其它对象，但是被引用的对象本身是可以修改的。
+1. 数据
+
+声明数据为常量，可以是编译时常量，也可以是在运行时被初始化后不能被改变的常量。
+>对于基本类型，final使数值不变；
+>对于引用类型，final使引用不变，也就不能引用其它对象，但是被引用的对象本身是可以修改的。
 
 ```
-final StringBuilder stringBuilder = new StringBuilder("123");
-System.out.println(stringBuilder);
-stringBuilder.append(11);
-System.out.println(stringBuilder);
-// 报错
-// stringBuilder = new StringBuilder("123123");
+final int x = 1;
+// x = 2;  // cannot assign value to final variable 'x'
+final A y = new A();
+y.a = 1;
 ```
 
-修饰不同位置的作用：
-- 方法：声明方法不能被子类重写。
-- 类:声明类不允许被继承。
-- private 方法隐式地被指定为 final，如果在子类中定义的方法和基类中的一个 private 方法签名相同，此时子类的方法不是重写基类方法，而是在子类中定义了一个新的方法。
+2. 方法
+
+声明方法不能被子类重写。
+
+private方法隐式地被指定为final，如果在子类中定义的方法和基类中的一个private方法签名相同，此时子类的方法不是重写基类方法，而是在子类中定义了一个新的方法。
+
+3. 类
+
+声明类不允许被继承。
 
 ## <a name="10">static 关键字</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 

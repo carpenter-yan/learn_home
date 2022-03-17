@@ -7,7 +7,7 @@ import java.util.function.Function;
 
 public class StringTest {
     public static void main(String[] args) {
-        testStringFormat();
+        testIntern3();
     }
 
     public static void testSplit() {
@@ -35,13 +35,34 @@ public class StringTest {
         }
     }
 
-    public static void testIntern() {
+    public static void testIntern1() {
         String s1 = "abc";
         String s2 = "abc";
         System.out.println(s1 == s2);
         String s3 = s1.intern();
         String s4 = s2.intern();
         System.out.println(s3 == s4);
+    }
+
+    public static void testIntern2() {
+        String s = new String("1");
+        s.intern();
+        String s2 = "1";
+        System.out.println(s == s2);
+
+        String s3 = new String("1") + new String("1");
+        s3.intern();
+        String s4 = "11";
+        System.out.println(s3 == s4);
+    }
+
+    public static void testIntern3() {
+        String str2 = new String("str") + new String("01");
+        String str1 = "str01";
+        str2.intern();//常量池中已经存在"str01"，intern方法会返回常量池"str01"的应用，但这里没有对返回值重新赋值到str2，所以str2仍然指向普通堆中的"str01"
+        System.out.println(str1 == str2);//false
+        str2 = str2.intern();
+        System.out.println(str1 == str2);//true
     }
 
     public static void testHashCode() {
@@ -192,7 +213,7 @@ public class StringTest {
     }
 
     @Test
-    public void testChar2(){
+    public void testChar2() {
         String str = "52";
         char[] arr = str.toCharArray();
         System.out.println(Integer.parseInt(String.valueOf(arr[1])));

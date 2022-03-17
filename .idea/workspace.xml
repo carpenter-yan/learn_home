@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加mysql文章">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="更新final部分">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/base/java/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/StringTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -333,8 +334,9 @@
       <recent name="com.carpenter.yan.java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MethodTest.test1">
-    <configuration name="ArrayTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.StringTest">
+    <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="base.java.StringTest" />
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -342,10 +344,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="base.java" />
-      <option name="MAIN_CLASS_NAME" value="base.java.ArrayTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -415,19 +413,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ArrayTest.test1" />
       <item itemvalue="JUnit.JDK8InfImpl.test1" />
       <item itemvalue="JUnit.InnetAddressTest.test1" />
       <item itemvalue="JUnit.BufferTest.testBasic" />
       <item itemvalue="JUnit.MethodTest.test1" />
+      <item itemvalue="Application.StringTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringTest" />
         <item itemvalue="JUnit.MethodTest.test1" />
         <item itemvalue="JUnit.BufferTest.testBasic" />
         <item itemvalue="JUnit.InnetAddressTest.test1" />
         <item itemvalue="JUnit.JDK8InfImpl.test1" />
-        <item itemvalue="JUnit.ArrayTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -601,20 +599,6 @@
       <workItem from="1612336485475" duration="1122000" />
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
-    </task>
-    <task id="LOCAL-00038" summary="add spring ioc">
-      <created>1584410068470</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1584410068470</updated>
-    </task>
-    <task id="LOCAL-00039" summary="add spring ioc">
-      <created>1584424535207</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1584424535207</updated>
     </task>
     <task id="LOCAL-00040" summary="add spring autowired">
       <created>1584427174126</created>
@@ -945,7 +929,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647306281940</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="优化string constant pool部分">
+      <created>1647308625277</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1647308625277</updated>
+    </task>
+    <task id="LOCAL-00088" summary="优化string constant pool部分02">
+      <created>1647309457223</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1647309457223</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1104,9 +1102,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="迁移learning项目" />
-    <MESSAGE value="迁移kgnote项目" />
-    <MESSAGE value="markdown强调" />
     <MESSAGE value="增加目录列表和锚点" />
     <MESSAGE value="增加斜体和粗体" />
     <MESSAGE value="增加分级标题" />
@@ -1129,7 +1124,10 @@
     <MESSAGE value="修改String相关部分02" />
     <MESSAGE value="修改StringBuilder部分" />
     <MESSAGE value="增加mysql文章" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加mysql文章" />
+    <MESSAGE value="优化string constant pool部分" />
+    <MESSAGE value="优化string constant pool部分02" />
+    <MESSAGE value="更新final部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新final部分" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
