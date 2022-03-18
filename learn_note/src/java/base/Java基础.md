@@ -452,8 +452,10 @@ public InitialOrderTest() {
 - 子类（构造函数）
 
 ## <a name="11">Object 通用方法</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-``` 
+
+```
 public native int hashCode()
+
 public boolean equals(Object obj)
 
 protected native Object clone() throws CloneNotSupportedException
@@ -464,64 +466,124 @@ public final native Class<?> getClass()
 
 protected void finalize() throws Throwable {}
 
-// 线程间协作相关
-//Exception in thread "main" java.lang.IllegalMonitorStateException
 public final native void notify()
+
 public final native void notifyAll()
+
 public final native void wait(long timeout) throws InterruptedException
+
 public final void wait(long timeout, int nanos) throws InterruptedException
+
 public final void wait() throws InterruptedException
 ```
 
+
 ### <a name="12">equals()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-等价与相等:
+**1. 等价关系**
+
+两个对象具有等价关系，需要满足以下五个条件：
+
+Ⅰ 自反性
+
+```
+x.equals(x); // true
+```
+
+Ⅱ 对称性
+
+```
+x.equals(y) == y.equals(x); // true
+```
+
+Ⅲ 传递性
+
+```
+if (x.equals(y) && y.equals(z))
+    x.equals(z); // true;
+```
+
+Ⅳ 一致性
+
+多次调用 equals() 方法结果不变
+
+```
+x.equals(y) == x.equals(y); // true
+```
+
+Ⅴ 与 null 的比较
+
+对任何不是 null 的对象 x 调用 x.equals(null) 结果都为 false
+
+```
+x.equals(null); // false;
+```
+
+**2. 等价与相等**
+
 - 对于基本类型，== 判断两个值是否相等，基本类型没有 equals() 方法。
 - 对于引用类型，== 判断两个变量是否引用同一个对象，而 equals() 判断引用的对象是否等价。
 
-如何重写：
-1. 检查是否为同一个对象的引用，如果是直接返回 true；
-2. 检查是否是同一个类型，如果不是，直接返回 false；
-3. 将 Object 对象进行转型；
-4. 判断每个关键域是否相等。
-
 ```
-@Override
-public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
+Integer x = new Integer(1);
+Integer y = new Integer(1);
+System.out.println(x.equals(y)); // true
+System.out.println(x == y);      // false
+```
 
-    EqualExample that = (EqualExample) o;
+**3. 实现**
 
-    if (x != that.x) return false;
-    if (y != that.y) return false;
-    return z == that.z;
+- 检查是否为同一个对象的引用，如果是直接返回 true；
+- 检查是否是同一个类型，如果不是，直接返回 false；
+- 将 Object 对象进行转型；
+- 判断每个关键域是否相等。
+
+```java
+public class EqualExample {
+
+    private int x;
+    private int y;
+    private int z;
+
+    public EqualExample(int x, int y, int z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        EqualExample that = (EqualExample) o;
+
+        if (x != that.x) return false;
+        if (y != that.y) return false;
+        return z == that.z;
+    }
 }
 ```
 
 ### <a name="13">hashCode()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-hashCode()：hashCode是jdk根据对象的地址或者字符串或者数字算出来的int类型的数值.
-- 对象按照自己不同的特征尽量的有不同的哈希码，作用是用于快速查找
-- 另一个应用就是hash集合的使用
 
-重写hashcode方法:
-```
-    private String name;
-	private int age;
-	
-    @Override
-	public int hashCode() {
-		int result = 17;
-		result = result * 31 + name.hashCode();
-		result = result * 31 + age;
-		
-		return result;
-	}
-```
+hashCode() 返回哈希值，而 equals() 是用来判断两个对象是否等价。等价的两个对象散列值一定相同，但是散列值相同的两个对象不一定等价，这是因为计算哈希值具有随机性，两个值不同的对象可能计算出相同的哈希值。
 
-为什么要使用 31 ?
-1. 原因一：更少的乘积结果冲突
-2. 原因二：与 31 相乘可以转换成移位和减法：31*x == (x<<5)-x，编译器会自动进行这个优化
+在覆盖 equals() 方法时应当总是覆盖 hashCode() 方法，保证等价的两个对象哈希值也相等。
+
+HashSet  和 HashMap 等集合类使用了 hashCode()  方法来计算对象应该存储的位置，因此要将对象添加到这些集合类中，需要让对应的类实现 hashCode()  方法。
+
+下面的代码中，新建了两个等价的对象，并将它们添加到 HashSet 中。我们希望将这两个对象当成一样的，只在集合中添加一个对象。但是 EqualExample 没有实现 hashCode() 方法，因此这两个对象的哈希值是不同的，最终导致集合添加了两个等价的对象。
+
+```
+EqualExample e1 = new EqualExample(1, 1, 1);
+EqualExample e2 = new EqualExample(1, 1, 1);
+System.out.println(e1.equals(e2)); // true
+HashSet<EqualExample> set = new HashSet<>();
+set.add(e1);
+set.add(e2);
+System.out.println(set.size());   // 2
+```
 
 ### <a name="14">toString()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
