@@ -841,30 +841,148 @@ synchronized void test() throws InterruptedException {
 
 ## <a name="17">继承</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-Java 中有三个访问权限修饰符：private、protected 以及 public，
-- 如果不加访问修饰符，表示包级可见。
-- protected 用于修饰成员，表示在继承体系中成员对于子类可见，但是这个访问修饰符对于类没有意义。
-- private 仅自己可见
-- public 所有均可见
+### 访问权限
 
-private 和 protected 不能修饰类。
-1. 设计良好的模块会隐藏所有的实现细节，把它的 API 与它的实现清晰地隔离开来。模块之间只通过它们的 API 进行通信。
-2. 如果子类的方法重写了父类的方法，那么子类中该方法的访问级别不允许低于父类的访问级别。这是为了确保可以使用父类实例的地方都可以使用子类实例去代替，也就是确保满足里氏替换原则。
+Java 中有三个访问权限修饰符：private、protected 以及 public，如果不加访问修饰符，表示包级可见。
+
+可以对类或类中的成员（字段和方法）加上访问修饰符。
+
+- 类可见表示其它类可以用这个类创建实例对象。
+- 成员可见表示其它类可以用这个类的实例对象访问到该成员；
+
+protected 用于修饰成员，表示在继承体系中成员对于子类可见，但是这个访问修饰符对于类没有意义。
+
+设计良好的模块会隐藏所有的实现细节，把它的 API 与它的实现清晰地隔离开来。模块之间只通过它们的 API 进行通信，一个模块不需要知道其他模块的内部工作情况，这个概念被称为信息隐藏或封装。因此访问权限应当尽可能地使每个类或者成员不被外界访问。
+
+如果子类的方法重写了父类的方法，那么子类中该方法的访问级别不允许低于父类的访问级别。这是为了确保可以使用父类实例的地方都可以使用子类实例去代替，也就是确保满足里氏替换原则。
+
+字段决不能是公有的，因为这么做的话就失去了对这个字段修改行为的控制，客户端可以对其随意修改。例如下面的例子中，AccessExample 拥有 id 公有字段，如果在某个时刻，我们想要使用 int 存储 id 字段，那么就需要修改所有的客户端代码。
+
+```java
+public class AccessExample {
+    public String id;
+}
+```
+
+可以使用公有的 getter 和 setter 方法来替换公有字段，这样的话就可以控制对字段的修改行为。
+
+```java
+public class AccessExample {
+
+    private int id;
+
+    public String getId() {
+        return id + "";
+    }
+
+    public void setId(String id) {
+        this.id = Integer.valueOf(id);
+    }
+}
+```
+
+但是也有例外，如果是包级私有的类或者私有的嵌套类，那么直接暴露成员不会有特别大的影响。
+
+```java
+public class AccessWithInnerClassExample {
+
+    private class InnerClass {
+        int x;
+    }
+
+    private InnerClass innerClass;
+
+    public AccessWithInnerClassExample() {
+        innerClass = new InnerClass();
+    }
+
+    public int getValue() {
+        return innerClass.x;  // 直接访问
+    }
+}
+```
 
 ## <a name="18">抽象类与接口</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 ### <a name="19">抽象类</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-- 如果一个类中包含抽象方法，那么这个类必须声明为抽象类。
-- 抽象类和抽象方法都使用 abstract 关键字进行声明。
-> 抽象类和普通类最大的区别是，抽象类不能被实例化，只能被继承。
+抽象类和抽象方法都使用 abstract 关键字进行声明。如果一个类中包含抽象方法，那么这个类必须声明为抽象类。
+
+抽象类和普通类最大的区别是，抽象类不能被实例化，只能被继承。
+
+```java
+public abstract class AbstractClassExample {
+
+    protected int x;
+    private int y;
+
+    public abstract void func1();
+
+    public void func2() {
+        System.out.println("func2");
+    }
+}
+```
+
+```java
+public class AbstractExtendClassExample extends AbstractClassExample {
+    @Override
+    public void func1() {
+        System.out.println("func1");
+    }
+}
+```
+
+```
+// AbstractClassExample ac1 = new AbstractClassExample(); // 'AbstractClassExample' is abstract; cannot be instantiated
+AbstractClassExample ac2 = new AbstractExtendClassExample();
+ac2.func1();
+```
 
 ### <a name="20">接口</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 接口是抽象类的延伸，在 Java 8 之前，它可以看成是一个完全抽象的类，也就是说它不能有任何的方法实现。
-- 从 Java 8 开始，接口也可以拥有默认的方法实现
-- 接口的成员（字段 + 方法）默认都是 public 的，并且不允许定义为 private 或者 protected。
-- 接口的字段默认都是 static 和 final 的。
+
+从 Java 8 开始，接口也可以拥有默认的方法实现，这是因为不支持默认方法的接口的维护成本太高了。在 Java 8 之前，如果一个接口想要添加新的方法，那么要修改所有实现了该接口的类，让它们都实现新增的方法。
+
+接口的成员（字段 + 方法）默认都是 public 的，并且不允许定义为 private 或者 protected。从 Java 9 开始，允许将方法定义为 private，这样就能定义某些复用的代码又不会把方法暴露出去。
+
+接口的字段默认都是 static 和 final 的。
+
+```java
+public interface InterfaceExample {
+
+    void func1();
+
+    default void func2(){
+        System.out.println("func2");
+    }
+
+    int x = 123;
+    // int y;               // Variable 'y' might not have been initialized
+    public int z = 0;       // Modifier 'public' is redundant for interface fields
+    // private int k = 0;   // Modifier 'private' not allowed here
+    // protected int l = 0; // Modifier 'protected' not allowed here
+    // private void fun3(); // Modifier 'private' not allowed here
+}
+```
+
+```java
+public class InterfaceImplementExample implements InterfaceExample {
+    @Override
+    public void func1() {
+        System.out.println("func1");
+    }
+}
+```
+
+```
+// InterfaceExample ie1 = new InterfaceExample(); // 'InterfaceExample' is abstract; cannot be instantiated
+InterfaceExample ie2 = new InterfaceImplementExample();
+ie2.func1();
+System.out.println(InterfaceExample.x);
+```
+
 
 ### <a name="21">比较</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
@@ -880,46 +998,208 @@ private 和 protected 不能修饰类。
 - 抽象类： 拓展继承该抽象类的模块的类的行为功能（开放闭合原则）
 - 接口：约束继承该接口的类行为（依赖倒置原则）
 
+### **4. 使用选择**
+
+使用接口：
+
+- 需要让不相关的类都实现一个方法，例如不相关的类都可以实现 Comparable 接口中的 compareTo() 方法；
+- 需要使用多重继承。
+
+使用抽象类：
+
+- 需要在几个相关的类中共享代码。
+- 需要能控制继承来的成员的访问权限，而不是都为 public。
+- 需要继承非静态和非常量字段。
+
+在很多情况下，接口优先于抽象类。因为接口没有抽象类严格的类层次结构要求，可以灵活地为一个类添加行为。并且从 Java 8 开始，接口也可以有默认的方法实现，使得修改接口的成本也变的很低。
+
+- [Abstract Methods and Classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+- [深入理解 abstract class 和 interface](https://www.ibm.com/developerworks/cn/java/l-javainterface-abstract/)
+- [When to Use Abstract Class and Interface](https://dzone.com/articles/when-to-use-abstract-class-and-intreface)
+- [Java 9 Private Methods in Interfaces](https://www.journaldev.com/12850/java-9-private-methods-interfaces)
+
+
 ## <a name="22">super关键字</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-1. 访问父类的构造函数：可以使用 super() 函数访问父类的构造函数，从而委托父类完成一些初始化的工作。
-2. 访问父类的成员：如果子类重写了父类的某个方法，可以通过使用 super 关键字来引用父类的方法实现。
-3. 泛型中用于约束泛型的下界。如`< ? super Apple>`
+- 访问父类的构造函数：可以使用 super() 函数访问父类的构造函数，从而委托父类完成一些初始化的工作。应该注意到，子类一定会调用父类的构造函数来完成初始化工作，一般是调用父类的默认构造函数，如果子类需要调用父类其它构造函数，那么就可以使用 super() 函数。
+- 访问父类的成员：如果子类重写了父类的某个方法，可以通过使用 super 关键字来引用父类的方法实现。
+- 泛型中用于约束泛型的下界。如`< ? super Apple>`
+
+```java
+public class SuperExample {
+
+    protected int x;
+    protected int y;
+
+    public SuperExample(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public void func() {
+        System.out.println("SuperExample.func()");
+    }
+}
+```
+
+```java
+public class SuperExtendExample extends SuperExample {
+
+    private int z;
+
+    public SuperExtendExample(int x, int y, int z) {
+        super(x, y);
+        this.z = z;
+    }
+
+    @Override
+    public void func() {
+        super.func();
+        System.out.println("SuperExtendExample.func()");
+    }
+}
+```
+
+```
+SuperExample e = new SuperExtendExample(1, 2, 3);
+e.func();
+```
+
+```html
+SuperExample.func()
+SuperExtendExample.func()
+```
+
+[Using the Keyword super](https://docs.oracle.com/javase/tutorial/java/IandI/super.html)
 
 ## <a name="23">重写与重载</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 ### <a name="24">重写（Override）：</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-重写：存在于继承体系中，指子类实现了一个与父类在方法声明上完全相同的一个方法。
+存在于继承体系中，指子类实现了一个与父类在方法声明上完全相同的一个方法。
 
-重写有以下三个限制：
-1. 子类方法的访问权限必须大于等于父类方法；
-2. 子类方法的返回类型必须是父类方法返回类型或为其子类型。
-3. 子类方法抛出的异常类型必须是父类抛出异常类型或为其子类型。
+为了满足里式替换原则，重写有以下三个限制：
+
+- 子类方法的访问权限必须大于等于父类方法；
+- 子类方法的返回类型必须是父类方法返回类型或为其子类型。
+- 子类方法抛出的异常类型必须是父类抛出异常类型或为其子类型。
 
 使用 @Override 注解，可以让编译器帮忙检查是否满足上面的三个限制条件。
+
+下面的示例中，SubClass 为 SuperClass 的子类，SubClass 重写了 SuperClass 的 func() 方法。其中：
+
+- 子类方法访问权限为 public，大于父类的 protected。
+- 子类的返回类型为 ArrayList\<Integer\>，是父类返回类型 List\<Integer\> 的子类。
+- 子类抛出的异常类型为 Exception，是父类抛出异常 Throwable 的子类。
+- 子类重写方法使用 @Override 注解，从而让编译器自动检查是否满足限制条件。
+
+```java
+class SuperClass {
+    protected List<Integer> func() throws Throwable {
+        return new ArrayList<>();
+    }
+}
+
+class SubClass extends SuperClass {
+    @Override
+    public ArrayList<Integer> func() throws Exception {
+        return new ArrayList<>();
+    }
+}
+```
+
+在调用一个方法时，先从本类中查找看是否有对应的方法，如果没有再到父类中查看，看是否从父类继承来。否则就要对参数进行转型，转成父类之后看是否有对应的方法。总的来说，方法调用的优先级为：
+
+- this.func(this)
+- super.func(this)
+- this.func(super)
+- super.func(super)
+
+
+```java
+/*
+    A
+    |
+    B
+    |
+    C
+    |
+    D
+ */
+
+
+class A {
+
+    public void show(A obj) {
+        System.out.println("A.show(A)");
+    }
+
+    public void show(C obj) {
+        System.out.println("A.show(C)");
+    }
+}
+
+class B extends A {
+
+    @Override
+    public void show(A obj) {
+        System.out.println("B.show(A)");
+    }
+}
+
+class C extends B {
+}
+
+class D extends C {
+}
+```
+
+```
+public static void main(String[] args) {
+
+    A a = new A();
+    B b = new B();
+    C c = new C();
+    D d = new D();
+
+    // 在 A 中存在 show(A obj)，直接调用
+    a.show(a); // A.show(A)
+    // 在 A 中不存在 show(B obj)，将 B 转型成其父类 A
+    a.show(b); // A.show(A)
+    // 在 B 中存在从 A 继承来的 show(C obj)，直接调用
+    b.show(c); // A.show(C)
+    // 在 B 中不存在 show(D obj)，但是存在从 A 继承来的 show(C obj)，将 D 转型成其父类 C
+    b.show(d); // A.show(C)
+
+    // 引用的还是 B 对象，所以 ba 和 b 的调用结果一样
+    A ba = new B();
+    ba.show(c); // A.show(C)
+    ba.show(d); // A.show(C)
+}
+```
+
 
 ### <a name="25">重载（Overload）</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 存在于同一个类中，指一个方法与已经存在的方法名称上相同，但是参数类型、个数、顺序至少有一个不同。
 
-- 应该注意的是，返回值不同，其它都相同不算是重载。
-- 重载方法的优先级，`char->int->long->float->double ->Character -> Serializable -> Object`,基本类型的重载方法会按此优先级寻找对应的方法，若重载的方法参数与调用的方法不一致，则会向父类查找匹配上相同类型的方法。
+应该注意的是，返回值不同，其它都相同不算是重载。
 
-```
-    public static void sayHello(int arg) {
-        System.out.println("this is int " +arg);
+```java
+class OverloadingExample {
+    public void show(int x) {
+        System.out.println(x);
     }
 
-    public static void sayHello(long arg) {
-        System.out.println("this is long " +arg);
+    public void show(int x, String y) {
+        System.out.println(x + " " + y);
     }
-
-    public static void main(String[]args) {
-        sayHello('a');
+    public static void main(String[] args) {
+        OverloadingExample example = new OverloadingExample();
+        example.show(1);
+        example.show(1, "2");
     }
-//output 
-this is int 97
+}
 ```
 
 ## <a name="26">反射</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>

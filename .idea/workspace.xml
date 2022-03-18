@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="更新clone部分">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加Java关键字native">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
@@ -599,13 +599,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00045" summary="add spring properties">
-      <created>1585183749599</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1585183749599</updated>
-    </task>
     <task id="LOCAL-00046" summary="add spring properties">
       <created>1591837198488</created>
       <option name="number" value="00046" />
@@ -942,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647604937476</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="增加Java关键字native">
+      <created>1647606584035</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1647606584035</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1101,7 +1101,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加参考链接" />
     <MESSAGE value="增加自动链接" />
     <MESSAGE value="增加本地文件链接" />
     <MESSAGE value="试验锚点" />
@@ -1126,7 +1125,8 @@
     <MESSAGE value="更新equals和hashcode部分" />
     <MESSAGE value="更新toString部分" />
     <MESSAGE value="更新clone部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新clone部分" />
+    <MESSAGE value="增加Java关键字native" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加Java关键字native" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
