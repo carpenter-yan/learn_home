@@ -465,6 +465,12 @@ public InitialOrderTest() {
 - 子类（实例变量、普通语句块）
 - 子类（构造函数）
 
+## <a name="101">native 关键字</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+
+- [Java关键字(一)——instanceof](https://www.cnblogs.com/ysocean/p/8486500.html)
+
+- [Java关键字(二)——native](https://www.cnblogs.com/ysocean/p/8476933.html)
+
 ## <a name="11">Object 通用方法</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 ```
@@ -749,7 +755,8 @@ System.out.println(e2.get(2)); // 222
 
 **3. 深拷贝**
 
-拷贝对象和原始对象的引用类型引用不同对象。
+创建一个新对象，然后将当前对象的非静态字段复制到该新对象，无论该字段是值类型的还是引用类型，都复制独立的一份。
+当你修改其中一个对象的任何内容时，都不会影响另一个对象的内容。
 
 ```java
 public class DeepCloneExample implements Cloneable {
@@ -795,38 +802,15 @@ e1.set(2, 222);
 System.out.println(e2.get(2)); // 2
 ```
 
-**4. clone() 的替代方案**
+**4. 如何实现深拷贝**
 
-使用 clone() 方法来拷贝一个对象即复杂又有风险，它会抛出异常，并且还需要类型转换。Effective Java 书上讲到，最好不要去使用 clone()，可以使用拷贝构造函数或者拷贝工厂来拷贝一个对象。
+1. 让每个引用类型属性内部都重写clone()方法。但是这种做法有个弊端，如果引用类型嵌套太深，那么代码量显然会很大，所以这种方法不太合适。
 
-```java
-public class CloneConstructorExample {
+2. 利用序列化。序列化是将对象写到流中便于传输，而反序列化则是把对象从流中读取出来。这里写到流中的对象则是原始对象的一个拷贝，
+   因为原始对象还存在JVM中， 所以我们可以利用对象的序列化产生克隆对象，然后通过反序列化获取这个对象。
 
-    private int[] arr;
-
-    public CloneConstructorExample() {
-        arr = new int[10];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = i;
-        }
-    }
-
-    public CloneConstructorExample(CloneConstructorExample original) {
-        arr = new int[original.arr.length];
-        for (int i = 0; i < original.arr.length; i++) {
-            arr[i] = original.arr[i];
-        }
-    }
-
-    public void set(int index, int value) {
-        arr[index] = value;
-    }
-
-    public int get(int index) {
-        return arr[index];
-    }
-}
-```
+> 注意每个需要序列化的类都要实现 Serializable接口，如果有某个属性不需要序列化，可以将其声明为transient，即将其排除在克隆属性之外。
+> String类型属于深拷贝。
 
 - [谈谈java里的深拷贝和浅拷贝](https://blog.csdn.net/ailiwanzi/article/details/88751250)
 
