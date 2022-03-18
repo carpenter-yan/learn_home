@@ -58,7 +58,8 @@
 - char/16
 - boolean/~
   
-boolean只有true或false，可以使用1bit来存储，但具体大小没有明确规定。JVM在编译时期将boolean类型数据转换为int，但boolean数组却是通过byte数组来实现
+boolean只有true或false，可以使用1bit来存储，但具体大小没有明确规定。
+JVM在编译时期将boolean类型数据转换为int，但boolean数组却是通过byte数组来实现
 
 short和char: 都占用4个字节，但short是对数值编码，首位为符号位。char是对字符编码，无符号位(0~65535)
 
@@ -93,7 +94,8 @@ new Integer(123) 与 Integer.valueOf(123) 的区别在于：
 
 > valueOf() 方法的实现比较简单，先判断值是否在缓存池中，如果在则返回缓存池中的实例。
 
-- [Autoboxing and Unboxing](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html)  
+- [Autoboxing and Unboxing](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html)
+  
 - [StackOverflow : Differences between new Integer(123), Integer.valueOf(123) and just 123
 ](https://stackoverflow.com/questions/9030817/differences-between-new-integer123-integer-valueof123-and-just-123)
 
@@ -173,11 +175,12 @@ value数组被声明为final，初始化之后就不能再引用其它数组。�
 1. 字符串常量池的定义和使用
 字符串常量池（String Pool）是JVM为了最小化在堆上存储具有重复字符串对象所造成的冗余和内存浪费而在留出一个特殊区域。
 
-- 不使用new关键字创建的字符串对象存储在堆的**字符串常量池**部分  
-- 还可以使用String的intern()方法在运行过程将字符串添加到**字符串常量池**中  
+- 不使用new关键字创建的字符串对象存储在堆的**字符串常量池**部分
+- 还可以使用String的intern()方法在运行过程将字符串添加到**字符串常量池**中
 - 使用new关键字创建的字符串对象存储在堆的**普通内存**部分
 
-在Java7之前，String Pool被放在运行时常量池中，它属于永久代。而在Java7，String Pool被移到堆中。这是因为永久代的空间有限，在大量使用字符串的场景下会导致OutOfMemoryError错误。
+在Java7之前，String Pool被放在运行时常量池中，它属于永久代。而在Java7，String Pool被移到堆中。
+这是因为永久代的空间有限，在大量使用字符串的场景下会导致OutOfMemoryError错误。
 
 2. String对象创建问题
 > new String("abc")创建两String对象。(前提是String Pool 中还没有 "abc" 字符串对象)\
@@ -215,20 +218,27 @@ public String(String original) {
 
 3. String.intern()方法
 
-String.intern()是一个native的方法。通过分析OpenJDK7源码，它的大体实现结构就是:JAVA使用jni调用c++实现的StringTable的intern方法, StringTable的intern方法跟Java中的HashMap的实现是差不多的, 只是不能自动扩容。默认大小是1009。
+String.intern()是一个native的方法。通过分析OpenJDK7源码，它的大体实现结构就是:JAVA使用jni调用c++实现的StringTable的intern方法, 
+StringTable的intern方法跟Java中的HashMap的实现是差不多的, 只是不能自动扩容。默认大小是1009。
 
-要注意的是，String的String Pool是一个固定大小的Hashtable，默认值大小长度是1009，如果放进String Pool的String非常多，就会造成Hash冲突严重，从而导致链表会很长，而链表长了后直接会造成的影响就是当调用String.intern时性能会大幅下降。
+要注意的是，String的String Pool是一个固定大小的Hashtable，默认值大小长度是1009，如果放进String Pool的String非常多，
+就会造成Hash冲突严重，从而导致链表会很长，而链表长了后直接会造成的影响就是当调用String.intern时性能会大幅下降。
 
-在jdk6中StringTable是固定的，就是1009的长度，所以如果常量池中的字符串过多就会导致效率下降很快。在jdk7中，StringTable的长度可以通过一个参数指定：
+在jdk6中StringTable是固定的，就是1009的长度，所以如果常量池中的字符串过多就会导致效率下降很快。
+在jdk7中，StringTable的长度可以通过一个参数指定：
 
 > -XX:StringTableSize=99991
 
 - new String都是在堆上创建字符串对象。当调用intern()方法时，编译器会将字符串添加到常量池中（stringTable维护），并返回指向该常量的引用。
-- 通过字面量赋值创建字符串（如：String str=”twm”）时，会先在常量池中查找是否存在相同的字符串，若存在，则将栈中的引用直接指向该字符串；若不存在，则在常量池中生成一个字符串，再将栈中的引用指向该字符串。
-- 常量字符串的“+”操作，编译阶段直接会合成为一个字符串。如string str=”JA”+”VA”，在编译阶段会直接合并成语句String str=”JAVA”，于是会去常量池中查找是否存在”JAVA”,从而进行创建或引用。 
+- 通过字面量赋值创建字符串（如：String str=”twm”）时，会先在常量池中查找是否存在相同的字符串，
+  若存在，则将栈中的引用直接指向该字符串；若不存在，则在常量池中生成一个字符串，再将栈中的引用指向该字符串。
+- 常量字符串的“+”操作，编译阶段直接会合成为一个字符串。如string str=”JA”+”VA”，在编译阶段会直接合并成语句String str=”JAVA”，
+  于是会去常量池中查找是否存在”JAVA”,从而进行创建或引用。 
 - 对于final字段，编译期直接进行了常量替换（而对于非final字段则是在运行期进行赋值处理的）。
 - 常量字符串和变量拼接时（如：String str3=baseStr + “01”;）会调用stringBuilder.append()在堆上创建新的对象。
-- JDK7后，intern方法还是会先去查询常量池中是否有已经存在，如果存在，则返回常量池中的引用，这一点与之前没有区别，区别在于，如果在常量池找不到对应的字符串，则不会再将字符串拷贝到常量池，而只是在常量池中生成一个对原字符串的引用。简单的说，就是往常量池放的东西变了：原来在常量池中找不到时，复制一个副本放到常量池，1.7后则是将在堆上的地址引用复制到常量池。
+- JDK7后，intern方法还是会先去查询常量池中是否有已经存在，如果存在，则返回常量池中的引用，这一点与之前没有区别，
+  区别在于，如果在常量池找不到对应的字符串，则不会再将字符串拷贝到常量池，而只是在常量池中生成一个对原字符串的引用。
+  简单的说，就是往常量池放的东西变了：原来在常量池中找不到时，复制一个副本放到常量池，1.7后则是将在堆上的地址引用复制到常量池。
 
 举例说明：
 
@@ -239,7 +249,9 @@ String str1 = "str01";
 System.out.println(str1 == str2);//true
 ```
 
-在JDK 1.7下，当执行str2.intern();时，因为常量池中没有“str01”这个字符串，所以会在常量池中生成一个对堆中的“str01”的引用(注意这里是引用 ，就是这个区别于JDK 1.6的地方。在JDK1.6下是生成原字符串的拷贝)，而在进行String str1 = “str01”;字面量赋值的时候，常量池中已经存在一个引用，所以直接返回了该引用，因此str1和str2都指向堆中的同一个字符串，返回true。
+在JDK 1.7下，当执行str2.intern();时，因为常量池中没有“str01”这个字符串，所以会在常量池中生成一个对堆中的“str01”的引用
+(注意这里是引用 ，就是这个区别于JDK 1.6的地方。在JDK1.6下是生成原字符串的拷贝)，而在进行String str1 = “str01”;
+字面量赋值的时候，常量池中已经存在一个引用，所以直接返回了该引用，因此str1和str2都指向堆中的同一个字符串，返回true。
 
 ```
 String str2 = new String("str") + new String("01");
@@ -250,7 +262,8 @@ str2=str2.intern();
 System.out.println(str1 == str2);//true
 ```
 
-将中间两行调换位置以后，因为在进行字面量赋值（String str1 = “str01″）的时候，常量池中不存在，所以str1指向的常量池中的位置，而str2指向的是堆中的对象，再进行intern方法时，对str1和str2已经没有影响了，所以返回false。
+将中间两行调换位置以后，因为在进行字面量赋值（String str1 = “str01″）的时候，常量池中不存在，所以str1指向的常量池中的位置，
+而str2指向的是堆中的对象，再进行intern方法时，对str1和str2已经没有影响了，所以返回false。
 
 - [字符串常量池String Constant Pool](https://www.cnblogs.com/LinQingYang/p/12524949.html#importantPointsToRememberLabel)
 - [StackOverflow : What is String interning?](https://stackoverflow.com/questions/10578984/what-is-string-interning)
@@ -301,7 +314,8 @@ y.a = 1;
 
 声明方法不能被子类重写。
 
-private方法隐式地被指定为final，如果在子类中定义的方法和基类中的一个private方法签名相同，此时子类的方法不是重写基类方法，而是在子类中定义了一个新的方法。
+private方法隐式地被指定为final，如果在子类中定义的方法和基类中的一个private方法签名相同，
+此时子类的方法不是重写基类方法，而是在子类中定义了一个新的方法。
 
 **3. 类**
 
@@ -566,13 +580,15 @@ public class EqualExample {
 
 ### <a name="13">hashCode()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-hashCode() 返回哈希值，而 equals() 是用来判断两个对象是否等价。等价的两个对象散列值一定相同，但是散列值相同的两个对象不一定等价，这是因为计算哈希值具有随机性，两个值不同的对象可能计算出相同的哈希值。
+hashCode() 返回哈希值，而 equals() 是用来判断两个对象是否等价。等价的两个对象散列值一定相同，
+但是散列值相同的两个对象不一定等价，这是因为计算哈希值具有随机性，两个值不同的对象可能计算出相同的哈希值。
 
 在覆盖 equals() 方法时应当总是覆盖 hashCode() 方法，保证等价的两个对象哈希值也相等。
 
-HashSet  和 HashMap 等集合类使用了 hashCode()  方法来计算对象应该存储的位置，因此要将对象添加到这些集合类中，需要让对应的类实现 hashCode()  方法。
+HashSet和HashMap等集合类使用了hashCode()方法来计算对象应该存储的位置，因此要将对象添加到这些集合类中，需要让对应的类实现 hashCode()方法。
 
-下面的代码中，新建了两个等价的对象，并将它们添加到 HashSet 中。我们希望将这两个对象当成一样的，只在集合中添加一个对象。但是 EqualExample 没有实现 hashCode() 方法，因此这两个对象的哈希值是不同的，最终导致集合添加了两个等价的对象。
+下面的代码中，新建了两个等价的对象，并将它们添加到 HashSet 中。我们希望将这两个对象当成一样的，只在集合中添加一个对象。
+但是 EqualExample 没有实现 hashCode() 方法，因此这两个对象的哈希值是不同的，最终导致集合添加了两个等价的对象。
 
 ```
 EqualExample e1 = new EqualExample(1, 1, 1);
@@ -584,9 +600,11 @@ set.add(e2);
 System.out.println(set.size());   // 2
 ```
 
-理想的哈希函数应当具有均匀性，即不相等的对象应当均匀分布到所有可能的哈希值上。这就要求了哈希函数要把所有域的值都考虑进来。可以将每个域都当成 R 进制的某一位，然后组成一个 R 进制的整数。
+理想的哈希函数应当具有均匀性，即不相等的对象应当均匀分布到所有可能的哈希值上。这就要求了哈希函数要把所有域的值都考虑进来。
+可以将每个域都当成 R 进制的某一位，然后组成一个 R 进制的整数。
 
-R 一般取 31，因为它是一个奇素数，如果是偶数的话，当出现乘法溢出，信息就会丢失，因为与 2 相乘相当于向左移一位，最左边的位丢失。并且一个数与 31 相乘可以转换成移位和减法：`31*x == (x<<5)-x`，编译器会自动进行这个优化。
+R 一般取 31，因为它是一个奇素数，如果是偶数的话，当出现乘法溢出，信息就会丢失，因为与 2 相乘相当于向左移一位，最左边的位丢失。
+并且一个数与 31 相乘可以转换成移位和减法：`31*x == (x<<5)-x`，编译器会自动进行这个优化。
 
 ```
 @Override
@@ -625,11 +643,194 @@ ToStringExample@4554617c
 
 ### <a name="15">clone()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-主要用于对象的拷贝克隆，如果一个对象不实现clone接口方法，默认抛出CloneNotSupportedException
+**1. cloneable**
 
-对象的拷贝分为浅拷贝与深拷贝
-- 浅拷贝就是返回同一个引用的对象。
-- 深拷贝就是返回和原始对象的引用类型引用不同对象。
+clone() 是Object的protected方法，它不是public，一个类不显式去重写clone()，其它类就不能直接去调用该类实例的clone()方法。
+
+```java
+public class CloneExample {
+    private int a;
+    private int b;
+}
+```
+
+```
+CloneExample e1 = new CloneExample();
+// CloneExample e2 = e1.clone(); // 'clone()' has protected access in 'java.lang.Object'
+```
+
+重写 clone() 得到以下实现：
+
+```java
+public class CloneExample {
+    private int a;
+    private int b;
+
+    @Override
+    public CloneExample clone() throws CloneNotSupportedException {
+        return (CloneExample)super.clone();
+    }
+}
+```
+
+```
+CloneExample e1 = new CloneExample();
+try {
+    CloneExample e2 = e1.clone();
+} catch (CloneNotSupportedException e) {
+    e.printStackTrace();
+}
+```
+
+```html
+java.lang.CloneNotSupportedException: CloneExample
+```
+
+以上抛出了 CloneNotSupportedException，这是因为CloneExample没有实现Cloneable接口。
+
+应该注意的是，clone()方法并不是Cloneable接口的方法，而是Object的一个 protected方法。
+Cloneable 接口只是规定，如果一个类没有实现Cloneable 接口又调用了 clone()方法，就会抛出 CloneNotSupportedException。
+
+```java
+public class CloneExample implements Cloneable {
+    private int a;
+    private int b;
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}
+```
+
+**2. 浅拷贝**
+
+创建一个新对象，然后将当前对象的非静态字段复制到该新对象，如果字段是值类型的，那么对该字段执行复制；
+如果该字段是引用类型的话，则复制引用但不复制引用的对象。因此，原始对象及其副本引用同一个对象。
+
+```java
+public class ShallowCloneExample implements Cloneable {
+
+    private int[] arr;
+
+    public ShallowCloneExample() {
+        arr = new int[10];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i;
+        }
+    }
+
+    public void set(int index, int value) {
+        arr[index] = value;
+    }
+
+    public int get(int index) {
+        return arr[index];
+    }
+
+    @Override
+    protected ShallowCloneExample clone() throws CloneNotSupportedException {
+        return (ShallowCloneExample) super.clone();
+    }
+}
+```
+
+```
+ShallowCloneExample e1 = new ShallowCloneExample();
+ShallowCloneExample e2 = null;
+try {
+    e2 = e1.clone();
+} catch (CloneNotSupportedException e) {
+    e.printStackTrace();
+}
+e1.set(2, 222);
+System.out.println(e2.get(2)); // 222
+```
+
+**3. 深拷贝**
+
+拷贝对象和原始对象的引用类型引用不同对象。
+
+```java
+public class DeepCloneExample implements Cloneable {
+
+    private int[] arr;
+
+    public DeepCloneExample() {
+        arr = new int[10];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i;
+        }
+    }
+
+    public void set(int index, int value) {
+        arr[index] = value;
+    }
+
+    public int get(int index) {
+        return arr[index];
+    }
+
+    @Override
+    protected DeepCloneExample clone() throws CloneNotSupportedException {
+        DeepCloneExample result = (DeepCloneExample) super.clone();
+        result.arr = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            result.arr[i] = arr[i];
+        }
+        return result;
+    }
+}
+```
+
+```
+DeepCloneExample e1 = new DeepCloneExample();
+DeepCloneExample e2 = null;
+try {
+    e2 = e1.clone();
+} catch (CloneNotSupportedException e) {
+    e.printStackTrace();
+}
+e1.set(2, 222);
+System.out.println(e2.get(2)); // 2
+```
+
+**4. clone() 的替代方案**
+
+使用 clone() 方法来拷贝一个对象即复杂又有风险，它会抛出异常，并且还需要类型转换。Effective Java 书上讲到，最好不要去使用 clone()，可以使用拷贝构造函数或者拷贝工厂来拷贝一个对象。
+
+```java
+public class CloneConstructorExample {
+
+    private int[] arr;
+
+    public CloneConstructorExample() {
+        arr = new int[10];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i;
+        }
+    }
+
+    public CloneConstructorExample(CloneConstructorExample original) {
+        arr = new int[original.arr.length];
+        for (int i = 0; i < original.arr.length; i++) {
+            arr[i] = original.arr[i];
+        }
+    }
+
+    public void set(int index, int value) {
+        arr[index] = value;
+    }
+
+    public int get(int index) {
+        return arr[index];
+    }
+}
+```
+
+- [谈谈java里的深拷贝和浅拷贝](https://blog.csdn.net/ailiwanzi/article/details/88751250)
+
+- [Java的深拷贝和浅拷贝](https://www.cnblogs.com/ysocean/p/8482979.html)
 
 ### <a name="16">wait、notify、notifyAll 相关</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 

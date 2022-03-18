@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="更新equals和hashcode部分">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="更新toString部分">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
@@ -599,13 +599,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00043" summary="add spring properties">
-      <created>1584586614753</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1584586614753</updated>
-    </task>
     <task id="LOCAL-00044" summary="add spring aop">
       <created>1584954973846</created>
       <option name="number" value="00044" />
@@ -942,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647567265819</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="更新toString部分">
+      <created>1647595677681</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1647595677681</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1101,7 +1101,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加分级标题" />
     <MESSAGE value="增加分级标题返回目标锚点" />
     <MESSAGE value="增加参考链接" />
     <MESSAGE value="增加自动链接" />
@@ -1126,7 +1125,8 @@
     <MESSAGE value="更新final部分" />
     <MESSAGE value="更新static部分" />
     <MESSAGE value="更新equals和hashcode部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新equals和hashcode部分" />
+    <MESSAGE value="更新toString部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新toString部分" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
