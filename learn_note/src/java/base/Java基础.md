@@ -566,7 +566,6 @@ public class EqualExample {
 
 ### <a name="13">hashCode()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-
 hashCode() 返回哈希值，而 equals() 是用来判断两个对象是否等价。等价的两个对象散列值一定相同，但是散列值相同的两个对象不一定等价，这是因为计算哈希值具有随机性，两个值不同的对象可能计算出相同的哈希值。
 
 在覆盖 equals() 方法时应当总是覆盖 hashCode() 方法，保证等价的两个对象哈希值也相等。
@@ -585,9 +584,44 @@ set.add(e2);
 System.out.println(set.size());   // 2
 ```
 
+理想的哈希函数应当具有均匀性，即不相等的对象应当均匀分布到所有可能的哈希值上。这就要求了哈希函数要把所有域的值都考虑进来。可以将每个域都当成 R 进制的某一位，然后组成一个 R 进制的整数。
+
+R 一般取 31，因为它是一个奇素数，如果是偶数的话，当出现乘法溢出，信息就会丢失，因为与 2 相乘相当于向左移一位，最左边的位丢失。并且一个数与 31 相乘可以转换成移位和减法：`31*x == (x<<5)-x`，编译器会自动进行这个优化。
+
+```
+@Override
+public int hashCode() {
+    int result = 17;
+    result = 31 * result + x;
+    result = 31 * result + y;
+    result = 31 * result + z;
+    return result;
+}
+```
+
 ### <a name="14">toString()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-默认返回 对象名@4554617c 这种形式，其中 @ 后面的数值为散列码的无符号十六进制表示。
+默认返回 ToStringExample@4554617c 这种形式，其中 @ 后面的数值为散列码的无符号十六进制表示。
+
+```java
+public class ToStringExample {
+
+    private int number;
+
+    public ToStringExample(int number) {
+        this.number = number;
+    }
+}
+```
+
+```
+ToStringExample example = new ToStringExample(123);
+System.out.println(example.toString());
+```
+
+```html
+ToStringExample@4554617c
+```
 
 ### <a name="15">clone()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
