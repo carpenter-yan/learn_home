@@ -1,5 +1,5 @@
-#<a name="index">Java基础</a>
-
+#Java基础
+<a name="index">**Index**</a>
 <a href="#0">Java 基础</a>  
 [一、数据类型](#一数据类型)  
 &emsp;<a href="#1">1. 基本数据类型</a>  
@@ -72,6 +72,7 @@ short和char: 都占用4个字节，但short是对数值编码，首位为符号
 - [Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 - [The Java® Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf)
 
+## ABC <a style="float:right;text-decoration:none;" href="#Java基础">[Top]</a>
 
 ## <a name="2">包装类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
