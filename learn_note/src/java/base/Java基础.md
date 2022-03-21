@@ -1,4 +1,4 @@
-<a href="#0"><h1>Java基础</h1></a>  
+#Java基础
 <!-- GFM-TOC -->
 * [Java 基础](#java-基础)
     * [一、数据类型](#一数据类型)
@@ -132,7 +132,9 @@ BigDecimal保持精度的原理是内部记录有效位数和小数点后位数�
 
 BigInteger的原理是将大数转换为int数组再按位运算  
 
-## <a name="5">String</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+[BACK TO TOP](#Java基础)
+
+## 二、String
 
 String被声明为final，因此它不可被继承。 在Java8中，String内部使用char数组存储数据。
 
