@@ -70,11 +70,9 @@ short和char: 都占用4个字节，但short是对数值编码，首位为符号
 
 包装类有以下用途
 
-1. 集合不允许存放基本数据类型，故常用包装类
-   
-2. 作为基本数据类型对应的类类型，提供了一系列实用的对象操作，如类型转换，进制转换等
-   
-3. 包含了每种基本类型的相关属性，如最大值，最小值，所占位数等
+- 集合不允许存放基本数据类型，故常用包装类
+- 作为基本数据类型对应的类类型，提供了一系列实用的对象操作，如类型转换，进制转换等
+- 包含了每种基本类型的相关属性，如最大值，最小值，所占位数等
 
 > 包装类都为final 不可继承 \
 > 包装类型都继承了Number抽象类
@@ -95,8 +93,7 @@ new Integer(123) 与 Integer.valueOf(123) 的区别在于：
   
 - [StackOverflow : Differences between new Integer(123), Integer.valueOf(123) and just 123
 ](https://stackoverflow.com/questions/9030817/differences-between-new-integer123-integer-valueof123-and-just-123)
-
-
+  
 ### 缓冲池
 
 包装类型内存使用 private static class IntegerCache，声明一个内部使用的缓存池
@@ -321,6 +318,152 @@ private方法隐式地被指定为final，如果在子类中定义的方法和�
 **3. 类**
 
 声明类不允许被继承。
+
+[BACK TO TOP](#Java基础)
+
+## 三、运算
+
+### 参数传递
+
+Java 的参数是以值传递的形式传入方法中，而不是引用传递。
+
+以下代码中 Dog dog 的 dog 是一个指针，存储的是对象的地址。在将一个参数传入一个方法时，本质上是将对象的地址以值的方式传递到形参中。
+
+```java
+public class Dog {
+
+    String name;
+
+    Dog(String name) {
+        this.name = name;
+    }
+
+    String getName() {
+        return this.name;
+    }
+
+    void setName(String name) {
+        this.name = name;
+    }
+
+    String getObjectAddress() {
+        return super.toString();
+    }
+}
+```
+
+在方法中改变对象的字段值会改变原对象该字段值，因为引用的是同一个对象。
+
+```java
+class PassByValueExample {
+    public static void main(String[] args) {
+        Dog dog = new Dog("A");
+        func(dog);
+        System.out.println(dog.getName());          // B
+    }
+
+    private static void func(Dog dog) {
+        dog.setName("B");
+    }
+}
+```
+
+但是在方法中将指针引用了其它对象，那么此时方法里和方法外的两个指针指向了不同的对象，在一个指针改变其所指向对象的内容对另一个指针所指向的对象没有影响。
+
+```java
+public class PassByValueExample {
+    public static void main(String[] args) {
+        Dog dog = new Dog("A");
+        System.out.println(dog.getObjectAddress()); // Dog@4554617c
+        func(dog);
+        System.out.println(dog.getObjectAddress()); // Dog@4554617c
+        System.out.println(dog.getName());          // A
+    }
+
+    private static void func(Dog dog) {
+        System.out.println(dog.getObjectAddress()); // Dog@4554617c
+        dog = new Dog("B");
+        System.out.println(dog.getObjectAddress()); // Dog@74a14482
+        System.out.println(dog.getName());          // B
+    }
+}
+```
+
+[StackOverflow: Is Java “pass-by-reference” or “pass-by-value”?](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
+
+### float 与 double
+
+Java 不能隐式执行向下转型，因为这会使得精度降低。
+
+1.1 字面量属于 double 类型，不能直接将 1.1 直接赋值给 float 变量，因为这是向下转型。
+
+```java
+// float f = 1.1;
+```
+
+1.1f 字面量才是 float 类型。
+
+```
+float f = 1.1f;
+```
+
+### 隐式类型转换
+
+因为字面量 1 是 int 类型，它比 short 类型精度要高，因此不能隐式地将 int 类型向下转型为 short 类型。
+
+```
+short s1 = 1;
+// s1 = s1 + 1;
+```
+
+但是使用 += 或者 ++ 运算符会执行隐式类型转换。
+
+```
+s1 += 1;
+s1++;
+```
+
+上面的语句相当于将 s1 + 1 的计算结果进行了向下转型：
+
+```
+s1 = (short) (s1 + 1);
+```
+
+[StackOverflow : Why don't Java's +=, -=, *=, /= compound assignment operators require casting?](https://stackoverflow.com/questions/8710619/why-dont-javas-compound-assignment-operators-require-casting)
+
+### switch
+
+从 Java 7 开始，可以在 switch 条件判断语句中使用 String 对象。
+
+```
+String s = "a";
+switch (s) {
+    case "a":
+        System.out.println("aaa");
+        break;
+    case "b":
+        System.out.println("bbb");
+        break;
+}
+```
+
+switch 不支持 long、float、double，是因为 switch 的设计初衷是对那些只有少数几个值的类型进行等值判断，如果值过于复杂，那么还是用 if 比较合适。
+
+```java
+// long x = 111;
+// switch (x) { // Incompatible types. Found: 'long', required: 'char, byte, short, int, Character, Byte, Short, Integer, String, or an enum'
+//     case 111:
+//         System.out.println(111);
+//         break;
+//     case 222:
+//         System.out.println(222);
+//         break;
+// }
+```
+
+[StackOverflow : Why can't your switch statement data type be long, Java?](https://stackoverflow.com/questions/2676210/why-cant-your-switch-statement-data-type-be-long-java)
+
+[BACK TO TOP](#Java基础)
 
 ## <a name="10">static 关键字</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 

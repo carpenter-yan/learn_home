@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="目录调整01">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="目录调整11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
@@ -604,13 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00060" summary="迁移learning项目">
-      <created>1642822759386</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1642822759387</updated>
-    </task>
     <task id="LOCAL-00061" summary="迁移kgnote项目">
       <created>1642824189503</created>
       <option name="number" value="00061" />
@@ -947,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647842921560</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="目录调整11">
+      <created>1647845385025</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1647845385025</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1118,7 +1118,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加BigDecimal原理参考" />
     <MESSAGE value="修改String相关部分" />
     <MESSAGE value="修改String相关部分02" />
     <MESSAGE value="修改StringBuilder部分" />
@@ -1143,7 +1142,8 @@
     <MESSAGE value="目录调整09" />
     <MESSAGE value="目录调整10" />
     <MESSAGE value="目录调整01" />
-    <option name="LAST_COMMIT_MESSAGE" value="目录调整01" />
+    <MESSAGE value="目录调整11" />
+    <option name="LAST_COMMIT_MESSAGE" value="目录调整11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
