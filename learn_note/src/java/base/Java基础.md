@@ -43,7 +43,7 @@
 
 ## 一、数据类型 <a style="float:right;text-decoration:none;" href="#0">[Top]</a>
 
-### 基本类型 <a style="float:right;text-decoration:none;" href="#0">[Top]</a>
+### 基本类型
 
 # <a name="0">Java基础</a><a style="float:right;text-decoration:none;" href="#0">[Top]</a>
 
