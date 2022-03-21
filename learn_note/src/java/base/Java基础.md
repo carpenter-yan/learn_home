@@ -1,6 +1,7 @@
 <a name="index">**Index**</a>
 
 <a href="#0">Java 基础</a>  
+[一、数据类型](#一数据类型)  
 &emsp;<a href="#1">1. 基本数据类型</a>  
 &emsp;&emsp;<a href="#2">1.1. 包装类型</a>  
 &emsp;&emsp;<a href="#3">1.2. 缓冲池</a>  
@@ -44,6 +45,9 @@
 &emsp;&emsp;<a href="#41">16.4. 获取键盘输入的两种方式</a>  
 &emsp;&emsp;<a href="#42">16.5. Arrays.asList()</a>  
 &emsp;&emsp;<a href="#43">16.6. java复制</a>
+
+## 一、数据类型 <a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+
 # <a name="0">Java 基础</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 ## <a name="1">基本数据类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加重载和重写">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加反射">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
@@ -599,13 +599,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00047" summary="add LRU">
-      <created>1596589705150</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1596589705150</updated>
-    </task>
     <task id="LOCAL-00048" summary="add LRU">
       <created>1602234867165</created>
       <option name="number" value="00048" />
@@ -942,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647610114209</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="增加反射">
+      <created>1647833530605</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1647833530605</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1101,7 +1101,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加本地文件链接" />
     <MESSAGE value="试验锚点" />
     <MESSAGE value="加入引用" />
     <MESSAGE value="加入图像" />
@@ -1126,7 +1125,8 @@
     <MESSAGE value="更新clone部分" />
     <MESSAGE value="增加Java关键字native" />
     <MESSAGE value="增加重载和重写" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加重载和重写" />
+    <MESSAGE value="增加反射" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加反射" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
