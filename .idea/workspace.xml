@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="目录调整02">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="目录调整03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
@@ -599,13 +599,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00051" summary="add elasticsearch">
-      <created>1621862467140</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1621862467140</updated>
-    </task>
     <task id="LOCAL-00052" summary="add elasticsearch">
       <created>1632993460030</created>
       <option name="number" value="00052" />
@@ -942,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647841083785</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="目录调整03">
+      <created>1647841282336</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1647841282336</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1101,7 +1101,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="加入图像" />
     <MESSAGE value="增加表头和代码" />
     <MESSAGE value="百度图片" />
     <MESSAGE value="修改markdown" />
@@ -1126,7 +1125,8 @@
     <MESSAGE value="增加反射" />
     <MESSAGE value="目录调整01" />
     <MESSAGE value="目录调整02" />
-    <option name="LAST_COMMIT_MESSAGE" value="目录调整02" />
+    <MESSAGE value="目录调整03" />
+    <option name="LAST_COMMIT_MESSAGE" value="目录调整03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

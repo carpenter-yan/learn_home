@@ -43,11 +43,9 @@
 &emsp;&emsp;<a href="#42">16.5. Arrays.asList()</a>  
 &emsp;&emsp;<a href="#43">16.6. java复制</a>
 
-## 一、数据类型 <a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+# <a name="0">Java基础</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
-# <a name="0">Java 基础</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
-## <a name="1">基本数据类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## <a name="1">1. 基本数据类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 八大基本数据类型
 - byte/8: 占用1个字节(-128~127)
@@ -69,9 +67,7 @@ short和char: 都占用4个字节，但short是对数值编码，首位为符号
 - [Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 - [The Java® Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf)
 
-## ABC <a style="float:right;text-decoration:none;" href="#Java基础">[Top]</a>
-
-## <a name="2">包装类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### <a name="2">1.2 包装类型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 包装类有以下用途
 
@@ -102,7 +98,7 @@ new Integer(123) 与 Integer.valueOf(123) 的区别在于：
 ](https://stackoverflow.com/questions/9030817/differences-between-new-integer123-integer-valueof123-and-just-123)
 
 
-## <a name="3">缓冲池</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### <a name="3">1.3 缓冲池</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 包装类型内存使用 private static class IntegerCache，声明一个内部使用的缓存池
 > 如Integer中有个静态内部类IntegerCache，里面有个cache[],也就是Integer常量池，常量池的大小为一个字节（-128~127）\
@@ -118,7 +114,7 @@ new Integer(123) 与 Integer.valueOf(123) 的区别在于：
 - int values: between -128 and 127
 - char: in the range \u0000 to \u007F
 
-### <a name="4">BigDecimal</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### <a name="4">1.4 BigDecimal</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 BigDecimal 主要用于处理解决精度丢失问题
 > float和double类型主要是为了科学计算和工程计算而设计的。在广泛的数字范围上提供较为精确的快速近似计算而精心设计的。然而，它们并没有提供完全精确的结果
