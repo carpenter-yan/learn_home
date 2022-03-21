@@ -11,7 +11,6 @@
         * [不可变性](#不可变性)
         * [String Constant Pool](#String-Constant-Pool)
         * [String StringBuffer and StringBuilder](#string-stringbuffer-and-stringbuilder)
-        * [new String("abc")](#new-stringabc)
     * [三、运算](#三运算)
         * [参数传递](#参数传递)
         * [float 与 double](#float-与-double)
@@ -20,12 +19,15 @@
     * [四、关键字](#四关键字)
         * [final](#final)
         * [static](#static)
+        * [native](#native)
+        * [instance of](#instance-of)
     * [五、Object 通用方法](#五object-通用方法)
         * [概览](#概览)
         * [equals()](#equals)
         * [hashCode()](#hashcode)
         * [toString()](#tostring)
         * [clone()](#clone)
+        * [wait notify notifyAll](#wait-notify-notifyall)
     * [六、继承](#六继承)
         * [访问权限](#访问权限)
         * [抽象类与接口](#抽象类与接口)
@@ -292,33 +294,6 @@ StringBuilder > StringBuffer > String。这个实验结果是相对而言的，�
 
 - [StackOverflow : String, StringBuffer, and StringBuilder](https://stackoverflow.com/questions/2971315/string-stringbuffer-and-stringbuilder)
 
-
-## <a name="9">final 关键字</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
-**1. 数据**
-
-声明数据为常量，可以是编译时常量，也可以是在运行时被初始化后不能被改变的常量。
->对于基本类型，final使数值不变；
->对于引用类型，final使引用不变，也就不能引用其它对象，但是被引用的对象本身是可以修改的。
-
-```
-final int x = 1;
-// x = 2;  // cannot assign value to final variable 'x'
-final A y = new A();
-y.a = 1;
-```
-
-**2. 方法**
-
-声明方法不能被子类重写。
-
-private方法隐式地被指定为final，如果在子类中定义的方法和基类中的一个private方法签名相同，
-此时子类的方法不是重写基类方法，而是在子类中定义了一个新的方法。
-
-**3. 类**
-
-声明类不允许被继承。
-
 [BACK TO TOP](#Java基础)
 
 ## 三、运算
@@ -465,7 +440,35 @@ switch 不支持 long、float、double，是因为 switch 的设计初衷是对�
 
 [BACK TO TOP](#Java基础)
 
-## <a name="10">static 关键字</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## 四、关键字
+
+### final
+
+**1. 数据**
+
+声明数据为常量，可以是编译时常量，也可以是在运行时被初始化后不能被改变的常量。
+>对于基本类型，final使数值不变；
+>对于引用类型，final使引用不变，也就不能引用其它对象，但是被引用的对象本身是可以修改的。
+
+```
+final int x = 1;
+// x = 2;  // cannot assign value to final variable 'x'
+final A y = new A();
+y.a = 1;
+```
+
+**2. 方法**
+
+声明方法不能被子类重写。
+
+private方法隐式地被指定为final，如果在子类中定义的方法和基类中的一个private方法签名相同，
+此时子类的方法不是重写基类方法，而是在子类中定义了一个新的方法。
+
+**3. 类**
+
+声明类不允许被继承。
+
+### static
 
 **1. 静态变量**
 
@@ -609,13 +612,19 @@ public InitialOrderTest() {
 - 子类（实例变量、普通语句块）
 - 子类（构造函数）
 
-## <a name="101">native 关键字</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
-- [Java关键字(一)——instanceof](https://www.cnblogs.com/ysocean/p/8486500.html)
+### native
 
 - [Java关键字(二)——native](https://www.cnblogs.com/ysocean/p/8476933.html)
 
-## <a name="11">Object 通用方法</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### instance of
+
+- [Java关键字(一)——instanceof](https://www.cnblogs.com/ysocean/p/8486500.html)
+
+[BACK TO TOP](#Java基础)
+
+## 五、Object 通用方法
+
+### 概览
 
 ```
 public native int hashCode()
@@ -642,7 +651,8 @@ public final void wait() throws InterruptedException
 ```
 
 
-### <a name="12">equals()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### equals()
+
 **1. 等价关系**
 
 两个对象具有等价关系，需要满足以下五个条件：
@@ -728,7 +738,7 @@ public class EqualExample {
 }
 ```
 
-### <a name="13">hashCode()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### hashCode()
 
 hashCode() 返回哈希值，而 equals() 是用来判断两个对象是否等价。等价的两个对象散列值一定相同，
 但是散列值相同的两个对象不一定等价，这是因为计算哈希值具有随机性，两个值不同的对象可能计算出相同的哈希值。
@@ -767,7 +777,7 @@ public int hashCode() {
 }
 ```
 
-### <a name="14">toString()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### toString()
 
 默认返回 ToStringExample@4554617c 这种形式，其中 @ 后面的数值为散列码的无符号十六进制表示。
 
@@ -791,7 +801,7 @@ System.out.println(example.toString());
 ToStringExample@4554617c
 ```
 
-### <a name="15">clone()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### clone()
 
 **1. cloneable**
 
@@ -960,7 +970,7 @@ System.out.println(e2.get(2)); // 2
 
 - [Java的深拷贝和浅拷贝](https://www.cnblogs.com/ysocean/p/8482979.html)
 
-### <a name="16">wait、notify、notifyAll 相关</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### wait notify notifyAll
 
 如果当前线程没有获得一个对象的监听器，调用该方法就会抛出一个IllegalMonitorStateException
 ```
@@ -983,7 +993,9 @@ synchronized void test() throws InterruptedException {
 - 执行在此对象上进行同步的 synchronized 语句的方法
 - 对于 Class 类型的对象，执行该类的同步静态方法
 
-## <a name="17">继承</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+[BACK TO TOP](#Java基础)
+
+## 六、继承
 
 ### 访问权限
 
@@ -1046,9 +1058,7 @@ public class AccessWithInnerClassExample {
 }
 ```
 
-## <a name="18">抽象类与接口</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
-### <a name="19">抽象类</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### 抽象类与接口
 
 抽象类和抽象方法都使用 abstract 关键字进行声明。如果一个类中包含抽象方法，那么这个类必须声明为抽象类。
 
@@ -1082,8 +1092,6 @@ public class AbstractExtendClassExample extends AbstractClassExample {
 AbstractClassExample ac2 = new AbstractExtendClassExample();
 ac2.func1();
 ```
-
-### <a name="20">接口</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 接口是抽象类的延伸，在 Java 8 之前，它可以看成是一个完全抽象的类，也就是说它不能有任何的方法实现。
 
@@ -1128,7 +1136,7 @@ System.out.println(InterfaceExample.x);
 ```
 
 
-### <a name="21">比较</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+**比较**
 
 从设计层面上看
 - 抽象类的实现目的，是代码复用，一种模板设计的方式，可以让这些类都派生于一个抽象类。
@@ -1142,7 +1150,7 @@ System.out.println(InterfaceExample.x);
 - 抽象类： 拓展继承该抽象类的模块的类的行为功能（开放闭合原则）
 - 接口：约束继承该接口的类行为（依赖倒置原则）
 
-### **4. 使用选择**
+**使用选择**
 
 使用接口：
 
@@ -1163,7 +1171,7 @@ System.out.println(InterfaceExample.x);
 - [Java 9 Private Methods in Interfaces](https://www.journaldev.com/12850/java-9-private-methods-interfaces)
 
 
-## <a name="22">super关键字</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### super
 
 - 访问父类的构造函数：可以使用 super() 函数访问父类的构造函数，从而委托父类完成一些初始化的工作。应该注意到，子类一定会调用父类的构造函数来完成初始化工作，一般是调用父类的默认构造函数，如果子类需要调用父类其它构造函数，那么就可以使用 super() 函数。
 - 访问父类的成员：如果子类重写了父类的某个方法，可以通过使用 super 关键字来引用父类的方法实现。
@@ -1216,9 +1224,7 @@ SuperExtendExample.func()
 
 [Using the Keyword super](https://docs.oracle.com/javase/tutorial/java/IandI/super.html)
 
-## <a name="23">重写与重载</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
-### <a name="24">重写（Override）：</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### 重写与重载
 
 存在于继承体系中，指子类实现了一个与父类在方法声明上完全相同的一个方法。
 
@@ -1322,9 +1328,6 @@ public static void main(String[] args) {
 }
 ```
 
-
-### <a name="25">重载（Overload）</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
 存在于同一个类中，指一个方法与已经存在的方法名称上相同，但是参数类型、个数、顺序至少有一个不同。
 
 应该注意的是，返回值不同，其它都相同不算是重载。
@@ -1346,7 +1349,7 @@ class OverloadingExample {
 }
 ```
 
-## <a name="26">反射</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## 七、反射
 
 每个类都有一个   **Class**   对象，包含了与类有关的信息。当编译一个新类时，会产生一个同名的 .class 文件，该文件内容保存着 Class 对象。
 
@@ -1379,7 +1382,7 @@ Class 和 java.lang.reflect 一起对反射提供了支持，java.lang.reflect �
 - [Trail: The Reflection API](https://docs.oracle.com/javase/tutorial/reflect/index.html)
 - [深入解析 Java 反射（1）- 基础](http://www.sczyh30.com/posts/Java/java-reflection-1/)
 
-## <a name="27">异常</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## 八、异常
 
 Throwable 可以用来表示任何可以作为异常抛出的类，分为两种： Error 和 Exception。
 > 其中 Error 用来表示 JVM 无法处理的错误，
@@ -1401,7 +1404,7 @@ try语句return问题：**如果try语句里有return，返回的是try语句块
 4. 针对对象引用的返回，如果finally中有修改值，返回的是引用的对象。
    **如果try，finally语句里均有return，忽略try的return，而使用finally的return.**
 
-## <a name="28">泛型</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## 九、泛型
 
 泛型的本质是参数化类型，也就是所操作的数据类型被指定为一个参数。
 - 在集合中存储对象并在使用前进行类型转换是不方便的。泛型防止了那种情况的发生。它提供了编译期的类型安全，确保你只能把正确类型的对象放入集合中，避免了在运行时出现ClassCastException。
@@ -1523,50 +1526,6 @@ public @interface FruitName {
    String value() default "";
 }
 ```
-
-## <a name="33">线程</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
-### <a name="34">线程状态</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
-![avatar](https://gitee.com/rbmon/file-storage/raw/main/learning-note/learning/concurrent/threadState.jpg)
-1. 新建（NEW）：创建后尚未启动。
-2. 可运行（RUNABLE）：正在 Java
-   虚拟机中运行。但是在操作系统层面，它可能处于运行状态，也可能等待资源调度（例如处理器资源），资源调度完成就进入运行状态。所以该状态的可运行是指可以被运行，具体有没有运行要看底层操作系统的资源调度。
-3. 阻塞（BLOCKED）：请求获取 monitor lock 从而进入 synchronized 函数或者代码块，但是其它线程已经占用了该 monitor lock，所以出于阻塞状态。要结束该状态进入从而 RUNABLE
-   需要其他线程释放 monitor lock。
-4. 无限期等待（WAITING）：等待其它线程显式地唤醒。
-
-> 阻塞和等待的区别在于，阻塞是被动的，它是在等待获取 monitor lock。而等待是主动的，通过调用 Object.wait() 等方法进入。
-
-| 进入方法 | 退出方法 |
-| --- | --- |
-| 没有设置 Timeout 参数的 Object.wait() 方法 | Object.notify() / Object.notifyAll() |
-| 没有设置 Timeout 参数的 Thread.join() 方法 | 被调用的线程执行完毕 |
-| LockSupport.park() 方法 | LockSupport.unpark(Thread) |
-
-5. 限期等待（TIMED_WAITING）：无需等待其它线程显式地唤醒，在一定时间之后会被系统自动唤醒。
-> 调用 Thread.sleep() 方法使线程进入限期等待状态时，常常用“使一个线程睡眠”进行描述。调用 Object.wait() 方法使线程进入限期等待或者无限期等待时，常常用“挂起一个线程”进行描述。睡眠和挂起是用来描述行为，而阻塞和等待用来描述状态。
-
-| 进入方法 | 退出方法 |
-| --- | --- |
-| Thread.sleep() 方法 | 时间结束 |
-| 设置了 Timeout 参数的 Object.wait() 方法 | 时间结束 / Object.notify() / Object.notifyAll()  |
-| 设置了 Timeout 参数的 Thread.join() 方法 | 时间结束 / 被调用的线程执行完毕 |
-| LockSupport.parkNanos() 方法 | LockSupport.unpark(Thread) |
-| LockSupport.parkUntil() 方法 | LockSupport.unpark(Thread) |
-
-6. 死亡（TERMINATED）：可以是线程结束任务之后自己结束，或者产生了异常而结束。
-
-### <a name="35">创建一个线程的开销</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
-
-JVM 在背后帮我们做了哪些事情：
-1. 它为一个线程栈分配内存，该栈为每个线程方法调用保存一个栈帧
-2. 每一栈帧由一个局部变量数组、返回值、操作数堆栈和常量池组成
-3. 一些支持本机方法的 jvm 也会分配一个本机堆栈
-4. 每个线程获得一个程序计数器，告诉它当前处理器执行的指令是什么
-5. 系统创建一个与Java线程对应的本机线程
-6. 将与线程相关的描述符添加到JVM内部数据结构中
-7. 线程共享堆和方法区域
 
 ## <a name="36">枚举类</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
