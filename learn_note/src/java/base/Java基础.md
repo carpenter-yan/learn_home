@@ -1,47 +1,49 @@
 <a href="#0"><h1>Java基础</h1></a>  
-&emsp;<a href="#1">1. 基本数据类型</a>  
-&emsp;&emsp;<a href="#2">1.1. 包装类型</a>  
-&emsp;&emsp;<a href="#3">1.2. 缓冲池</a>  
-&emsp;&emsp;<a href="#4">1.3. BigDecimal</a>  
-&emsp;<a href="#5">2. String</a>  
-&emsp;&emsp;<a href="#6">2.1 不可变性</a>  
-&emsp;&emsp;<a href="#7">2.2 String Constant Pool</a>  
-&emsp;&emsp;<a href="#8">2.3 StringBuilder,StringBuffer</a>  
-&emsp;<a href="#9">3. final 关键字</a>  
-&emsp;<a href="#10">4. static 关键字</a>  
-&emsp;<a href="#11">5. Object 通用方法</a>  
-&emsp;&emsp;<a href="#12">5.1. equals()</a>  
-&emsp;&emsp;<a href="#13">5.2. hashCode()</a>  
-&emsp;&emsp;<a href="#14">5.3. toString()</a>  
-&emsp;&emsp;<a href="#15">5.4. clone()</a>  
-&emsp;&emsp;<a href="#16">5.5. wait、notify、notifyAll 相关</a>  
-&emsp;<a href="#17">6. 继承</a>  
-&emsp;<a href="#18">7. 抽象类与接口</a>  
-&emsp;&emsp;<a href="#19">7.1. 抽象类</a>  
-&emsp;&emsp;<a href="#20">7.2. 接口</a>  
-&emsp;&emsp;<a href="#21">7.3. 比较</a>  
-&emsp;<a href="#22">8. super关键字</a>  
-&emsp;<a href="#23">9. 重写与重载</a>  
-&emsp;&emsp;<a href="#24">9.1. 重写（Override）：</a>  
-&emsp;&emsp;<a href="#25">9.2. 重载（Overload）</a>  
-&emsp;<a href="#26">10. 反射</a>  
-&emsp;<a href="#27">11. 异常</a>  
-&emsp;<a href="#28">12. 泛型</a>  
-&emsp;&emsp;<a href="#29">12.1. 类型擦除</a>  
-&emsp;<a href="#30">13. 注解</a>  
-&emsp;&emsp;<a href="#31">13.1. 内置注解</a>  
-&emsp;&emsp;<a href="#32">13.2. 元注解</a>  
-&emsp;<a href="#33">14. 线程</a>  
-&emsp;&emsp;<a href="#34">14.1. 线程状态</a>  
-&emsp;&emsp;<a href="#35">14.2. 创建一个线程的开销</a>  
-&emsp;<a href="#36">15. 枚举类</a>  
-&emsp;<a href="#37">16. 零散的点</a>  
-&emsp;&emsp;<a href="#38">16.1. 方法调用的知识点</a>  
-&emsp;&emsp;<a href="#39">16.2. 三大特性</a>  
-&emsp;&emsp;<a href="#40">16.3. 序列化与反序列化</a>  
-&emsp;&emsp;<a href="#41">16.4. 获取键盘输入的两种方式</a>  
-&emsp;&emsp;<a href="#42">16.5. Arrays.asList()</a>  
-&emsp;&emsp;<a href="#43">16.6. java复制</a>
+<!-- GFM-TOC -->
+* [Java 基础](#java-基础)
+    * [一、数据类型](#一数据类型)
+        * [基本类型](#基本类型)
+        * [包装类型](#包装类型)
+        * [缓存池](#缓存池)
+    * [二、String](#二string)
+        * [概览](#概览)
+        * [不可变的好处](#不可变的好处)
+        * [String, StringBuffer and StringBuilder	](#string-stringbuffer-and-stringbuilder	)
+        * [String Pool](#string-pool)
+        * [new String("abc")](#new-stringabc)
+    * [三、运算](#三运算)
+        * [参数传递](#参数传递)
+        * [float 与 double](#float-与-double)
+        * [隐式类型转换](#隐式类型转换)
+        * [switch](#switch)
+    * [四、关键字](#四关键字)
+        * [final](#final)
+        * [static](#static)
+    * [五、Object 通用方法](#五object-通用方法)
+        * [概览](#概览)
+        * [equals()](#equals)
+        * [hashCode()](#hashcode)
+        * [toString()](#tostring)
+        * [clone()](#clone)
+    * [六、继承](#六继承)
+        * [访问权限](#访问权限)
+        * [抽象类与接口](#抽象类与接口)
+        * [super](#super)
+        * [重写与重载](#重写与重载)
+    * [七、反射](#七反射)
+    * [八、异常](#八异常)
+    * [九、泛型](#九泛型)
+    * [十、注解](#十注解)
+    * [十一、特性](#十一特性)
+        * [Java 各版本的新特性](#java-各版本的新特性)
+        * [Java 与 C++ 的区别](#java-与-c-的区别)
+        * [JRE or JDK](#jre-or-jdk)
+    * [参考资料](#参考资料)
+<!-- GFM-TOC -->
+
+## 一、数据类型 <a style="float:right;text-decoration:none;" href="#0">[Top]</a>
+
+### 基本类型 <a style="float:right;text-decoration:none;" href="#0">[Top]</a>
 
 # <a name="0">Java基础</a><a style="float:right;text-decoration:none;" href="#0">[Top]</a>
 

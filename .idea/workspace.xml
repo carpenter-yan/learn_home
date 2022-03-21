@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="目录调整03">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="目录调整05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
@@ -599,20 +599,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00052" summary="add elasticsearch">
-      <created>1632993460030</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1632993460031</updated>
-    </task>
-    <task id="LOCAL-00053" summary="add elasticsearch">
-      <created>1634195538068</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1634195538068</updated>
-    </task>
     <task id="LOCAL-00054" summary="delete module">
       <created>1642036507380</created>
       <option name="number" value="00054" />
@@ -942,7 +928,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647841282336</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="目录调整04">
+      <created>1647841610791</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1647841610791</updated>
+    </task>
+    <task id="LOCAL-00102" summary="目录调整05">
+      <created>1647841716581</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1647841716581</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1101,8 +1101,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加表头和代码" />
-    <MESSAGE value="百度图片" />
     <MESSAGE value="修改markdown" />
     <MESSAGE value="增加Java基础" />
     <MESSAGE value="增加io文章" />
@@ -1126,7 +1124,9 @@
     <MESSAGE value="目录调整01" />
     <MESSAGE value="目录调整02" />
     <MESSAGE value="目录调整03" />
-    <option name="LAST_COMMIT_MESSAGE" value="目录调整03" />
+    <MESSAGE value="目录调整04" />
+    <MESSAGE value="目录调整05" />
+    <option name="LAST_COMMIT_MESSAGE" value="目录调整05" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
