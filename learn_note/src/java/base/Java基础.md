@@ -1,4 +1,4 @@
-<a name="index">**Index**</a>
+#<a name="index">Java基础</a>
 
 <a href="#0">Java 基础</a>  
 [一、数据类型](#一数据类型)  
