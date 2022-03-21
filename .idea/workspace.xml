@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="目录调整09">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="目录调整01">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,17 +88,22 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="master" />
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="PUSH_TAGS">
-      <GitPushTagMode />
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -598,20 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00058" summary="refactor end">
-      <created>1642039233460</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1642039233460</updated>
-    </task>
-    <task id="LOCAL-00059" summary="增加spring-cache文件">
-      <created>1642123332707</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1642123332707</updated>
-    </task>
     <task id="LOCAL-00060" summary="迁移learning项目">
       <created>1642822759386</created>
       <option name="number" value="00060" />
@@ -941,7 +933,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647842769347</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="目录调整10">
+      <created>1647842833819</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1647842833819</updated>
+    </task>
+    <task id="LOCAL-00108" summary="目录调整01">
+      <created>1647842921560</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1647842921560</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1075,7 +1081,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -1100,7 +1118,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="基础类型修改" />
     <MESSAGE value="增加BigDecimal原理参考" />
     <MESSAGE value="修改String相关部分" />
     <MESSAGE value="修改String相关部分02" />
@@ -1116,7 +1133,6 @@
     <MESSAGE value="增加Java关键字native" />
     <MESSAGE value="增加重载和重写" />
     <MESSAGE value="增加反射" />
-    <MESSAGE value="目录调整01" />
     <MESSAGE value="目录调整02" />
     <MESSAGE value="目录调整03" />
     <MESSAGE value="目录调整04" />
@@ -1125,7 +1141,9 @@
     <MESSAGE value="目录调整07" />
     <MESSAGE value="目录调整08" />
     <MESSAGE value="目录调整09" />
-    <option name="LAST_COMMIT_MESSAGE" value="目录调整09" />
+    <MESSAGE value="目录调整10" />
+    <MESSAGE value="目录调整01" />
+    <option name="LAST_COMMIT_MESSAGE" value="目录调整01" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

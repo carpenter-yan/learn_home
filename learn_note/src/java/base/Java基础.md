@@ -8,9 +8,9 @@
         * [BigDecimal](#BigDecimal)
     * [二、String](#二string)
         * [概览](#概览)
-        * [不可变的好处](#不可变的好处)
-        * [String, StringBuffer and StringBuilder	](#string-stringbuffer-and-stringbuilder	)
-        * [String Pool](#string-pool)
+        * [不可变性](#不可变性)
+        * [String Constant Pool](#String-Constant-Pool)
+        * [String StringBuffer and StringBuilder](#string-stringbuffer-and-stringbuilder)
         * [new String("abc")](#new-stringabc)
     * [三、运算](#三运算)
         * [参数传递](#参数传递)
@@ -136,6 +136,8 @@ BigInteger的原理是将大数转换为int数组再按位运算
 
 ## 二、String
 
+### 概览
+
 String被声明为final，因此它不可被继承。 在Java8中，String内部使用char数组存储数据。
 
 ```java
@@ -161,7 +163,7 @@ public final class String
 
 value数组被声明为final，初始化之后就不能再引用其它数组。并且String内部没有改变value数组的方法，因此可以保证String不可变。
 
-### <a name="6">不可变性</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### 不可变性
 
 不可变的好处
 > 可以缓存hash值。String的hash值经常被使用，如String用做HashMap的key。不可变性使得hash值也不可变，因此只需要进行一次计算。  
@@ -169,7 +171,7 @@ value数组被声明为final，初始化之后就不能再引用其它数组。�
 > 安全性。String 经常作为参数，String不可变性可以保证参数不可变。如网络传输  
 > 线程安全。String 不可变性天生具备线程安全，可以在多个线程中安全地使用。  
 
-### <a name="7">String Constant Pool</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### String Constant Pool
 
 1. 字符串常量池的定义和使用
 字符串常量池（String Pool）是JVM为了最小化在堆上存储具有重复字符串对象所造成的冗余和内存浪费而在留出一个特殊区域。
@@ -269,7 +271,7 @@ System.out.println(str1 == str2);//true
 - [深入解析 String#intern](https://tech.meituan.com/in_depth_understanding_string_intern.html)
 
 
-### <a name="8">StringBuilder,StringBuffer</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### String StringBuffer and StringBuilder
 
 **1. 可变性**
 
