@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="目录调整06">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="目录调整07">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -598,13 +599,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00055" summary="refactor module">
-      <created>1642037834763</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1642037834763</updated>
-    </task>
     <task id="LOCAL-00056" summary="refactor module">
       <created>1642037880535</created>
       <option name="number" value="00056" />
@@ -941,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647841967571</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="目录调整07">
+      <created>1647842244073</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1647842244073</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1100,7 +1101,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加Java基础" />
     <MESSAGE value="增加io文章" />
     <MESSAGE value="字符上标" />
     <MESSAGE value="基础类型修改" />
@@ -1125,7 +1125,8 @@
     <MESSAGE value="目录调整04" />
     <MESSAGE value="目录调整05" />
     <MESSAGE value="目录调整06" />
-    <option name="LAST_COMMIT_MESSAGE" value="目录调整06" />
+    <MESSAGE value="目录调整07" />
+    <option name="LAST_COMMIT_MESSAGE" value="目录调整07" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
