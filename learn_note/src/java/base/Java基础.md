@@ -4,12 +4,12 @@
     * [一、数据类型](#一数据类型)
         * [基本类型](#基本类型)
         * [包装类型](#包装类型)
-        * [缓存池](#缓存池)
+        * [缓冲池](#缓冲池)
         * [BigDecimal](#BigDecimal)
     * [二、String](#二string)
         * [概览](#概览)
-        * [不可变性](#不可变性)
-        * [String Constant Pool](#String-Constant-Pool)
+        * [不可变的好处](#不可变的好处)
+        * [String Constant Pool](#string-constant-pool)
         * [String StringBuffer and StringBuilder](#string-stringbuffer-and-stringbuilder)
     * [三、运算](#三运算)
         * [参数传递](#参数传递)
@@ -162,13 +162,12 @@ public final class String
 
 value数组被声明为final，初始化之后就不能再引用其它数组。并且String内部没有改变value数组的方法，因此可以保证String不可变。
 
-### 不可变性
+### 不可变的好处
 
-不可变的好处
-> 可以缓存hash值。String的hash值经常被使用，如String用做HashMap的key。不可变性使得hash值也不可变，因此只需要进行一次计算。  
-> String Pool的需要。一个String对象已经被创建过了，就会从String Pool中取得引用。只有String是不可变的，才能使用String Pool。  
-> 安全性。String 经常作为参数，String不可变性可以保证参数不可变。如网络传输  
-> 线程安全。String 不可变性天生具备线程安全，可以在多个线程中安全地使用。  
+- 可以缓存hash值。String的hash值经常被使用，如String用做HashMap的key。不可变性使得hash值也不可变，因此只需要进行一次计算。  
+- String Pool的需要。一个String对象已经被创建过了，就会从String Pool中取得引用。只有String是不可变的，才能使用String Pool。  
+- 安全性。String 经常作为参数，String不可变性可以保证参数不可变。如网络传输  
+- 线程安全。String 不可变性天生具备线程安全，可以在多个线程中安全地使用。  
 
 ### String Constant Pool
 
@@ -1349,6 +1348,8 @@ class OverloadingExample {
 }
 ```
 
+[BACK TO TOP](#Java基础)
+
 ## 七、反射
 
 每个类都有一个   **Class**   对象，包含了与类有关的信息。当编译一个新类时，会产生一个同名的 .class 文件，该文件内容保存着 Class 对象。
@@ -1382,6 +1383,8 @@ Class 和 java.lang.reflect 一起对反射提供了支持，java.lang.reflect �
 - [Trail: The Reflection API](https://docs.oracle.com/javase/tutorial/reflect/index.html)
 - [深入解析 Java 反射（1）- 基础](http://www.sczyh30.com/posts/Java/java-reflection-1/)
 
+[BACK TO TOP](#Java基础)
+
 ## 八、异常
 
 Throwable 可以用来表示任何可以作为异常抛出的类，分为两种： Error 和 Exception。
@@ -1404,6 +1407,8 @@ try语句return问题：**如果try语句里有return，返回的是try语句块
 4. 针对对象引用的返回，如果finally中有修改值，返回的是引用的对象。
    **如果try，finally语句里均有return，忽略try的return，而使用finally的return.**
 
+[BACK TO TOP](#Java基础)
+
 ## 九、泛型
 
 泛型的本质是参数化类型，也就是所操作的数据类型被指定为一个参数。
@@ -1418,7 +1423,7 @@ try语句return问题：**如果try语句里有return，返回的是try语句块
 3. 另一种是`<? super T>`它通过确保类型必须是T的父类来设定类型的下界
 4. 泛型类型必须用限定内的类型来进行初始化，否则会导致编译错误。
 
-### <a name="29">类型擦除</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### 类型擦除
 
 类型擦除: Java的泛型基本上都是在编译器这个层次上实现的，在生成的字节码中是不包含泛型中的类型信息的，使用泛型的时候加上类型参数，在编译器编译的时候会去掉，这个过程成为类型擦除。
 - 如在代码中定义`List<Object>`和`List<String>`等类型，在编译后都会变成List，JVM看到的只是List，而由泛型附加的类型信息对JVM是看不到的。
@@ -1469,9 +1474,9 @@ public class Box<T> {
 
 Java不能实现真正的泛型，只能使用类型擦除来实现伪泛型，这样虽然不会有类型膨胀问题，但是也引起来许多新问题
 
-## <a name="30">注解</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## 注解
 
-### <a name="31">内置注解</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### 内置注解
 
 Java 定义了一套注解，共有 7 个，3 个在 java.lang 中，剩下 4 个在 java.lang.annotation 中。
 
@@ -1491,7 +1496,7 @@ Java 定义了一套注解，共有 7 个，3 个在 java.lang 中，剩下 4 �
 - `@FunctionalInterface` - Java 8 开始支持，标识一个匿名函数或函数式接口。
 - `@Repeatable` - Java 8 开始支持，标识某注解可以在同一个声明上使用多次。
 
-### <a name="32">元注解</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### 元注解
 
 java.lang.annotation 提供了四种元注解，专门注解其他的注解（在自定义注解的时候，需要使用到元注解）：
 
@@ -1527,7 +1532,7 @@ public @interface FruitName {
 }
 ```
 
-## <a name="36">枚举类</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## 枚举类
 
 枚举类比较使用==，同样也可以使用equals方法，Enum类中重写了equals实际上还是调用==方法。
 ```
@@ -1595,9 +1600,9 @@ public final class T extends Enum
 }
 ```
 
-## <a name="37">零散的点</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## 零散的点
 
-### <a name="38">方法调用的知识点</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### 方法调用的知识点
 
 1. 按值调用(call by value)表示方法接收的是调用者提供的值，
 2. 而按引用调用（call by reference)表示方法接收的是调用者提供的变量地址。
@@ -1627,20 +1632,20 @@ s1:小张
 s2:小李
 ```
 
-### <a name="39">三大特性</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### 三大特性
 
 - 封装:封装是指把一个对象的状态信息（也就是属性）隐藏在对象内部，不允许外部对象直接访问对象的内部信息。
 - 继承:不同类型的对象，相互之间经常有一定数量的共同点。 extends
 - 多态:表示一个对象具有多种的状态。具体表现为父类的引用指向子类的实例。
 
-### <a name="40">序列化与反序列化</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### 序列化与反序列化
 
 `transient` 关键字的作用是：阻止实例中那些用此关键字修饰的的变量序列化；当对象被反序列化时，被 transient 修饰的变量值不会被持久化和恢复。transient 只能修饰变量，不能修饰类和方法。
 
 序列化ID：`serialVersionUID`决定着是否能够成功反序列化！简单来说，java的序列化机制是通过在运行时判断类的serialVersionUID来验证版本一致性的。
 > ` private static final long serialVersionUID`
 
-### <a name="41">获取键盘输入的两种方式</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### 获取键盘输入的两种方式
 
 ```
 //通过 Scanner
@@ -1653,12 +1658,12 @@ BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 String s = input.readLine();
 ```
 
-### <a name="42">Arrays.asList()</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### Arrays.asList()
 
 Arrays.asList(): 返回的并不是 java.util.ArrayList ，而是 java.util.Arrays 的一个内部类,这个内部类并没有实现集合的add()、remove()、clear()
 会抛出异常unSupportedOperationException。
 
-### <a name="43">java复制</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### java复制
 
 对于基本类型，直接赋值复制，对于对象类型分为浅拷贝与深拷贝
 1. 浅拷贝：对引用数据类型进行引用传递般的拷贝，此为浅拷贝。
