@@ -51,10 +51,10 @@
 八大基本数据类型
 - byte/8(-128~127)
 - short/16(-32768~32767)
-- int/32(-2<sup>31</sup>~2<sup>31</sup>-1)
-- float/32(-3.40292347E+38~3.40292347E+38)
-- long/64(-2<sup>63</sup>~2<sup>63</sup>-1)
-- double/64(IEEE754)
+- int/32
+- long/64
+- float/32
+- double/64
 - char/16
 - boolean/~
   
