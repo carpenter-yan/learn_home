@@ -117,12 +117,16 @@ new Integer(123) 与 Integer.valueOf(123) 的区别在于：
 BigDecimal 主要用于处理解决精度丢失问题
 > float和double类型主要是为了科学计算和工程计算而设计的。在广泛的数字范围上提供较为精确的快速近似计算而精心设计的。然而，它们并没有提供完全精确的结果
 
-```
-float a = 1.0f - 0.9f;
-float b = 0.9f - 0.8f;
-System.out.println(a);// 0.100000024
-System.out.println(b);// 0.099999964
-System.out.println(a == b);// false
+```java
+class demo {
+    public static void main(String[] args) {
+        float a = 1.0f - 0.9f;
+        float b = 0.9f - 0.8f;
+        System.out.println(a);// 0.100000024
+        System.out.println(b);// 0.099999964
+        System.out.println(a == b);// false
+    }
+}
 ```
 
 BigDecimal保持精度的原理是内部记录有效位数和小数点后位数，将小数转化为BigInteger计算再按小数位转换回小数  
@@ -164,14 +168,21 @@ value数组被声明为final，初始化之后就不能再引用其它数组。�
 
 ### 不可变的好处
 
-- 可以缓存hash值。String的hash值经常被使用，如String用做HashMap的key。不可变性使得hash值也不可变，因此只需要进行一次计算。  
-- String Pool的需要。一个String对象已经被创建过了，就会从String Pool中取得引用。只有String是不可变的，才能使用String Pool。  
-- 安全性。String 经常作为参数，String不可变性可以保证参数不可变。如网络传输  
-- 线程安全。String 不可变性天生具备线程安全，可以在多个线程中安全地使用。  
+- **可以缓存hash值**  
+String的hash值经常被使用，如String用做HashMap的key。不可变性使得hash值也不可变，因此只需要进行一次计算。  
+
+- **String Pool的需要**  
+一个String对象已经被创建过了，就会从String Pool中取得引用。只有String是不可变的，才能使用String Pool。  
+
+- **安全性**  
+String 经常作为参数，String不可变性可以保证参数不可变。如网络传输  
+
+- **线程安全**  
+String 不可变性天生具备线程安全，可以在多个线程中安全地使用。  
 
 ### String Constant Pool
 
-1. 字符串常量池的定义和使用
+1. 字符串常量池的定义和使用  
 字符串常量池（String Pool）是JVM为了最小化在堆上存储具有重复字符串对象所造成的冗余和内存浪费而在留出一个特殊区域。
 
 - 不使用new关键字创建的字符串对象存储在堆的**字符串常量池**部分
@@ -182,36 +193,40 @@ value数组被声明为final，初始化之后就不能再引用其它数组。�
 这是因为永久代的空间有限，在大量使用字符串的场景下会导致OutOfMemoryError错误。
 
 2. String对象创建问题
-> new String("abc")创建两String对象。(前提是String Pool 中还没有 "abc" 字符串对象)\
-> "abc" 属于字符串字面量，因此编译时期会在 String Pool 中创建一个字符串对象，指向这个 "abc" 字符串字面量；\
-> 而使用 new 的方式会在堆中创建一个字符串对象。\
+> new String("abc")创建两String对象。(前提是String Pool 中还没有 "abc" 字符串对象)。
+> "abc" 属于字符串字面量，因此编译时期会在 String Pool 中创建一个字符串对象，指向这个 "abc" 字符串字面量。
+> 而使用 new 的方式会在堆中创建一个字符串对象。
 
-```
-String s1 = "abc";
-String s2 = "abc";
-String s3 = new String("abc");
-System.out.println(s1 == s2);  // true
-System.out.println(s1 == s3);  // false
+```java
+class demo{
+    public static void main(String[] args){
+        String s1 = "abc";
+        String s2 = "abc";
+        String s3 = new String("abc");
+        System.out.println(s1 == s2);// true
+        System.out.println(s1 == s3);// false
 
-String a = "hello2"; 　  
-String b = "hello";       
-String c = b + 2;       
-System.out.println((a == c));
-输出结果为:false。由于有符号引用的存在，所以  String c = b + 2;不会在编译期间被优化，不会把b+2当做字面常量来处理的
+        String a = "hello2";
+        String b = "hello";
+        String c = b + 2;
+        System.out.println((a == c));//输出结果为:false。由于有符号引用的存在，所以  String c = b + 2;不会在编译期间被优化，不会把b+2当做字面常量来处理的
 
-String a = "hello2";   　
-final String b = "hello";       
-String c = b + 2;       
-System.out.println((a == c));
-输出结果为：true。对于被final修饰的变量，会在class文件常量池中保存一个副本，也就是说不会通过连接而进行访问
+        String a = "hello2";
+        final String b = "hello";
+        String c = b + 2;
+        System.out.println((a == c));//输出结果为：true。对于被final修饰的变量，会在class文件常量池中保存一个副本，也就是说不会通过连接而进行访问
+    }
+}
 ```
 
 以下是 String构造函数的源码，可以看到，在将一个字符串对象作为另一个字符串对象的构造函数参数时，并不会完全复制value数组内容，而是都会指向同一个value数组。
 
-```
-public String(String original) {
-    this.value = original.value;
-    this.hash = original.hash;
+```java
+class String{
+    public String(String original) {
+        this.value = original.value;
+        this.hash = original.hash;
+    }
 }
 ```
 
@@ -241,24 +256,32 @@ StringTable的intern方法跟Java中的HashMap的实现是差不多的, 只是�
 
 举例说明：
 
-```
-String str2 = new String("str") + new String("01");
-str2.intern();//常量池中保存的是"str01"的应用，即str2
-String str1 = "str01";
-System.out.println(str1 == str2);//true
+```java
+class demo{
+    public static void main(String[] args){
+        String str2 = new String("str") + new String("01");
+        str2.intern();//常量池中保存的是"str01"的应用，即str2
+        String str1 = "str01";
+        System.out.println(str1 == str2);//true
+    }
+}
 ```
 
 在JDK 1.7下，当执行str2.intern();时，因为常量池中没有“str01”这个字符串，所以会在常量池中生成一个对堆中的“str01”的引用
 (注意这里是引用 ，就是这个区别于JDK 1.6的地方。在JDK1.6下是生成原字符串的拷贝)，而在进行String str1 = “str01”;
 字面量赋值的时候，常量池中已经存在一个引用，所以直接返回了该引用，因此str1和str2都指向堆中的同一个字符串，返回true。
 
-```
-String str2 = new String("str") + new String("01");
-String str1 = "str01";
-str2.intern();//常量池中已经存在"str01"，intern方法会返回常量池"str01"的应用，但这里没有对返回值重新赋值到str2，所以str2仍然指向普通堆中的"str01"
-System.out.println(str1 == str2);//false
-str2=str2.intern();
-System.out.println(str1 == str2);//true
+```java
+class demo{
+    public static void main(String[] args){
+        String str2 = new String("str") + new String("01");
+        String str1 = "str01";
+        str2.intern();//常量池中已经存在"str01"，intern方法会返回常量池"str01"的应用，但这里没有对返回值重新赋值到str2，所以str2仍然指向普通堆中的"str01"
+        System.out.println(str1 == str2);//false
+        str2=str2.intern();
+        System.out.println(str1 == str2);//true
+    }
+}
 ```
 
 将中间两行调换位置以后，因为在进行字面量赋值（String str1 = “str01″）的时候，常量池中不存在，所以str1指向的常量池中的位置，
@@ -299,66 +322,26 @@ StringBuilder > StringBuffer > String。这个实验结果是相对而言的，�
 
 ### 参数传递
 
-Java 的参数是以值传递的形式传入方法中，而不是引用传递。
-
-以下代码中 Dog dog 的 dog 是一个指针，存储的是对象的地址。在将一个参数传入一个方法时，本质上是将对象的地址以值的方式传递到形参中。
-
-```java
-public class Dog {
-
-    String name;
-
-    Dog(String name) {
-        this.name = name;
-    }
-
-    String getName() {
-        return this.name;
-    }
-
-    void setName(String name) {
-        this.name = name;
-    }
-
-    String getObjectAddress() {
-        return super.toString();
-    }
-}
-```
-
-在方法中改变对象的字段值会改变原对象该字段值，因为引用的是同一个对象。
+1. 按值调用(call by value)表示方法接收的是调用者提供的值，
+2. 而按引用调用（call by reference)表示方法接收的是调用者提供的变量地址。
+3. 方法体传递参数时，无论是值还是对象都是“值”传递。引用类型传递的是引用变量的地址。
 
 ```java
-class PassByValueExample {
+class demo {
     public static void main(String[] args) {
-        Dog dog = new Dog("A");
-        func(dog);
-        System.out.println(dog.getName());          // B
+        Student s1 = new Student("小张");
+        Student s2 = new Student("小李");
+        Test.swap(s1, s2);
+        System.out.println("s1:" + s1.getName());//s1:小张
+        System.out.println("s2:" + s2.getName());//s2:小李
     }
 
-    private static void func(Dog dog) {
-        dog.setName("B");
-    }
-}
-```
-
-但是在方法中将指针引用了其它对象，那么此时方法里和方法外的两个指针指向了不同的对象，在一个指针改变其所指向对象的内容对另一个指针所指向的对象没有影响。
-
-```java
-public class PassByValueExample {
-    public static void main(String[] args) {
-        Dog dog = new Dog("A");
-        System.out.println(dog.getObjectAddress()); // Dog@4554617c
-        func(dog);
-        System.out.println(dog.getObjectAddress()); // Dog@4554617c
-        System.out.println(dog.getName());          // A
-    }
-
-    private static void func(Dog dog) {
-        System.out.println(dog.getObjectAddress()); // Dog@4554617c
-        dog = new Dog("B");
-        System.out.println(dog.getObjectAddress()); // Dog@74a14482
-        System.out.println(dog.getName());          // B
+    public static void swap(Student x, Student y) {
+        Student temp = x;
+        x = y;
+        y = temp;
+        System.out.println("x:" + x.getName());//x:小李
+        System.out.println("y:" + y.getName());//y:小张
     }
 }
 ```
@@ -1601,36 +1584,6 @@ public final class T extends Enum
 ```
 
 ## 零散的点
-
-### 方法调用的知识点
-
-1. 按值调用(call by value)表示方法接收的是调用者提供的值，
-2. 而按引用调用（call by reference)表示方法接收的是调用者提供的变量地址。
-3. 方法体传递参数时，无论是值还是对象都是“值”传递。引用类型传递的是引用变量的地址。
-
-```
-public static void main(String[] args) {
-   // TODO Auto-generated method stub
-   Student s1 = new Student("小张");
-   Student s2 = new Student("小李");
-   Test.swap(s1, s2);
-   System.out.println("s1:" + s1.getName());
-   System.out.println("s2:" + s2.getName());
-}
-
-public static void swap(Student x, Student y) {
-   Student temp = x;
-   x = y;
-   y = temp;
-   System.out.println("x:" + x.getName());
-   System.out.println("y:" + y.getName());
-}
-// output
-x:小李
-y:小张
-s1:小张
-s2:小李
-```
 
 ### 三大特性
 
