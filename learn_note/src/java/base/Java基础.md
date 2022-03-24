@@ -1371,9 +1371,9 @@ Class 和 java.lang.reflect 一起对反射提供了支持，java.lang.reflect �
 
 说明： JVM将使用类装载器, 将类装入内存(前提是:类还没有装入内存),不做类的初始化工作.返回Class的对象
 
-**2.Class.forName("类名字符串") **
+**2.Class.forName()**
 
-类名字符串是包名+类名。装入类,并做类的静态初始化，返回Class的对象
+参数类名字符串是包名+类名。装入类,并做类的静态初始化，返回Class的对象
 
 **3.实例对象.getClass()**
 

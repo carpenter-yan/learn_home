@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="复核到七反射">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加Class反射获取对象三种方式区别">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
@@ -604,13 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00068" summary="增加自动链接">
-      <created>1642837480765</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1642837480765</updated>
-    </task>
     <task id="LOCAL-00069" summary="增加本地文件链接">
       <created>1642837700331</created>
       <option name="number" value="00069" />
@@ -947,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648084244414</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="增加Class反射获取对象三种方式区别">
+      <created>1648086905950</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1648086905950</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1118,7 +1118,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="更新final部分" />
     <MESSAGE value="更新static部分" />
     <MESSAGE value="更新equals和hashcode部分" />
     <MESSAGE value="更新toString部分" />
@@ -1143,7 +1142,8 @@
     <MESSAGE value="修改目录结构" />
     <MESSAGE value="复核到四关键字" />
     <MESSAGE value="复核到七反射" />
-    <option name="LAST_COMMIT_MESSAGE" value="复核到七反射" />
+    <MESSAGE value="增加Class反射获取对象三种方式区别" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加Class反射获取对象三种方式区别" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
