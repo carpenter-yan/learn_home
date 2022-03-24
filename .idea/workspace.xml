@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="修改目录结构">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="复核到四关键字">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
     </list>
@@ -604,13 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00066" summary="增加分级标题返回目标锚点">
-      <created>1642836086039</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1642836086039</updated>
-    </task>
     <task id="LOCAL-00067" summary="增加参考链接">
       <created>1642836893692</created>
       <option name="number" value="00067" />
@@ -947,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647996851796</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="复核到四关键字">
+      <created>1647998847677</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1647998847677</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1118,7 +1118,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="优化string constant pool部分" />
     <MESSAGE value="优化string constant pool部分02" />
     <MESSAGE value="更新final部分" />
     <MESSAGE value="更新static部分" />
@@ -1143,7 +1142,8 @@
     <MESSAGE value="修改目录03" />
     <MESSAGE value="修改基本类型" />
     <MESSAGE value="修改目录结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改目录结构" />
+    <MESSAGE value="复核到四关键字" />
+    <option name="LAST_COMMIT_MESSAGE" value="复核到四关键字" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

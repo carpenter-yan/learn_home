@@ -555,33 +555,25 @@ import static com.xxx.ClassName.*
 
 **6. 初始化顺序**
 
-静态变量和静态语句块优先于实例变量和普通语句块，静态变量和静态语句块的初始化顺序取决于它们在代码中的顺序。
+静态变量和静态语句块优先于实例变量和普通语句块，静态变量和静态语句块的初始化顺序取决于它们在代码中的顺序。最后才是构造函数的初始化。
 
-```
-public static String staticField = "静态变量";
-```
+```java
+class Demo {
+    public static String staticField = "静态变量";
 
-```
-static {
-    System.out.println("静态语句块");
-}
-```
+    static {
+        System.out.println("静态语句块");
+    }
 
-```
-public String field = "实例变量";
-```
+    public String field = "实例变量";
 
-```
-{
-    System.out.println("普通语句块");
-}
-```
+    {
+        System.out.println("普通语句块");
+    }
 
-最后才是构造函数的初始化。
-
-```
-public InitialOrderTest() {
-    System.out.println("构造函数");
+    public Demo() {
+        System.out.println("构造函数");
+    }
 }
 ```
 
@@ -608,30 +600,32 @@ public InitialOrderTest() {
 
 ### 概览
 
+```java
+class Object{
+    public native int hashCode();
+
+    public boolean equals(Object obj);
+
+    protected native Object clone() throws CloneNotSupportedException;
+
+    public String toString();
+
+    public final native Class<?> getClass();
+
+    protected void finalize() throws Throwable {}
+
+    public final native void notify();
+
+    public final native void notifyAll();
+
+    public final native void wait(long timeout) throws InterruptedException;
+
+    public final void wait(long timeout, int nanos) throws InterruptedException;
+
+    public final void wait() throws InterruptedException;
+}
+
 ```
-public native int hashCode()
-
-public boolean equals(Object obj)
-
-protected native Object clone() throws CloneNotSupportedException
-
-public String toString()
-
-public final native Class<?> getClass()
-
-protected void finalize() throws Throwable {}
-
-public final native void notify()
-
-public final native void notifyAll()
-
-public final native void wait(long timeout) throws InterruptedException
-
-public final void wait(long timeout, int nanos) throws InterruptedException
-
-public final void wait() throws InterruptedException
-```
-
 
 ### equals()
 
@@ -732,14 +726,18 @@ HashSet和HashMap等集合类使用了hashCode()方法来计算对象应该存�
 下面的代码中，新建了两个等价的对象，并将它们添加到 HashSet 中。我们希望将这两个对象当成一样的，只在集合中添加一个对象。
 但是 EqualExample 没有实现 hashCode() 方法，因此这两个对象的哈希值是不同的，最终导致集合添加了两个等价的对象。
 
-```
-EqualExample e1 = new EqualExample(1, 1, 1);
-EqualExample e2 = new EqualExample(1, 1, 1);
-System.out.println(e1.equals(e2)); // true
-HashSet<EqualExample> set = new HashSet<>();
-set.add(e1);
-set.add(e2);
-System.out.println(set.size());   // 2
+```java
+class EqualExample {
+    public static void main(String[] args) {
+        EqualExample e1 = new EqualExample(1, 1, 1);
+        EqualExample e2 = new EqualExample(1, 1, 1);
+        System.out.println(e1.equals(e2)); // true
+        HashSet<EqualExample> set = new HashSet<>();
+        set.add(e1);
+        set.add(e2);
+        System.out.println(set.size());   // 2
+    }
+}
 ```
 
 理想的哈希函数应当具有均匀性，即不相等的对象应当均匀分布到所有可能的哈希值上。这就要求了哈希函数要把所有域的值都考虑进来。
@@ -761,7 +759,7 @@ public int hashCode() {
 
 ### toString()
 
-默认返回 ToStringExample@4554617c 这种形式，其中 @ 后面的数值为散列码的无符号十六进制表示。
+默认返回 ToStringExample@4554617c 这种形式，其中@后面的数值为散列码的无符号十六进制表示。
 
 ```java
 public class ToStringExample {
@@ -812,15 +810,15 @@ public class CloneExample {
     public CloneExample clone() throws CloneNotSupportedException {
         return (CloneExample)super.clone();
     }
-}
-```
 
-```
-CloneExample e1 = new CloneExample();
-try {
-    CloneExample e2 = e1.clone();
-} catch (CloneNotSupportedException e) {
-    e.printStackTrace();
+    public static void main(String[] args) {
+        CloneExample e1 = new CloneExample();
+        try {
+            CloneExample e2 = e1.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+    }
 }
 ```
 
@@ -874,19 +872,19 @@ public class ShallowCloneExample implements Cloneable {
     protected ShallowCloneExample clone() throws CloneNotSupportedException {
         return (ShallowCloneExample) super.clone();
     }
-}
-```
 
-```
-ShallowCloneExample e1 = new ShallowCloneExample();
-ShallowCloneExample e2 = null;
-try {
-    e2 = e1.clone();
-} catch (CloneNotSupportedException e) {
-    e.printStackTrace();
+    public static void main(String[] args) {
+        ShallowCloneExample e1 = new ShallowCloneExample();
+        ShallowCloneExample e2 = null;
+        try {
+            e2 = e1.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        e1.set(2, 222);
+        System.out.println(e2.get(2)); // 222
+    }
 }
-e1.set(2, 222);
-System.out.println(e2.get(2)); // 222
 ```
 
 **3. 深拷贝**
@@ -923,19 +921,19 @@ public class DeepCloneExample implements Cloneable {
         }
         return result;
     }
-}
-```
 
-```
-DeepCloneExample e1 = new DeepCloneExample();
-DeepCloneExample e2 = null;
-try {
-    e2 = e1.clone();
-} catch (CloneNotSupportedException e) {
-    e.printStackTrace();
+    public static void main(String[] args) {
+        DeepCloneExample e1 = new DeepCloneExample();
+        DeepCloneExample e2 = null;
+        try {
+            e2 = e1.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        e1.set(2, 222);
+        System.out.println(e2.get(2)); // 2
+    }
 }
-e1.set(2, 222);
-System.out.println(e2.get(2)); // 2
 ```
 
 **4. 如何实现深拷贝**
