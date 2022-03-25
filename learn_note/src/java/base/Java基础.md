@@ -7,7 +7,6 @@
         * [缓冲池](#缓冲池)
         * [BigDecimal](#BigDecimal)
     * [二、String](#二string)
-        * [概览](#概览)
         * [不可变的好处](#不可变的好处)
         * [String Constant Pool](#string-constant-pool)
         * [String StringBuffer and StringBuilder](#string-stringbuffer-and-stringbuilder)
@@ -22,7 +21,6 @@
         * [native](#native)
         * [instance of](#instance-of)
     * [五、Object 通用方法](#五object-通用方法)
-        * [概览](#概览)
         * [equals()](#equals)
         * [hashCode()](#hashcode)
         * [toString()](#tostring)
@@ -139,8 +137,6 @@ BigInteger的原理是将大数转换为int数组再按位运算
 [BACK TO TOP](#Java基础)
 
 ## 二、String
-
-### 概览
 
 String被声明为final，因此它不可被继承。 在Java8中，String内部使用char数组存储数据。
 
@@ -598,8 +594,6 @@ class Demo {
 [BACK TO TOP](#Java基础)
 
 ## 五、Object 通用方法
-
-### 概览
 
 ```java
 class Object{
@@ -1456,6 +1450,17 @@ testTypeGetClass---class TestClassType
 当我们编写一个新的java类时,JVM就会帮我们编译成class对象,存放在同名的.class文件中。 在运行时，当需要生成这个类的对象，
 JVM就会检查此类是否已经装载内存中。若是没有装载，则把.class文件装入到内存中。若是装载，则根据class文件生成实例对象。
 
+### 创建对象的几种方式
+
+1. 通过new关键字
+
+2. 通过Class类的newInstance()方法，这种默认是调用类的无参构造方法创建对象。
+
+3. 通过Constructor类的newInstance方法，可以指定某个构造器来创建对象。
+
+4. 利用Clone方法， Clone是Object 类中的一个方法，通过clone创建一个一模一样的对象。
+
+5. 反序列化，调用ObjectInputStream类的readObject()方法。
 
 [BACK TO TOP](#Java基础)
 
