@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="复核反射部分">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/Java基础.md" afterDir="false" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="Java基础基本完成">
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -604,13 +603,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00071" summary="加入引用">
-      <created>1642838846494</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1642838846494</updated>
-    </task>
     <task id="LOCAL-00072" summary="加入图像">
       <created>1642839063183</created>
       <option name="number" value="00072" />
@@ -947,7 +939,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648171540096</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Java基础基本完成">
+      <created>1648258856254</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1648258856254</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1118,7 +1117,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="更新toString部分" />
     <MESSAGE value="更新clone部分" />
     <MESSAGE value="增加Java关键字native" />
     <MESSAGE value="增加重载和重写" />
@@ -1143,7 +1141,8 @@
     <MESSAGE value="增加Class反射获取对象三种方式区别" />
     <MESSAGE value="修复问题" />
     <MESSAGE value="复核反射部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="复核反射部分" />
+    <MESSAGE value="Java基础基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java基础基本完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
