@@ -33,10 +33,12 @@
         * [重写与重载](#重写与重载)
     * [七、反射](#七反射)
         * [class对象获取方法](#class对象获取方法)
+        * [创建对象的几种方式](#创建对象的几种方式)
     * [八、异常](#八异常)
     * [九、泛型](#九泛型)
     * [十、注解](#十注解)
-    * [十一、特性](#十一特性)
+    * [十一、枚举类](#十一枚举类)
+    * [十二、特性](#十一特性)
         * [Java 各版本的新特性](#java-各版本的新特性)
         * [Java 与 C++ 的区别](#java-与-c-的区别)
         * [JRE or JDK](#jre-or-jdk)
@@ -91,7 +93,6 @@ new Integer(123) 与 Integer.valueOf(123) 的区别在于：
 > valueOf() 方法的实现比较简单，先判断值是否在缓存池中，如果在则返回缓存池中的实例。
 
 - [Autoboxing and Unboxing](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html)
-  
 - [StackOverflow : Differences between new Integer(123), Integer.valueOf(123) and just 123
 ](https://stackoverflow.com/questions/9030817/differences-between-new-integer123-integer-valueof123-and-just-123)
   
@@ -942,7 +943,6 @@ public class DeepCloneExample implements Cloneable {
 > String类型属于深拷贝。
 
 - [谈谈java里的深拷贝和浅拷贝](https://blog.csdn.net/ailiwanzi/article/details/88751250)
-
 - [Java的深拷贝和浅拷贝](https://www.cnblogs.com/ysocean/p/8482979.html)
 
 ### wait notify notifyAll
@@ -1486,6 +1486,9 @@ try语句return问题：**如果try语句里有return，返回的是try语句块
 4. 针对对象引用的返回，如果finally中有修改值，返回的是引用的对象。
    **如果try，finally语句里均有return，忽略try的return，而使用finally的return.**
 
+- [Java Exception Interview Questions and Answers](https://www.journaldev.com/2167/java-exception-interview-questions-and-answersl)
+- [Java提高篇——Java 异常处理](https://www.cnblogs.com/Qian123/p/5715402.html)
+
 [BACK TO TOP](#Java基础)
 
 ## 九、泛型
@@ -1553,7 +1556,12 @@ public class Box<T> {
 
 Java不能实现真正的泛型，只能使用类型擦除来实现伪泛型，这样虽然不会有类型膨胀问题，但是也引起来许多新问题
 
-## 注解
+- [Java 泛型详解](https://www.cnblogs.com/Blue-Keroro/p/8875898.html)
+- [10 道 Java 泛型面试题](https://cloud.tencent.com/developer/article/1033693)
+
+[BACK TO TOP](#Java基础)
+
+## 十、注解
 
 ### 内置注解
 
@@ -1611,7 +1619,12 @@ public @interface FruitName {
 }
 ```
 
-## 枚举类
+[注解 Annotation 实现原理与自定义注解例子](https://www.cnblogs.com/acm-bingzi/p/javaAnnotation.html)
+
+
+[BACK TO TOP](#Java基础)
+
+## 十一、枚举类
 
 枚举类比较使用==，同样也可以使用equals方法，Enum类中重写了equals实际上还是调用==方法。
 ```
@@ -1679,43 +1692,53 @@ public final class T extends Enum
 }
 ```
 
-## 零散的点
+[BACK TO TOP](#Java基础)
 
-### 三大特性
+## 十二、特性
 
-- 封装:封装是指把一个对象的状态信息（也就是属性）隐藏在对象内部，不允许外部对象直接访问对象的内部信息。
-- 继承:不同类型的对象，相互之间经常有一定数量的共同点。 extends
-- 多态:表示一个对象具有多种的状态。具体表现为父类的引用指向子类的实例。
+### Java 各版本的新特性
 
-### 序列化与反序列化
+**New highlights in Java SE 8**
 
-`transient` 关键字的作用是：阻止实例中那些用此关键字修饰的的变量序列化；当对象被反序列化时，被 transient 修饰的变量值不会被持久化和恢复。transient 只能修饰变量，不能修饰类和方法。
+1. Lambda Expressions
+2. Pipelines and Streams
+3. Date and Time API
+4. Default Methods
+5. Type Annotations
+6. Nashhorn JavaScript Engine
+7. Concurrent Accumulators
+8. Parallel operations
+9. PermGen Error Removed
 
-序列化ID：`serialVersionUID`决定着是否能够成功反序列化！简单来说，java的序列化机制是通过在运行时判断类的serialVersionUID来验证版本一致性的。
-> ` private static final long serialVersionUID`
+**New highlights in Java SE 7**
 
-### 获取键盘输入的两种方式
+1. Strings in Switch Statement
+2. Type Inference for Generic Instance Creation
+3. Multiple Exception Handling
+4. Support for Dynamic Languages
+5. Try with Resources
+6. Java nio Package
+7. Binary Literals, Underscore in literals
+8. Diamond Syntax
 
-```
-//通过 Scanner
-Scanner input = new Scanner(System.in);
-String s  = input.nextLine();
-input.close();
+- [Difference between Java 1.8 and Java 1.7?](http://www.selfgrowth.com/articles/difference-between-java-18-and-java-17)
+- [Java 8 特性](http://www.importnew.com/19345.html)
 
-方法 2：通过 BufferedReader
-BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-String s = input.readLine();
-```
+### Java 与 C++ 的区别
 
-### Arrays.asList()
+- Java 是纯粹的面向对象语言，所有的对象都继承自 java.lang.Object，C++ 为了兼容 C 即支持面向对象也支持面向过程。
+- Java 通过虚拟机从而实现跨平台特性，但是 C++ 依赖于特定的平台。
+- Java 没有指针，它的引用可以理解为安全指针，而 C++ 具有和 C 一样的指针。
+- Java 支持自动垃圾回收，而 C++ 需要手动回收。
+- Java 不支持多重继承，只能通过实现多个接口来达到相同目的，而 C++ 支持多重继承。
+- Java 不支持操作符重载，虽然可以对两个 String 对象执行加法运算，但是这是语言内置支持的操作，不属于操作符重载，而 C++ 可以。
+- Java 的 goto 是保留字，但是不可用，C++ 可以使用 goto。
 
-Arrays.asList(): 返回的并不是 java.util.ArrayList ，而是 java.util.Arrays 的一个内部类,这个内部类并没有实现集合的add()、remove()、clear()
-会抛出异常unSupportedOperationException。
+[What are the main differences between Java and C++?](http://cs-fundamentals.com/tech-interview/java/differences-between-java-and-cpp.php)
 
-### java复制
+### JRE or JDK
 
-对于基本类型，直接赋值复制，对于对象类型分为浅拷贝与深拷贝
-1. 浅拷贝：对引用数据类型进行引用传递般的拷贝，此为浅拷贝。
-2. 深拷贝：对基本数据类型进行值传递，对引用数据类型，创建一个新的对象，并复制其内容，此为深拷贝。
+- JRE：Java Runtime Environment，Java 运行环境的简称，为 Java 的运行提供了所需的环境。它是一个 JVM 程序，主要包括了 JVM 的标准实现和一些 Java 基本类库。
+- JDK：Java Development Kit，Java 开发工具包，提供了 Java 的开发及运行环境。JDK 是 Java 开发的核心，集成了 JRE 以及一些其它的工具，比如编译 Java 源码的编译器 javac 等。
 
-> 深拷贝的另一种方式，使用序列化和反序列化，获取一个新对象。
+[BACK TO TOP](#Java基础)
