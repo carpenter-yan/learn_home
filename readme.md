@@ -8,6 +8,7 @@
 
 ## Java相关
 - [Java基础](learn_note/src/java/base/JAVA_BASE.md)
+- [Java集合](learn_note/src/java/base/COLLECTION.md)
 
 
 ## 参考资料
