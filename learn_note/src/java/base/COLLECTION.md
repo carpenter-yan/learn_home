@@ -21,17 +21,23 @@
 
 ## 一、概览
 
-容器主要包括 Collection 和 Map 两种，Collection 存储着对象的集合，而 Map 存储着键值对（两个对象）的映射表。
+Java数组长度不可变化，为了保存数量不确定的数据，以及具有映射关系的数据（也称关联数组），Java提供了集合类。
+
+容器主要包括Collection和Map两种，Collection存储着对象的集合，而Map存储着键值对（两个对象）的映射表。
+
+Java容器只能存储对象，对基本类型支持不友好，只能通过包装器类保存，增加了内存占用和装箱拆箱的计算量
+
+- [换个数据结构，一不小心节约了591台机器！](https://www.cnblogs.com/thisiswhy/p/16066548.html)  
 
 ### Collection
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208220948084.png"/> </div><br>
+<div align="center"><img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208220948084.png"/></div><br>
 
 #### 1. Set
 
-- TreeSet：基于红黑树实现，支持有序性操作，例如根据一个范围查找元素的操作。但是查找效率不如 HashSet，HashSet 查找的时间复杂度为 O(1)，TreeSet 则为 O(logN)。
-
 - HashSet：基于哈希表实现，支持快速查找，但不支持有序性操作。并且失去了元素的插入顺序信息，也就是说使用 Iterator 遍历 HashSet 得到的结果是不确定的。
+
+- TreeSet：基于红黑树实现，支持有序性操作，例如根据一个范围查找元素的操作。但是查找效率不如 HashSet，HashSet 查找的时间复杂度为 O(1)，TreeSet 则为 O(logN)。
 
 - LinkedHashSet：具有 HashSet 的查找效率，并且内部使用双向链表维护元素的插入顺序。
 
@@ -51,13 +57,14 @@
 
 ### Map
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20201101234335837.png"/> </div><br>
-
-- TreeMap：基于红黑树实现。
+<div align="center"><img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20201101234335837.png"/></div><br>
 
 - HashMap：基于哈希表实现。
 
-- HashTable：和 HashMap 类似，但它是线程安全的，这意味着同一时刻多个线程同时写入 HashTable 不会导致数据不一致。它是遗留类，不应该去使用它，而是使用 ConcurrentHashMap 来支持线程安全，ConcurrentHashMap 的效率会更高，因为 ConcurrentHashMap 引入了分段锁。
+- TreeMap：基于红黑树实现。
+
+- HashTable：和HashMap 类似，但它是线程安全的，这意味着同一时刻多个线程同时写入HashTable不会导致数据不一致。
+  它是遗留类，不应该去使用它，而是使用 ConcurrentHashMap来支持线程安全，ConcurrentHashMap的效率会更高，因为ConcurrentHashMap引入了分段锁。
 
 - LinkedHashMap：使用双向链表来维护元素的顺序，顺序为插入顺序或者最近最少使用（LRU）顺序。
 
@@ -73,11 +80,15 @@ Collection 继承了 Iterable 接口，其中的 iterator() 方法能够产生�
 从 JDK 1.5 之后可以使用 foreach 方法来遍历实现了 Iterable 接口的聚合对象。
 
 ```java
-List<String> list = new ArrayList<>();
-list.add("a");
-list.add("b");
-for (String item : list) {
-    System.out.println(item);
+class demo{
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("a");
+        list.add("b");
+        for (String item : list) {
+            System.out.println(item);
+        }
+    }
 }
 ```
 
@@ -86,22 +97,20 @@ for (String item : list) {
 java.util.Arrays#asList() 可以把数组类型转换为 List 类型。
 
 ```java
-@SafeVarargs
-public static <T> List<T> asList(T... a)
+class Arrays{
+    @SafeVarargs
+    public static <T> List<T> asList(T... a);
+
+    public static void main(String[] args) {
+        Integer[] arr = {1, 2, 3};
+        List list = Arrays.asList(arr);
+
+        List list = Arrays.asList(1, 2, 3);//也可以使用以下方式调用 asList()：
+    }
+}
 ```
 
 应该注意的是 asList() 的参数为泛型的变长参数，不能使用基本类型数组作为参数，只能使用相应的包装类型数组。
-
-```java
-Integer[] arr = {1, 2, 3};
-List list = Arrays.asList(arr);
-```
-
-也可以使用以下方式调用 asList()：
-
-```java
-List list = Arrays.asList(1, 2, 3);
-```
 
 ## 三、源码分析
 
@@ -111,152 +120,208 @@ List list = Arrays.asList(1, 2, 3);
 
 ### ArrayList
 
-
 #### 1. 概览
 
-因为 ArrayList 是基于数组实现的，所以支持快速随机访问。RandomAccess 接口标识着该类支持快速随机访问。
+因为ArrayList是基于数组实现的，所以支持快速随机访问。RandomAccess接口标识着该类支持快速随机访问。
 
 ```java
 public class ArrayList<E> extends AbstractList<E>
-        implements List<E>, RandomAccess, Cloneable, java.io.Serializable
-```
+        implements List<E>, RandomAccess, Cloneable, java.io.Serializable{
+    private static final int DEFAULT_CAPACITY = 10;  //数组的默认大小为 10。
 
-数组的默认大小为 10。
-
-```java
-private static final int DEFAULT_CAPACITY = 10;
+}
 ```
 
 <div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208232221265.png"/> </div><br>
 
 #### 2. 扩容
 
-添加元素时使用 ensureCapacityInternal() 方法来保证容量足够，如果不够时，需要使用 grow() 方法进行扩容，新容量的大小为 `oldCapacity + (oldCapacity >> 1)`，即 oldCapacity+oldCapacity/2。其中 oldCapacity >> 1 需要取整，所以新容量大约是旧容量的 1.5 倍左右。（oldCapacity 为偶数就是 1.5 倍，为奇数就是 1.5 倍-0.5）
+添加元素时使用ensureCapacityInternal()方法来保证容量足够，如果不够时，需要使用grow() 方法进行扩容，新容量的大小为 `oldCapacity + (oldCapacity >> 1)`，
+即 oldCapacity+oldCapacity/2。其中 oldCapacity >> 1 需要取整，所以新容量大约是旧容量的1.5 倍左右。（oldCapacity 为偶数就是 1.5 倍，为奇数就是 1.5 倍-0.5）
 
-扩容操作需要调用 `Arrays.copyOf()` 把原数组整个复制到新数组中，这个操作代价很高，因此最好在创建 ArrayList 对象时就指定大概的容量大小，减少扩容操作的次数。
+扩容操作需要调用 `Arrays.copyOf()` 把原数组整个复制到新数组中，这个操作代价很高，因此最好在创建ArrayList对象时就指定大概的容量大小，减少扩容操作的次数。
 
 ```java
-public boolean add(E e) {
-    ensureCapacityInternal(size + 1);  // Increments modCount!!
-    elementData[size++] = e;
-    return true;
-}
-
-private void ensureCapacityInternal(int minCapacity) {
-    if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
-        minCapacity = Math.max(DEFAULT_CAPACITY, minCapacity);
+class ArrayList{
+    public boolean add(E e) {
+        ensureCapacityInternal(size + 1);  // Increments modCount!!
+        elementData[size++] = e;
+        return true;
     }
-    ensureExplicitCapacity(minCapacity);
-}
 
-private void ensureExplicitCapacity(int minCapacity) {
-    modCount++;
-    // overflow-conscious code
-    if (minCapacity - elementData.length > 0)
-        grow(minCapacity);
-}
-
-private void grow(int minCapacity) {
-    // overflow-conscious code
-    int oldCapacity = elementData.length;
-    int newCapacity = oldCapacity + (oldCapacity >> 1);
-    if (newCapacity - minCapacity < 0)
-        newCapacity = minCapacity;
-    if (newCapacity - MAX_ARRAY_SIZE > 0)
-        newCapacity = hugeCapacity(minCapacity);
-    // minCapacity is usually close to size, so this is a win:
-    elementData = Arrays.copyOf(elementData, newCapacity);
+    private void ensureCapacityInternal(int minCapacity) {
+        if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
+            minCapacity = Math.max(DEFAULT_CAPACITY, minCapacity);
+        }
+        ensureExplicitCapacity(minCapacity);
+    }
+    
+    private void ensureExplicitCapacity(int minCapacity) {
+        modCount++;
+        // overflow-conscious code
+        if (minCapacity - elementData.length > 0)
+            grow(minCapacity);
+    }
+    
+    private void grow(int minCapacity) {
+        // overflow-conscious code
+        int oldCapacity = elementData.length;
+        int newCapacity = oldCapacity + (oldCapacity >> 1);
+        if (newCapacity - minCapacity < 0)
+            newCapacity = minCapacity;
+        if (newCapacity - MAX_ARRAY_SIZE > 0)
+            newCapacity = hugeCapacity(minCapacity);
+        // minCapacity is usually close to size, so this is a win:
+        elementData = Arrays.copyOf(elementData, newCapacity);
+    }
 }
 ```
 
 #### 3. 删除元素
 
-需要调用 System.arraycopy() 将 index+1 后面的元素都复制到 index 位置上，该操作的时间复杂度为 O(N)，可以看到 ArrayList 删除元素的代价是非常高的。
+需要调用System.arraycopy() 将index+1后面的元素都复制到index位置上，该操作的时间复杂度为 O(N)，可以看到ArrayList删除元素的代价是非常高的。
 
 ```java
-public E remove(int index) {
-    rangeCheck(index);
-    modCount++;
-    E oldValue = elementData(index);
-    int numMoved = size - index - 1;
-    if (numMoved > 0)
-        System.arraycopy(elementData, index+1, elementData, index, numMoved);
-    elementData[--size] = null; // clear to let GC do its work
-    return oldValue;
+class ArrayList{
+    public E remove(int index) {
+        rangeCheck(index);
+        modCount++;
+        E oldValue = elementData(index);
+        int numMoved = size - index - 1;
+        if (numMoved > 0)
+            System.arraycopy(elementData, index+1, elementData, index, numMoved);
+        elementData[--size] = null; // clear to let GC do its work
+        return oldValue;
+    }
 }
 ```
 
 #### 4. 序列化
 
-ArrayList 基于数组实现，并且具有动态扩容特性，因此保存元素的数组不一定都会被使用，那么就没必要全部进行序列化。
+ArrayList基于数组实现，并且具有动态扩容特性，因此保存元素的数组不一定都会被使用(部分元素没值)，那么就没必要全部进行序列化。
 
-保存元素的数组 elementData 使用 transient 修饰，该关键字声明数组默认不会被序列化。
+保存元素的数组 elementData使用transient修饰，该关键字声明数组默认不会被序列化。
 
 ```java
-transient Object[] elementData; // non-private to simplify nested class access
+class ArrayList{
+    transient Object[] elementData; // non-private to simplify nested class access
+
+    private void readObject(java.io.ObjectInputStream s)
+            throws java.io.IOException, ClassNotFoundException {
+        elementData = EMPTY_ELEMENTDATA;
+
+        // Read in size, and any hidden stuff
+        s.defaultReadObject();
+
+        // Read in capacity
+        s.readInt(); // ignored
+
+        if (size > 0) {
+            // be like clone(), allocate array based upon size not capacity
+            ensureCapacityInternal(size);
+
+            Object[] a = elementData;
+            // Read in all elements in the proper order.
+            for (int i=0; i<size; i++) {
+                a[i] = s.readObject();
+            }
+        }
+    }
+
+    private void writeObject(java.io.ObjectOutputStream s)
+            throws java.io.IOException{
+        // Write out element count, and any hidden stuff
+        int expectedModCount = modCount;
+        s.defaultWriteObject();
+
+        // Write out size as capacity for behavioural compatibility with clone()
+        s.writeInt(size);
+
+        // Write out all elements in the proper order.
+        for (int i=0; i<size; i++) {
+            s.writeObject(elementData[i]);
+        }
+
+        if (modCount != expectedModCount) {
+            throw new ConcurrentModificationException();
+        }
+    }
+
+    public static void main(String[] args) {
+        ArrayList list = new ArrayList();
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
+        oos.writeObject(list);
+    }
+}
 ```
 
 ArrayList 实现了 writeObject() 和 readObject() 来控制只序列化数组中有元素填充那部分内容。
 
+序列化时需要使用ObjectOutputStream的writeObject()将对象转换为字节流并输出。
+而writeObject()方法在传入的对象存在writeObject()的时候会去反射调用该对象的writeObject()来实现序列化。
+反序列化使用的是ObjectInputStream的readObject()方法，原理类似。
+
+#### 5. Fail-Fast
+
+modCount用来记录ArrayList结构发生变化的次数。结构发生变化是指添加或者删除至少一个元素的所有操作，或者是调整内部数组的大小，仅仅只是设置元素的值不算结构发生变化。
+
+在进行序列化或者迭代等操作时，需要比较操作前后modCount是否改变，如果改变了需要抛出ConcurrentModificationException。代码参考上节序列化中的writeObject()方法。
+
 ```java
-private void readObject(java.io.ObjectInputStream s)
-    throws java.io.IOException, ClassNotFoundException {
-    elementData = EMPTY_ELEMENTDATA;
+class ArrayList{
+    public Iterator<E> iterator() {
+        return new Itr();
+    }
 
-    // Read in size, and any hidden stuff
-    s.defaultReadObject();
+    private class Itr implements Iterator<E> {
+        int cursor;       // index of next element to return
+        int lastRet = -1; // index of last element returned; -1 if no such
+        int expectedModCount = modCount; //创建迭代器是初始化为modCount
 
-    // Read in capacity
-    s.readInt(); // ignored
+        Itr() {}
 
-    if (size > 0) {
-        // be like clone(), allocate array based upon size not capacity
-        ensureCapacityInternal(size);
+        final void checkForComodification() {
+            /** 当调用ArrayList的add,remove等方法时会改变modCount。但expectedModCount初始化后不变，所以能快速失败
+              但在多线程环境下可能不准确，官方写的是经历准确抛出快速失败
+             */
+            if (modCount != expectedModCount) 
+                throw new ConcurrentModificationException();
+        }
 
-        Object[] a = elementData;
-        // Read in all elements in the proper order.
-        for (int i=0; i<size; i++) {
-            a[i] = s.readObject();
+        public boolean hasNext() {
+            return cursor != size;
+        }
+
+        @SuppressWarnings("unchecked")
+        public E next() {
+            checkForComodification();
+            int i = cursor;
+            if (i >= size)
+                throw new NoSuchElementException();
+            Object[] elementData = ArrayList.this.elementData;
+            if (i >= elementData.length)
+                throw new ConcurrentModificationException();
+            cursor = i + 1;
+            return (E) elementData[lastRet = i];
+        }
+
+        public void remove() {
+            if (lastRet < 0)
+                throw new IllegalStateException();
+            checkForComodification();
+
+            try {
+                ArrayList.this.remove(lastRet);
+                cursor = lastRet;
+                lastRet = -1;
+                expectedModCount = modCount;//迭代器的remove方法最后修改了expectedModCount,所以不会fail-fast
+            } catch (IndexOutOfBoundsException ex) {
+                throw new ConcurrentModificationException();
+            }
         }
     }
 }
 ```
-
-```java
-private void writeObject(java.io.ObjectOutputStream s)
-    throws java.io.IOException{
-    // Write out element count, and any hidden stuff
-    int expectedModCount = modCount;
-    s.defaultWriteObject();
-
-    // Write out size as capacity for behavioural compatibility with clone()
-    s.writeInt(size);
-
-    // Write out all elements in the proper order.
-    for (int i=0; i<size; i++) {
-        s.writeObject(elementData[i]);
-    }
-
-    if (modCount != expectedModCount) {
-        throw new ConcurrentModificationException();
-    }
-}
-```
-
-序列化时需要使用 ObjectOutputStream 的 writeObject() 将对象转换为字节流并输出。而 writeObject() 方法在传入的对象存在 writeObject() 的时候会去反射调用该对象的 writeObject() 来实现序列化。反序列化使用的是 ObjectInputStream 的 readObject() 方法，原理类似。
-
-```java
-ArrayList list = new ArrayList();
-ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
-oos.writeObject(list);
-```
-
-#### 5. Fail-Fast
-
-modCount 用来记录 ArrayList 结构发生变化的次数。结构发生变化是指添加或者删除至少一个元素的所有操作，或者是调整内部数组的大小，仅仅只是设置元素的值不算结构发生变化。
-
-在进行序列化或者迭代等操作时，需要比较操作前后 modCount 是否改变，如果改变了需要抛出 ConcurrentModificationException。代码参考上节序列化中的 writeObject() 方法。
-
 
 ### Vector
 
