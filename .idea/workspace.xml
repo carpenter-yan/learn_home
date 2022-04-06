@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加Java容器内容">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="优化ArrayList源码分析">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/infomation.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/infomation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/network/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/computer/network/resource.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -605,13 +605,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00075" summary="百度图片">
-      <created>1643159224344</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1643159224345</updated>
-    </task>
     <task id="LOCAL-00076" summary="修改markdown">
       <created>1643160263773</created>
       <option name="number" value="00076" />
@@ -948,7 +941,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648430750196</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="优化ArrayList源码分析">
+      <created>1648779183918</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1648779183918</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1119,7 +1119,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加反射" />
     <MESSAGE value="目录调整02" />
     <MESSAGE value="目录调整03" />
     <MESSAGE value="目录调整04" />
@@ -1144,7 +1143,8 @@
     <MESSAGE value="增加首页链接" />
     <MESSAGE value="增加首页链接01" />
     <MESSAGE value="增加Java容器内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加Java容器内容" />
+    <MESSAGE value="优化ArrayList源码分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化ArrayList源码分析" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
