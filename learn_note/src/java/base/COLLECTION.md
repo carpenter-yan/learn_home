@@ -9,11 +9,11 @@
     * [二、容器中的设计模式](#二容器中的设计模式)
         * [迭代器模式](#迭代器模式)
         * [适配器模式](#适配器模式)
-    * [三、LIST源码分析](#三LIST源码分析)
+    * [三、List源码分析](#三List源码分析)
         * [ArrayList](#arraylist)
         * [Vector](#vector)
         * [LinkedList](#linkedlist)
-    * [四、MAP源码分析](#四MAP源码分析)
+    * [四、Map源码分析](#四Map源码分析)
         * [HashMap](#hashmap)
         * [LinkedHashMap](#linkedhashmap)
         * [WeakHashMap](#weakhashmap)
@@ -73,6 +73,8 @@ Java容器只能存储对象，对基本类型支持不友好，只能通过包�
 
 - LinkedHashMap：使用双向链表来维护元素的顺序，顺序为插入顺序或者最近最少使用（LRU）顺序。
 
+[BACK TO TOP](#Java容器)
+
 ## 二、容器中的设计模式
 
 ### 迭代器模式
@@ -115,7 +117,9 @@ class Arrays {
 
 应该注意的是 asList() 的参数为泛型的变长参数，不能使用基本类型数组作为参数，只能使用相应的包装类型数组。
 
-## 三、LIST源码分析
+[BACK TO TOP](#Java容器)
+
+## 三、List源码分析
 
 如果没有特别说明，以下源码分析基于JDK 1.8。
 
@@ -468,7 +472,7 @@ ArrayList基于动态数组实现，LinkedList基于双向链表实现。ArrayLi
 
 [BACK TO TOP](#Java容器)
 
-## 四、MAP源码分析
+## 四、Map源码分析
 
 ### HashMap
 
@@ -687,7 +691,9 @@ class HashMap {
     }
 }
 ```
-问题：为什么采用hashcode的高16位和低16位异或能降低hash碰撞？hash函数能不能直接用key的hashcode？  
+
+问题：为什么采用hashcode的高16位和低16位异或能降低hash碰撞？hash函数能不能直接用key的hashcode？
+
 - 上述解释的点，低位与高位混合，加大hash的随机性。
 - key的hashcode可能被重写，重写的hash函数冲突的概率无法保证。因此hashMap需要在此基础使用自己的hash加大随机性。
 
@@ -804,8 +810,7 @@ class HashMap {
 
 ```
 
-下边这个判断，它用于把原来的普通链表拆分为两条链表，位置不变或者放在新的位置。（要么在原有位置，要么在原有位置+oldCap位置上）
-这也是为什么要求capability为2的幂，并且每次扩容为2倍的原因。
+下边这个判断，它用于把原来的普通链表拆分为两条链表，位置不变或者放在新的位置。（要么在原有位置，要么在原有位置+oldCap位置上） 这也是为什么要求capability为2的幂，并且每次扩容为2倍的原因。
 因为这样在扩容时原有1条链表最多只会拆为2条，减少了新链表的数量，降低了复杂度。
 
 ```
@@ -816,112 +821,119 @@ class HashMap {
 
 Java 1.7中使用头插发，在多线程的情况下，在rehash的过程中会造成链表形成环，然后在get方法中就会造成死循环。
 
+#### 1.8主要的优化：
+
+- 数组+链表改成了数组+链表或红黑树；
+- 链表的插入方式从头插法改成了尾插法，简单说就是插入时，如果数组位置上已经有元素，1.7将新元素放到数组中，原始节点作为新节点的后继节点，1.8遍历链表，将元素放置到链表的最后；
+- 扩容的时候1.7需要对原数组中的元素进行重新hash定位在新数组的位置，1.8采用更简单的判断逻辑，位置不变或索引+旧容量大小；
+- 在插入时，1.7先判断是否需要扩容，再插入，1.8先进行插入，插入完成再判断是否需要扩容；
+
+好处：
+
+- 防止发生hash冲突，链表长度过长，将时间复杂度由O(n)降为O(logn);
+- 因为1.7头插法扩容时，头插法会使链表发生反转，多线程环境下会产生环；
+
+> 在多线程环境下，1.7 会产生死循环、数据丢失、数据覆盖的问题，1.8 中会有数据覆盖的问题。
+
 [深入理解哈希表](https://www.cnblogs.com/LiLihongqiang/p/7655823.html)  
 [美团关于HashMap的讲解](https://tech.meituan.com/2016/06/24/java-hashmap.html)  
 [hashMap头插法和尾插法区别](https://blog.csdn.net/weixin_35523284/article/details/112096437)  
 [面试官再问你 HashMap 底层原理，就把这篇文章甩给他看](https://www.cnblogs.com/starry-skys/p/12689683.html)  
 [HashMap？ConcurrentHashMap？相信看完这篇没人能难住你！](https://blog.csdn.net/weixin_44460333/article/details/86770169)
 
+[BACK TO TOP](#Java容器)
+
 ### LinkedHashMap
 
 #### 存储结构
 
-继承自 HashMap，因此具有和 HashMap 一样的快速查找特性。
+继承自HashMap，因此具有和HashMap一样的快速查找特性。内部维护了一个双向链表，用来维护插入顺序或者LRU顺序。
 
 ```java
-public class LinkedHashMap<K, V> extends HashMap<K, V> implements Map<K, V>
-```
+public class LinkedHashMap<K, V> extends HashMap<K, V> implements Map<K, V> {
+    // The head (eldest) of the doubly linked list. head最老
+    transient LinkedHashMap.Entry<K, V> head;
 
-内部维护了一个双向链表，用来维护插入顺序或者 LRU 顺序。
+    // The tail (youngest) of the doubly linked list. tail最新
+    transient LinkedHashMap.Entry<K, V> tail;
 
-```java
-/**
- * The head (eldest) of the doubly linked list.
- */
-transient LinkedHashMap.Entry<K, V> head;
+    // accessOrder 决定了顺序，默认为false，此时维护的是插入顺序。
+    final boolean accessOrder;
 
-/**
- * The tail (youngest) of the doubly linked list.
- */
-transient LinkedHashMap.Entry<K, V> tail;
-```
+    // LinkedHashMap 最重要的是以下用于维护顺序的函数，它们会在put、get 等方法中调用。
+    void afterNodeAccess(Node<K, V> p) {
+    }
 
-accessOrder 决定了顺序，默认为 false，此时维护的是插入顺序。
-
-```java
-final boolean accessOrder;
-```
-
-LinkedHashMap 最重要的是以下用于维护顺序的函数，它们会在 put、get 等方法中调用。
-
-```java
-void afterNodeAccess(Node<K, V> p){}
-        void afterNodeInsertion(boolean evict){}
+    void afterNodeInsertion(boolean evict) {
+    }
+}
 ```
 
 #### afterNodeAccess()
 
-当一个节点被访问时，如果 accessOrder 为 true，则会将该节点移到链表尾部。也就是说指定为 LRU 顺序之后，在每次访问一个节点时，会将这个节点移到链表尾部，保证链表尾部是最近访问的节点，那么链表首部就是最近最久未使用的节点。
+当一个节点被访问时，如果accessOrder为true，则会将该节点移到链表尾部。也就是说指定为LRU顺序之后， 在每次访问一个节点时，会将这个节点移到链表尾部，保证链表尾部是最近访问的节点，那么链表首部就是最近最久未使用的节点。
 
 ```java
-void afterNodeAccess(Node<K, V> e){ // move node to last
+class LinkedHashMap {
+    void afterNodeAccess(Node<K, V> e) { // move node to last
         LinkedHashMap.Entry<K, V> last;
-        if(accessOrder&&(last=tail)!=e){
-        LinkedHashMap.Entry<K, V> p=
-        (LinkedHashMap.Entry<K, V>)e,b=p.before,a=p.after;
-        p.after=null;
-        if(b==null)
-        head=a;
-        else
-        b.after=a;
-        if(a!=null)
-        a.before=b;
-        else
-        last=b;
-        if(last==null)
-        head=p;
-        else{
-        p.before=last;
-        last.after=p;
+        if (accessOrder && (last = tail) != e) {
+            LinkedHashMap.Entry<K, V> p =
+                    (LinkedHashMap.Entry<K, V>) e, b = p.before, a = p.after;
+            p.after = null;
+            if (b == null)
+                head = a;
+            else
+                b.after = a;
+            if (a != null)
+                a.before = b;
+            else
+                last = b;
+            if (last == null)
+                head = p;
+            else {
+                p.before = last;
+                last.after = p;
+            }
+            tail = p;
+            ++modCount;
         }
-        tail=p;
-        ++modCount;
-        }
-        }
+    }
+}
 ```
 
 #### afterNodeInsertion()
 
-在 put 等操作之后执行，当 removeEldestEntry() 方法返回 true 时会移除最晚的节点，也就是链表首部节点 first。
+在 put等操作之后执行，当removeEldestEntry()方法返回true时会移除最晚的节点，也就是链表首部节点first。
 
-evict 只有在构建 Map 的时候才为 false，在这里为 true。
+evict只有在构建Map的时候才为false，在这里为 true。
 
 ```java
-void afterNodeInsertion(boolean evict){ // possibly remove eldest
+class LinkedHashMap {
+    void afterNodeInsertion(boolean evict) { // possibly remove eldest
         LinkedHashMap.Entry<K, V> first;
-        if(evict&&(first=head)!=null&&removeEldestEntry(first)){
-        K key=first.key;
-        removeNode(hash(key),key,null,false,true);
+        if (evict && (first = head) != null && removeEldestEntry(first)) {
+            K key = first.key;
+            removeNode(hash(key), key, null, false, true);
         }
-        }
-```
-
-removeEldestEntry() 默认为 false，如果需要让它为 true，需要继承 LinkedHashMap 并且覆盖这个方法的实现，这在实现 LRU
-的缓存中特别有用，通过移除最近最久未使用的节点，从而保证缓存空间足够，并且缓存的数据都是热点数据。
-
-```java
-protected boolean removeEldestEntry(Map.Entry<K, V> eldest){
+    }
+    
+    protected boolean removeEldestEntry(Map.Entry<K, V> eldest){
         return false;
-        }
+    }
+}
 ```
+
+removeEldestEntry() 默认为false，如果需要让它为true，需要继承LinkedHashMap并且覆盖这个方法的实现，
+这在实现LRU 的缓存中特别有用，通过移除最近最久未使用的节点，从而保证缓存空间足够，并且缓存的数据都是热点数据。
 
 #### LRU 缓存
 
-以下是使用 LinkedHashMap 实现的一个 LRU 缓存：
+以下是使用 LinkedHashMap实现的一个LRU缓存：
 
-- 设定最大缓存空间 MAX_ENTRIES 为 3；
-- 使用 LinkedHashMap 的构造函数将 accessOrder 设置为 true，开启 LRU 顺序；
-- 覆盖 removeEldestEntry() 方法实现，在节点多于 MAX_ENTRIES 就会将最近最久未使用的数据移除。
+- 设定最大缓存空间MAX_ENTRIES为3；
+- 使用LinkedHashMap的构造函数将accessOrder设置为 true，开启LRU顺序；
+- 覆盖removeEldestEntry()方法实现，在节点多于MAX_ENTRIES就会将最近最久未使用的数据移除。
 
 ```java
 class LRUCache<K, V> extends LinkedHashMap<K, V> {
@@ -934,11 +946,8 @@ class LRUCache<K, V> extends LinkedHashMap<K, V> {
     LRUCache() {
         super(MAX_ENTRIES, 0.75f, true);
     }
-}
-```
 
-```java
-public static void main(String[]args){
+    public static void main(String[]args){
         LRUCache<Integer, String> cache=new LRUCache<>();
         cache.put(1,"a");
         cache.put(2,"b");
@@ -946,7 +955,8 @@ public static void main(String[]args){
         cache.get(1);
         cache.put(4,"d");
         System.out.println(cache.keySet());
-        }
+    }
+}
 ```
 
 ```html
