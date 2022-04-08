@@ -42,6 +42,7 @@
         * [Java 各版本的新特性](#java-各版本的新特性)
         * [Java 与 C++ 的区别](#java-与-c-的区别)
         * [JRE or JDK](#jre-or-jdk)
+        * [classpath and jar](#classpath-and-jar)
     * [参考资料](#参考资料)
 <!-- GFM-TOC -->
 
@@ -1698,31 +1699,9 @@ public final class T extends Enum
 
 ### Java 各版本的新特性
 
-**New highlights in Java SE 8**
-
-1. Lambda Expressions
-2. Pipelines and Streams
-3. Date and Time API
-4. Default Methods
-5. Type Annotations
-6. Nashhorn JavaScript Engine
-7. Concurrent Accumulators
-8. Parallel operations
-9. PermGen Error Removed
-
-**New highlights in Java SE 7**
-
-1. Strings in Switch Statement
-2. Type Inference for Generic Instance Creation
-3. Multiple Exception Handling
-4. Support for Dynamic Languages
-5. Try with Resources
-6. Java nio Package
-7. Binary Literals, Underscore in literals
-8. Diamond Syntax
-
 - [Difference between Java 1.8 and Java 1.7?](http://www.selfgrowth.com/articles/difference-between-java-18-and-java-17)
-- [Java 8 特性](http://www.importnew.com/19345.html)
+- [Java 8 特性](http://www.importnew.com/19345.html)  
+- [JDK8到JDK17各个版本的重要特性整理](https://www.cnblogs.com/jackion5/p/10772017.html)  
 
 ### Java 与 C++ 的区别
 
@@ -1740,5 +1719,12 @@ public final class T extends Enum
 
 - JRE：Java Runtime Environment，Java 运行环境的简称，为 Java 的运行提供了所需的环境。它是一个 JVM 程序，主要包括了 JVM 的标准实现和一些 Java 基本类库。
 - JDK：Java Development Kit，Java 开发工具包，提供了 Java 的开发及运行环境。JDK 是 Java 开发的核心，集成了 JRE 以及一些其它的工具，比如编译 Java 源码的编译器 javac 等。
+
+### classpath and jar
+
+- JVM通过环境变量classpath决定搜索class的路径和顺序；不推荐设置系统环境变量classpath，始终建议通过-cp命令传入；
+- jar包相当于目录，可以包含很多.class文件，方便下载和使用；MANIFEST.MF文件可以提供jar包的信息，如Main-Class，这样可以直接运行jar包。
+
+- [classpath和jar](https://www.liaoxuefeng.com/wiki/1252599548343744/1260466914339296)  
 
 [BACK TO TOP](#Java基础)
