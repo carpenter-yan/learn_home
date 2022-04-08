@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="优化hashmap部分">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="优化LinkedHashMap部分">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" afterDir="false" />
     </list>
@@ -604,13 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00078" summary="增加Java基础">
-      <created>1646357683511</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1646357683512</updated>
-    </task>
     <task id="LOCAL-00079" summary="增加io文章">
       <created>1646659989984</created>
       <option name="number" value="00079" />
@@ -947,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649424329016</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="优化LinkedHashMap部分">
+      <created>1649426575813</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1649426575813</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1118,7 +1118,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="目录调整04" />
     <MESSAGE value="目录调整05" />
     <MESSAGE value="目录调整06" />
     <MESSAGE value="目录调整07" />
@@ -1143,7 +1142,8 @@
     <MESSAGE value="优化ArrayList源码分析" />
     <MESSAGE value="优化Vector源码分析" />
     <MESSAGE value="优化hashmap部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化hashmap部分" />
+    <MESSAGE value="优化LinkedHashMap部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化LinkedHashMap部分" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
