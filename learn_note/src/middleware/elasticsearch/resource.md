@@ -30,3 +30,5 @@
 
 [想问下，这么多客户端到底啥区别，用哪个呢？](https://elasticsearch.cn/question/2945)  
 
+[2万字详解，吃透 ES](https://mp.weixin.qq.com/s/hY2zBZqzMjVSIgnDK19EUQ)  
+
