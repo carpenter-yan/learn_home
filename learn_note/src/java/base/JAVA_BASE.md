@@ -63,7 +63,7 @@
 boolean只有true或false，可以使用1bit来存储，但具体大小没有明确规定。
 JVM在编译时期将boolean类型数据转换为int，但boolean数组却是通过byte数组来实现
 
-short和char: 都占用4个字节，但short是对数值编码，首位为符号位。char是对字符编码，无符号位(0~65535)
+short和char: 都占用2个字节，但short是对数值编码，首位为符号位。char是对字符编码，无符号位(0~65535)
 
 基本数据类型转换关系：byte→short(char)→int→long→float→double
 
