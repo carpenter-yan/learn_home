@@ -5,11 +5,31 @@
 1. xxx是什么？
 2. xxx优缺点是什么？
 3. xxx应用及使用场景是什么？
+## 系统理论
 
 ## Java相关
 - [Java基础](learn_note/src/java/base/JAVA_BASE.md)
 - [Java集合](learn_note/src/java/base/COLLECTION.md)
+- [Java并发](learn_note/src/java/base/CONCURRENCY.md)
+- [JavaI/O](learn_note/src/java/base/JAVA_IO.md)
+- [Java虚拟机](learn_note/src/java/base/JAVA_JVM.md)
 
+## 开源框架
+- [spring]()
+- [springMVC]()
+- [mybatis]()
+- [spring boot]()
+- [spring cloud]()
+- [spring alibaba]()
+
+## 数据库
+- [MySQL]()
+- [Redis]()
+- [ElasticSearch]()
+
+## 中间件
+- [Kafka]()
+- [Nginx]()
 
 ## 参考资料
 | 地址 | 简介 |
