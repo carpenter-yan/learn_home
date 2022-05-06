@@ -17,7 +17,15 @@
         * [HashMap](#hashmap)
         * [LinkedHashMap](#linkedhashmap)
         * [WeakHashMap](#weakhashmap)
-    * [四、集合工具类](#四集合工具类)
+        * [TreeMap](#treemap)
+    * [五、Set源码分析](#五Set源码分析)
+        * [HashSet](#hashset)
+        * [LinkedHashSet](#linkedhashset)
+        * [TreeSet](#treeset)
+    * [六、Queue源码分析](#六Queue源码分析)
+        * [PriorityQueue](#priorityqueue)
+        * [ArrayDeque](#arraydeque)
+    * [七、集合工具类](#四集合工具类)
     * [参考资料](#参考资料)
 
 <!-- GFM-TOC -->
@@ -1024,7 +1032,29 @@ public final class ConcurrentCache<K, V> {
 相比使用LinkedHashMap实现的LRU，longterm使得内存占用翻倍，虽然能在下次垃圾回收是清理，但增加了垃圾回收的负担。
 LinkedHashMap使用了额外的pre和next记录顺序，内存使用有效率更低。
 
-## 四、集合工具类
+### TreeMap
+
+[BACK TO TOP](#Java容器)
+
+## 五、Set源码分析
+
+### HashSet
+
+## LinkedHashSet
+
+### TreeSet
+
+[BACK TO TOP](#Java容器)
+
+## 六、Queue源码分析
+
+### PriorityQueue
+
+## ArrayDeque
+
+[BACK TO TOP](#Java容器)
+
+## 七、集合工具类
 
 ## 参考资料
 
