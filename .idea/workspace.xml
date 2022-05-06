@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加Java基础思维导图">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="修改目录结构">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/xmind8/JAVA_BASE.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/xmind8/JAVA_BASE.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/middleware/elasticsearch/1-java-api.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/database/elasticsearch/1-java-api.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/middleware/elasticsearch/2-java-dsl.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/database/elasticsearch/2-java-dsl.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/middleware/elasticsearch/lucene/1-lucene-theory.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/database/elasticsearch/lucene/1-lucene-theory.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/middleware/elasticsearch/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/database/elasticsearch/resource.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -609,13 +603,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00082" summary="增加BigDecimal原理参考">
-      <created>1646919250878</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1646919250879</updated>
-    </task>
     <task id="LOCAL-00083" summary="修改String相关部分">
       <created>1647048942867</created>
       <option name="number" value="00083" />
@@ -952,7 +939,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650937641132</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="修改目录结构">
+      <created>1651109044896</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1651109044897</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1131,7 +1125,6 @@
     <MESSAGE value="增加运算部分" />
     <MESSAGE value="修改目录03" />
     <MESSAGE value="修改基本类型" />
-    <MESSAGE value="修改目录结构" />
     <MESSAGE value="复核到四关键字" />
     <MESSAGE value="复核到七反射" />
     <MESSAGE value="增加Class反射获取对象三种方式区别" />
@@ -1148,7 +1141,8 @@
     <MESSAGE value="优化WeakHashMap部分" />
     <MESSAGE value="增加操作系统目录" />
     <MESSAGE value="增加Java基础思维导图" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加Java基础思维导图" />
+    <MESSAGE value="修改目录结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改目录结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
