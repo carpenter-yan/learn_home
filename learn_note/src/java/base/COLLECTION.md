@@ -980,7 +980,8 @@ WeakHashMap的Entry继承自WeakReference，被WeakReference关联的对象在�
 WeakHashMap主要用来实现缓存，通过使用WeakHashMap来引用缓存对象，由JVM对这部分缓存进行回收。
 
 ```java
-private static class Entry<K, V> extends WeakReference<Object> implements Map.Entry<K, V> {}
+private static class Entry<K, V> extends WeakReference<Object> implements Map.Entry<K, V> {
+}
 ```
 
 #### ConcurrentCache
@@ -1029,10 +1030,263 @@ public final class ConcurrentCache<K, V> {
 }
 ```
 
-相比使用LinkedHashMap实现的LRU，longterm使得内存占用翻倍，虽然能在下次垃圾回收是清理，但增加了垃圾回收的负担。
-LinkedHashMap使用了额外的pre和next记录顺序，内存使用有效率更低。
+相比使用LinkedHashMap实现的LRU，longterm使得内存占用翻倍，虽然能在下次垃圾回收是清理，但增加了垃圾回收的负担。 LinkedHashMap使用了额外的pre和next记录顺序，内存使用有效率更低。
 
 ### TreeMap
+
+定义了一个Entry的节点，基于红黑树的实现
+
+```java
+public class TreeMap<K, V> extends AbstractMap<K, V> implements NavigableMap<K, V>, Cloneable, java.io.Serializable {
+    //treeMap的排序规则，如果为null，则根据键的自然顺序进行排序
+    private final Comparator<? super K> comparator;
+    //红黑数的根节点
+    private transient Entry<K, V> root;
+    //红黑树节点的个数
+    private transient int size = 0;
+    //treeMap的结构性修改次数。实现fast-fail机制的关键
+    private transient int modCount = 0;
+
+    //使用key的自然排序来构造一个空的treeMap
+    public TreeMap() {
+        comparator = null;
+    }
+
+    //使用给定的比较器来构造一个空的treeMap
+    public TreeMap(Comparator<? super K> comparator) {
+        this.comparator = comparator;
+    }
+
+    //使用key的自然排序来构造一个treeMap，treeMap包含给定map中所有的键值对
+    public TreeMap(Map<? extends K, ? extends V> m) {
+        comparator = null;
+        putAll(m);
+    }
+
+    //使用指定的sortedMap来构造treeMap。treeMap中含有sortedMap中所有的键值对，键值对顺序和sortedMap中相同
+    public TreeMap(SortedMap<K, ? extends V> m) {
+        comparator = m.comparator();
+        try {
+            buildFromSorted(m.size(), m.entrySet().iterator(), null, null);
+        } catch (java.io.IOException cannotHappen) {
+        } catch (ClassNotFoundException cannotHappen) {
+        }
+    }
+
+    //返回指定的key对应的value，如果value为null，则返回null
+    public V get(Object key) {
+        Entry<K, V> p = getEntry(key);
+        return (p == null ? null : p.value);
+    }
+
+    //返回节点，如果没有则返回null
+    final Entry<K, V> getEntry(Object key) {
+        //如果比较器为不为null
+        if (comparator != null)
+            //通过比较器来获取结果。
+            return getEntryUsingComparator(key);
+        //如果key为null，抛出NullPointerException
+        if (key == null)
+            throw new NullPointerException();
+        @SuppressWarnings("unchecked")
+        Comparable<? super K> k = (Comparable<? super K>) key;
+        Entry<K, V> p = root;
+        //按照二叉树搜索的方式进行搜索，搜到返回
+        while (p != null) {
+            //比较节点的key和参数key
+            int cmp = k.compareTo(p.key);
+            //如果节点的key小于参数key
+            if (cmp < 0)
+                //向左遍历
+                p = p.left;
+            else if (cmp > 0)//如果节点的key大于参数key
+                //向左遍历
+                p = p.right;
+            else//如果节点的key等于参数key
+                return p;
+        }
+        //如果遍历完依然没有找到对应的节点，返回null
+        return null;
+    }
+
+    //使用comparator获取节点
+    final Entry<K, V> getEntryUsingComparator(Object key) {
+        @SuppressWarnings("unchecked")
+        K k = (K) key;
+        Comparator<? super K> cpr = comparator;
+        if (cpr != null) {
+            Entry<K, V> p = root;
+            //按照二叉树搜索的方式进行搜索，搜到返回
+            while (p != null) {
+                //比较节点的key和参数key
+                int cmp = k.compareTo(p.key);
+                //如果节点的key小于参数key
+                if (cmp < 0)
+                    //向左遍历
+                    p = p.left;
+                else if (cmp > 0)//如果节点的key大于参数key
+                    //向左遍历
+                    p = p.right;
+                else//如果节点的key等于参数key
+                    return p;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 将指定参数key和指定参数value插入map中，如果key已经存在，那就替换key对应的value
+     * @return 如果value被替换，则返回旧的value，否则返回null。当然，可能key对应的value就是null
+     */
+    public V put(K key, V value) {
+        Entry<K, V> t = root;
+        //如果根节点为空
+        if (t == null) {
+            compare(key, key); // 对key是否为null进行检查type
+
+            //创建一个根节点，返回null
+            root = new Entry<>(key, value, null);
+            size = 1;
+            modCount++;
+            return null;
+        }
+        //记录比较结果
+        int cmp;
+        Entry<K, V> parent;
+        // split comparator and comparable paths
+        Comparator<? super K> cpr = comparator;
+        //如果comparator不为null
+        if (cpr != null) {
+            //循环查找key要插入的位置
+            do {
+                //记录上次循环的节点t
+                parent = t;
+                //比较节点t的key和参数key的大小
+                cmp = cpr.compare(key, t.key);
+                //如果节点t的key > 参数key
+                if (cmp < 0)
+                    t = t.left;
+                else if (cmp > 0)//如果节点t的key < 参数key
+                    t = t.right;
+                else//如果节点t的key = 参数key，替换value，返回旧value
+                    return t.setValue(value);
+            } while (t != null);//t为null，没有要比较的节点，代表已经找到新节点要插入的位置
+        } else {
+            //如果comparator为null，，则使用key作为比较器进行比较，并且key必须实现Comparable接口
+            //如果key为null，抛出NullPointerException
+            if (key == null)
+                throw new NullPointerException();
+            @SuppressWarnings("unchecked")
+            Comparable<? super K> k = (Comparable<? super K>) key;
+            do {//循环查找key要插入的位置
+                parent = t;
+                cmp = k.compareTo(t.key);
+                if (cmp < 0)
+                    t = t.left;
+                else if (cmp > 0)
+                    t = t.right;
+                else
+                    return t.setValue(value);
+            } while (t != null);
+        }
+        // 找到新节点的父节点后，创建节点对象
+        Entry<K, V> e = new Entry<>(key, value, parent);
+        //如果新节点key的值小于父节点key的值，则插在父节点的左侧
+        if (cmp < 0)
+            parent.left = e;
+        else//否则插在父节点的左侧
+            parent.right = e;
+        //插入新的节点后，为了保持红黑树平衡，对红黑树进行调整
+        fixAfterInsertion(e);
+        size++;
+        modCount++;
+        //这种情况下没有替换旧value，返回努力了
+        return null;
+    }
+
+    public V remove(Object key) {
+        Entry<K, V> p = getEntry(key);
+        if (p == null)
+            return null;
+
+        V oldValue = p.value;
+        deleteEntry(p);
+        return oldValue;
+    }
+
+    private void deleteEntry(Entry<K, V> p) {
+        modCount++;
+        size--;
+
+        // If strictly internal, copy successor's element to p and then make p
+        // point to successor.
+        if (p.left != null && p.right != null) {
+            Entry<K, V> s = successor(p);
+            p.key = s.key;
+            p.value = s.value;
+            p = s;
+        } // p has 2 children
+
+        // Start fixup at replacement node, if it exists.
+        Entry<K, V> replacement = (p.left != null ? p.left : p.right);
+
+        if (replacement != null) {
+            // Link replacement to parent
+            replacement.parent = p.parent;
+            if (p.parent == null)
+                root = replacement;
+            else if (p == p.parent.left)
+                p.parent.left = replacement;
+            else
+                p.parent.right = replacement;
+
+            // Null out links so they are OK to use by fixAfterDeletion.
+            p.left = p.right = p.parent = null;
+
+            // Fix replacement
+            if (p.color == BLACK)
+                fixAfterDeletion(replacement);
+        } else if (p.parent == null) { // return if we are the only node.
+            root = null;
+        } else { //  No children. Use self as phantom replacement and unlink.
+            if (p.color == BLACK)
+                fixAfterDeletion(p);
+
+            if (p.parent != null) {
+                if (p == p.parent.left)
+                    p.parent.left = null;
+                else if (p == p.parent.right)
+                    p.parent.right = null;
+                p.parent = null;
+            }
+        }
+    }
+
+    //获取TreeMap中大于或等于key的最小的节点，若不存在，就返回null
+    final Entry<K, V> getCeilingEntry(K key);
+
+    //获取TreeMap中小于或等于key的最大的节点，若不存在，就返回null
+    final Entry<K, V> getFloorEntry(K key);
+
+    //获取TreeMap中大于key的最小的节点，若不存在，返回null
+    final Entry<K, V> getHigherEntry(K key);
+
+    //获取TreeMap中小于key的最大的节点，若不存在，就返回null
+    final Entry<K, V> getLowerEntry(K key);
+}
+```
+
+#### TreeMap与HashMap比较
+1. 不同点
+- hashmap数据结构使用数组+链表+红黑树
+- hashmap节点无序，treemap有序
+- treemap实现了NavigableMap
+- hashmap允许key为null，treemap不允许
+- hashmap的增删改查时间复杂度为o(1)，treemap为log(n)
+2. 相同点
+- 都以键值对的形式存储数据
+- 都继承了AbstractMap，实现了Map、Cloneable、Serializable
+- 都是非同步的
 
 [BACK TO TOP](#Java容器)
 
