@@ -1293,10 +1293,56 @@ public class TreeMap<K, V> extends AbstractMap<K, V> implements NavigableMap<K, 
 ## 五、Set源码分析
 
 ### HashSet
+为什么没有get方法？ 因为Map的get方法是通过Key获取的，而HashSet的应用里面，key都用来存值了。
 
-## LinkedHashSet
+```java
+public class HashSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, java.io.Serializable {
+
+    // 基于HashMap实现的，HashSet中的元素都存放在HashMap的key上面，value是统一的一个固定对象PRESENT
+    private transient HashMap<E, Object> map;
+
+    // Dummy value to associate with an Object in the backing Map
+    private static final Object PRESENT = new Object();
+
+    // 内部使用HashMap实现
+    public HashSet() {
+        map = new HashMap<>();
+    }
+}
+```
+
+### LinkedHashSet
+LinkedHashSet：LinkedHashSet是HashSet 的子类，并且其内部是通过LinkedHashMap 来实现的
+
+```java
+public class LinkedHashSet<E> extends HashSet<E> implements Set<E>, Cloneable, java.io.Serializable {
+    public LinkedHashSet() {
+        super(16, .75f, true);
+    }
+
+    HashSet(int initialCapacity, float loadFactor, boolean dummy) {
+        map = new LinkedHashMap<>(initialCapacity, loadFactor);
+    }
+}
+```
 
 ### TreeSet
+基于treeMap实现
+
+```java
+public class TreeSet<E> extends AbstractSet<E>
+    implements NavigableSet<E>, Cloneable, java.io.Serializable
+{
+    private transient NavigableMap<E,Object> m;
+
+    // Dummy value to associate with an Object in the backing Map
+    private static final Object PRESENT = new Object();
+
+    TreeSet(NavigableMap<E,Object> m) {
+        this.m = m;
+    }
+}
+```
 
 [BACK TO TOP](#Java容器)
 
@@ -1304,7 +1350,7 @@ public class TreeMap<K, V> extends AbstractMap<K, V> implements NavigableMap<K, 
 
 ### PriorityQueue
 
-## ArrayDeque
+### ArrayDeque
 
 [BACK TO TOP](#Java容器)
 
