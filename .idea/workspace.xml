@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加TreeMap源码分析">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加Set源码分析">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" afterDir="false" />
     </list>
@@ -604,13 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00086" summary="增加mysql文章">
-      <created>1647306281940</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1647306281940</updated>
-    </task>
     <task id="LOCAL-00087" summary="优化string constant pool部分">
       <created>1647308625277</created>
       <option name="number" value="00087" />
@@ -947,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652233097465</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="增加Set源码分析">
+      <created>1652750226355</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1652750226356</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1118,7 +1118,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="目录调整10" />
     <MESSAGE value="目录调整01" />
     <MESSAGE value="目录调整11" />
     <MESSAGE value="增加运算部分" />
@@ -1143,7 +1142,8 @@
     <MESSAGE value="修改目录结构" />
     <MESSAGE value="增加set和queue目录" />
     <MESSAGE value="增加TreeMap源码分析" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加TreeMap源码分析" />
+    <MESSAGE value="增加Set源码分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加Set源码分析" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

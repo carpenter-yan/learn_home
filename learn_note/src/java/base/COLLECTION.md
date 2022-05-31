@@ -1352,6 +1352,8 @@ public class TreeSet<E> extends AbstractSet<E>
 
 ### ArrayDeque
 
+### LinkedList
+
 [BACK TO TOP](#Java容器)
 
 ## 七、集合工具类
