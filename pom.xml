@@ -12,7 +12,6 @@
         <module>learn_java</module>
         <module>learn_spring</module>
         <module>learn_elasticsearch</module>
-        <module>learn_note</module>
     </modules>
 
     <properties>
@@ -25,6 +24,7 @@
         <joda.time.version>2.10.5</joda.time.version>
         <google.guava.version>29.0-jre</google.guava.version>
         <elasticsearch.version>7.9.3</elasticsearch.version>
+        <java.object.layout.version>0.16</java.object.layout.version>
     </properties>
 
     <dependencyManagement>
@@ -93,6 +93,11 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${google.guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jol</groupId>
+                <artifactId>jol-core</artifactId>
+                <version>${java.object.layout.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

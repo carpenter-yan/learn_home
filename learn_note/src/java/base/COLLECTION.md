@@ -1277,13 +1277,17 @@ public class TreeMap<K, V> extends AbstractMap<K, V> implements NavigableMap<K, 
 ```
 
 #### TreeMap与HashMap比较
+
 1. 不同点
+
 - hashmap数据结构使用数组+链表+红黑树
 - hashmap节点无序，treemap有序
 - treemap实现了NavigableMap
 - hashmap允许key为null，treemap不允许
 - hashmap的增删改查时间复杂度为o(1)，treemap为log(n)
+
 2. 相同点
+
 - 都以键值对的形式存储数据
 - 都继承了AbstractMap，实现了Map、Cloneable、Serializable
 - 都是非同步的
@@ -1293,6 +1297,7 @@ public class TreeMap<K, V> extends AbstractMap<K, V> implements NavigableMap<K, 
 ## 五、Set源码分析
 
 ### HashSet
+
 为什么没有get方法？ 因为Map的get方法是通过Key获取的，而HashSet的应用里面，key都用来存值了。
 
 ```java
@@ -1312,6 +1317,7 @@ public class HashSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, jav
 ```
 
 ### LinkedHashSet
+
 LinkedHashSet：LinkedHashSet是HashSet 的子类，并且其内部是通过LinkedHashMap 来实现的
 
 ```java
@@ -1327,18 +1333,18 @@ public class LinkedHashSet<E> extends HashSet<E> implements Set<E>, Cloneable, j
 ```
 
 ### TreeSet
+
 基于treeMap实现
 
 ```java
 public class TreeSet<E> extends AbstractSet<E>
-    implements NavigableSet<E>, Cloneable, java.io.Serializable
-{
-    private transient NavigableMap<E,Object> m;
+        implements NavigableSet<E>, Cloneable, java.io.Serializable {
+    private transient NavigableMap<E, Object> m;
 
     // Dummy value to associate with an Object in the backing Map
     private static final Object PRESENT = new Object();
 
-    TreeSet(NavigableMap<E,Object> m) {
+    TreeSet(NavigableMap<E, Object> m) {
         this.m = m;
     }
 }
@@ -1347,13 +1353,13 @@ public class TreeSet<E> extends AbstractSet<E>
 [BACK TO TOP](#Java容器)
 
 ## 六、Queue源码分析
-队列（Queue）是一种经常使用的集合。Queue实际上是实现了一个先进先出（FIFO：First In First Out）的有序表。
-它和List的区别在于，List可以在任意位置添加和删除元素，而Queue只有两个操作
+
+队列（Queue）是一种经常使用的集合。Queue实际上是实现了一个先进先出（FIFO：First In First Out）的有序表。 它和List的区别在于，List可以在任意位置添加和删除元素，而Queue只有两个操作
+
 - 把元素添加到队列末尾
 - 从队列头部取出元素
 
-对于具体的实现类，有的Queue有最大队列长度限制，有的Queue没有。
-注意到添加、删除和获取队列元素总是有两个方法，这是因为在添加或获取元素失败时，这两个方法的行为是不同的。
+对于具体的实现类，有的Queue有最大队列长度限制，有的Queue没有。 注意到添加、删除和获取队列元素总是有两个方法，这是因为在添加或获取元素失败时，这两个方法的行为是不同的。
 
 |操作|throw Exception|返回false或null|
 |----|----|----| 
@@ -1363,12 +1369,199 @@ public class TreeSet<E> extends AbstractSet<E>
 
 ### PriorityQueue
 
+底层使用堆数据结构。 堆严格意义上来说又叫二叉堆（Binary Heap），因为它的结构是一颗完全二叉树，堆一般分为大顶堆和小顶堆。
+堆是一颗除底层外被完全填满的二叉树，底层的节点从左到右填入，这样的树叫做完全二叉树。即缺失结点的部分一定在树的右下侧。 由于我们想很快找出最小元，则最小元应该在根上，任意节点都小于它的后裔，这就是小顶堆（Min-Heap）；
+如果是查找最大元，则最大元应该在根上，任意节点都要大于它的后裔，这就是大顶堆(Max-heap)。 由于是完全二叉树，节点的索引之间有着一定的关系，故我们可以使用数组来存储二叉堆，具体如下：
+
+- left(i) = 2i + 1;
+- right(i) = 2i + 2;
+- parent(i) = [(i-1)/2];
+
+插入流程：将新节点插入到堆的最后一个节点，然后该节点不断和父节点对比进行上浮，直到堆平衡。 删除流程：将根节点删除，然后将最后一个节点放到根节点，然后该节点不断和子节点对比进行下沉，直到堆平衡。
+
+```java
+public class PriorityQueue<E> extends AbstractQueue<E> implements java.io.Serializable {
+    //默认初始容量
+    private static final int DEFAULT_INITIAL_CAPACITY = 11;
+    //队列内部存储
+    transient Object[] queue;
+    //队列元素个数
+    private int size = 0;
+    //比较器，用于队列元素排序
+    private final Comparator<? super E> comparator;
+    //结构修改次数
+    transient int modCount = 0;
+
+    //从指定集合构建优先队列
+    public PriorityQueue(Collection<? extends E> c) {
+        if (c instanceof SortedSet<?>) {
+            SortedSet<? extends E> ss = (SortedSet<? extends E>) c;
+            this.comparator = (Comparator<? super E>) ss.comparator();
+            initElementsFromCollection(ss);
+        } else if (c instanceof PriorityQueue<?>) {
+            PriorityQueue<? extends E> pq = (PriorityQueue<? extends E>) c;
+            this.comparator = (Comparator<? super E>) pq.comparator();
+            initFromPriorityQueue(pq);
+        } else {
+            //直接分析从集合构建
+            this.comparator = null;
+            initFromCollection(c);
+        }
+    }
+
+    private void initFromCollection(Collection<? extends E> c) {
+        initElementsFromCollection(c);
+        heapify();
+    }
+
+    // 初始化元素:初始化实例属性
+    private void initElementsFromCollection(Collection<? extends E> c) {
+        Object[] a = c.toArray();
+        // If c.toArray incorrectly doesn't return Object[], copy it.
+        if (a.getClass() != Object[].class)
+            a = Arrays.copyOf(a, a.length, Object[].class);
+        int len = a.length;
+        if (len == 1 || this.comparator != null)
+            for (int i = 0; i < len; i++)
+                if (a[i] == null)
+                    throw new NullPointerException();
+        this.queue = a;
+        this.size = a.length;
+    }
+
+    // 将任意数组整理成堆的形状。这个过程，我们称之为heapify。
+    private void heapify() {
+        // 找到这个堆中第一个非叶子节点，这个节点的位置始终是数组的数量除以2，然后执行siftDown
+        for (int i = (size >>> 1) - 1; i >= 0; i--)
+            siftDown(i, (E) queue[i]);
+    }
+
+    // 添加1个元素
+    public boolean offer(E e) {
+        if (e == null)
+            throw new NullPointerException();
+        modCount++;
+        int i = size;
+        if (i >= queue.length)
+            grow(i + 1);
+        size = i + 1;
+        if (i == 0)
+            queue[0] = e;
+        else
+            siftUp(i, e);
+        return true;
+    }
+
+    // 数组扩容
+    private void grow(int minCapacity) {
+        int oldCapacity = queue.length;
+        // Double size if small; else grow by 50% 原始长度小于64则double，大于64则50%
+        int newCapacity = oldCapacity + ((oldCapacity < 64) ?
+                (oldCapacity + 2) :
+                (oldCapacity >> 1));
+        // overflow-conscious code
+        if (newCapacity - MAX_ARRAY_SIZE > 0)
+            newCapacity = hugeCapacity(minCapacity);
+        queue = Arrays.copyOf(queue, newCapacity);
+    }
+
+    // 上浮操作
+    private void siftUp(int k, E x) {
+        if (comparator != null)
+            siftUpUsingComparator(k, x);
+        else
+            siftUpComparable(k, x);
+    }
+
+    // 通过比较器上浮  这里可以看错默认是小顶堆,通过改变comparator行为实现大顶堆
+    private void siftUpUsingComparator(int k, E x) {
+        while (k > 0) {
+            int parent = (k - 1) >>> 1;
+            Object e = queue[parent];
+            if (comparator.compare(x, (E) e) >= 0)
+                break;
+            queue[k] = e;
+            k = parent;
+        }
+        queue[k] = x;
+    }
+
+    // 删除堆顶元素
+    @SuppressWarnings("unchecked")
+    public E poll() {
+        if (size == 0)
+            return null;
+        int s = --size;
+        modCount++;
+        E result = (E) queue[0];
+        E x = (E) queue[s];
+        queue[s] = null;
+        if (s != 0)
+            siftDown(0, x);
+        return result;
+    }
+
+    // 下沉操作
+    private void siftDown(int k, E x) {
+        if (comparator != null)
+            siftDownUsingComparator(k, x);
+        else
+            siftDownComparable(k, x);
+    }
+
+    // 通过比较器下沉
+    private void siftDownUsingComparator(int k, E x) {
+        int half = size >>> 1;
+        while (k < half) {
+            int child = (k << 1) + 1;
+            Object c = queue[child];
+            int right = child + 1;
+            if (right < size &&
+                    comparator.compare((E) c, (E) queue[right]) > 0)
+                c = queue[child = right];
+            if (comparator.compare(x, (E) c) <= 0)
+                break;
+            queue[k] = c;
+            k = child;
+        }
+        queue[k] = x;
+    }
+}
+```
+
 [使用PriorityQueue](https://www.liaoxuefeng.com/wiki/1252599548343744/1265120632401152)
 [刷算法不知道PriorityQueue?看了这篇文章才知道他有多实用](https://baijiahao.baidu.com/s?id=1665383380422326763&wfr=spider&for=pc)
 [Java堆结构PriorityQueue完全解析](https://hanking.blog.csdn.net/article/details/71189189?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-71189189-blog-87179364.pc_relevant_scanpaymentv1&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-71189189-blog-87179364.pc_relevant_scanpaymentv1&utm_relevant_index=1)
-
+[优先队列(PriorityQueue)](https://www.jianshu.com/p/cb591a12f50c)
 
 ### ArrayDeque
+Queue是队列，只能一头进，另一头出。如果把条件放松一下，允许两头都进，两头都出，这种队列叫双端队列（Double Ended Queue），学名Deque。
+
+Java集合提供了接口Deque来实现一个双端队列，它的功能是：
+
+既可以添加到队尾，也可以添加到队首；
+既可以从队首获取，又可以从队尾获取。
+比较一下Queue和Deque出队和入队的方法：
+
+| |Queue|Deque|
+|----|----|----|
+|添加元素到队尾|add(E e) / offer(E e)|addLast(E e) / offerLast(E e)|
+|取队首元素并删除|E remove() / E poll()|E removeFirst() / E pollFirst()
+|取队首元素但不删除|E element() / E peek()|E getFirst() / E peekFirst()
+|添加元素到队首|无|addFirst(E e) / offerFirst(E e)
+|取队尾元素并删除|无|E removeLast() / E pollLast()
+|取队尾元素但不删除|无\E getLast() / E peekLast()
+
+Deque接口实际上扩展自Queue。因此，Queue提供的add()/offer()方法在Deque中也可以使用，
+但是，使用Deque，最好不要调用offer()，而是调用offerLast()，这样不需要思考就能一眼看出这是添加到队尾
+
+LinkedList真是一个全能选手，它即是List，又是Queue，还是Deque。
+但是我们在使用的时候，总是用特定的接口来引用它，这是因为持有接口说明代码的抽象层次更高，而且接口本身定义的方法代表了特定的用途
+
+[使用Deque](https://www.liaoxuefeng.com/wiki/1252599548343744/1265122668445536)
+[深入理解循环队列----循环数组实现ArrayDeque](https://blog.csdn.net/qq_35326718/article/details/72972159?spm=1001.2101.3001.6650.15&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-72972159-blog-115381856.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-72972159-blog-115381856.pc_relevant_aa&utm_relevant_index=24)
+[ArrayDeque双端队列完全解析](https://blog.csdn.net/ted_cs/article/details/82926423?spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-6-82926423-blog-115381856.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-6-82926423-blog-115381856.pc_relevant_aa&utm_relevant_index=13)
+[集合框架之ArrayDeque类详解](https://blog.csdn.net/lucklycoder/article/details/115381856)
 
 ### LinkedList
 

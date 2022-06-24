@@ -8,9 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="learn_java" />
         <module name="learn_elasticsearch" />
+        <module name="learn_note" />
         <module name="learn-elasticsearch" />
         <module name="learn_spring" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="learn_note" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加工具jol">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加queue">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/infomation.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/infomation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/base/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/CONCURRENCY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +343,7 @@
       <recent name="com.carpenter.yan.java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StringTest">
+  <component name="RunManager" selected="JUnit.BloomFilterTest.test1">
     <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="base.java.StringTest" />
       <module name="learn_java" />
@@ -353,7 +357,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferTest.testBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BloomFilterTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guava" />
+      <option name="MAIN_CLASS_NAME" value="guava.BloomFilterTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
@@ -362,40 +382,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="base.java" />
-      <option name="MAIN_CLASS_NAME" value="base.java.BufferTest" />
-      <option name="METHOD_NAME" value="testBasic" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InnetAddressTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learn_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="base.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="base" />
-      <option name="MAIN_CLASS_NAME" value="base.InnetAddressTest" />
+      <option name="MAIN_CLASS_NAME" value="base.java.FileTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDK8InfImpl.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="base.java8.*" />
+          <option name="PATTERN" value="base.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="base.java8" />
-      <option name="MAIN_CLASS_NAME" value="base.java8.JDK8InfImpl" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="base.java" />
+      <option name="MAIN_CLASS_NAME" value="base.java.Main" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -419,18 +423,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.StringTest" />
-      <item itemvalue="JUnit.JDK8InfImpl.test1" />
-      <item itemvalue="JUnit.InnetAddressTest.test1" />
-      <item itemvalue="JUnit.BufferTest.testBasic" />
       <item itemvalue="JUnit.MethodTest.test1" />
+      <item itemvalue="JUnit.FileTest.test1" />
+      <item itemvalue="JUnit.Main.test2" />
+      <item itemvalue="JUnit.BloomFilterTest.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BloomFilterTest.test1" />
+        <item itemvalue="JUnit.Main.test2" />
+        <item itemvalue="JUnit.FileTest.test1" />
         <item itemvalue="Application.StringTest" />
         <item itemvalue="JUnit.MethodTest.test1" />
-        <item itemvalue="JUnit.BufferTest.testBasic" />
-        <item itemvalue="JUnit.InnetAddressTest.test1" />
-        <item itemvalue="JUnit.JDK8InfImpl.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -604,13 +608,6 @@
       <workItem from="1612336485475" duration="1122000" />
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
-    </task>
-    <task id="LOCAL-00088" summary="优化string constant pool部分02">
-      <created>1647309457223</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1647309457223</updated>
     </task>
     <task id="LOCAL-00089" summary="更新final部分">
       <created>1647479402563</created>
@@ -948,7 +945,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653958691841</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="增加queue">
+      <created>1654651843917</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1654651843917</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1077,6 +1081,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -1119,7 +1133,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="目录调整11" />
     <MESSAGE value="增加运算部分" />
     <MESSAGE value="修改目录03" />
     <MESSAGE value="修改基本类型" />
@@ -1144,7 +1157,8 @@
     <MESSAGE value="增加TreeMap源码分析" />
     <MESSAGE value="增加Set源码分析" />
     <MESSAGE value="增加工具jol" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加工具jol" />
+    <MESSAGE value="增加queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加queue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1164,8 +1178,20 @@
           <line>15</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/learn_java/src/main/java/guava/BloomFilterTest.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="numBits" />
+        <watch expression="numBits" language="JAVA" />
+        <watch expression="numBits" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
