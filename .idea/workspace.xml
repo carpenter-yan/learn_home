@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="完成arraydeque">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/CONCURRENCY.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -604,13 +603,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00092" summary="更新toString部分">
-      <created>1647595677681</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1647595677681</updated>
-    </task>
     <task id="LOCAL-00093" summary="更新clone部分">
       <created>1647604937476</created>
       <option name="number" value="00093" />
@@ -947,7 +939,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656729291126</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="完成arraydeque">
+      <created>1656740513429</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1656740513432</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TestHistory">
