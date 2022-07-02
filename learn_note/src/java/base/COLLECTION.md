@@ -1536,11 +1536,12 @@ public class PriorityQueue<E> extends AbstractQueue<E> implements java.io.Serial
 
 ### ArrayDeque
 Queue是队列，只能一头进，另一头出。如果把条件放松一下，允许两头都进，两头都出，这种队列叫双端队列（Double Ended Queue），学名Deque。
+Deque接口的实现可以被当作FIFO队列使用，也可以当作LIFO队列（栈）来使用。官方也是推荐使用 Deque 的实现来替代 Stack。
 
 Java集合提供了接口Deque来实现一个双端队列，它的功能是：
+- 既可以添加到队尾，也可以添加到队首；
+- 既可以从队首获取，又可以从队尾获取。
 
-既可以添加到队尾，也可以添加到队首；
-既可以从队首获取，又可以从队尾获取。
 比较一下Queue和Deque出队和入队的方法：
 
 | |Queue|Deque|
@@ -1555,15 +1556,156 @@ Java集合提供了接口Deque来实现一个双端队列，它的功能是：
 Deque接口实际上扩展自Queue。因此，Queue提供的add()/offer()方法在Deque中也可以使用，
 但是，使用Deque，最好不要调用offer()，而是调用offerLast()，这样不需要思考就能一眼看出这是添加到队尾
 
+```java
+public class ArrayDeque<E> extends AbstractCollection<E>
+                           implements Deque<E>, Cloneable, Serializable {
+    //用数组存储元素
+    transient Object[] elements;
+    //头部元素的索引
+    transient int head;
+    //尾部下一个将要被加入的元素的索引
+    transient int tail;
+    //最小容量，必须为2的幂次方
+    private static final int MIN_INITIAL_CAPACITY = 8;
+
+    //构造器，allocateElements方法找到不小于c.size的最小2的幂。其他构造器略
+    public ArrayDeque(Collection<? extends E> c) {
+        allocateElements(c.size());
+        addAll(c);
+    }
+
+    //向末尾添加元素
+    public void addLast(E e) {
+        if (e == null)
+            throw new NullPointerException();
+        elements[tail] = e;
+        //tail+1对数组长度取模==head则表示队列满
+        if ( (tail = (tail + 1) & (elements.length - 1)) == head)
+            doubleCapacity();
+    }
+
+    //向头部添加元素
+    public void addFirst(E e) {
+        if (e == null)
+            throw new NullPointerException();
+        elements[head = (head - 1) & (elements.length - 1)] = e;
+        //判断队列已满
+        if (head == tail)
+            doubleCapacity();
+    }
+
+    private void doubleCapacity() {
+        //扩容时头部索引和尾部索引肯定相等
+        assert head == tail;
+        int p = head;
+        int n = elements.length;
+        int r = n - p; // number of elements to the right of p
+        int newCapacity = n << 1;
+        if (newCapacity < 0)
+            throw new IllegalStateException("Sorry, deque too big");
+        Object[] a = new Object[newCapacity];
+        //复制头部索引到数组末端的元素到新数组的头部
+        System.arraycopy(elements, p, a, 0, r);
+        //复制其余元素
+        System.arraycopy(elements, 0, a, r, p);
+        elements = a;
+        //重置头尾索引
+        head = 0;
+        tail = n;
+    }
+
+    // 删除头部元素
+    public E pollFirst() {
+        int h = head;
+        @SuppressWarnings("unchecked")
+        E result = (E) elements[h];
+        // Element is null if deque empty
+        if (result == null)
+            return null;
+        elements[h] = null;     // Must null out slot
+        head = (h + 1) & (elements.length - 1);
+        return result;
+    }
+
+    public E pollLast() {
+        int t = (tail - 1) & (elements.length - 1);
+        @SuppressWarnings("unchecked")
+        E result = (E) elements[t];
+        if (result == null)
+            return null;
+        elements[t] = null;
+        tail = t;
+        return result;
+    }
+
+    /**迭代器 ArrayDeque 在迭代是检查并发修改并没有使用类似于ArrayList等容器中使用的modCount，而是通过尾部索引的来确定的。
+     *     具体参考 next 方法中的注释。但是这样不一定能保证检测到所有的并发修改情况，
+     *     加入先移除了尾部元素，又添加了一个尾部元素，这种情况下迭代器是没法检测出来的。
+     *     除了 DeqIterator，还有一个反向的迭代器 DescendingIterator，顺序和 DeqIterator 相反。
+     */
+    private class DeqIterator implements Iterator<E> {
+        private int cursor = head;
+        private int fence = tail;
+        private int lastRet = -1;
+
+        public boolean hasNext() {
+            return cursor != fence;
+        }
+
+        public E next() {
+            if (cursor == fence)
+                throw new NoSuchElementException();
+            @SuppressWarnings("unchecked")
+            E result = (E) elements[cursor];
+            // This check doesn't catch all possible comodifications,
+            // but does catch the ones that corrupt traversal
+            if (tail != fence || result == null)
+                throw new ConcurrentModificationException();
+            lastRet = cursor;
+            cursor = (cursor + 1) & (elements.length - 1);
+            return result;
+        }
+
+        public void remove() {
+            if (lastRet < 0)
+                throw new IllegalStateException();
+            if (delete(lastRet)) { // if left-shifted, undo increment in next()
+                cursor = (cursor - 1) & (elements.length - 1);
+                fence = tail;
+            }
+            lastRet = -1;
+        }
+
+        public void forEachRemaining(Consumer<? super E> action) {
+            Objects.requireNonNull(action);
+            Object[] a = elements;
+            int m = a.length - 1, f = fence, i = cursor;
+            cursor = f;
+            while (i != f) {
+                @SuppressWarnings("unchecked") E e = (E)a[i];
+                i = (i + 1) & m;
+                if (e == null)
+                    throw new ConcurrentModificationException();
+                action.accept(e);
+            }
+        }
+    }
+}
+```
+
+- ArrayDeque 是Deque接口的一种具体实现，是依赖于可变数组来实现的。
+- ArrayDeque 没有容量限制，可根据需求自动进行扩容。
+- ArrayDeque 可以作为栈来使用，效率要高于Stack；ArrayDeque也可以作为队列来使用，效率相较于基于双向链表的LinkedList也要更好一些。
+- 注意，ArrayDeque不支持为null的元素。
+
+[使用Deque](https://www.liaoxuefeng.com/wiki/1252599548343744/1265122668445536)
+[Java 容器源码分析之 Deque 与 ArrayDeque](https://www.cnblogs.com/wxd0108/p/7366234.html)
+
+### LinkedList
 LinkedList真是一个全能选手，它即是List，又是Queue，还是Deque。
 但是我们在使用的时候，总是用特定的接口来引用它，这是因为持有接口说明代码的抽象层次更高，而且接口本身定义的方法代表了特定的用途
 
-[使用Deque](https://www.liaoxuefeng.com/wiki/1252599548343744/1265122668445536)
-[深入理解循环队列----循环数组实现ArrayDeque](https://blog.csdn.net/qq_35326718/article/details/72972159?spm=1001.2101.3001.6650.15&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-72972159-blog-115381856.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-72972159-blog-115381856.pc_relevant_aa&utm_relevant_index=24)
-[ArrayDeque双端队列完全解析](https://blog.csdn.net/ted_cs/article/details/82926423?spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-6-82926423-blog-115381856.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-6-82926423-blog-115381856.pc_relevant_aa&utm_relevant_index=13)
-[集合框架之ArrayDeque类详解](https://blog.csdn.net/lucklycoder/article/details/115381856)
-
-### LinkedList
+[LinkedList](#linkedlist)
 
 [BACK TO TOP](#Java容器)
 
@@ -1582,4 +1724,3 @@ LinkedList真是一个全能选手，它即是List，又是Queue，还是Deque�
 - [HashMap 相关面试题及其解答](https://www.jianshu.com/p/75adf47958a7)
 - [Java 集合细节（二）：asList 的缺陷](http://wiki.jikexueyuan.com/project/java-enhancement/java-thirtysix.html)
 - [Java Collection Framework – The LinkedList Class](http://javaconceptoftheday.com/java-collection-framework-linkedlist-class/)
-

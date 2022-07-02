@@ -13,8 +13,5 @@
         <module name="learn_spring" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="learn_note" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

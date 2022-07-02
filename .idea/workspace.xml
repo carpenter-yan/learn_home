@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加queue">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加bloomFilter测试，通过断点查看占用内存大小">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/base/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/CONCURRENCY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -609,20 +606,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00089" summary="更新final部分">
-      <created>1647479402563</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1647479402564</updated>
-    </task>
-    <task id="LOCAL-00090" summary="更新static部分">
-      <created>1647523490219</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1647523490220</updated>
-    </task>
     <task id="LOCAL-00091" summary="更新equals和hashcode部分">
       <created>1647567265819</created>
       <option name="number" value="00091" />
@@ -952,7 +935,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654651843917</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="增加bloomFilter测试，通过断点查看占用内存大小">
+      <created>1656049323936</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1656049323937</updated>
+    </task>
+    <task id="LOCAL-00139" summary="增加bloomFilter测试，通过断点查看占用内存大小">
+      <created>1656049363632</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1656049363632</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1133,7 +1130,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加运算部分" />
     <MESSAGE value="修改目录03" />
     <MESSAGE value="修改基本类型" />
     <MESSAGE value="复核到四关键字" />
@@ -1158,7 +1154,8 @@
     <MESSAGE value="增加Set源码分析" />
     <MESSAGE value="增加工具jol" />
     <MESSAGE value="增加queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加queue" />
+    <MESSAGE value="增加bloomFilter测试，通过断点查看占用内存大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加bloomFilter测试，通过断点查看占用内存大小" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1177,11 +1174,6 @@
           <url>file://$PROJECT_DIR$/learn_java/src/main/java/base/StackTest.java</url>
           <line>15</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/learn_java/src/main/java/guava/BloomFilterTest.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
