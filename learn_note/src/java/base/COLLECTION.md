@@ -843,6 +843,7 @@ Java 1.7中使用头插发，在多线程的情况下，在rehash的过程中会
 
 > 在多线程环境下，1.7 会产生死循环、数据丢失、数据覆盖的问题，1.8 中会有数据覆盖的问题。
 
+[Hash冲突的四种解决办](https://www.cnblogs.com/gongcheng-/p/10894205.html#_label1_0)
 [深入理解哈希表](https://www.cnblogs.com/LiLihongqiang/p/7655823.html)  
 [美团关于HashMap的讲解](https://tech.meituan.com/2016/06/24/java-hashmap.html)  
 [hashMap头插法和尾插法区别](https://blog.csdn.net/weixin_35523284/article/details/112096437)  

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加bloomFilter测试，通过断点查看占用内存大小">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="完成arraydeque">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -606,13 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00091" summary="更新equals和hashcode部分">
-      <created>1647567265819</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1647567265819</updated>
-    </task>
     <task id="LOCAL-00092" summary="更新toString部分">
       <created>1647595677681</created>
       <option name="number" value="00092" />
@@ -949,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656049363632</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="完成arraydeque">
+      <created>1656729291125</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1656729291126</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1130,7 +1128,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="修改目录03" />
     <MESSAGE value="修改基本类型" />
     <MESSAGE value="复核到四关键字" />
     <MESSAGE value="复核到七反射" />
@@ -1155,7 +1152,8 @@
     <MESSAGE value="增加工具jol" />
     <MESSAGE value="增加queue" />
     <MESSAGE value="增加bloomFilter测试，通过断点查看占用内存大小" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加bloomFilter测试，通过断点查看占用内存大小" />
+    <MESSAGE value="完成arraydeque" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成arraydeque" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
