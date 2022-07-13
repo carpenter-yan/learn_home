@@ -8,11 +8,11 @@
 ## 系统理论
 
 ## Java相关
-- [Java基础](learn_note/src/java/base/JAVA_BASE.md)
-- [Java集合](learn_note/src/java/base/COLLECTION.md)
-- [Java并发](learn_note/src/java/base/CONCURRENCY.md)
-- [JavaI/O](learn_note/src/java/base/JAVA_IO.md)
-- [Java虚拟机](learn_note/src/java/base/JAVA_JVM.md)
+- [Java基础](learn_note/java/base/JAVA_BASE.md)
+- [Java集合](learn_note/java/base/COLLECTION.md)
+- [Java并发](learn_note/java/base/CONCURRENCY.md)
+- [JavaI/O](learn_note/java/base/JAVA_IO.md)
+- [Java虚拟机](learn_note/java/base/JAVA_JVM.md)
 
 ## 开源框架
 - [spring]()

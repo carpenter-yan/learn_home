@@ -4,8 +4,149 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="完成arraydeque">
-      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/src/java/base/CONCURRENCY.md" afterDir="false" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="初始化Java并发">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/artchitecture/resouce.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/artchitecture/resouce.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/network/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/network/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/pattern/singleton.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/pattern/singleton.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/system/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/system/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/uml/class.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/uml/class.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/uml/images/aggregation.png" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/uml/images/aggregation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/uml/images/associate.png" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/uml/images/associate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/uml/images/car_class.png" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/uml/images/car_class.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/uml/images/compose.png" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/uml/images/compose.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/uml/images/dependence.png" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/uml/images/dependence.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/uml/images/extends.png" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/uml/images/extends.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/computer/uml/images/implements.png" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/uml/images/implements.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/database/elasticsearch/1-java-api.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/elasticsearch/1-java-api.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/database/elasticsearch/2-java-dsl.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/elasticsearch/2-java-dsl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/database/elasticsearch/lucene/1-lucene-theory.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/elasticsearch/lucene/1-lucene-theory.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/database/elasticsearch/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/elasticsearch/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/database/mysql/mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/mysql/mysql.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/database/mysql/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/mysql/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/database/redis/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/redis/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/database/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/infomation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/COLLECTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/COLLECTION.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/JAVA_BASE.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/JAVA_BASE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/JAVA_IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/JAVA_IO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/JAVA_JVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/JAVA_JVM.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/jvm.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/jvm.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/jvm1.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/jvm1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/other.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/other.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/regex.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/regex.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/schedule.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/schedule.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/thread.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/thread.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/xmind8/JAVA_BASE.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/xmind8/JAVA_BASE.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/base/xml.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/xml.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/log4j.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/log4j.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-1-sample.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-1-sample.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-10-sql-result.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-10-sql-result.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-11-sql-other.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-11-sql-other.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-12-excute-review.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-12-excute-review.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-2-config.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-2-config.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-3-config-parse.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-3-config-parse.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-4-mapper.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-4-mapper.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-5-mapper-parse.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-5-mapper-parse.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-6-mapper-load.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-6-mapper-load.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-7-mapper-sql.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-7-mapper-sql.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-8-parse-review.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-8-parse-review.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/opensource/mybatis/mybatis-9-sql-excute.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/opensource/mybatis/mybatis-9-sql-excute.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/cache/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/cache/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/cloud/begin.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/cloud/begin.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/cloud/dubbo/dubbo-1-spi.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/cloud/dubbo/dubbo-1-spi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/cloud/dubbo/dubbo-2-register.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/cloud/dubbo/dubbo-2-register.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/cloud/eureka/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/cloud/eureka/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/cloud/jsf/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/cloud/jsf/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/cloud/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/cloud/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/cloud/theory/分布式理论.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/cloud/theory/分布式理论.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/cloud/theory/微服务理论.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/cloud/theory/微服务理论.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-0-prepare.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-0-prepare.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-1-profile.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-1-profile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-1-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-1-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-10-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-10-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-21-definition.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-21-definition.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-22-attributes.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-22-attributes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-23-meta.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-23-meta.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-24-lookup.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-24-lookup.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-25-replaced.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-25-replaced.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-26-constructor.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-26-constructor.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-27-property.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-27-property.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-28-qualifier.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-28-qualifier.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-30-decorate.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-30-decorate.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-40-register.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-2-bean/bean-40-register.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-3-alias.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-3-alias.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-2-default/default-4-import.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-2-default/default-4-import.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/1-analysis/analysis-3-customer.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/1-analysis/analysis-3-customer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-1-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-1-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-2-singleton.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-2-singleton.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-3-getObject.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-3-getObject.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-4-getSingleton.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-4-getSingleton.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-5-create.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-5-create.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-6-doCreate/create-1-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-6-doCreate/create-1-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-6-doCreate/create-2-instance.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-6-doCreate/create-2-instance.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-6-doCreate/create-3-addFactory.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-6-doCreate/create-3-addFactory.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-6-doCreate/create-4-populate.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-6-doCreate/create-4-populate.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-6-doCreate/create-5-initialize.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-6-doCreate/create-5-initialize.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/2-loading/loading-6-doCreate/create-6-dispose.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/2-loading/loading-6-doCreate/create-6-dispose.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/3-extend/extend-1-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/3-extend/extend-1-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/3-extend/extend-10-finish.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/3-extend/extend-10-finish.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/3-extend/extend-2-prepare.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/3-extend/extend-2-prepare.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/3-extend/extend-3-beanFactory.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/3-extend/extend-3-beanFactory.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/3-extend/extend-4-prepareFactory.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/3-extend/extend-4-prepareFactory.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/3-extend/extend-5-postFactory.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/3-extend/extend-5-postFactory.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/3-extend/extend-6-registerProcessor.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/3-extend/extend-6-registerProcessor.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/3-extend/extend-7-message.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/3-extend/extend-7-message.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/3-extend/extend-8-multicaster.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/3-extend/extend-8-multicaster.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/3-extend/extend-9-initialization.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/3-extend/extend-9-initialization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/4-aop/aop-1-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/4-aop/aop-1-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/4-aop/aop-2-create.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/4-aop/aop-2-create.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/4-aop/aop-3-findAdvisors.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/4-aop/aop-3-findAdvisors.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/4-aop/aop-4-findCanApply.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/4-aop/aop-4-findCanApply.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/4-aop/aop-5-createProxy/proxy-1-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/4-aop/aop-5-createProxy/proxy-1-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/4-aop/aop-5-createProxy/proxy-2-create.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/4-aop/aop-5-createProxy/proxy-2-create.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/4-aop/aop-5-createProxy/proxy-3-jdk.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/4-aop/aop-5-createProxy/proxy-3-jdk.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/4-aop/aop-5-createProxy/proxy-4-cglib.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/4-aop/aop-5-createProxy/proxy-4-cglib.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/4-aop/static-1-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/4-aop/static-1-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/5-jdbc/jdbc-1-update.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/5-jdbc/jdbc-1-update.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/5-jdbc/jdbc-2-excute.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/5-jdbc/jdbc-2-excute.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/5-jdbc/jdbc-3-query.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/5-jdbc/jdbc-3-query.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/6-mybatis/mybatis-1-session.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/6-mybatis/mybatis-1-session.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/6-mybatis/mybatis-2-mapper.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/6-mybatis/mybatis-2-mapper.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/6-mybatis/mybatis-3-scanner.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/6-mybatis/mybatis-3-scanner.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/7-transaction/trans-1-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/7-transaction/trans-1-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/7-transaction/trans-2-creator.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/7-transaction/trans-2-creator.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/7-transaction/trans-3-advisor.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/7-transaction/trans-3-advisor.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/7-transaction/trans-4-Interceptor.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/7-transaction/trans-4-Interceptor.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/7-transaction/trans-5-create.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/7-transaction/trans-5-create.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/7-transaction/trans-6-rollback.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/7-transaction/trans-6-rollback.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/7-transaction/trans-7-commit.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/7-transaction/trans-7-commit.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/8-mvc/mvc-1-loader.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/8-mvc/mvc-1-loader.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/8-mvc/mvc-2-dispather.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/8-mvc/mvc-2-dispather.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/8-mvc/mvc-3-init.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/8-mvc/mvc-3-init.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/8-mvc/mvc-4-doService.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/8-mvc/mvc-4-doService.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/8-mvc/mvc-5-getHandler.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/8-mvc/mvc-5-getHandler.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/8-mvc/mvc-6-render.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/8-mvc/mvc-6-render.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/9-boot/boot-1-run.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/9-boot/boot-1-run.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/9-boot/boot-2-starter.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/9-boot/boot-2-starter.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/9-boot/boot-3-conditional.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/9-boot/boot-3-conditional.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/9-boot/boot-4-property.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/9-boot/boot-4-property.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/9-boot/boot-5-tomcat.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/9-boot/boot-5-tomcat.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/java/spring/framework/spring-life-cycle.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/spring/framework/spring-life-cycle.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/javascript/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/javascript/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/middleware/Prometheus/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/middleware/Prometheus/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/middleware/kafka/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/middleware/kafka/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/middleware/nginx/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/middleware/nginx/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/python/base/resouce.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/resouce.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/replay/Http重复请求问题排查.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/replay/Http重复请求问题排查.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/replay/架构案例.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/replay/架构案例.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/tools/BloomFilter.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/tools/BloomFilter.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/tools/JavaObjectLayout.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/tools/JavaObjectLayout.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/tools/markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/tools/markdown.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/src/tools/vscode.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/tools/vscode.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,11 +463,11 @@
       <recent name="D:\IdeaProjects\learn_home\learn_protobuf\src\main\java\com\carpenter\yan\learn\protobuf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learn_note" />
       <recent name="$PROJECT_DIR$/learn_note/src/database" />
       <recent name="D:\IdeaProjects\learn_home\learn_note\src\computer" />
       <recent name="D:\IdeaProjects\learn_home\learn_note\src\java\base" />
       <recent name="D:\IdeaProjects\learn_home\learn_note\src\java\spring\cloud" />
-      <recent name="D:\IdeaProjects\learn_home\learn_note\src\middleware" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="base" />
@@ -602,13 +743,6 @@
       <workItem from="1612336485475" duration="1122000" />
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
-    </task>
-    <task id="LOCAL-00093" summary="更新clone部分">
-      <created>1647604937476</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1647604937476</updated>
     </task>
     <task id="LOCAL-00094" summary="增加Java关键字native">
       <created>1647606584035</created>
@@ -946,7 +1080,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656740513432</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="初始化Java并发">
+      <created>1656740770611</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1656740770611</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1127,7 +1268,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="修改基本类型" />
     <MESSAGE value="复核到四关键字" />
     <MESSAGE value="复核到七反射" />
     <MESSAGE value="增加Class反射获取对象三种方式区别" />
@@ -1152,7 +1292,8 @@
     <MESSAGE value="增加queue" />
     <MESSAGE value="增加bloomFilter测试，通过断点查看占用内存大小" />
     <MESSAGE value="完成arraydeque" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成arraydeque" />
+    <MESSAGE value="初始化Java并发" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化Java并发" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
