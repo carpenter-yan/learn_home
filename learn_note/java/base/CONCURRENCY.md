@@ -189,6 +189,9 @@ public class MyThread extends Thread {
 
 可以是线程结束任务之后自己结束，或者产生了异常而结束。
 
+![线程状态](../img/threadstate.png)
+
+
 [Java SE 9 Enum Thread.State](https://docs.oracle.com/javase/9/docs/api/java/lang/Thread.State.html)
 
 ## 二、基础线程机制
