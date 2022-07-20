@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="Java并发开发01">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="Java并发开发03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/java/base/img.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -605,20 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00096" summary="增加反射">
-      <created>1647833530605</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1647833530605</updated>
-    </task>
-    <task id="LOCAL-00097" summary="目录调整01">
-      <created>1647834288564</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1647834288564</updated>
-    </task>
     <task id="LOCAL-00098" summary="目录调整01">
       <created>1647835097263</created>
       <option name="number" value="00098" />
@@ -948,7 +933,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658193784108</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="Java并发开发02">
+      <created>1658194650895</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1658194650895</updated>
+    </task>
+    <task id="LOCAL-00146" summary="Java并发开发03">
+      <created>1658194777182</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1658194777182</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1129,8 +1128,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加Class反射获取对象三种方式区别" />
-    <MESSAGE value="修复问题" />
     <MESSAGE value="复核反射部分" />
     <MESSAGE value="Java基础基本完成" />
     <MESSAGE value="增加首页链接" />
@@ -1154,7 +1151,9 @@
     <MESSAGE value="初始化Java并发" />
     <MESSAGE value="结构调整" />
     <MESSAGE value="Java并发开发01" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java并发开发01" />
+    <MESSAGE value="Java并发开发02" />
+    <MESSAGE value="Java并发开发03" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java并发开发03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

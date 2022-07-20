@@ -15,11 +15,11 @@
         * [无限期等待（WAITING）](#无限期等待waiting)
         * [限期等待（TIMED_WAITING）](#限期等待timed_waiting)
         * [死亡（TERMINATED）](#死亡terminated)
-    * [三、基础线程机制](#二基础线程机制)
-        * [Executor](#executor)
-        * [Daemon](#daemon)
+    * [三、线程方法](#三线程方法)
+        * [join()](#join)
         * [sleep()](#sleep)
         * [yield()](#yield)
+        * [Daemon](#daemon)
     * [三、中断](#三中断)
         * [InterruptedException](#interruptedexception)
         * [interrupted()](#interrupted)
@@ -30,7 +30,6 @@
         * [比较](#比较)
         * [使用选择](#使用选择)
     * [五、线程之间的协作](#五线程之间的协作)
-        * [join()](#join)
         * [wait() notify() notifyAll()](#wait-notify-notifyall)
         * [await() signal() signalAll()](#await-signal-signalall)
     * [七、J.U.C - AQS](#七juc---aqs)
@@ -138,7 +137,6 @@ public class MyThread extends Thread {
 - Java 不支持多重继承，因此继承了 Thread 类就无法继承其它类，但是可以实现多个接口；
 - 类可能只要求可执行就行，继承整个 Thread 类开销过大。
 
-
 ## 二、线程状态
 
 一个线程只能处于一种状态，并且这里的线程状态特指Java虚拟机的线程状态，不能反映线程在特定操作系统下的状态。
@@ -149,14 +147,11 @@ public class MyThread extends Thread {
 
 ### 可运行（RUNNABLE）
 
-正在Java虚拟机中运行。
-但是在操作系统层面，它可能处于运行状态，也可能等待资源调度（例如处理器资源），资源调度完成就进入运行状态。
-所以该状态的可运行是指可以被运行，具体有没有运行要看底层操作系统的资源调度。
+正在Java虚拟机中运行。 但是在操作系统层面，它可能处于运行状态，也可能等待资源调度（例如处理器资源），资源调度完成就进入运行状态。 所以该状态的可运行是指可以被运行，具体有没有运行要看底层操作系统的资源调度。
 
 ### 阻塞（BLOCKED）
 
-请求获取monitor lock 从而进入synchronized函数或者代码块，但是其它线程已经占用了该monitor lock，所以出于阻塞状态。
-要结束该状态进入RUNNABLE 需要其他线程释放monitor lock。
+请求获取monitor lock 从而进入synchronized函数或者代码块，但是其它线程已经占用了该monitor lock，所以出于阻塞状态。 要结束该状态进入RUNNABLE 需要其他线程释放monitor lock。
 
 ### 无限期等待（WAITING）
 
@@ -191,30 +186,101 @@ public class MyThread extends Thread {
 
 ![线程状态](./img/threadstate.png)
 
-
 [Java SE 9 Enum Thread.State](https://docs.oracle.com/javase/9/docs/api/java/lang/Thread.State.html)
 
-## 二、基础线程机制
+## 三、线程方法
 
-### Executor
+### join()
 
-Executor 管理多个异步任务的执行，而无需程序员显式地管理线程的生命周期。这里的异步是指多个任务的执行互不干扰，不需要进行同步操作。
+在线程中调用另一个线程的join()方法，会将当前线程挂起，而不是忙等待，直到目标线程结束。
 
-主要有三种 Executor：
-
-- CachedThreadPool：一个任务创建一个线程；
-- FixedThreadPool：所有任务只能使用固定大小的线程；
-- SingleThreadExecutor：相当于大小为 1 的 FixedThreadPool。
+对于以下代码，虽然b线程先启动，但是因为在b线程中调用了a线程的join()方法，b线程会等待a线程结束才继续执行，因此最后能够保证a线程的输出先于b线程的输出。
 
 ```java
-public static void main(String[]args){
-        ExecutorService executorService=Executors.newCachedThreadPool();
-        for(int i=0;i< 5;i++){
-        executorService.execute(new MyRunnable());
+public class JoinExample {
+    private class A extends Thread {
+        @Override
+        public void run() {
+            System.out.println("A");
         }
-        executorService.shutdown();
+    }
+
+    private class B extends Thread {
+        private A a;
+
+        B(A a) {
+            this.a = a;
         }
+
+        @Override
+        public void run() {
+            try {
+                a.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("B");
+        }
+    }
+
+    public void test() {
+        A a = new A();
+        B b = new B(a);
+        b.start();
+        a.start();
+    }
+
+    public static void main(String[] args) {
+        JoinExample example = new JoinExample();
+        example.test();
+    }
+}
 ```
+
+```
+A
+B
+```
+
+### sleep()
+
+Thread.sleep(millisec) 方法会休眠当前正在执行的线程，millisec单位为毫秒。
+
+sleep()可能会抛出InterruptedException，因为异常不能跨线程传播回main()中，因此必须在本地进行处理。 线程中抛出的其它异常也同样需要在本地进行处理。
+
+```java
+class demo {
+    public void run() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+```
+
+### yield()
+
+对静态方法Thread.yield()的调用声明了当前线程已经完成了生命周期中最重要的部分，可以切换给其它线程来执行。
+
+该方法只是对线程调度器的一个建议，而且也只是建议具有相同优先级的其它线程可以运行。
+
+```java
+class demo {
+    public void run() {
+        Thread.yield();
+    }
+}
+
+```
+
+sleep()和yield()方法调用后线程的状态不同(运行状态区分)
+
+sleep()方法会将线程转入*阻塞状态*,直到经过阻塞时间才会转入就绪状态;
+
+而yield()不会将线程转入阻塞状态,它只是强制当前线程进入*就绪状态*。 因此完全有可能某个线程被yield()方法暂停之后,立即再次获得处理器资源被执行。
 
 ### Daemon
 
@@ -224,40 +290,20 @@ public static void main(String[]args){
 
 main() 属于非守护线程。
 
-在线程启动之前使用 setDaemon() 方法可以将一个线程设置为守护线程。
+在线程启动之前使用setDaemon()方法可以将一个线程设置为守护线程。
 
 ```java
-public static void main(String[]args){
-        Thread thread=new Thread(new MyRunnable());
+class demo {
+    public static void main(String[] args) {
+        Thread thread = new Thread(new MyRunnable());
         thread.setDaemon(true);
-        }
+        thread.start();
+    }
+}
 ```
 
-### sleep()
+### 线程优先级
 
-Thread.sleep(millisec) 方法会休眠当前正在执行的线程，millisec 单位为毫秒。
-
-sleep() 可能会抛出 InterruptedException，因为异常不能跨线程传播回 main() 中，因此必须在本地进行处理。线程中抛出的其它异常也同样需要在本地进行处理。
-
-```java
-public void run(){
-        try{
-        Thread.sleep(3000);
-        }catch(InterruptedException e){
-        e.printStackTrace();
-        }
-        }
-```
-
-### yield()
-
-对静态方法 Thread.yield() 的调用声明了当前线程已经完成了生命周期中最重要的部分，可以切换给其它线程来执行。该方法只是对线程调度器的一个建议，而且也只是建议具有相同优先级的其它线程可以运行。
-
-```java
-public void run(){
-        Thread.yield();
-        }
-```
 
 ## 三、中断
 
@@ -570,62 +616,6 @@ synchronized 中的锁是非公平的，ReentrantLock 默认情况下也是非�
 ## 五、线程之间的协作
 
 当多个线程可以一起工作去解决某个问题时，如果某些部分必须在其它部分之前完成，那么就需要对线程进行协调。
-
-### join()
-
-在线程中调用另一个线程的 join() 方法，会将当前线程挂起，而不是忙等待，直到目标线程结束。
-
-对于以下代码，虽然 b 线程先启动，但是因为在 b 线程中调用了 a 线程的 join() 方法，b 线程会等待 a 线程结束才继续执行，因此最后能够保证 a 线程的输出先于 b 线程的输出。
-
-```java
-public class JoinExample {
-
-    private class A extends Thread {
-        @Override
-        public void run() {
-            System.out.println("A");
-        }
-    }
-
-    private class B extends Thread {
-
-        private A a;
-
-        B(A a) {
-            this.a = a;
-        }
-
-        @Override
-        public void run() {
-            try {
-                a.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("B");
-        }
-    }
-
-    public void test() {
-        A a = new A();
-        B b = new B(a);
-        b.start();
-        a.start();
-    }
-}
-```
-
-```java
-public static void main(String[]args){
-        JoinExample example=new JoinExample();
-        example.test();
-        }
-```
-
-```
-A
-B
-```
 
 ### wait() notify() notifyAll()
 
@@ -1618,6 +1608,26 @@ Record 指针。如果 CAS 操作成功了，那么线程就获取了该对象�
 当有另外一个线程去尝试获取这个锁对象时，偏向状态就宣告结束，此时撤销偏向（Revoke Bias）后恢复到未锁定状态或者轻量级锁状态。
 
 <div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/390c913b-5f31-444f-bbdb-2b88b688e7ce.jpg" width="600"/> </div><br>
+
+### Executor
+
+Executor 管理多个异步任务的执行，而无需程序员显式地管理线程的生命周期。这里的异步是指多个任务的执行互不干扰，不需要进行同步操作。
+
+主要有三种 Executor：
+
+- CachedThreadPool：一个任务创建一个线程；
+- FixedThreadPool：所有任务只能使用固定大小的线程；
+- SingleThreadExecutor：相当于大小为 1 的 FixedThreadPool。
+
+```java
+public static void main(String[]args){
+        ExecutorService executorService=Executors.newCachedThreadPool();
+        for(int i=0;i< 5;i++){
+        executorService.execute(new MyRunnable());
+        }
+        executorService.shutdown();
+        }
+```
 
 ## 十三、多线程开发良好的实践
 
