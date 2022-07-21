@@ -20,6 +20,7 @@
         * [sleep()](#sleep)
         * [yield()](#yield)
         * [Daemon](#daemon)
+        * [线程优先级](#线程优先级)
     * [三、中断](#三中断)
         * [InterruptedException](#interruptedexception)
         * [interrupted()](#interrupted)
@@ -304,6 +305,25 @@ class demo {
 
 ### 线程优先级
 
+每个线程都具有一定的优先级，优先级高的线程获得更多的执行机会，优先级低的线程则获得较少的执行机会。
+
+线程默认的优先级与创建它的父线程一致，默认情况下，main具有普通优先级，其子线程也是普通优先级。
+
+Java虚拟机提供的线程优先级为1~10，但操作系统的线程优先级可能无法与其一一对应，为保障可移植性，建议使用已定义的静态常量优先级
+- MAX_PRIORITY : 10
+- NORM_PRIORITY : 5
+- MIN_PRIORITY : 1
+
+setPriority(int newPriority)用户更改线程优先级，getPriority()用户查询线程优先级。
+
+```java
+class demo {
+    public static void main(String[] args){
+        Thread.currentThread().getPriority();
+        Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
+    }
+}
+```
 
 ## 三、中断
 

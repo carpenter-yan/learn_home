@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="Java并发开发03">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="Java并发开发04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/base/thread/TestVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/thread/TestVolatile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -338,13 +339,13 @@
       <recent name="com.carpenter.yan.java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BigDecimalTest.test1">
-    <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="base.java.StringTest" />
+  <component name="RunManager" selected="JUnit.TestVolatile.test1">
+    <configuration name="TestVolatile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="base.thread.TestVolatile" />
       <module name="learn_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="base.java.*" />
+          <option name="PATTERN" value="base.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -384,22 +385,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learn_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="base.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="base.java" />
-      <option name="MAIN_CLASS_NAME" value="base.java.FileTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn_java" />
       <extension name="coverage">
@@ -416,20 +401,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestVolatile.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base.thread" />
+      <option name="MAIN_CLASS_NAME" value="base.thread.TestVolatile" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.StringTest" />
-      <item itemvalue="JUnit.FileTest.test1" />
       <item itemvalue="JUnit.Main.test2" />
       <item itemvalue="JUnit.BloomFilterTest.test1" />
       <item itemvalue="JUnit.BigDecimalTest.test1" />
+      <item itemvalue="Application.TestVolatile" />
+      <item itemvalue="JUnit.TestVolatile.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestVolatile.test1" />
+        <item itemvalue="Application.TestVolatile" />
         <item itemvalue="JUnit.BigDecimalTest.test1" />
         <item itemvalue="JUnit.BloomFilterTest.test1" />
         <item itemvalue="JUnit.Main.test2" />
-        <item itemvalue="JUnit.FileTest.test1" />
-        <item itemvalue="Application.StringTest" />
       </list>
     </recent_temporary>
   </component>
@@ -603,13 +604,6 @@
       <workItem from="1612336485475" duration="1122000" />
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
-    </task>
-    <task id="LOCAL-00098" summary="目录调整01">
-      <created>1647835097263</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1647835097263</updated>
     </task>
     <task id="LOCAL-00099" summary="目录调整02">
       <created>1647841083785</created>
@@ -947,7 +941,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658194777182</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="Java并发开发04">
+      <created>1658281365878</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1658281365878</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1128,7 +1129,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="复核反射部分" />
     <MESSAGE value="Java基础基本完成" />
     <MESSAGE value="增加首页链接" />
     <MESSAGE value="增加首页链接01" />
@@ -1153,7 +1153,8 @@
     <MESSAGE value="Java并发开发01" />
     <MESSAGE value="Java并发开发02" />
     <MESSAGE value="Java并发开发03" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java并发开发03" />
+    <MESSAGE value="Java并发开发04" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java并发开发04" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

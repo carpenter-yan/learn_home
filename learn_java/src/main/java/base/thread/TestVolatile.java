@@ -1,8 +1,19 @@
 package base.thread;
 
+import org.junit.Test;
+
 public class TestVolatile{
 
+    @Test
+    public void test1() {
+        System.out.println(Thread.currentThread().getPriority());
+        Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
+        System.out.println(Thread.currentThread().getPriority());
+    }
+
+
     public static void main(String[] args){
+        System.out.println(Thread.currentThread().getPriority());
         ThreadDemo td = new ThreadDemo();
         new Thread(td).start();
 
