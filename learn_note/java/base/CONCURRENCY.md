@@ -1,4 +1,4 @@
-# Java 并发
+# Java并发
 
 <!-- GFM-TOC -->
 
@@ -21,16 +21,16 @@
         * [yield()](#yield)
         * [Daemon](#daemon)
         * [线程优先级](#线程优先级)
-    * [三、中断](#三中断)
+    * [四、线程终止](#四线程终止)
         * [InterruptedException](#interruptedexception)
         * [interrupted()](#interrupted)
         * [Executor 的中断操作](#executor-的中断操作)
-    * [四、互斥同步](#四互斥同步)
+    * [五、线程同步](#五线程同步)
         * [synchronized](#synchronized)
         * [ReentrantLock](#reentrantlock)
         * [比较](#比较)
         * [使用选择](#使用选择)
-    * [五、线程之间的协作](#五线程之间的协作)
+    * [六、线程协作](#六线程协作)
         * [wait() notify() notifyAll()](#wait-notify-notifyall)
         * [await() signal() signalAll()](#await-signal-signalall)
     * [七、J.U.C - AQS](#七juc---aqs)
@@ -138,6 +138,8 @@ public class MyThread extends Thread {
 - Java 不支持多重继承，因此继承了 Thread 类就无法继承其它类，但是可以实现多个接口；
 - 类可能只要求可执行就行，继承整个 Thread 类开销过大。
 
+[BACK TO TOP](#Java并发)
+
 ## 二、线程状态
 
 一个线程只能处于一种状态，并且这里的线程状态特指Java虚拟机的线程状态，不能反映线程在特定操作系统下的状态。
@@ -188,6 +190,8 @@ public class MyThread extends Thread {
 ![线程状态](./img/threadstate.png)
 
 [Java SE 9 Enum Thread.State](https://docs.oracle.com/javase/9/docs/api/java/lang/Thread.State.html)
+
+[BACK TO TOP](#Java并发)
 
 ## 三、线程方法
 
@@ -310,6 +314,7 @@ class demo {
 线程默认的优先级与创建它的父线程一致，默认情况下，main具有普通优先级，其子线程也是普通优先级。
 
 Java虚拟机提供的线程优先级为1~10，但操作系统的线程优先级可能无法与其一一对应，为保障可移植性，建议使用已定义的静态常量优先级
+
 - MAX_PRIORITY : 10
 - NORM_PRIORITY : 5
 - MIN_PRIORITY : 1
@@ -318,27 +323,28 @@ setPriority(int newPriority)用户更改线程优先级，getPriority()用户查
 
 ```java
 class demo {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Thread.currentThread().getPriority();
         Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
     }
 }
 ```
 
-## 三、中断
+[BACK TO TOP](#Java并发)
+
+## 四、线程终止
 
 一个线程执行完毕之后会自动结束，如果在运行过程中发生异常也会提前结束。
 
 ### InterruptedException
 
-通过调用一个线程的 interrupt() 来中断该线程，如果该线程处于阻塞、限期等待或者无限期等待状态，那么就会抛出 InterruptedException，从而提前结束该线程。但是不能中断 I/O 阻塞和 synchronized
+通过调用一个线程的interrupt()来中断该线程，如果该线程处于阻塞、限期等待或者无限期等待状态，那么就会抛出InterruptedException， 从而提前结束该线程。 但是不能中断 I/O 阻塞和 synchronized
 锁阻塞。
 
-对于以下代码，在 main() 中启动一个线程之后再中断它，由于线程中调用了 Thread.sleep() 方法，因此会抛出一个 InterruptedException，从而提前结束线程，不执行之后的语句。
+对于以下代码，在 main() 中启动一个线程之后再中断它，由于线程中调用了 Thread.sleep() 方法， 因此会抛出一个 InterruptedException，从而提前结束线程，不执行之后的语句。
 
 ```java
 public class InterruptExample {
-
     private static class MyThread1 extends Thread {
         @Override
         public void run() {
@@ -350,16 +356,14 @@ public class InterruptExample {
             }
         }
     }
-}
-```
 
-```java
-public static void main(String[]args)throws InterruptedException{
-        Thread thread1=new MyThread1();
+    public static void main(String[] args) throws InterruptedException {
+        Thread thread1 = new MyThread1();
         thread1.start();
         thread1.interrupt();
         System.out.println("Main run");
-        }
+    }
+}
 ```
 
 ```html
@@ -373,13 +377,12 @@ at java.lang.Thread.run(Thread.java:745)
 
 ### interrupted()
 
-如果一个线程的 run() 方法执行一个无限循环，并且没有执行 sleep() 等会抛出 InterruptedException 的操作，那么调用线程的 interrupt() 方法就无法使线程提前结束。
+如果一个线程的 run() 方法执行一个无限循环，并且没有执行 sleep() 等会抛出 InterruptedException 的操作， 那么调用线程的 interrupt() 方法就无法使线程提前结束。
 
-但是调用 interrupt() 方法会设置线程的中断标记，此时调用 interrupted() 方法会返回 true。因此可以在循环体中使用 interrupted() 方法来判断线程是否处于中断状态，从而提前结束线程。
+但是调用 interrupt() 方法会设置线程的中断标记，此时调用 interrupted() 方法会返回 true。 因此可以在循环体中使用 interrupted() 方法来判断线程是否处于中断状态，从而提前结束线程。
 
 ```java
 public class InterruptExample {
-
     private static class MyThread2 extends Thread {
         @Override
         public void run() {
@@ -389,64 +392,22 @@ public class InterruptExample {
             System.out.println("Thread end");
         }
     }
-}
-```
 
-```java
-public static void main(String[]args)throws InterruptedException{
-        Thread thread2=new MyThread2();
+    public static void main(String[] args) throws InterruptedException {
+        Thread thread2 = new MyThread2();
         thread2.start();
         thread2.interrupt();
-        }
+    }
+}
 ```
 
 ```html
 Thread end
 ```
 
-### Executor 的中断操作
+[BACK TO TOP](#Java并发)
 
-调用 Executor 的 shutdown() 方法会等待线程都执行完毕之后再关闭，但是如果调用的是 shutdownNow() 方法，则相当于调用每个线程的 interrupt() 方法。
-
-以下使用 Lambda 创建线程，相当于创建了一个匿名内部线程。
-
-```java
-public static void main(String[]args){
-        ExecutorService executorService=Executors.newCachedThreadPool();
-        executorService.execute(()->{
-        try{
-        Thread.sleep(2000);
-        System.out.println("Thread run");
-        }catch(InterruptedException e){
-        e.printStackTrace();
-        }
-        });
-        executorService.shutdownNow();
-        System.out.println("Main run");
-        }
-```
-
-```html
-Main run
-java.lang.InterruptedException: sleep interrupted
-at java.lang.Thread.sleep(Native Method)
-at ExecutorInterruptExample.lambda$main$0(ExecutorInterruptExample.java:9)
-at ExecutorInterruptExample$$Lambda$1/1160460865.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-at java.lang.Thread.run(Thread.java:745)
-```
-
-如果只想中断 Executor 中的一个线程，可以通过使用 submit() 方法来提交一个线程，它会返回一个 Future\<?\> 对象，通过调用该对象的 cancel(true) 方法就可以中断线程。
-
-```java
-Future<?> future=executorService.submit(()->{
-        // ..
-        });
-        future.cancel(true);
-```
-
-## 四、互斥同步
+## 五、线程同步
 
 Java 提供了两种锁机制来控制多个线程对共享资源的互斥访问，第一个是 JVM 实现的 synchronized，而另一个是 JDK 实现的 ReentrantLock。
 
@@ -633,7 +594,9 @@ synchronized 中的锁是非公平的，ReentrantLock 默认情况下也是非�
 除非需要使用 ReentrantLock 的高级功能，否则优先使用 synchronized。这是因为 synchronized 是 JVM 实现的一种锁机制，JVM 原生地支持它，而 ReentrantLock 不是所有的 JDK
 版本都支持。并且使用 synchronized 不用担心没有释放锁而导致死锁问题，因为 JVM 会确保锁的释放。
 
-## 五、线程之间的协作
+[BACK TO TOP](#Java并发)
+
+## 六、线程协作
 
 当多个线程可以一起工作去解决某个问题时，如果某些部分必须在其它部分之前完成，那么就需要对线程进行协调。
 
@@ -1647,6 +1610,49 @@ public static void main(String[]args){
         }
         executorService.shutdown();
         }
+```
+
+
+### Executor 的中断操作
+
+调用 Executor 的 shutdown() 方法会等待线程都执行完毕之后再关闭，但是如果调用的是 shutdownNow() 方法，则相当于调用每个线程的 interrupt() 方法。
+
+以下使用 Lambda 创建线程，相当于创建了一个匿名内部线程。
+
+```java
+public static void main(String[]args){
+        ExecutorService executorService=Executors.newCachedThreadPool();
+        executorService.execute(()->{
+        try{
+        Thread.sleep(2000);
+        System.out.println("Thread run");
+        }catch(InterruptedException e){
+        e.printStackTrace();
+        }
+        });
+        executorService.shutdownNow();
+        System.out.println("Main run");
+        }
+```
+
+```html
+Main run
+java.lang.InterruptedException: sleep interrupted
+at java.lang.Thread.sleep(Native Method)
+at ExecutorInterruptExample.lambda$main$0(ExecutorInterruptExample.java:9)
+at ExecutorInterruptExample$$Lambda$1/1160460865.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+at java.lang.Thread.run(Thread.java:745)
+```
+
+如果只想中断 Executor 中的一个线程，可以通过使用 submit() 方法来提交一个线程，它会返回一个 Future\<?\> 对象，通过调用该对象的 cancel(true) 方法就可以中断线程。
+
+```java
+Future<?> future=executorService.submit(()->{
+        // ..
+        });
+        future.cancel(true);
 ```
 
 ## 十三、多线程开发良好的实践

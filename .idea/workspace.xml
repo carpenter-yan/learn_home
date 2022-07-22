@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="Java并发开发04">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加线程优先级">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/base/thread/TestVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/base/thread/TestVolatile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -605,13 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00099" summary="目录调整02">
-      <created>1647841083785</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1647841083785</updated>
-    </task>
     <task id="LOCAL-00100" summary="目录调整03">
       <created>1647841282336</created>
       <option name="number" value="00100" />
@@ -948,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658281365878</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="增加线程优先级">
+      <created>1658367935046</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1658367935046</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1129,7 +1128,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Java基础基本完成" />
     <MESSAGE value="增加首页链接" />
     <MESSAGE value="增加首页链接01" />
     <MESSAGE value="增加Java容器内容" />
@@ -1154,7 +1152,8 @@
     <MESSAGE value="Java并发开发02" />
     <MESSAGE value="Java并发开发03" />
     <MESSAGE value="Java并发开发04" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java并发开发04" />
+    <MESSAGE value="增加线程优先级" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加线程优先级" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
