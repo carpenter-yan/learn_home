@@ -409,27 +409,28 @@ Thread end
 
 ## 五、线程同步
 
-Java 提供了两种锁机制来控制多个线程对共享资源的互斥访问，第一个是 JVM 实现的 synchronized，而另一个是 JDK 实现的 ReentrantLock。
+Java 提供了两种锁机制来控制多个线程对共享资源的互斥访问，第一个是JVM实现的synchronized，而另一个是JDK实现的ReentrantLock。
 
 ### synchronized
 
 **1. 同步一个代码块**
 
 ```java
-public void func(){
-synchronized (this){
-        // ...
+class Demo {
+    public void func() {
+        synchronized (this) {
+            // ...
         }
-        }
+    }
+}
 ```
 
 它只作用于同一个对象，如果调用两个对象上的同步代码块，就不会进行同步。
 
-对于以下代码，使用 ExecutorService 执行了两个线程，由于调用的是同一个对象的同步代码块，因此这两个线程会进行同步，当一个线程进入同步语句块时，另一个线程就必须等待。
+对于以下代码，使用ExecutorService执行了两个线程，由于调用的是同一个对象的同步代码块，因此这两个线程会进行同步，当一个线程进入同步语句块时，另一个线程就必须等待。
 
 ```java
 public class SynchronizedExample {
-
     public void func1() {
         synchronized (this) {
             for (int i = 0; i < 10; i++) {
@@ -437,16 +438,14 @@ public class SynchronizedExample {
             }
         }
     }
-}
-```
 
-```java
-public static void main(String[]args){
-        SynchronizedExample e1=new SynchronizedExample();
-        ExecutorService executorService=Executors.newCachedThreadPool();
-        executorService.execute(()->e1.func1());
-        executorService.execute(()->e1.func1());
-        }
+    public static void main(String[] args) {
+        SynchronizedExample e1 = new SynchronizedExample();
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        executorService.execute(() -> e1.func1());
+        executorService.execute(() -> e1.func1());
+    }
+}
 ```
 
 ```html
@@ -456,13 +455,15 @@ public static void main(String[]args){
 对于以下代码，两个线程调用了不同对象的同步代码块，因此这两个线程就不需要同步。从输出结果可以看出，两个线程交叉执行。
 
 ```java
-public static void main(String[]args){
-        SynchronizedExample e1=new SynchronizedExample();
-        SynchronizedExample e2=new SynchronizedExample();
-        ExecutorService executorService=Executors.newCachedThreadPool();
-        executorService.execute(()->e1.func1());
-        executorService.execute(()->e2.func1());
-        }
+class SynchronizedExample {
+    public static void main(String[] args) {
+        SynchronizedExample e1 = new SynchronizedExample();
+        SynchronizedExample e2 = new SynchronizedExample();
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        executorService.execute(() -> e1.func1());
+        executorService.execute(() -> e2.func1());
+    }
+}
 ```
 
 ```html
@@ -472,28 +473,22 @@ public static void main(String[]args){
 **2. 同步一个方法**
 
 ```java
-public synchronized void func(){
+class Demo {
+    public synchronized void func() {
         // ...
-        }
+    }
+}
+
 ```
 
 它和同步代码块一样，作用于同一个对象。
 
 **3. 同步一个类**
 
-```java
-public void func(){
-synchronized (SynchronizedExample.class){
-        // ...
-        }
-        }
-```
-
 作用于整个类，也就是说两个线程调用同一个类的不同对象上的这种同步语句，也会进行同步。
 
 ```java
 public class SynchronizedExample {
-
     public void func2() {
         synchronized (SynchronizedExample.class) {
             for (int i = 0; i < 10; i++) {
@@ -501,17 +496,15 @@ public class SynchronizedExample {
             }
         }
     }
-}
-```
 
-```java
-public static void main(String[]args){
-        SynchronizedExample e1=new SynchronizedExample();
-        SynchronizedExample e2=new SynchronizedExample();
-        ExecutorService executorService=Executors.newCachedThreadPool();
-        executorService.execute(()->e1.func2());
-        executorService.execute(()->e2.func2());
-        }
+    public static void main(String[] args) {
+        SynchronizedExample e1 = new SynchronizedExample();
+        SynchronizedExample e2 = new SynchronizedExample();
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        executorService.execute(() -> e1.func2());
+        executorService.execute(() -> e2.func2());
+    }
+}
 ```
 
 ```html
@@ -521,16 +514,18 @@ public static void main(String[]args){
 **4. 同步一个静态方法**
 
 ```java
-public synchronized static void fun(){
+class Demo {
+    public synchronized static void fun() {
         // ...
-        }
+    }
+}
 ```
 
 作用于整个类。
 
 ### ReentrantLock
 
-ReentrantLock 是 java.util.concurrent（J.U.C）包中的锁。
+ReentrantLock 是java.util.concurrent（J.U.C）包中的锁。
 
 ```java
 public class LockExample {
@@ -547,16 +542,14 @@ public class LockExample {
             lock.unlock(); // 确保释放锁，从而避免发生死锁。
         }
     }
-}
-```
 
-```java
-public static void main(String[]args){
-        LockExample lockExample=new LockExample();
-        ExecutorService executorService=Executors.newCachedThreadPool();
-        executorService.execute(()->lockExample.func());
-        executorService.execute(()->lockExample.func());
-        }
+    public static void main(String[] args) {
+        LockExample lockExample = new LockExample();
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        executorService.execute(() -> lockExample.func());
+        executorService.execute(() -> lockExample.func());
+    }
+}
 ```
 
 ```html
@@ -591,8 +584,9 @@ synchronized 中的锁是非公平的，ReentrantLock 默认情况下也是非�
 
 ### 使用选择
 
-除非需要使用 ReentrantLock 的高级功能，否则优先使用 synchronized。这是因为 synchronized 是 JVM 实现的一种锁机制，JVM 原生地支持它，而 ReentrantLock 不是所有的 JDK
-版本都支持。并且使用 synchronized 不用担心没有释放锁而导致死锁问题，因为 JVM 会确保锁的释放。
+除非需要使用 ReentrantLock 的高级功能，否则优先使用 synchronized。
+这是因为 synchronized 是 JVM 实现的一种锁机制，JVM 原生地支持它，而 ReentrantLock 不是所有的 JDK 版本都支持。
+并且使用 synchronized 不用担心没有释放锁而导致死锁问题，因为 JVM 会确保锁的释放。
 
 [BACK TO TOP](#Java并发)
 
@@ -1611,7 +1605,6 @@ public static void main(String[]args){
         executorService.shutdown();
         }
 ```
-
 
 ### Executor 的中断操作
 
