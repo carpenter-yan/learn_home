@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="修改线程中断">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="优化线程同步">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -603,13 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00101" summary="目录调整04">
-      <created>1647841610791</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1647841610791</updated>
-    </task>
     <task id="LOCAL-00102" summary="目录调整05">
       <created>1647841716581</created>
       <option name="number" value="00102" />
@@ -946,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658452572119</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="优化线程同步">
+      <created>1658453467391</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1658453467391</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1127,7 +1128,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加首页链接01" />
     <MESSAGE value="增加Java容器内容" />
     <MESSAGE value="优化ArrayList源码分析" />
     <MESSAGE value="优化Vector源码分析" />
@@ -1152,7 +1152,8 @@
     <MESSAGE value="Java并发开发04" />
     <MESSAGE value="增加线程优先级" />
     <MESSAGE value="修改线程中断" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改线程中断" />
+    <MESSAGE value="优化线程同步" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化线程同步" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

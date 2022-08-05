@@ -584,9 +584,8 @@ synchronized 中的锁是非公平的，ReentrantLock 默认情况下也是非�
 
 ### 使用选择
 
-除非需要使用 ReentrantLock 的高级功能，否则优先使用 synchronized。
-这是因为 synchronized 是 JVM 实现的一种锁机制，JVM 原生地支持它，而 ReentrantLock 不是所有的 JDK 版本都支持。
-并且使用 synchronized 不用担心没有释放锁而导致死锁问题，因为 JVM 会确保锁的释放。
+除非需要使用 ReentrantLock 的高级功能，否则优先使用 synchronized。 这是因为 synchronized 是 JVM 实现的一种锁机制，JVM 原生地支持它，而 ReentrantLock 不是所有的 JDK
+版本都支持。 并且使用 synchronized 不用担心没有释放锁而导致死锁问题，因为 JVM 会确保锁的释放。
 
 [BACK TO TOP](#Java并发)
 
@@ -596,13 +595,13 @@ synchronized 中的锁是非公平的，ReentrantLock 默认情况下也是非�
 
 ### wait() notify() notifyAll()
 
-调用 wait() 使得线程等待某个条件满足，线程在等待时会被挂起，当其他线程的运行使得这个条件满足时，其它线程会调用 notify() 或者 notifyAll() 来唤醒挂起的线程。
+调用wait()使得线程等待某个条件满足，线程在等待时会被挂起， 当其他线程的运行使得这个条件满足时，其它线程会调用 notify()或者notifyAll() 来唤醒挂起的线程。
 
-它们都属于 Object 的一部分，而不属于 Thread。
+它们都属于Object的一部分，而不属于Thread。
 
-只能用在同步方法或者同步控制块中使用，否则会在运行时抛出 IllegalMonitorStateException。
+只能用在同步方法或者同步控制块中使用，否则会在运行时抛出IllegalMonitorStateException。
 
-使用 wait() 挂起期间，线程会释放锁。这是因为，如果没有释放锁，那么其它线程就无法进入对象的同步方法或者同步控制块中，那么就无法执行 notify() 或者 notifyAll() 来唤醒挂起的线程，造成死锁。
+使用wait() 挂起期间，线程会释放锁。这是因为，如果没有释放锁，那么其它线程就无法进入对象的同步方法或者同步控制块中， 那么就无法执行 notify() 或者 notifyAll() 来唤醒挂起的线程，造成死锁。
 
 ```java
 public class WaitNotifyExample {
@@ -620,16 +619,14 @@ public class WaitNotifyExample {
         }
         System.out.println("after");
     }
-}
-```
 
-```java
-public static void main(String[]args){
-        ExecutorService executorService=Executors.newCachedThreadPool();
-        WaitNotifyExample example=new WaitNotifyExample();
-        executorService.execute(()->example.after());
-        executorService.execute(()->example.before());
-        }
+    public static void main(String[] args) {
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        WaitNotifyExample example = new WaitNotifyExample();
+        executorService.execute(() -> example.after());
+        executorService.execute(() -> example.before());
+    }
+}
 ```
 
 ```html
@@ -644,12 +641,12 @@ after
 
 ### await() signal() signalAll()
 
-java.util.concurrent 类库中提供了 Condition 类来实现线程之间的协调，可以在 Condition 上调用 await() 方法使线程等待，其它线程调用 signal() 或 signalAll()
+java.util.concurrent类库中提供了Condition 类来实现线程之间的协调， 可以在 Condition 上调用 await() 方法使线程等待，其它线程调用 signal() 或 signalAll()
 方法唤醒等待的线程。
 
-相比于 wait() 这种等待方式，await() 可以指定等待的条件，因此更加灵活。
+相比于wait() 这种等待方式，await() 可以指定等待的条件，因此更加灵活。
 
-使用 Lock 来获取一个 Condition 对象。
+使用Lock 来获取一个 Condition 对象。
 
 ```java
 public class AwaitSignalExample {
@@ -678,16 +675,14 @@ public class AwaitSignalExample {
             lock.unlock();
         }
     }
-}
-```
 
-```java
-public static void main(String[]args){
-        ExecutorService executorService=Executors.newCachedThreadPool();
-        AwaitSignalExample example=new AwaitSignalExample();
-        executorService.execute(()->example.after());
-        executorService.execute(()->example.before());
-        }
+    public static void main(String[] args) {
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        AwaitSignalExample example = new AwaitSignalExample();
+        executorService.execute(() -> example.after());
+        executorService.execute(() -> example.before());
+    }
+}
 ```
 
 ```html
@@ -695,9 +690,14 @@ before
 after
 ```
 
+[BACK TO TOP](#Java并发)
+
 ## 七、J.U.C - AQS
 
 java.util.concurrent（J.U.C）大大提高了并发性能，AQS 被认为是 J.U.C 的核心。
+
+[操作系统——信号量](https://blog.csdn.net/weixin_43914272/article/details/108317212?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-108317212-blog-79746627.pc_relevant_multi_platform_whitelistv2_ad_hc&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-108317212-blog-79746627.pc_relevant_multi_platform_whitelistv2_ad_hc&utm_relevant_index=1)
+[1.5w字，30图带你彻底掌握 AQS！](https://mp.weixin.qq.com/s/k3LJTKAmS5rOh67LOIwh6A)  
 
 ### CountDownLatch
 
