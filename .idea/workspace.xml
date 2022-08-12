@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="优化线程同步">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加aqs资料">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" afterDir="false" />
     </list>
@@ -604,13 +604,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00102" summary="目录调整05">
-      <created>1647841716581</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1647841716581</updated>
-    </task>
     <task id="LOCAL-00103" summary="目录调整06">
       <created>1647841967571</created>
       <option name="number" value="00103" />
@@ -947,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658453467391</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="增加aqs资料">
+      <created>1659663234554</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1659663234555</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1128,7 +1128,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加Java容器内容" />
     <MESSAGE value="优化ArrayList源码分析" />
     <MESSAGE value="优化Vector源码分析" />
     <MESSAGE value="优化hashmap部分" />
@@ -1153,7 +1152,8 @@
     <MESSAGE value="增加线程优先级" />
     <MESSAGE value="修改线程中断" />
     <MESSAGE value="优化线程同步" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化线程同步" />
+    <MESSAGE value="增加aqs资料" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加aqs资料" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -698,6 +698,8 @@ java.util.concurrent（J.U.C）大大提高了并发性能，AQS 被认为是 J.
 
 [操作系统——信号量](https://blog.csdn.net/weixin_43914272/article/details/108317212?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-108317212-blog-79746627.pc_relevant_multi_platform_whitelistv2_ad_hc&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-108317212-blog-79746627.pc_relevant_multi_platform_whitelistv2_ad_hc&utm_relevant_index=1)
 [1.5w字，30图带你彻底掌握 AQS！](https://mp.weixin.qq.com/s/k3LJTKAmS5rOh67LOIwh6A)  
+[Java并发编程](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU3OTc1MDM1Mg==&action=getalbum&album_id=1642945458278809603&scene=173&from_msgid=2247495259&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
+[The java.util.concurrent Synchronizer Framework翻译](https://www.jianshu.com/p/25751df6bec5)  
 
 ### CountDownLatch
 
