@@ -18,7 +18,7 @@ public class BloomFilterTest {
     @Test
     public void test1() {
         BloomFilter bloomFilter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()),
-                10000000, 0.00001);
+                50000000, 0.0001);
 
         for (int i = 0; i < 1000; i++) {
             bloomFilter.put(RandomStringUtils.randomAlphabetic(16));

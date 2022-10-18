@@ -8,7 +8,7 @@
         * [实现 Callable 接口](#实现-callable-接口)
         * [继承 Thread 类](#继承-thread-类)
         * [实现接口 VS 继承 Thread](#实现接口-vs-继承-thread)
-    * [二、线程状态](#六线程状态)
+    * [二、线程状态](#二线程状态)
         * [新建（NEW）](#新建new)
         * [可运行（RUNABLE）](#可运行runable)
         * [阻塞（BLOCKED）](#阻塞blocked)
