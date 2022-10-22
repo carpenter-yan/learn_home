@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加aqs资料2">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加aqs资料3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_java/src/main/java/guava/BloomFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_java/src/main/java/guava/BloomFilterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -600,13 +598,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00104" summary="目录调整07">
-      <created>1647842244073</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1647842244073</updated>
-    </task>
     <task id="LOCAL-00105" summary="目录调整08">
       <created>1647842506076</created>
       <option name="number" value="00105" />
@@ -943,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660267382255</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="增加aqs资料3">
+      <created>1666080152084</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1666080152084</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1124,7 +1122,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="优化Vector源码分析" />
     <MESSAGE value="优化hashmap部分" />
     <MESSAGE value="优化LinkedHashMap部分" />
     <MESSAGE value="优化WeakHashMap部分" />
@@ -1149,7 +1146,8 @@
     <MESSAGE value="优化线程同步" />
     <MESSAGE value="增加aqs资料" />
     <MESSAGE value="增加aqs资料2" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加aqs资料2" />
+    <MESSAGE value="增加aqs资料3" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加aqs资料3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

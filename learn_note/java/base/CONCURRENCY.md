@@ -696,16 +696,45 @@ after
 
 java.util.concurrent（J.U.C）大大提高了并发性能，AQS 被认为是 J.U.C 的核心。
 
-[操作系统——信号量](https://blog.csdn.net/weixin_43914272/article/details/108317212?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-108317212-blog-79746627.pc_relevant_multi_platform_whitelistv2_ad_hc&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-108317212-blog-79746627.pc_relevant_multi_platform_whitelistv2_ad_hc&utm_relevant_index=1)
+[操作系统——信号量](https://blog.csdn.net/weixin_43914272/article/details/108317212?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-108317212-blog-79746627.pc_relevant_multi_platform_whitelistv2_ad_hc&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-108317212-blog-79746627.pc_relevant_multi_platform_whitelistv2_ad_hc&utm_relevant_index=1)  
 [1.5w字，30图带你彻底掌握 AQS！](https://mp.weixin.qq.com/s/k3LJTKAmS5rOh67LOIwh6A)  
-[Java并发编程](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU3OTc1MDM1Mg==&action=getalbum&album_id=1642945458278809603&scene=173&from_msgid=2247495259&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
-[The java.util.concurrent Synchronizer Framework翻译](https://www.jianshu.com/p/25751df6bec5)  
+[从ReentrantLock的实现看AQS的原理及应用](https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html)
+[The java.util.concurrent Synchronizer Framework翻译](https://www.jianshu.com/p/25751df6bec5)
+[Java并发编程](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU3OTc1MDM1Mg==&action=getalbum&album_id=1642945458278809603&scene=173&from_msgid=2247495259&from_itemidx=1&count=3&nolastread=1#wechat_redirect)  
+
+### AbstractQueuedSynchronizer
+AQS核心设计基础:
+1. 原子的管理同步状态  
+   AQS通过一个volatile int值来维护同步状态。并且暴露出getState,setState,compareAndSetState三个方法来获取和更新状态。  
+   继承了AQS的具体类必须定义tryAcquire和tryRelease来控制获取锁和释放锁的操作。 
+   tryAcquire必须在线程acquire时返回true，tryRelease必须在同步状态可以在未来被acquire时返回true。  
+   同时这两个方法可以传入一个int参数，用来修改同步状态。
+2. 阻塞线程，解除阻塞线程  
+   JUC包里有一个LockSupport类解决了这个问题。LockSupport.park方法阻塞当前线程直到LockSupport.unpark被调用。
+3. 管理等待队列
+   框架的核心是管理存放阻塞线程的队列，AQS使用了FIFO队列。因此，框架不支持有优先级的同步。  
+   目前主要有两种数据结构可以作为队列的候选者，AQS采用了Craig, Landin, and Hagersten (CLH)的变体，
+   因为它更容易的被用于处理cancel和timeout。
+
+AQS使用了模版方法设计模式，子类只需要定义用于检查和更新状态的方法来控制acquire和release。  
+JUC包中的所有同步器都把AQS的子类定义为内部私有类，因为内部控制acquire和release的策略不应该被使用者看到。
+
+AQS核心思想是：如果被请求的共享资源空闲，那么就将当前请求资源的线程设置为有效的工作线程，将共享资源设置为锁定状态；  
+如果共享资源被占用，就需要一定的阻塞等待唤醒机制来保证锁分配。这个机制主要用的是CLH队列的变体实现的，将暂时获取不到锁的线程加入到队列中。
+
+CLH：Craig、Landin and Hagersten队列，是单向链表，AQS中的队列是CLH变体的虚拟双向队列（FIFO），
+AQS是通过将每条请求共享资源的线程封装成一个节点来实现锁的分配。
+
+主要原理图如下：
+<div align="center"><img src="https://p0.meituan.net/travelcube/7132e4cef44c26f62835b197b239147b18062.png" /></div><br>
+
+AQS使用一个Volatile的int类型的成员变量来表示同步状态，通过内置的FIFO队列来完成资源获取的排队工作，通过CAS完成对State值的修改。
 
 ### CountDownLatch
 
 用来控制一个或者多个线程等待多个线程。
 
-维护了一个计数器 cnt，每次调用 countDown() 方法会让计数器的值减 1，减到 0 的时候，那些因为调用 await() 方法而在等待的线程就会被唤醒。
+维护了一个计数器cnt，每次调用countDown() 方法会让计数器的值减1，减到0的时候，那些因为调用await()方法而等待的线程就会被唤醒。
 
 <div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/ba078291-791e-4378-b6d1-ece76c2f0b14.png" width="300px"> </div><br>
 
@@ -737,23 +766,26 @@ run..run..run..run..run..run..run..run..run..run..end
 
 用来控制多个线程互相等待，只有当多个线程都到达时，这些线程才会继续执行。
 
-和 CountdownLatch 相似，都是通过维护计数器来实现的。线程执行 await() 方法之后计数器会减 1，并进行等待，直到计数器为 0，所有调用 await() 方法而在等待的线程才能继续执行。
+和CountdownLatch相似，都是通过维护计数器来实现的。线程执行await()方法之后计数器会减1，并进行等待，直到计数器为0，
+所有调用await()方法而在等待的线程才能继续执行。
 
-CyclicBarrier 和 CountdownLatch 的一个区别是，CyclicBarrier 的计数器通过调用 reset() 方法可以循环使用，所以它才叫做循环屏障。
+CyclicBarrier和CountdownLatch的一个区别是，CyclicBarrier的计数器通过调用reset()方法可以循环使用，所以它才叫做循环屏障。
 
-CyclicBarrier 有两个构造函数，其中 parties 指示计数器的初始值，barrierAction 在所有线程都到达屏障的时候会执行一次。
+CyclicBarrier有两个构造函数，其中parties指示计数器的初始值，barrierAction在所有线程都到达屏障的时候会执行一次。
 
 ```java
-public CyclicBarrier(int parties,Runnable barrierAction){
+public class CyclicBarrier {
+    public CyclicBarrier(int parties,Runnable barrierAction){
         if(parties<=0)throw new IllegalArgumentException();
         this.parties=parties;
         this.count=parties;
         this.barrierCommand=barrierAction;
-        }
+    }
 
-public CyclicBarrier(int parties){
+    public CyclicBarrier(int parties){
         this(parties,null);
-        }
+    }
+}
 ```
 
 <div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/f71af66b-0d54-4399-a44b-f47b58321984.png" width="300px"> </div><br>
@@ -787,9 +819,9 @@ before..before..before..before..before..before..before..before..before..before..
 
 ### Semaphore
 
-Semaphore 类似于操作系统中的信号量，可以控制对互斥资源的访问线程数。
+Semaphore类似于操作系统中的信号量，可以控制对互斥资源的访问线程数。
 
-以下代码模拟了对某个服务的并发请求，每次只能有 3 个客户端同时访问，请求总数为 10。
+以下代码模拟了对某个服务的并发请求，每次只能有3个客户端同时访问，请求总数为10。
 
 ```java
 public class SemaphoreExample {
