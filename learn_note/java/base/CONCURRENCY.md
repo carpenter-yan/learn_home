@@ -698,8 +698,8 @@ java.util.concurrent（J.U.C）大大提高了并发性能，AQS 被认为是 J.
 
 [操作系统——信号量](https://blog.csdn.net/weixin_43914272/article/details/108317212?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-108317212-blog-79746627.pc_relevant_multi_platform_whitelistv2_ad_hc&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-108317212-blog-79746627.pc_relevant_multi_platform_whitelistv2_ad_hc&utm_relevant_index=1)  
 [1.5w字，30图带你彻底掌握 AQS！](https://mp.weixin.qq.com/s/k3LJTKAmS5rOh67LOIwh6A)  
-[从ReentrantLock的实现看AQS的原理及应用](https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html)
-[The java.util.concurrent Synchronizer Framework翻译](https://www.jianshu.com/p/25751df6bec5)
+[从ReentrantLock的实现看AQS的原理及应用](https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html)  
+[The java.util.concurrent Synchronizer Framework翻译](https://www.jianshu.com/p/25751df6bec5)  
 [Java并发编程](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU3OTc1MDM1Mg==&action=getalbum&album_id=1642945458278809603&scene=173&from_msgid=2247495259&from_itemidx=1&count=3&nolastread=1#wechat_redirect)  
 
 ### AbstractQueuedSynchronizer
@@ -856,24 +856,25 @@ public class SemaphoreExample {
 
 ### FutureTask
 
-在介绍 Callable 时我们知道它可以有返回值，返回值通过 Future\<V\> 进行封装。FutureTask 实现了 RunnableFuture 接口，该接口继承自 Runnable 和 Future\<V\> 接口，这使得
+在介绍Callable 时我们知道它可以有返回值，返回值通过Future\<V\> 进行封装。  
+FutureTask 实现了RunnableFuture 接口，该接口继承自Runnable和Future\<V\> 接口，这使得
 FutureTask 既可以当做一个任务执行，也可以有返回值。
 
 ```java
-public class FutureTask<V> implements RunnableFuture<V>
+public class FutureTask<V> implements RunnableFuture<V>{}
 ```
 
 ```java
-public interface RunnableFuture<V> extends Runnable, Future<V>
+public interface RunnableFuture<V> extends Runnable, Future<V>{}
 ```
 
-FutureTask 可用于异步获取执行结果或取消执行任务的场景。当一个计算任务需要执行很长时间，那么就可以用 FutureTask 来封装这个任务，主线程在完成自己的任务之后再去获取结果。
+FutureTask可用于异步获取执行结果或取消执行任务的场景。
+当一个计算任务需要执行很长时间，那么就可以用FutureTask来封装这个任务，主线程在完成自己的任务之后再去获取结果。
 
 ```java
 public class FutureTaskExample {
-
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        FutureTask<Integer> futureTask = new FutureTask<Integer>(new Callable<Integer>() {
+        FutureTask<Integer> futureTask = new FutureTask<>(new Callable<Integer>() {
             @Override
             public Integer call() throws Exception {
                 int result = 0;
@@ -920,9 +921,7 @@ java.util.concurrent.BlockingQueue 接口有以下阻塞队列的实现：
 
 ```java
 public class ProducerConsumer {
-
     private static BlockingQueue<String> queue = new ArrayBlockingQueue<>(5);
-
     private static class Producer extends Thread {
         @Override
         public void run() {
@@ -936,7 +935,6 @@ public class ProducerConsumer {
     }
 
     private static class Consumer extends Thread {
-
         @Override
         public void run() {
             try {
@@ -947,24 +945,22 @@ public class ProducerConsumer {
             System.out.print("consume..");
         }
     }
-}
-```
 
-```java
-public static void main(String[]args){
+    public static void main(String[]args){
         for(int i=0;i< 2;i++){
-        Producer producer=new Producer();
-        producer.start();
+            Producer producer=new Producer();
+            producer.start();
         }
         for(int i=0;i< 5;i++){
-        Consumer consumer=new Consumer();
-        consumer.start();
+            Consumer consumer=new Consumer();
+            consumer.start();
         }
         for(int i=0;i< 3;i++){
-        Producer producer=new Producer();
-        producer.start();
+            Producer producer=new Producer();
+            producer.start();
         }
-        }
+    }
+}
 ```
 
 ```html
