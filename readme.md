@@ -50,3 +50,4 @@
 | [日拱一兵](https://dayarch.top/) | 挺用心的一个Java博主，解读Java相关技术 |
 | [美团技术团队](https://tech.meituan.com/) | 美团技术团队永远的神，深度解读技术 |
 | [廖雪峰Java教程](https://www.liaoxuefeng.com/wiki/1252599548343744) |
+| [小林x图解计算机基础](https://xiaolincoding.com) |
