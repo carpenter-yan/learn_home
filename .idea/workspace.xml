@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加小林资料">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加ES资料">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/database/elasticsearch/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/elasticsearch/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/computer/system/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/computer/system/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/database/redis/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/redis/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/java/base/CONCURRENCY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -598,13 +601,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00108" summary="目录调整01">
-      <created>1647842921560</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1647842921560</updated>
-    </task>
     <task id="LOCAL-00109" summary="目录调整11">
       <created>1647845385025</created>
       <option name="number" value="00109" />
@@ -941,7 +937,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672034373935</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="增加ES资料">
+      <created>1672046268519</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1672046268519</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1122,7 +1125,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加操作系统目录" />
     <MESSAGE value="增加Java基础思维导图" />
     <MESSAGE value="修改目录结构" />
     <MESSAGE value="增加set和queue目录" />
@@ -1147,7 +1149,8 @@
     <MESSAGE value="增加aqs资料4" />
     <MESSAGE value="增加http协议资料" />
     <MESSAGE value="增加小林资料" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加小林资料" />
+    <MESSAGE value="增加ES资料" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加ES资料" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

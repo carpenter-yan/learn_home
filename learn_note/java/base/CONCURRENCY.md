@@ -1713,3 +1713,4 @@ Future<?> future=executorService.submit(()->{
 - [聊聊并发（八）——Fork/Join 框架介绍](http://ifeve.com/talk-concurrency-forkjoin/)
 - [Eliminating SynchronizationRelated Atomic Operations with Biased Locking and Bulk Rebiasing](http://www.oracle.com/technetwork/java/javase/tech/biasedlocking-oopsla2006-preso-150106.pdf)
 - [通透～～ThreadLocal夺命11连问](https://mp.weixin.qq.com/s/LEHFFdT1MwyEXof2MYW1GQ)
+- [为了带你精通Java AQS，我画了40张图](https://mp.weixin.qq.com/s/HO88uZFGEj9Y20ZAjUqwPQ)
