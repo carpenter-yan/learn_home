@@ -14,6 +14,10 @@
 - [JavaI/O](learn_note/java/base/JAVA_IO.md)
 - [Java虚拟机](learn_note/java/base/JAVA_JVM.md)
 
+## Python相关
+- [Python基础](learn_note/python/base/PY_BASE.md)
+- [Python函数](learn_note/python/base/PY_FUNC.md)
+
 ## 开源框架
 - [spring]()
 - [springMVC]()
