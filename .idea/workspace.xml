@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python基础02">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python基础03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" afterDir="false" />
     </list>
@@ -598,13 +598,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00112" summary="修改基本类型">
-      <created>1647870420254</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1647870420254</updated>
-    </task>
     <task id="LOCAL-00113" summary="修改目录结构">
       <created>1647911302751</created>
       <option name="number" value="00113" />
@@ -941,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674110980485</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="增加python基础03">
+      <created>1674179239797</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1674179239797</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1122,7 +1122,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加TreeMap源码分析" />
     <MESSAGE value="增加Set源码分析" />
     <MESSAGE value="增加工具jol" />
     <MESSAGE value="增加queue" />
@@ -1147,7 +1146,8 @@
     <MESSAGE value="增加redis资料" />
     <MESSAGE value="增加python基础" />
     <MESSAGE value="增加python基础02" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加python基础02" />
+    <MESSAGE value="增加python基础03" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加python基础03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -299,6 +299,37 @@ b'\xe4\xb8\xad\xe6\x96\x87'
 |%s|字符串|
 |%x|十六进制整数|
 
+其中，格式化整数和浮点数还可以指定是否补0和整数与小数的位数：
+```python
+print('%2d-%02d' % (3, 1))
+print('%.2f' % 3.1415926)
+```
+
+如果你不太确定应该用什么，%s永远起作用，它会把任何数据类型转换为字符串：
+```python
+>>> 'Age: %s. Gender: %s' % (25, True)
+'Age: 25. Gender: True'
+```
+
+有些时候，字符串里面的%是一个普通字符怎么办？这个时候就需要转义，用%%来表示一个%：
+```python
+>>> 'growth rate: %d %%' % 7
+'growth rate: 7 %'
+```
+
+另一种格式化字符串的方法是使用字符串的format()方法，它会用传入的参数依次替换字符串内的占位符{0}、{1}……：
+```python
+>>> 'Hello, {0}, 成绩提升了 {1:.1f}%'.format('小明', 17.125)
+'Hello, 小明, 成绩提升了 17.1%'
+```
+
+最后一种格式化字符串的方法是使用以f开头的字符串，称之为f-string，它和普通字符串不同之处在于，字符串如果包含{xxx}，就会以对应的变量替换：
+```python
+>>> r = 2.5
+>>> s = 3.14 * r ** 2
+>>> print(f'The area of a circle with radius {r} is {s:.2f}')
+The area of a circle with radius 2.5 is 19.62
+```
 
 - 空值
 
@@ -355,5 +386,107 @@ else:
 ### 循环
 
 ### 使用list和tuple
+
+- list
+
+Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。
+```python
+>>> classmates = ['Michael', 'Bob', 'Tracy']
+```
+
+用len()函数可以获得list元素的个数
+
+用索引来访问list中每一个位置的元素，记得索引是从0开始的。
+当索引超出了范围时，Python会报一个IndexError错误。
+最后一个元素的索引是len(classmates) - 1。
+用-1做索引，直接获取最后一个元素，以此类推，可以获取倒数第2个、倒数第3个。
+```python
+>>> len(classmates)
+3
+>>> classmates[0]
+'Michael'
+>>> classmates[-1]
+'Tracy'
+```
+
+list相关操作
+```python
+#追加元素到末尾
+>>> classmates.append('Adam')
+>>> classmates
+['Michael', 'Bob', 'Tracy', 'Adam']
+
+#插入到指定的位置
+>>> classmates.insert(1, 'Jack')
+>>> classmates
+['Michael', 'Jack', 'Bob', 'Tracy', 'Adam']
+
+#删除list末尾的元素
+>>> classmates.pop()
+'Adam'
+>>> classmates
+['Michael', 'Jack', 'Bob', 'Tracy']
+
+#删除指定位置的元素
+>>> classmates.pop(1)
+'Jack'
+>>> classmates
+['Michael', 'Bob', 'Tracy']
+
+#替换某个元素
+>>> classmates[1] = 'Sarah'
+>>> classmates
+['Michael', 'Sarah', 'Tracy']
+```
+
+list里面的元素的数据类型也可以不同，list元素也可以是另一个list
+```python
+>>> L = ['Apple', 123, True]
+
+>>> s = ['python', 'java', ['asp', 'php'], 'scheme']
+```
+要拿到'php'可以写p[1]或者s[2][1]，因此s可以看成是一个二维数组，类似的还有三维、四维……数组，不过很少用到。
+
+- tuple
+
+另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改
+```python
+>>> classmates = ('Michael', 'Bob', 'Tracy')
+```
+现在，classmates这个tuple不能变了，它也没有append()，insert()这样的方法。
+其他获取元素的方法和list是一样的，你可以正常地使用classmates[0]，classmates[-1]，但不能赋值成另外的元素。
+
+不可变的tuple有什么意义？因为tuple不可变，所以代码更安全。如果可能，能用tuple代替list就尽量用tuple。
+
+tuple的陷阱：当你定义一个tuple时，在定义的时候，tuple的元素就必须被确定下来，比如：
+```python
+>>> t = (1, 2)
+>>> t
+(1, 2)
+```
+
+要定义一个只有1个元素的tuple，如果你这么定义：
+```python
+>>> t = (1)
+>>> t
+1
+```
+
+定义的不是tuple，是1这个数！这是因为括号()既可以表示tuple，又可以表示数学公式中的小括号，这就产生了歧义，
+因此，Python规定，这种情况下，按小括号进行计算，计算结果自然是1。
+
+只有1个元素的tuple定义时必须加一个逗号,，来消除歧义：
+```python
+>>> t = (1,)
+>>> t
+(1,)
+```
+
+
+
+
+
+
+
 
 ### 使用dict和set
