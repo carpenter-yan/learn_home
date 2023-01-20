@@ -1,4 +1,23 @@
-
+# Python基础
+<!-- GFM-TOC -->
+* [Python 基础](#python-基础)
+    * [一、简介](#一简介)
+        * [Python是一种什么语言？](#Python是一种什么语言？)
+        * [Python的应用范围？](#Python的应用范围？)
+        * [Python的优缺点？](#Python的优缺点？)
+    * [二、开发环境搭建](#二开发环境搭建)
+        * [python安装](#python安装)
+        * [python解释器](#python解释器)
+        * [命令模式和交互模式](#命令模式和交互模式)
+        * [文本编辑器](#文本编辑器)
+    * [三、Python基础](#Python基础)
+        * [基础语法](#基础语法)
+        * [数据类型和变量](#数据类型和变量)
+        * [条件判断](#条件判断)
+        * [循环](#循环)
+        * [使用list和tuple](#使用list和tuple)
+        * [使用dict和set](#使用dict和set)
+<!-- GFM-TOC -->
 
 
 
