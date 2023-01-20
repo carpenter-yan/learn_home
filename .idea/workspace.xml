@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python基础04">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python基础05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -598,13 +597,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00114" summary="修改目录结构">
-      <created>1647996851796</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1647996851796</updated>
-    </task>
     <task id="LOCAL-00115" summary="复核到四关键字">
       <created>1647998847677</created>
       <option name="number" value="00115" />
@@ -941,7 +933,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674180702483</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="增加python基础05">
+      <created>1674184363053</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1674184363053</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1122,7 +1121,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加工具jol" />
     <MESSAGE value="增加queue" />
     <MESSAGE value="增加bloomFilter测试，通过断点查看占用内存大小" />
     <MESSAGE value="完成arraydeque" />
@@ -1147,7 +1145,8 @@
     <MESSAGE value="增加python基础02" />
     <MESSAGE value="增加python基础03" />
     <MESSAGE value="增加python基础04" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加python基础04" />
+    <MESSAGE value="增加python基础05" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加python基础05" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
