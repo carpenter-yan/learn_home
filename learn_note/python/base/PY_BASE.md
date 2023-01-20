@@ -385,6 +385,62 @@ else:
 
 ### 循环
 
+Python的循环有两种，一种是for...in循环，依次把list或tuple中的每个元素迭代出来
+```python
+sum = 0
+for x in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+    sum = sum + x
+print(sum)
+```
+
+如果要计算1-100的整数之和，从1写到100有点困难，
+幸好Python提供一个range()函数，可以生成一个整数序列，再通过list()函数可以转换为list。
+比如range(5)生成的序列是从0开始小于5的整数：
+```python
+sum = 0
+for x in list(range(101)):
+    sum = sum + x
+print(sum)
+```
+
+第二种循环是while循环，只要条件满足，就不断循环，条件不满足时退出循环
+```python
+sum = 0
+n = 99
+while n > 0:
+    sum = sum + n
+    n = n - 2
+print(sum)
+```
+
+在循环中，break语句可以提前退出循环
+```python
+n = 1
+while n <= 100:
+    if n > 10: # 当n = 11时，条件满足，执行break语句
+        break # break语句会结束当前循环
+    print(n)
+    n = n + 1
+print('END')
+```
+
+在循环过程中，也可以通过continue语句，跳过当前的这次循环，直接开始下一次循环。
+```python
+n = 0
+while n < 10:
+    n = n + 1
+    if n % 2 == 0: # 如果n是偶数，执行continue语句
+        continue # continue语句会直接继续下一轮循环，后续的print()语句不会执行
+    print(n)
+```
+
+要特别注意，不要滥用break和continue语句。
+break和continue会造成代码执行逻辑分叉过多，容易出错。
+大多数循环并不需要用到break和continue语句。
+
+有些时候，如果代码写得有问题，会让程序陷入“死循环”，也就是永远循环下去。
+这时可以用Ctrl+C退出程序，或者强制结束Python进程。
+
 ### 使用list和tuple
 
 - list
@@ -482,11 +538,77 @@ tuple的陷阱：当你定义一个tuple时，在定义的时候，tuple的元�
 (1,)
 ```
 
-
-
-
-
-
-
-
 ### 使用dict和set
+
+- dict
+
+Python内置了字典：dict的支持，dict全称dictionary，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。
+```python
+>>> d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
+>>> d['Michael']
+95
+```
+
+其他操作
+```python
+#1、添加+修改：
+#由于一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值冲掉
+>>> d['Adam'] = 67
+>>> d['Adam']
+67
+
+#如果key不存在，dict就会报错
+#要避免key不存在的错误，有两种办法，一是通过in判断key是否存在
+>>> 'Thomas' in d
+False
+
+#二是通过dict提供的get()方法，如果key不存在，可以返回None，或者自己指定的value：
+>>> d.get('Thomas')
+>>> d.get('Thomas', -1)
+-1
+#注意：返回None的时候Python的交互环境不显示结果。
+
+#2、删除
+>>> d.pop('Bob')
+75
+>>> d
+{'Michael': 95, 'Tracy': 85}
+```
+
+正确使用dict非常重要，需要牢记的第一条就是dict的key必须是不可变对象。
+这是因为dict根据key来计算value的存储位置，如果每次计算相同的key得出的结果不同，那dict内部就完全混乱了。
+这个通过key计算位置的算法称为哈希算法（Hash）。
+在Python中，字符串、整数等都是不可变的，因此，可以放心地作为key。而list是可变的，就不能作为key
+
+- set
+
+set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key。
+
+要创建一个set，需要提供一个list作为输入集合：
+```python
+>>> s = set([1, 2, 3])
+>>> s
+{1, 2, 3}
+```
+
+重复元素在set中自动被过滤。其他操作
+```python
+#1、添加
+>>> s.add(4)
+>>> s
+{1, 2, 3, 4}
+
+#2、删除
+>>> s.remove(4)
+>>> s
+{1, 2, 3}
+
+#3、集合操作
+>>> s1 = set([1, 2, 3])
+>>> s2 = set([2, 3, 4])
+>>> s1 & s2
+{2, 3}
+>>> s1 | s2
+{1, 2, 3, 4}
+```
+
