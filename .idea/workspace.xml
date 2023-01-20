@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python基础08">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python基础09">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/python/base/PY_FUNC.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/PY_FUNC.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -599,13 +598,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00118" summary="修复问题">
-      <created>1648087019998</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1648087019998</updated>
-    </task>
     <task id="LOCAL-00119" summary="复核反射部分">
       <created>1648171540096</created>
       <option name="number" value="00119" />
@@ -942,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674200388899</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="增加python基础09">
+      <created>1674200863696</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1674200863696</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1123,7 +1122,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="初始化Java并发" />
     <MESSAGE value="结构调整" />
     <MESSAGE value="Java并发开发01" />
     <MESSAGE value="Java并发开发02" />
@@ -1148,7 +1146,8 @@
     <MESSAGE value="增加python基础06" />
     <MESSAGE value="增加python基础07" />
     <MESSAGE value="增加python基础08" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加python基础08" />
+    <MESSAGE value="增加python基础09" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加python基础09" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

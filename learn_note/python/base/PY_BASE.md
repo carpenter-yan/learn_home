@@ -885,4 +885,284 @@ def fact(n):
 在计算机中，函数调用是通过栈（stack）这种数据结构实现的，进入函数调用，会加一层栈帧， 函数返回，减一层栈帧。
 由于栈的大小不是无限的，所以，递归调用的次数过多，会导致栈溢出。
 
-### 高级特性
+## 五、高级特性
+
+### 切片
+
+取一个list或tuple的部分元素，Python提供了切片（Slice）操作符。
+```python
+>>> L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
+>>> L[:3]
+['Michael', 'Sarah', 'Tracy']
+#从索引1开始，取出2个元素出来
+>>> L[1:3]
+['Sarah', 'Tracy']
+#Python支持L[-1]取倒数第一个元素，那么它同样支持倒数切片。住倒数第一个元素的索引是-1。
+>>> L[-2:]
+['Bob', 'Jack']
+>>> L[-2:-1]
+['Bob']
+#前10个数，每两个取一个
+>>> L = list(range(100))
+>>> L[:10:2]
+[0, 2, 4, 6, 8]
+#所有数，每5个取一个
+>>> L[::5]
+[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]
+#只写[:]就可以原样复制一个list
+>>> L[:]
+[0, 1, 2, 3, ..., 99]
+```
+
+tuple也是一种list，唯一区别是tuple不可变。因此，tuple也可以用切片操作，只是操作的结果仍是tuple
+```python
+>>> (0, 1, 2, 3, 4, 5)[:3]
+(0, 1, 2)
+```
+
+字符串也可以看成是一种list，每个元素就是一个字符。因此，字符串也可以用切片操作，只是操作结果仍是字符串
+```python
+>>> 'ABCDEFG'[:3]
+'ABC'
+>>> 'ABCDEFG'[::2]
+'ACEG'
+```
+很多编程语言中，针对字符串提供了很多各种截取函数（例如，substring），其实目的就是对字符串切片。
+Python没有针对字符串的截取函数，只需要切片一个操作就可以完成。
+
+### 迭代
+
+如果给定一个list或tuple，我们可以通过for循环来遍历这个list或tuple，这种遍历我们称为迭代（Iteration）。
+
+Python的for循环不仅可以用在list或tuple上，还可以作用在其他可迭代对象上。
+```python
+>>> d = {'a': 1, 'b': 2, 'c': 3}
+>>> for key in d:
+...     print(key)
+...
+a
+c
+b
+```
+因为dict的存储不是按照list的方式顺序排列，所以，迭代出的结果顺序很可能不一样。
+
+默认情况下，dict迭代的是key。如果要迭代value，可以用for value in d.values()，
+如果要同时迭代key和value，可以用for k, v in d.items()。
+
+由于字符串也是可迭代对象，因此，也可以作用于for循环：
+```python
+>>> for ch in 'ABC':
+...     print(ch)
+...
+A
+B
+C
+```
+
+所以，当我们使用for循环时，只要作用于一个可迭代对象，for循环就可以正常运行，
+那么，如何判断一个对象是可迭代对象呢？方法是通过collections.abc模块的Iterable类型判断：
+```python
+>>> from collections.abc import Iterable
+>>> isinstance('abc', Iterable) # str是否可迭代
+True
+>>> isinstance([1,2,3], Iterable) # list是否可迭代
+True
+>>> isinstance(123, Iterable) # 整数是否可迭代
+False
+```
+
+如果要对list实现类似Java那样的下标循环怎么办？Python内置的enumerate函数可以把一个list变成索引-元素对，这样就可以在for循环中同时迭代索引和元素本身：
+```python
+>>> for i, value in enumerate(['A', 'B', 'C']):
+...     print(i, value)
+...
+0 A
+1 B
+2 C
+```
+
+### 列表生成式
+
+列表生成式即List Comprehensions，是Python内置的非常简单却强大的可以用来创建list的生成式。
+
+写列表生成式时，把要生成的元素x * x放到前面，后面跟for循环，就可以把list创建出来
+```python
+>>> [x * x for x in range(1, 11)]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+#for循环后面还可以加上if判断，这样我们就可以筛选出仅偶数的平方
+>>> [x * x for x in range(1, 11) if x % 2 == 0]
+[4, 16, 36, 64, 100]
+#还可以使用两层循环，可以生成全排列。三层和三层以上的循环就很少用到了。
+>>> [m + n for m in 'ABC' for n in 'XYZ']
+['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
+#for循环其实可以同时使用两个甚至多个变量
+>>> d = {'x': 'A', 'y': 'B', 'z': 'C' }
+>>> [k + '=' + v for k, v in d.items()]
+['y=B', 'x=A', 'z=C']
+```
+
+### 生成器
+通过列表生成式，我们可以直接创建一个列表。但是，受到内存限制，列表容量肯定是有限的。
+而且，创建一个包含100万个元素的列表，不仅占用很大的存储空间，如果我们仅仅需要访问前面几个元素，那后面绝大多数元素占用的空间都白白浪费了。
+
+如果列表元素可以按照某种算法推算出来，是否可以在循环的过程中不断推算出后续的元素呢？这样就不必创建完整的list，从而节省大量的空间。
+
+在Python中，这种一边循环一边计算的机制，称为生成器：generator。
+
+1. 要创建一个generator，有很多种方法。第一种方法很简单，只要把一个列表生成式的[]改成()，就创建了一个generator：
+```python
+>>> L = [x * x for x in range(10)]
+>>> L
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> g = (x * x for x in range(10))
+>>> g
+<generator object <genexpr> at 0x1022ef630>
+```
+
+创建L和g的区别仅在于最外层的[]和()，L是一个list，而g是一个generator。
+
+怎么打印出generator的每一个元素呢？可以通过next()函数获得generator的下一个返回值：
+```python
+>>> next(g)
+0
+#中间省略
+>>> next(g)
+81
+>>> next(g)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+```
+
+generator保存的是算法，每次调用next(g)，就计算出g的下一个元素的值，直到计算到最后一个元素，没有更多的元素时，抛出StopIteration的错误。
+
+上面这种不断调用next(g)实在是太变态了，正确的方法是使用for循环，因为generator也是可迭代对象：
+```python
+>>> g = (x * x for x in range(10))
+>>> for n in g:
+        print(n)
+0
+#中间省略
+81
+```
+我们创建了一个generator后，基本上永远不会调用next()，而是通过for循环来迭代它，并且不需要关心StopIteration的错误
+
+2. 如果推算的算法比较复杂，用类似列表生成式的for循环无法实现的时候，还可以用函数来实现。
+
+斐波拉契数列用列表生成式写不出来，但是，用函数把它打印出来却很容易：
+```python
+def fib(max):
+    n, a, b = 0, 0, 1
+    while n < max:
+        print(b)
+        a, b = b, a + b
+        n = n + 1
+    return 'done'
+    
+#注意，赋值语句：a, b = b, a + b 相当于：
+#t = (b, a + b) # t是一个tuple
+#a = t[0]
+#b = t[1]
+
+>>> fib(6)
+1
+1
+2
+3
+5
+8
+'done'
+```
+
+fib函数实际上是定义了斐波拉契数列的推算规则，可以从第一个元素开始，推算出后续任意的元素，这种逻辑其实非常类似generator。
+
+要把fib函数变成generator函数，只需要把print(b)改为yield b就可以了：
+```python
+def fib(max):
+    n, a, b = 0, 0, 1
+    while n < max:
+        yield b
+        a, b = b, a + b
+        n = n + 1
+    return 'done'
+```
+
+如果一个函数定义中包含yield关键字，那么这个函数就不再是一个普通函数，而是一个generator函数，
+调用一个generator函数将返回一个generator：
+```python
+>>> f = fib(6)
+>>> f
+<generator object fib at 0x104feaaa0>
+
+>>> for n in fib(6):
+...     print(n)
+...
+1
+1
+2
+3
+5
+8
+```
+
+generator函数和普通函数的执行流程不一样。普通函数是顺序执行，遇到return语句或者最后一行函数语句就返回。
+而变成generator的函数，在每次调用next()的时候执行，遇到yield语句返回，再次执行时从上次返回的yield语句处继续执行。
+
+### 迭代器
+
+我们已经知道，可以直接作用于for循环的数据类型有以下几种：
+- 集合数据类型，如list、tuple、dict、set、str等；
+- generator，包括生成器和带yield的generator function。
+
+这些可以直接作用于for循环的对象统称为可迭代对象：Iterable。 可以使用isinstance()判断一个对象是否是Iterable对象：
+```python
+>>> from collections.abc import Iterable
+>>> isinstance([], Iterable)
+True
+>>> isinstance({}, Iterable)
+True
+>>> isinstance('abc', Iterable)
+True
+>>> isinstance((x for x in range(10)), Iterable)
+True
+>>> isinstance(100, Iterable)
+False
+```
+
+而生成器不但可以作用于for循环，还可以被next()函数不断调用并返回下一个值，直到最后抛出StopIteration错误表示无法继续返回下一个值了。
+
+可以被next()函数调用并不断返回下一个值的对象称为迭代器：Iterator。 可以使用isinstance()判断一个对象是否是Iterator对象：
+```python
+>>> from collections.abc import Iterator
+>>> isinstance((x for x in range(10)), Iterator)
+True
+>>> isinstance([], Iterator)
+False
+>>> isinstance({}, Iterator)
+False
+>>> isinstance('abc', Iterator)
+False
+```
+
+生成器都是Iterator对象，但list、dict、str虽然是Iterable，却不是Iterator。
+
+把list、dict、str等Iterable变成Iterator可以使用iter()函数：
+```python
+>>> isinstance(iter([]), Iterator)
+True
+>>> isinstance(iter('abc'), Iterator)
+True
+```
+为什么list、dict、str等数据类型不是Iterator？
+
+这是因为Python的Iterator对象表示的是一个数据流，Iterator对象可以被next()函数调用并不断返回下一个数据，直到没有数据时抛出StopIteration错误。
+可以把这个数据流看做是一个有序序列，但我们却不能提前知道序列的长度，只能不断通过next()函数实现按需计算下一个数据，
+所以Iterator的计算是惰性的，只有在需要返回下一个数据时它才会计算。
+
+Iterator甚至可以表示一个无限大的数据流，例如全体自然数。而使用list是永远不可能存储全体自然数的。
+
+
+## 六、函数式编程
+
+## 七、模块
+
