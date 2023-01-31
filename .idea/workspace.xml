@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python基础09">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python基础10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" afterDir="false" />
     </list>
@@ -598,13 +598,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00119" summary="复核反射部分">
-      <created>1648171540096</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1648171540096</updated>
-    </task>
     <task id="LOCAL-00120" summary="Java基础基本完成">
       <created>1648258856254</created>
       <option name="number" value="00120" />
@@ -941,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674200863696</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="增加python基础10">
+      <created>1674208480692</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1674208480692</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1122,7 +1122,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="结构调整" />
     <MESSAGE value="Java并发开发01" />
     <MESSAGE value="Java并发开发02" />
     <MESSAGE value="Java并发开发03" />
@@ -1147,7 +1146,8 @@
     <MESSAGE value="增加python基础07" />
     <MESSAGE value="增加python基础08" />
     <MESSAGE value="增加python基础09" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加python基础09" />
+    <MESSAGE value="增加python基础10" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加python基础10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
