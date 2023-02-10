@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python基础12">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python基础13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" afterDir="false" />
     </list>
@@ -598,13 +598,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00122" summary="增加首页链接01">
-      <created>1648259529099</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1648259529099</updated>
-    </task>
     <task id="LOCAL-00123" summary="增加Java容器内容">
       <created>1648430750196</created>
       <option name="number" value="00123" />
@@ -941,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675215519957</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="增加python基础13">
+      <created>1675301567910</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1675301567910</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1122,7 +1122,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Java并发开发03" />
     <MESSAGE value="Java并发开发04" />
     <MESSAGE value="增加线程优先级" />
     <MESSAGE value="修改线程中断" />
@@ -1147,7 +1146,8 @@
     <MESSAGE value="增加python基础10" />
     <MESSAGE value="增加python基础11" />
     <MESSAGE value="增加python基础12" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加python基础12" />
+    <MESSAGE value="增加python基础13" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加python基础13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
