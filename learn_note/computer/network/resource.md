@@ -4,6 +4,8 @@
 
 [HTTP与HTTPS的区别，详细介绍](https://blog.csdn.net/qq_35642036/article/details/82788421?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2.pc_relevant_default&utm_relevant_index=5)  
 
+[上图！ HTTPS 协议也就是这回事嘛](https://mp.weixin.qq.com/s/e5YLEVN3ZbBRkbn4sd_Nyg)
+
 [图解 | 原来这就是网络](https://www.cnblogs.com/flashsun/p/14266148.html#4800987)  
 
 [图解 | 原来这就是TCP](https://www.cnblogs.com/flashsun/p/14322660.html)  
