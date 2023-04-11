@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加https文章">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python面向对象内容">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/PY_BASE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/python/base/PY_FUNC.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/PY_OBJ.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/database/elasticsearch/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/elasticsearch/resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/python/base/PY_OBJ.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/PY_OBJ.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -599,13 +599,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00125" summary="优化Vector源码分析">
-      <created>1649208818439</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1649208818439</updated>
-    </task>
     <task id="LOCAL-00126" summary="优化hashmap部分">
       <created>1649424329016</created>
       <option name="number" value="00126" />
@@ -942,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676354181370</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="增加python面向对象内容">
+      <created>1676707515364</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1676707515367</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1123,7 +1123,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="修改线程中断" />
     <MESSAGE value="优化线程同步" />
     <MESSAGE value="增加aqs资料" />
     <MESSAGE value="增加aqs资料2" />
@@ -1148,7 +1147,8 @@
     <MESSAGE value="增加python基础13" />
     <MESSAGE value="增加python基础14" />
     <MESSAGE value="增加https文章" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加https文章" />
+    <MESSAGE value="增加python面向对象内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加python面向对象内容" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

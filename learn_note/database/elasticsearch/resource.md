@@ -32,3 +32,5 @@
 
 [2万字详解，吃透 ES](https://mp.weixin.qq.com/s/hY2zBZqzMjVSIgnDK19EUQ)  
 [万字长文讲解 ElasticSearch ！](https://mp.weixin.qq.com/s/sOuUHuY5F0idPtaV0meVKg) 
+
+[系统学习ElasticSearch](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIxMjE3NjYwOQ==&action=getalbum&album_id=1337850434433744897&scene=173&from_msgid=2247483805&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
