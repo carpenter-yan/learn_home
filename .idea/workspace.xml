@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加python面向对象内容">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/database/elasticsearch/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/database/elasticsearch/resource.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/python/base/PY_OBJ.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/python/base/PY_OBJ.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -599,13 +597,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00126" summary="优化hashmap部分">
-      <created>1649424329016</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1649424329016</updated>
-    </task>
     <task id="LOCAL-00127" summary="优化LinkedHashMap部分">
       <created>1649426575813</created>
       <option name="number" value="00127" />
@@ -942,7 +933,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676707515367</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="增加python面向对象内容">
+      <created>1681209786109</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1681209786110</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TestHistory">

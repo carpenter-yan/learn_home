@@ -53,6 +53,7 @@
 | [system-design](https://github.com/soulmachine/system-design/blob/master/cn/SUMMARY.md) | 一位博主的系统设计总结（很久未更新，可做参考） |
 | [日拱一兵](https://dayarch.top/) | 挺用心的一个Java博主，解读Java相关技术 |
 | [美团技术团队](https://tech.meituan.com/) | 美团技术团队永远的神，深度解读技术 |
+| [京东云开发者](https://www.cnblogs.com/Jcloud/category/2207321.html) |
 | [廖雪峰Java教程](https://www.liaoxuefeng.com/wiki/1252599548343744) |
 | [小林x图解计算机基础](https://xiaolincoding.com) |
 | [蝉沐风的博客园](https://www.cnblogs.com/chanmufeng) |
