@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加京东云开发者" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加林子er的博客园">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -595,13 +597,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00128" summary="优化WeakHashMap部分">
-      <created>1649427703581</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1649427703581</updated>
-    </task>
     <task id="LOCAL-00129" summary="增加操作系统目录">
       <created>1650416985112</created>
       <option name="number" value="00129" />
@@ -938,7 +933,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688002794709</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="增加林子er的博客园">
+      <created>1688953386211</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1688953386212</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1119,7 +1121,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加aqs资料" />
     <MESSAGE value="增加aqs资料2" />
     <MESSAGE value="增加aqs资料3" />
     <MESSAGE value="增加aqs资料4" />
@@ -1144,7 +1145,8 @@
     <MESSAGE value="增加https文章" />
     <MESSAGE value="增加python面向对象内容" />
     <MESSAGE value="增加京东云开发者" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加京东云开发者" />
+    <MESSAGE value="增加林子er的博客园" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加林子er的博客园" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
