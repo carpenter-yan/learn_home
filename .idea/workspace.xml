@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="资源整理01">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="资源整理02">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/resource.md" afterDir="false" />
     </list>
@@ -598,13 +598,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00132" summary="修改目录结构">
-      <created>1651799251925</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1651799251926</updated>
-    </task>
     <task id="LOCAL-00133" summary="增加set和queue目录">
       <created>1651800245743</created>
       <option name="number" value="00133" />
@@ -941,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690440811503</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="资源整理02">
+      <created>1690444228764</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1690444228764</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1122,7 +1122,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加http协议资料" />
     <MESSAGE value="增加小林资料" />
     <MESSAGE value="增加ES资料" />
     <MESSAGE value="增加redis资料" />
@@ -1147,7 +1146,8 @@
     <MESSAGE value="增加二叉树资源" />
     <MESSAGE value="增加京东云资源" />
     <MESSAGE value="资源整理01" />
-    <option name="LAST_COMMIT_MESSAGE" value="资源整理01" />
+    <MESSAGE value="资源整理02" />
+    <option name="LAST_COMMIT_MESSAGE" value="资源整理02" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
