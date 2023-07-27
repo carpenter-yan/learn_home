@@ -136,6 +136,7 @@
 - [XXL-JOB原理--定时任务框架简介](https://blog.csdn.net/qq924862077/article/details/82595948)
 
 ### Java工程
+- [互联网应用服务端的常用技术思想与机制纲要](https://www.cnblogs.com/lovesqcc/p/13633409.html)
 - [工程实践：给函数取一个"好"的名字](https://www.cnblogs.com/dolphin0520/p/10567879.html)
 - [Git知识总览(一) 从 git clone 和 git status 谈起](https://www.cnblogs.com/ludashi/p/8052739.html)
 - [自学Git，有哪些书籍或者好的学习资源？](https://www.zhihu.com/question/38008771)
@@ -191,3 +192,5 @@
 - [十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/articles/7674659.html)
 - [Java实现十个经典排序算法（带动态效果图）](https://www.cnblogs.com/jimoer/p/14532184.html)
 - [老板要我开发一个简单的工作流引擎](https://www.cnblogs.com/duck-and-duck/p/14436373.html)
+- [浅谈负载均衡算法与实现](https://www.cnblogs.com/CodeBear/p/10508880.html)
+- [加权随机算法的实现](https://www.iteye.com/blog/veiking-2309132)
