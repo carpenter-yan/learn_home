@@ -23,11 +23,13 @@
 - [Elastic Docs](https://www.elastic.co/guide/index.html)
 - [git-book](https://book.git-scm.com/)
 - [spring文档下载地址](https://docs.spring.io/spring-framework/docs/)
+- [joda-time文档](https://www.joda.org/joda-time/)
 
 ## github资源
 - [我的github](https://github.com/carpenter-yan)
 - [一周内容精彩分享](https://github.com/wmyskxz/weekly)
 - [HelloGitHub: :octocat: 分享 GitHub 上有趣、入门级的开源项目](https://github.com/521xueweihan/HelloGitHub)
+- [《Hello 算法》：动画图解、一键运行的数据结构与算法教程](https://github.com/krahets/hello-algo)
 - [CS-Notes: 技术面试必备基础知识](https://github.com/CyC2018/CS-Notes)
 - [learning-note: java开发 面试八股文](https://github.com/rbmonster/learning-note)
 - [JavaGuide: 【Java学习+面试指南】](https://github.com/Snailclimb/JavaGuide)
@@ -64,6 +66,7 @@
 - [酷爱图解晦涩难懂的计算机基础知识:小林Coding](https://www.cnblogs.com/xiaolincoding/)
 - [图解计算机知识:闪客Sun](https://www.cnblogs.com/flashsun/)
 - [趣话讲解计算机知识:轩辕之风](https://www.cnblogs.com/xuanyuan/)
+- [京东云技术团队](https://www.cnblogs.com/jingdongkeji/)
 - [Java日期处理:BAT的乌托邦](https://www.cnblogs.com/yourbatman/category/1918594.html)
 - [Sharding-JDBC:写出高级BUG](https://www.cnblogs.com/warehouse/)
 - [并发编程:程序员自由之路](https://www.cnblogs.com/54chensongxia/category/1583159.html)
@@ -184,6 +187,7 @@
 - [死磕nginx系列](https://www.cnblogs.com/biglittleant/p/8979966.html)
 - [nginx系列之一：nginx入门](https://blog.csdn.net/qq_29677867/article/details/90112120)
 
+### 算法+数据结构
 - [何时使用领域驱动设计](https://www.cnblogs.com/daxnet/p/15177443.html)
 - [Java 大白话讲解设计模式之 -- 建造者（Builder）模式](https://www.jianshu.com/p/afe090b2e19c)
 - [【设计模式】第一篇：概述、耦合、UML、七大原则，详细分析总结](https://www.cnblogs.com/ideal-20/p/13876651.html)
@@ -194,3 +198,4 @@
 - [老板要我开发一个简单的工作流引擎](https://www.cnblogs.com/duck-and-duck/p/14436373.html)
 - [浅谈负载均衡算法与实现](https://www.cnblogs.com/CodeBear/p/10508880.html)
 - [加权随机算法的实现](https://www.iteye.com/blog/veiking-2309132)
+- [有了红黑树，为啥还要跳表？](https://www.cnblogs.com/linvanda/p/17538558.html)

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="资源整理04">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="资源整理05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/resource.md" afterDir="false" />
     </list>
@@ -598,13 +598,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00135" summary="增加Set源码分析">
-      <created>1652750226355</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1652750226356</updated>
-    </task>
     <task id="LOCAL-00136" summary="增加工具jol">
       <created>1653958691841</created>
       <option name="number" value="00136" />
@@ -941,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690464537990</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="资源整理05">
+      <created>1690465101333</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1690465101333</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1122,7 +1122,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加redis资料" />
     <MESSAGE value="增加python基础" />
     <MESSAGE value="增加python基础02" />
     <MESSAGE value="增加python基础03" />
@@ -1147,7 +1146,8 @@
     <MESSAGE value="资源整理02" />
     <MESSAGE value="资源整理03" />
     <MESSAGE value="资源整理04" />
-    <option name="LAST_COMMIT_MESSAGE" value="资源整理04" />
+    <MESSAGE value="资源整理05" />
+    <option name="LAST_COMMIT_MESSAGE" value="资源整理05" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
