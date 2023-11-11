@@ -199,3 +199,5 @@
 - [浅谈负载均衡算法与实现](https://www.cnblogs.com/CodeBear/p/10508880.html)
 - [加权随机算法的实现](https://www.iteye.com/blog/veiking-2309132)
 - [有了红黑树，为啥还要跳表？](https://www.cnblogs.com/linvanda/p/17538558.html)
+
+- https://www.zhihu.com/question/398193048/answer/2626113129
