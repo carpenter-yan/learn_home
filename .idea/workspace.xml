@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加joda-time文档">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加工具链接">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/resource.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -597,13 +598,6 @@
       <workItem from="1612659625614" duration="599000" />
       <workItem from="1613697083490" duration="120000" />
     </task>
-    <task id="LOCAL-00137" summary="增加queue">
-      <created>1654651843917</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1654651843917</updated>
-    </task>
     <task id="LOCAL-00138" summary="增加bloomFilter测试，通过断点查看占用内存大小">
       <created>1656049323936</created>
       <option name="number" value="00138" />
@@ -940,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695435770675</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="增加工具链接">
+      <created>1699688707787</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1699688707787</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1121,7 +1122,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加python基础02" />
     <MESSAGE value="增加python基础03" />
     <MESSAGE value="增加python基础04" />
     <MESSAGE value="增加python基础05" />
@@ -1146,7 +1146,8 @@
     <MESSAGE value="资源整理04" />
     <MESSAGE value="资源整理05" />
     <MESSAGE value="增加joda-time文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加joda-time文档" />
+    <MESSAGE value="增加工具链接" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加工具链接" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

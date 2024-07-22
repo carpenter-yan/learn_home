@@ -118,7 +118,9 @@
 - [Dubbo（八）内核解析](https://blog.csdn.net/weixin_41947378/article/details/108431966)
 - [SpringCloud系列教程 | 第一篇：介绍](https://www.cnblogs.com/babycomeon/p/11111237.html)
 - [爸爸又给Spring MVC生了个弟弟叫Spring WebFlux](https://www.cnblogs.com/lixinjie/p/a-brother-of-spring-mvc-is-spring-webflux.html)
-- [Spring Security 入门原理及实战](https://www.cnblogs.com/demingblog/p/10874753.html)
+- [Spring Security 入门原理及实战](https://www.cnblogs.com/demingblog/p/10874753.html)  
+- [三歪肝出了期待已久的SpringMVC](https://mp.weixin.qq.com/s?__biz=MzI4Njg5MDA5NA==&mid=2247487665&idx=1&sn=cffb9d634a8b770562557b72a833e591&chksm=ebd751b0dca0d8a604d89b1e3c5d1728f35b752368f5a878311066cbc09ff8a5905ad05690c7&token=1936697047&lang=zh_CN#rd)  
+- [Spring MVC 的 @RequestMapping 注解的属性值详细讲解](https://zhuanlan.zhihu.com/p/704877637)  
 
 ### Java开源
 - [Java-时间处理----Joda-time](https://blog.csdn.net/lixgjob/article/details/85115567)
