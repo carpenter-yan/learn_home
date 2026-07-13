@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加es写入过程02">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加es写入优化和生产部署">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/02_crud.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/02_crud.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/21_redis.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/01_why_cache.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,11 +325,11 @@
       <recent name="D:\IdeaProjects\learn_home\learn_protobuf\src\main\java\com\carpenter\yan\learn\protobuf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Coding\IdealProject\learn_home\learn_note\interview\22_redis" />
       <recent name="C:\Coding\IdealProject\learn_home\learn_note\interview\23_elasticsearch" />
       <recent name="$PROJECT_DIR$/learn_note" />
       <recent name="$PROJECT_DIR$/learn_note/src/database" />
       <recent name="D:\IdeaProjects\learn_home\learn_note\src\computer" />
-      <recent name="D:\IdeaProjects\learn_home\learn_note\src\java\base" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="base" />
@@ -943,7 +943,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699688707787</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1123,7 +1123,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加python基础12" />
     <MESSAGE value="增加python基础13" />
     <MESSAGE value="增加python基础14" />
     <MESSAGE value="增加https文章" />
@@ -1148,7 +1147,8 @@
     <MESSAGE value="增加es内容" />
     <MESSAGE value="增加es写入过程" />
     <MESSAGE value="增加es写入过程02" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加es写入过程02" />
+    <MESSAGE value="增加es写入优化和生产部署" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加es写入优化和生产部署" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
