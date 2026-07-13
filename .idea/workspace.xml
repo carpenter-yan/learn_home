@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加es内容">
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/01_architecture.md" afterDir="false" />
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加es写入过程02">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/02_crud.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/02_crud.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -942,7 +943,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699688707787</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1122,8 +1123,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加python基础10" />
-    <MESSAGE value="增加python基础11" />
     <MESSAGE value="增加python基础12" />
     <MESSAGE value="增加python基础13" />
     <MESSAGE value="增加python基础14" />
@@ -1147,7 +1146,9 @@
     <MESSAGE value="增加可靠顺序延迟失效内容" />
     <MESSAGE value="增加MQ设计" />
     <MESSAGE value="增加es内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加es内容" />
+    <MESSAGE value="增加es写入过程" />
+    <MESSAGE value="增加es写入过程02" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加es写入过程02" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
