@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加redis内容03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/01_java.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/01_basic.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/02_jvm.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/02_collection.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/11_spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/02_spring/11_spring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/12_springboot.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/03_springboot/12_springboot.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/13_springcloud.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/04_springcloud/13_springcloud.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/14_mybatis.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/11_mybatis/14_mybatis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/21_mysql/22_mysql.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,11 +331,11 @@
       <recent name="D:\IdeaProjects\learn_home\learn_protobuf\src\main\java\com\carpenter\yan\learn\protobuf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Coding\IdealProject\learn_home\learn_note\interview\22_redis" />
-      <recent name="C:\Coding\IdealProject\learn_home\learn_note\interview\23_elasticsearch" />
-      <recent name="$PROJECT_DIR$/learn_note" />
-      <recent name="$PROJECT_DIR$/learn_note/src/database" />
-      <recent name="D:\IdeaProjects\learn_home\learn_note\src\computer" />
+      <recent name="C:\Coding\IdealProject\learn_home\learn_note\interview\11_mybatis" />
+      <recent name="C:\Coding\IdealProject\learn_home\learn_note\interview\21_mysql" />
+      <recent name="C:\Coding\IdealProject\learn_home\learn_note\interview\04_springboot" />
+      <recent name="C:\Coding\IdealProject\learn_home\learn_note\interview\03_springboot" />
+      <recent name="C:\Coding\IdealProject\learn_home\learn_note\interview\02_spring" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="base" />
@@ -942,7 +949,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699688707787</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <option name="localTasksCounter" value="201" />
     <servers />
   </component>
   <component name="TestHistory">
