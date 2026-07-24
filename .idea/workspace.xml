@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加Java并发3">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加Java并发4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/01_java/07_jvm2.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/07_jvm2.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -942,7 +943,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699688707787</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1122,7 +1123,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加京东云资源" />
     <MESSAGE value="资源整理01" />
     <MESSAGE value="资源整理02" />
     <MESSAGE value="资源整理03" />
@@ -1147,7 +1147,8 @@
     <MESSAGE value="增加Java并发1" />
     <MESSAGE value="增加Java并发2" />
     <MESSAGE value="增加Java并发3" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加Java并发3" />
+    <MESSAGE value="增加Java并发4" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加Java并发4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
