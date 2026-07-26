@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加mysql1">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加mysql3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/11_mybatis/14_mybatis.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/11_mybatis/14_mybatis.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -942,7 +943,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699688707787</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1122,8 +1123,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="资源整理04" />
-    <MESSAGE value="资源整理05" />
     <MESSAGE value="增加joda-time文档" />
     <MESSAGE value="增加工具链接" />
     <MESSAGE value="增加菜鸟教程连接" />
@@ -1147,7 +1146,9 @@
     <MESSAGE value="增加Java并发5" />
     <MESSAGE value="增加Java并发6" />
     <MESSAGE value="增加mysql1" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加mysql1" />
+    <MESSAGE value="增加mysql2" />
+    <MESSAGE value="增加mysql3" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加mysql3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
