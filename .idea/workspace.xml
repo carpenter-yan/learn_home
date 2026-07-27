@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加mybatis">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加springboot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/02_spring/11_spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/02_spring/11_spring.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/03_springboot/12_springboot.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/03_springboot/12_springboot.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/04_springcloud/13_springcloud.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/04_springcloud/13_springcloud.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -944,7 +943,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699688707787</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1124,7 +1123,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加智能体概念" />
     <MESSAGE value="更新智能体概念" />
     <MESSAGE value="增加高可用和不可重复资料" />
     <MESSAGE value="增加可靠顺序延迟失效内容" />
@@ -1149,7 +1147,8 @@
     <MESSAGE value="增加mysql4" />
     <MESSAGE value="增加mysql5" />
     <MESSAGE value="增加mybatis" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加mybatis" />
+    <MESSAGE value="增加springboot" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加springboot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
