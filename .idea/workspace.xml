@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加interview">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加设计模式1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/01_java/06_jvm1.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/06_jvm1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/01_java/07_jvm2.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/07_jvm2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/01_java/08_jvm3.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/08_jvm3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/05_pattern/02_Struct.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/05_pattern/02_Struct.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/11_mybatis/14_mybatis.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/11_mybatis/01_mybatis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/01_architecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/01_architecture.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/02_crud.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/02_crud.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -945,7 +946,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699688707787</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1125,7 +1126,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加高可用和不可重复资料" />
     <MESSAGE value="增加可靠顺序延迟失效内容" />
     <MESSAGE value="增加MQ设计" />
     <MESSAGE value="增加es内容" />
@@ -1150,7 +1150,8 @@
     <MESSAGE value="增加mybatis" />
     <MESSAGE value="增加springboot" />
     <MESSAGE value="增加interview" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加interview" />
+    <MESSAGE value="增加设计模式1" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加设计模式1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
