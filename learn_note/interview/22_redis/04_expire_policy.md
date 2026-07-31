@@ -16,7 +16,7 @@ Redis采用惰性删除 + 定期删除组合，不使用定时删除。
 
 ## 二、六大内存淘汰策略（maxmemory 达到上限触发）
    noeviction（默认不推荐）：拒绝写入，直接报错；
-   allkeys-lru（生产最常用）：全部 key 中淘汰最近最少使用；
+   allkeys-lru（生产最常用）：全部key中淘汰最近最少使用；
    allkeys-random：所有 key 随机删除，无优先级；
    volatile-lru：仅在带过期 key 中淘汰 LRU；
    volatile-random：仅过期 key 随机删；

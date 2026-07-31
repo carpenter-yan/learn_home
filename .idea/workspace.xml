@@ -4,12 +4,26 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加设计模式1">
+    <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加设计模式2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/05_pattern/02_Struct.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/05_pattern/02_Struct.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/11_mybatis/14_mybatis.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/11_mybatis/01_mybatis.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/01_architecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/01_architecture.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/02_crud.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/23_elasticsearch/02_crud.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/21_mysql/01_mysql_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/21_mysql/01_mysql_1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/21_mysql/02_mysql_2.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/21_mysql/02_mysql_2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/21_mysql/03_mysql_3.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/21_mysql/03_mysql_3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_redis/02_single_thread.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/02_single_thread.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_redis/04_expire_policy.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/04_expire_policy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_redis/06_master_slave.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/06_master_slave.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_redis/07_sentinel.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/07_sentinel.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_redis/08_persistence.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/08_persistence.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_redis/09_cluster.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/09_cluster.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_redis/10_caching_avalanche.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/10_caching_avalanche.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_redis/11_consistence.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/11_consistence.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_redis/12_redis-cas.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/12_redis-cas.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/22_redis/14_redis_rehash.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/22_redis/14_redis_rehash.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/24_msgqueue/01_why_mq.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/24_msgqueue/01_why_mq.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/24_msgqueue/02_high_avail.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/24_msgqueue/02_high_avail.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/24_msgqueue/03_no_repeat.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/24_msgqueue/03_no_repeat.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/24_msgqueue/04_reliable.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/24_msgqueue/04_reliable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/24_msgqueue/05_msg_order.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/24_msgqueue/05_msg_order.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -946,7 +960,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699688707787</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1126,7 +1140,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="增加可靠顺序延迟失效内容" />
     <MESSAGE value="增加MQ设计" />
     <MESSAGE value="增加es内容" />
     <MESSAGE value="增加es写入过程" />
@@ -1151,7 +1164,8 @@
     <MESSAGE value="增加springboot" />
     <MESSAGE value="增加interview" />
     <MESSAGE value="增加设计模式1" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加设计模式1" />
+    <MESSAGE value="增加设计模式2" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加设计模式2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
