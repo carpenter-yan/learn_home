@@ -16,7 +16,7 @@
 
     <properties>
         <protobuf.version>3.6.1</protobuf.version>
-        <fastjson.version>1.2.54</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <powermock.version>2.0.0</powermock.version>
         <mockito.version>2.23.4</mockito.version>
         <junit.version>4.12</junit.version>
