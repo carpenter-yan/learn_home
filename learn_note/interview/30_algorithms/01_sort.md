@@ -116,28 +116,168 @@ public static void bubbleSort(int[] arr) {
 数组 [2, 2, 1] 第一轮找到最小值 1，和第一个 2 交换 → [1, 2, 2] 原本两个2的相对顺序颠倒，因此不稳定。
 
 ## 快速排序
+### 一、快速排序原理分治思想：
+选一个基准值pivot，把数组划分成两部分：小于pivot放左边，大于等于pivot 放右边；
+基准元素划分完成后，它的位置就是最终有序位置；
+递归处理左区间、右区间，直到区间只有一个元素（天然有序）。
 
-二、分治/堆 O (n log n)（工程主流，面试重点）
-快速排序 Quick Sort【必考】
-选基准，小于基准放左、大于放右，递归左右。
-不稳定；平均 O (nlogn)，最坏 O (n²)（有序数组）；
-优化：随机基准、三数取中。
+核心特性
+平均时间复杂度：O(n log n)
+最坏：O(n^2)（数组完全有序，基准选两端）
+空间：O(log n)递归栈开销
+稳定性：不稳定排序
+工程最常用，底层 Arrays.sort 对基础类型就是快排变体
+二、Java 简易实现（好理解，面试手写够用）
+```
+public class QuickSort {
+    public static void quickSort(int[] arr) {
+        if (arr == null || arr.length <= 1) {
+            return;
+        }
+        sort(arr, 0, arr.length - 1);
+    }
 
-归并排序 Merge Sort
-分治拆分到单个元素，再有序合并两个有序数组。
-稳定；永远 O (nlogn)；需要额外数组空间 O (n)，适合超大文件外排序。
+    // 递归排序 [left, right]
+    private static void sort(int[] arr, int left, int right) {
+        if (left >= right) {
+            return;
+        }
+        // 分区，返回基准下标
+        int pivotIdx = partition(arr, left, right);
+        sort(arr, left, pivotIdx - 1);
+        sort(arr, pivotIdx + 1, right);
+    }
 
-堆排序 Heap Sort
+    // 分区函数，以最右侧为基准
+    private static int partition(int[] arr, int l, int r) {
+        int pivot = arr[r];
+        int smallArea = l; // 小于pivot区域的右边界
+
+        for (int i = l; i < r; i++) {
+            if (arr[i] < pivot) {
+                swap(arr, smallArea, i);
+                smallArea++;
+            }
+        }
+        // 把基准放到分割点
+        swap(arr, smallArea, r);
+        return smallArea;
+    }
+
+    private static void swap(int[] arr, int a, int b) {
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {4, 7, 2, 9, 1, 5, 3};
+        quickSort(arr);
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        // 输出：1 2 3 4 5 7 9
+    }
+}
+```
+### 三、面试口述精简回答
+快排采用分治，选定基准将数组分割为大小两部分，基准归位后递归左右子数组；平均效率最优，但不稳定，有序数组会退化到平方复杂度，一般通过随机基准、三数取中来优化最坏情况。
+
+### 四、高频面试简答
+为什么不稳定？
+等值元素会被分到基准两侧，原有相对顺序改变。
+怎么避免最坏O(n^2) ?
+随机选基准、三数取中法；数组长度很小时改用插入排序。
+和归并排序对比？
+快排原地排序、空间小；归并稳定，但需要额外数组空间。
+
+## 归并排序 Merge Sort
+### 一、归并排序核心原理
+分治思想，分两步：分 + 合
+分：把数组从中间拆成左右两半，递归拆分，直到子数组只有1个元素（天然有序）；
+合：将两个有序子数组，合并成一个完整有序数组。
+
+特性
+时间复杂度：稳定O(nlogn)，无论数据有序/乱序都不变
+空间复杂度：O(n)，需要额外辅助数组存合并结果
+稳定性：稳定排序（等值元素相对顺序不变）
+适用场景：超大文件、海量数据外排序；内存数组优先快排，大文件优先归并
+
+### 二、Java 完整示例
+```
+public class MergeSort {
+    // 对外入口
+    public static void mergeSort(int[] arr) {
+        if (arr == null || arr.length <= 1) {
+            return;
+        }
+        int[] temp = new int[arr.length]; // 辅助数组，避免频繁创建
+        sort(arr, temp, 0, arr.length - 1);
+    }
+
+    // 递归拆分区间 [l, r]
+    private static void sort(int[] arr, int[] temp, int l, int r) {
+        if (l >= r) {
+            return;
+        }
+        int mid = l + (r - l) / 2;
+        sort(arr, temp, l, mid);      // 拆分左半
+        sort(arr, temp, mid + 1, r);  // 拆分右半
+        merge(arr, temp, l, mid, r);   // 合并左右有序区间
+    }
+
+    // 合并两个有序区间：[l,mid] 和 [mid+1,r]
+    private static void merge(int[] arr, int[] temp, int l, int mid, int r) {
+        int i = l;    // 左区间指针
+        int j = mid + 1; // 右区间指针
+        int t = 0;    // 辅助数组指针
+
+        // 依次取左右区间较小值放入temp
+        while (i <= mid && j <= r) {
+            if (arr[i] <= arr[j]) {
+                temp[t++] = arr[i++];
+            } else {
+                temp[t++] = arr[j++];
+            }
+        }
+        // 左区间剩余元素拷贝
+        while (i <= mid) {
+            temp[t++] = arr[i++];
+        }
+        // 右区间剩余元素拷贝
+        while (j <= r) {
+            temp[t++] = arr[j++];
+        }
+        // 把temp有序数据写回原数组
+        t = 0;
+        while (l <= r) {
+            arr[l++] = temp[t++];
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {5, 2, 9, 1, 5, 6};
+        mergeSort(nums);
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+        // 输出：1 2 5 5 6 9
+    }
+}
+```
+### 三、面试口述精简版
+归并排序采用分治，先拆分数组为左右两部分递归排序，再合并两个有序数组；时间复杂度稳定 O(nlogn)，是稳定排序，但需要额外数组空间，适合超大文件外排序。
+### 四、高频对比考点
+和快排区别：
+快排原地排序、空间小、不稳定，有序数据会退化；
+归并空间开销大、稳定、性能不受原始数据顺序影响。
+为什么稳定？
+合并时 arr[i] <= arr[j]，等值优先取左边数组元素，原有顺序保留。
+
+
+## 堆排序 Heap Sort
 构建大顶堆，堆顶是最大值，循环取出堆顶再调整堆。
-不稳定；O (nlogn)，原地排序空间 O (1)；海量数据 TopK 专用。
-
-三、线性排序 O (n)（特殊限定条件，简单了解）
-计数排序 Count Sort
-要求数值范围小，统计每个数字出现次数，按次数回填。
-稳定、O (n)；只能整数、值域不能太大。
-基数排序 Radix Sort
-按个位、十位、百位依次计数排序，从低位到高位。
-稳定、O (n)；适合数字 / 字符串批量排序。
+不稳定；O (nlogn)，原地排序空间 O (1)；海量数据 TopK专用。
 
 # 一天速成算法高频题（后端面试必考，优先刷，总量 20 道，分模块）
 ## 一、数组/双指针（4题，最简单必拿分）

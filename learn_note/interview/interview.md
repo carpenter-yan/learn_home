@@ -166,3 +166,42 @@ DataPilot 离线数据开发流程，实时数据和离线数据口径对齐方�
 所有中间件不要只说用过，绑定你的业务讲选型理由、踩坑、解决方案；
 准备2~3次完整线上故障复盘，包含现象、排查路径、根因、修复、长效优化；
 微服务拆分、DDD、分布式事务、大促高可用是你简历最强护城河，重点打磨。
+
+
+Good morning / Good afternoon.
+早上好 / 下午好。
+
+My name is yangang. I got my master’s degree in Computer Software and Theory from Sichuan University.
+我叫 XXX。 我在四川大学取得计算机软件与理论专业硕士学位。
+
+I have over 18 years of software development experience, mainly in Java backend.
+我拥有 18 年以上软件开发经验，主要做 Java 后端以及技术管理工作。
+
+recently, I worked for JD Technology as backend architect.
+最近几年，我在京东科技担任后端架构师。
+Before that, I worked for Si‑Tech and another software company.
+在此之前，我曾在思特奇以及另一家软件公司任职。
+
+I can do architecture design, system refactoring and performance optimization.
+我能够做架构设计、系统重构以及性能优化。
+
+I also lead small development teams. My work includes task split, code review and mentoring junior engineers.
+我也带领小型研发团队，工作包含任务拆分、代码评审以及新人带教。
+
+I am familiar with microservices, MySQL, Redis, Kafka, Elasticsearch.
+我熟悉微服务、MySQL、Redis、Kafka、Elasticsearch。
+
+I also have experience for AI application using Python and LangChain.
+我也有使用 Python 和 LangChain 落地 AI 应用的实操经验。
+
+In my past projects, I built microservice platforms, designed delay‑task engine, billing system and permission components.
+在过往项目中，我搭建过微服务平台，设计延时任务引擎、计费系统和权限组件。
+
+These systems supported big sales events like 618 and Double‑11 with high availability.
+这些系统高可用支撑了 618、双 11 这类大型营销活动。
+
+I hope I can bring my experience to your team.
+我希望可以把我的经验带给贵团队。
+
+Thank you.
+谢谢。

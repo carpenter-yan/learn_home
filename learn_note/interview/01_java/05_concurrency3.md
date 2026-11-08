@@ -1,6 +1,6 @@
 ## 什么是CAS?有什么风险？
 ### 一、什么是 CAS
-CAS 全称：Compare And Swap，比较并交换，是一种无锁的乐观锁机制，底层 CPU 硬件指令，具备原子性。
+CAS全称：Compare And Swap，比较并交换，是一种无锁的乐观锁机制，底层CPU硬件指令，具备原子性。
 执行逻辑三个参数：内存值 V、预期旧值 A、要更新的新值 B
 比较：判断内存中当前值V是否等于预期值 A；
 相等：说明期间没人修改，直接把内存值更新为 B，操作成功；
@@ -99,7 +99,8 @@ compareAndSwapInt是一个native方法，基于CAS来操作int类型变量。其
 ## ThreadLocal是什么？
 ### 一、定义
 ThreadLocal是线程本地存储工具，为每个线程单独创建一份独立变量副本。
-多线程共用同一个ThreadLocal对象，但每个线程读写的是自己专属的数据，线程之间数据完全隔离，天然不存在共享竞争，不用加锁就能规避并发问题。
+多线程共用同一个ThreadLocal对象，但每个线程读写的是自己专属的数据，
+线程之间数据完全隔离，天然不存在共享竞争，不用加锁就能规避并发问题。
 ### 二、底层原理
 每个Thread线程内部自带ThreadLocalMap（key：ThreadLocal实例，value：线程存放的值）；
 线程读写 threadLocal.set()/get()，本质是操作当前线程自己的ThreadLocalMap，不会碰其他线程的Map；

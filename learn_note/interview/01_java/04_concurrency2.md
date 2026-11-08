@@ -1,9 +1,10 @@
 ## 什么是AQS？
 ### 一、AQS是什么
-AQS 全称：AbstractQueuedSynchronizer，抽象队列同步器
-是java.util.concurrent.locks 包下的抽象类，JUC并发工具底层核心基础框架。
+AQS全称：AbstractQueuedSynchronizer，抽象队列同步器
+是java.util.concurrent.locks包下的抽象类，JUC并发工具底层核心基础框架。
 ReentrantLock、CountDownLatch、Semaphore、CyclicBarrier、ReentrantReadWriteLock全部底层基于AQS实现。
-作用：封装了同步等待队列、线程阻塞/唤醒、同步状态管理、CAS操作，开发者只需要简单实现少量方法，就能快速实现锁、同步工具，不用重复写线程排队逻辑。
+作用：封装了同步等待队列、线程阻塞/唤醒、同步状态管理、CAS操作，
+开发者只需要简单实现少量方法，就能快速实现锁、同步工具，不用重复写线程排队逻辑。
 
 ### 二、AQS 三大核心成员
 1. 同步状态变量state（核心标记）
@@ -23,9 +24,9 @@ ReentrantLock、CountDownLatch、Semaphore、CyclicBarrier、ReentrantReadWriteL
    CANCELLED：线程超时 / 中断，取消等待
    多个状态控制线程阻塞、唤醒、取消。
 
-### 三、两大核心模式（AQS 两种资源竞争逻辑）
+### 三、两大核心模式（AQS两种资源竞争逻辑）
 1. 独占模式（Exclusive）
-   同一时间只允许一个线程持有资源 代表：ReentrantLock、WriteLock 写锁
+   同一时间只允许一个线程持有资源代表：ReentrantLock、WriteLock 写锁
    同一时刻只有一个线程能修改state，其他线程进队列阻塞。
 2. 共享模式（Shared）
    多线程可同时获取资源，支持并发 代表：Semaphore、CountDownLatch、ReadLock读锁
@@ -34,10 +35,10 @@ ReentrantLock、CountDownLatch、Semaphore、CyclicBarrier、ReentrantReadWriteL
 ### 四、核心流程（独占锁举例，ReentrantLock）
 线程调用lock()，调用AQS acquire()； 尝试tryAcquire()：CAS修改state，抢占锁；
 成功：直接执行业务代码； 失败：把当前线程封装为Node，加入队尾；
-队列内线程循环自旋尝试抢锁，多次失败后调用LockSupport.park() 阻塞线程（释放 CPU）；
+队列内线程循环自旋尝试抢锁，多次失败后调用LockSupport.park() 阻塞线程（释放CPU）；
 
 持有锁的线程unlock()，调用release()，修改state；
-state=0 释放成功，唤醒队列head后继阻塞线程； 被唤醒线程重新竞争锁，循环往复。
+state=0释放成功，唤醒队列head后继阻塞线程； 被唤醒线程重新竞争锁，循环往复。
 
 ### 五、Condition 条件队列（配套功能）
 AQS同步队列是阻塞抢锁队列； 每个Condition拥有独立单向条件队列。
@@ -134,7 +135,7 @@ CountDownLatch是JUC同步工具，底层AQS共享模式实现，内部维护计
 构造指定初始计数，线程调用countDown让计数器递减，主线程调用await阻塞等待，计数器归0后唤醒主线程。
 计数器只能递减、不能重置，一次性使用；常用于多线程并行任务，主线程等待全部子线程完成后汇总处理。
 ------------------------------------------------------------------------------
-什么是 CyclicBarrier？
+什么是CyclicBarrier？
 ### 一、基础定义
 CyclicBarrier循环屏障，JUC同步工具，底层不基于AQS，依靠ReentrantLock + Condition实现。
 作用：让一批线程互相等待，所有线程全部抵达屏障点，才统一解除阻塞、继续往下执行；计数器可以自动重置，能够循环反复使用，Cyclic = 循环。
