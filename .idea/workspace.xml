@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加排序算法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/01_java/01_basic.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/01_basic.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/01_java/02_collection.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/02_collection.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/01_java/03_concurrency1.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/03_concurrency1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/01_java/04_concurrency2.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/04_concurrency2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/01_java/05_concurrency3.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/01_java/05_concurrency3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/30_algorithms/01_sort.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/30_algorithms/01_sort.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_note/interview/interview.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/interview.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -949,7 +942,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699688707787</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TestHistory">
