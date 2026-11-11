@@ -45,6 +45,75 @@
 
 - “用 jstack 看线程状态定位阻塞问题。”
 
+
+### blocked 和 waiting 区别
+
+**每个 Java 对象都关联一个监视器（monitor），内部有三个队列：**
+
+```
+ObjectMonitor {
+    _owner      // 当前持有锁的线程
+    _cxq        // 竞争队列（新来的先进这里）
+    _EntryList  // ★ BLOCKED 的线程在这里排队
+    _WaitSet    // ★ WAITING 的线程在这里等
+}
+```
+
+### BLOCKED 怎么离开：靠锁释放，不靠唤醒
+
+**流程是这样的：**
+
+**① 线程 A 进 `synchronized`**
+
+- `_owner = A`，它拿着锁。
+
+**② 线程 B 也进这个同步块**
+
+- 锁被占，B 进 `_EntryList`，状态变 **BLOCKED**。
+
+**③ 线程 A 退出同步块 / 抛异常 / 调 wait**
+
+- JVM **释放 monitor**。
+- 从 `_EntryList` 里挑线程去竞争锁。
+- 抢到 → **RUNNABLE**；没抢到 → **继续 BLOCKED**。
+
+**整个过程没有人调用任何 “唤醒” 方法，是 “锁释放” 这个事件触发的。**
+
+---
+
+### 最关键的一个纠正：`notify` 不会让线程直接变 RUNNABLE
+
+**很多人说 “notify 后线程从 WAITING 变 RUNNABLE”—— 这是错的。**
+
+**真实路径是：**
+
+**① 线程 A 调 `obj.wait()`**
+
+- 释放锁，进 `_WaitSet`，状态 **WAITING**。
+
+**② 线程 B 拿到锁，调 `obj.notify()`**
+
+- 把 A 从 `_WaitSet` **移到 `_EntryList`**。
+- **A 的状态变成 BLOCKED！不是 RUNNABLE！**
+
+**③ A 为什么是 BLOCKED？**
+
+- 因为 `wait()` 返回前**必须重新拿到锁**。
+- 它现在只是 “被允许重新排队抢锁”，还没抢到。
+- JDK 文档原话：*“the thread waits until it can **re-obtain ownership of the monitor**”*。
+
+**④ B 退出同步块释放锁**
+
+- A（或队列里其他人）抢到锁 → **RUNNABLE**，`wait()` 才真正返回。
+
+**所以完整的状态链是：**
+
+```
+RUNNABLE --wait()--> WAITING --notify()--> BLOCKED --抢到锁--> RUNNABLE
+```
+
+**记住这条链：notify 只是 “从候诊室叫到门口”，还得自己挤进门。**
+
 ### 卡 2　volatile　★★★★
 
 **关键词**：可见性 / 禁止重排序 / 内存屏障 / 不保证原子性
@@ -105,6 +174,11 @@
 - synchronized：JVM 层实现、自动释放、不可中断、非公平。
 - ReentrantLock：AQS 实现、手动 unlock、可中断、可公平、支持 Condition。
 - 简单场景用 synchronized（JDK6 后性能已不差），复杂场景用 Lock。
+**面试话术**
+**两者都是 “乐观时用 CAS 在用户态抢，悲观时才 park 下陷到 futex”
+  区别只在于 AQS 把状态放在自己的 `state` 字段、用 Java 代码实现，
+  synchronized 把状态放进对象头 Mark Word、由 JVM 内建代码实现，
+  因此后者能被 JIT 做锁消除和锁粗化。**
 
 **项目钩子**
 
@@ -141,6 +215,13 @@
 **项目钩子**
 
 - “读 AQS 源码理解 ReentrantLock 的公平 / 非公平实现。”
+
+### CountDownLatch  CyclicBarrier Semaphore的区别
+- “CountDownLatch 是倒计时门闩，`await` 等、`countDown` 减，减到 0 全部放行，**一次性，不能重用**。”
+- “CyclicBarrier 是循环栅栏，所有线程 `await`，到齐了一起走，**可以反复用，还能配 barrierAction**。”
+- “Semaphore 是信号量，控制同时访问的线程数，**acquire/release 可反复**。”
+- “本质区别：**Latch 是等‘事’完成、角色不对称；Barrier 是等‘人’到齐、角色对称**。”
+- “还有个常被说错的点：**CyclicBarrier 不是 AQS 实现的，它用的是 ReentrantLock + Condition**。”
 
 ### 卡 5　CAS 与 ABA　★★★★
 
@@ -233,6 +314,9 @@
 - `newFixedThreadPool` / `newSingleThreadExecutor` 用**无界队列**，可能 OOM。
 - `newCachedThreadPool` 最大线程数是 `Integer.MAX_VALUE`，可能创建过多线程。
 - 阿里规范明确要求**手动 new ThreadPoolExecutor**，明确参数。
+**面试话术**
+Executors 的问题不在这几个参数好不好，而在它把 “队列多深、线程多少” 这两个生死数字设成了 “无限”， 
+让你失去了对边界的控制 —— 生产环境必须自己把这两个数字写死、封顶、并挂上监控。
 
 **项目钩子**
 
@@ -267,6 +351,12 @@
 - 配合 `set/get` 时的 `expungeStaleEntry` 清理 key 为 null 的 entry。
 - 但**清理是惰性的**，所以还是得主动 remove。
 - 正确用法：try-finally 里 remove。
+
+**面试话术** 
+- “ThreadLocal 的用法就一个模式：在当前线程绑数据，同线程内随便取，别的线程拿不到。”
+- “最典型三个场景：Web 里存用户上下文、复用非线程安全对象（如 SimpleDateFormat）、全链路 TraceId。”
+- “Spring 的事务管理本质也是这个：把 Connection 绑到当前线程，让多个 DAO 复用同一个连接。”
+- “关键是 `private static final` + `try-finally` 里 `remove()`，线程池场景不清就是泄漏 + 脏数据。”
 
 **项目钩子**
 

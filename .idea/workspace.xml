@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b07ab1e7-b681-4e96-b2a8-15047668affc" name="Default Changelist" comment="增加排序算法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_note/interview/99_total/04_java_thread.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn_note/interview/99_total/04_java_thread.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -942,7 +943,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699688707787</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <option name="localTasksCounter" value="223" />
     <servers />
   </component>
   <component name="TestHistory">
