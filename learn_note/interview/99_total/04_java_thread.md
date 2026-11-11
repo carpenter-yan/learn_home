@@ -216,6 +216,15 @@ RUNNABLE --wait()--> WAITING --notify()--> BLOCKED --抢到锁--> RUNNABLE
 
 - “读 AQS 源码理解 ReentrantLock 的公平 / 非公平实现。”
 
+### ReentrantLock的Condition机制
+- “Condition 是 Lock 版的 wait/notify，最大价值是**一个 Lock 能建多个条件队列**，可以精准唤醒。”
+- “底层是两套队列：AQS 的同步队列是双向链表，Condition 的条件队列是单向链表。”
+- “`await` 会**完全释放锁**并挂到条件队列；`signal` 把节点从条件队列挪到同步队列，**并没有直接让它跑**，它还要重新抢锁。”
+- “Condition 的条件队列是**单向链表**，**尾插入队、头取出队，严格 FIFO**。”
+- “所以状态链是：RUNNABLE → WAITING（条件队列）→ signal → BLOCKED（同步队列）→ 抢到锁 → RUNNABLE，和 wait/notify 完全同构。”
+- “生产者消费者用两个 Condition 分开等，避免 `notifyAll` 的无效唤醒。”
+- “`await` 必须写在 `while` 里，`signal` 必须持锁。”
+
 ### CountDownLatch  CyclicBarrier Semaphore的区别
 - “CountDownLatch 是倒计时门闩，`await` 等、`countDown` 减，减到 0 全部放行，**一次性，不能重用**。”
 - “CyclicBarrier 是循环栅栏，所有线程 `await`，到齐了一起走，**可以反复用，还能配 barrierAction**。”
